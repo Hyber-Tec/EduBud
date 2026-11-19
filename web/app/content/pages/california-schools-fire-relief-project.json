@@ -1,0 +1,443 @@
+{
+ "path": "/california-schools-fire-relief-project",
+ "meta": {
+  "title": "California Schools Fire Relief Project | Support and Rebuild — Get Involved Today — EduBud International",
+  "description": "Support California wildfire-affected schools with donations and volunteer efforts. Help rebuild learning environments and ensure continuous education for students.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a9aed099e4d5b18c7709747",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "vars": {
+    "--section-custom-height": "1vh"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 84,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 28,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "9b7136f28b0f6200b641",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 9,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 17,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"text-align: center; ; white-space:pre-wrap;\">California Schools Fire Relief Project</h1>"
+    },
+    {
+     "id": "a7a7cb7e38eb22dc0e7c",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 2,
+      "rowEnd": 27,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "55.86080586080586% 100%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1500/1000",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/53e2753194e6",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1500,
+      "height": 1000,
+      "alt": "Cityscape at sunset with buildings and palm trees against a pink-orange sky and distant mountains.",
+      "focal": [
+       0.5586080586080586,
+       1
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"a7a7cb7e38eb22dc0e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+    },
+    {
+     "id": "c61d2d18936e2064bb95",
+     "mobile": {
+      "rowStart": 24,
+      "colStart": 2,
+      "rowEnd": 28,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 11,
+      "rowEnd": 11,
+      "colEnd": 19,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"text-align: start; ; white-space:pre-wrap;\"><strong>Project Objective</strong></h3>"
+    },
+    {
+     "id": "a6427b9494025f009c86",
+     "mobile": {
+      "rowStart": 27,
+      "colStart": 2,
+      "rowEnd": 28,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 11,
+      "rowEnd": 12,
+      "colEnd": 23,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "line"
+    },
+    {
+     "id": "3676f6897edc720f20af",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 36,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 11,
+      "rowEnd": 16,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"text-align: start; ; white-space:pre-wrap;\">This initiative was launched to provide support to <em>schools, teachers, and students</em> impacted by wildfires. Led by our dedicated California-based chapter teams, we work through donations and volunteer efforts to <span class=\"rte-text-highlight\"><strong>supply essential classroom resources, deliver emotional support programs, and help rebuild safe learning environments.</strong></span> Our commitment is to support affected communities in their recovery, ensuring that students can continue their education without interruption.</p>"
+    },
+    {
+     "id": "bed3ee93d1cd32550161",
+     "mobile": {
+      "rowStart": 37,
+      "colStart": 2,
+      "rowEnd": 42,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 16,
+      "colStart": 11,
+      "rowEnd": 19,
+      "colEnd": 24,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: start; ; white-space:pre-wrap;\" class=\"rte-large\">This initiative was led by our EduBud Irvine Chapter, which organized a successful can drive across nearby schools, <strong><em>collecting over 5,000 cans</em></strong> to donate to the <em>Family Forward</em> weekend food pantry. In addition, they <strong><em>raised more than $7,000</em></strong> to support students from families who lost their homes to fires.</p>"
+    },
+    {
+     "id": "6b1f05f623f8bd946e7c",
+     "mobile": {
+      "rowStart": 42,
+      "colStart": 2,
+      "rowEnd": 56,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 11,
+      "rowEnd": 27,
+      "colEnd": 16,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "5528/3112",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/96d067ab7362",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 5528,
+      "height": 3112,
+      "alt": "People browsing and shopping at an outdoor flea market with tables and boxes of secondhand items, trees and mountains in the background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"6b1f05f623f8bd946e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+    },
+    {
+     "id": "acb91cbb51f74efc28ae",
+     "mobile": {
+      "rowStart": 56,
+      "colStart": 2,
+      "rowEnd": 70,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 16,
+      "rowEnd": 27,
+      "colEnd": 21,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "5526/3110",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/2378e967d306",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 5526,
+      "height": 3110,
+      "alt": "People sorting and organizing clothes in a large indoor space, surrounded by numerous boxes and piles of clothing.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"acb91cbb51f74efc28ae\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+    },
+    {
+     "id": "282987d8888cad494cdd",
+     "mobile": {
+      "rowStart": 70,
+      "colStart": 2,
+      "rowEnd": 84,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 21,
+      "rowEnd": 27,
+      "colEnd": 26,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "5526/3686",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/3bb5b93b3168",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 5526,
+      "height": 3686,
+      "alt": "Multiple canned goods like corn and chicken stacked in cardboard boxes on shelves, with snack and cereal boxes nearby.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"282987d8888cad494cdd\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+    }
+   ]
+  }
+ ]
+}

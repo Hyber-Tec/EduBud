@@ -1,0 +1,2278 @@
+{
+ "path": "/our-team",
+ "meta": {
+  "title": "About Us | Empower Students Today - Join Us — EduBud International",
+  "description": "EduBud International Inc. promotes diversity, equity, and inclusion through educational programs, mentorship, and community initiatives for underserved students. Join us to support changemakers.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a971b5c6c7a5f31e93dfa2a",
+   "theme": "black-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "image": {
+     "base": "/media/a54cae523737",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 736,
+     "height": 1308,
+     "alt": "",
+     "focal": [
+      0.5284507668370749,
+      0.2320290036254532
+     ]
+    },
+    "art": {
+     "kind": "conic"
+    },
+    "overlayOpacity": 0.65
+   },
+   "grid": {
+    "mobile": {
+     "rows": 46,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 20,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "1f9c79ccfa5eefc47695",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 3,
+      "rowEnd": 5,
+      "colEnd": 14,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Who We Are</h1>"
+    },
+    {
+     "id": "87a262190ff74b067584",
+     "mobile": {
+      "rowStart": 7,
+      "colStart": 2,
+      "rowEnd": 16,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 3,
+      "rowEnd": 13,
+      "colEnd": 14,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">EduBud International Inc. is built on the belief that education is the foundation for a better future. Our mission is to instill in our students the power of education and encourage them to use their knowledge and talents to support further communities.</h4><h4 style=\"white-space:pre-wrap;\">Below is our Diversity, Equity, and Inclusion (DEI) Statement.</h4>"
+    },
+    {
+     "id": "e8bdec13ed4686bde1f2",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 3,
+      "rowEnd": 14,
+      "colEnd": 14,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>DEI Statement.</strong></p>"
+    },
+    {
+     "id": "212a6b7c5ba579ce7bd8",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 2,
+      "rowEnd": 36,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 14,
+      "colStart": 3,
+      "rowEnd": 21,
+      "colEnd": 23,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\">At <strong><em>EduBud,</em></strong> we are dedicated to promoting <em>diversity, equity, and inclusion</em> in all that we do. </p><p style=\"white-space:pre-wrap;\">We believe that a truly transformative education is one that recognizes and celebrates the uniqueness of every individual. Our mission is to provide access to educational resources, mentorship, and leadership opportunities for all students, particularly those from marginalized, underrepresented, and underserved communities, both locally and globally. We actively work to dismantle barriers to education, advocating for equitable opportunities that empower students of all backgrounds—regardless of race, ethnicity, gender, ability, or socioeconomic status. We are committed to creating a learning environment where all voices are heard, valued, and respected. By embracing diverse perspectives, we enrich the learning experience and encourage innovation, collaboration, and empathy. EduBud also prioritizes creating spaces where students feel a strong sense of belonging, fostering an atmosphere that supports their growth, development, and aspirations. We recognize that true inclusion requires intentional action, and we continuously strive to ensure that our programs, resources, and partnerships reflect our core values of diversity and equity. Through our work, we aim to contribute to a more inclusive educational landscape, where every student has the opportunity to thrive, succeed, and lead change.</p>"
+    },
+    {
+     "id": "6325e45ffeb718cbf5e7",
+     "mobile": {
+      "rowStart": 36,
+      "colStart": 2,
+      "rowEnd": 47,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 15,
+      "rowEnd": 14,
+      "colEnd": 24,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "54.800000000000004% 64%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1249/1249",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/68a283df6918",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1249,
+      "height": 1249,
+      "alt": "Logo for EduBud community center established in 2022, with colorful abstract illustrations of people and a flower, and the slogan: inclusive education, limitless potential, growing community.",
+      "focal": [
+       0.548,
+       0.64
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"6325e45ffeb718cbf5e7\"] .image-frame { overflow: hidden; clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); -webkit-clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); }"
+    }
+   ]
+  },
+  {
+   "id": "6aa24174876cc3274e9ea20a",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 22,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 13,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "820a7c4bd82422fdbb0a",
+     "mobile": {
+      "rowStart": 9,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 16,
+      "rowEnd": 13,
+      "colEnd": 24,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "45.19969998124883% 66.40415025939122%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1024/1536",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/74ce1ff19e99",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1024,
+      "height": 1536,
+      "alt": "Young woman in white dress standing in an arched brick walkway with greenery in the background.",
+      "focal": [
+       0.45199699981248825,
+       0.6640415025939121
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"820a7c4bd82422fdbb0a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }"
+    },
+    {
+     "id": "yui_3_17_2_1_1790190058840_9521",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 13,
+      "rowEnd": 9,
+      "colEnd": 19,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "horizontal-right-leaning-oval",
+     "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
+     "viewBox": "0 0 150 100",
+     "stretched": true
+    },
+    {
+     "id": "0f4c7d51083c2b247475",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 3,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Founder &amp; Executive Director</h2>"
+    },
+    {
+     "id": "e99ccb0a6bb79efd1c3d",
+     "mobile": {
+      "rowStart": 7,
+      "colStart": 2,
+      "rowEnd": 9,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 3,
+      "rowEnd": 10,
+      "colEnd": 7,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Clara Lim</strong></h4>"
+    },
+    {
+     "id": "5b73a1801ded6a85a4cd",
+     "mobile": {
+      "rowStart": 20,
+      "colStart": 3,
+      "rowEnd": 22,
+      "colEnd": 9,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 3,
+      "rowEnd": 12,
+      "colEnd": 7,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "Founder's Message",
+     "link": {
+      "href": "/founder-message"
+     },
+     "kind": "secondary",
+     "size": "large",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a9b2778521028217d3284de",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 130,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 56,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "5fef25e62d9cb0871701",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 4,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Learning Center Leadership</h1>"
+    },
+    {
+     "id": "e32524ecbc41911d3dcc",
+     "mobile": {
+      "rowStart": 9,
+      "colStart": 3,
+      "rowEnd": 18,
+      "colEnd": 9,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 15,
+      "rowEnd": 16,
+      "colEnd": 23,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "44.663998665999664% 8.800550034377153%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1086/1448",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-native-aspect-ratio": "1086/1448"
+     },
+     "type": "image",
+     "picture": {
+      "base": "/media/5a57676341fc",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1086,
+      "height": 1448,
+      "alt": "",
+      "focal": [
+       0.44663998665999666,
+       0.08800550034377153
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }"
+    },
+    {
+     "id": "a17afffd6efa58553c89",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 3,
+      "rowEnd": 20,
+      "colEnd": 7,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 16,
+      "colStart": 15,
+      "rowEnd": 18,
+      "colEnd": 23,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Sunny</h4>"
+    },
+    {
+     "id": "2e078a9809dbabd30658",
+     "mobile": {
+      "rowStart": 19,
+      "colStart": 3,
+      "rowEnd": 20,
+      "colEnd": 7,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 15,
+      "rowEnd": 18,
+      "colEnd": 23,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Operational Director</p>"
+    },
+    {
+     "id": "77ecc3cee1b4943efd97",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 3,
+      "rowEnd": 30,
+      "colEnd": 9,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 5,
+      "rowEnd": 16,
+      "colEnd": 13,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "680/649",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-native-aspect-ratio": "680/649"
+     },
+     "type": "image",
+     "picture": {
+      "base": "/media/4dac74ed244b",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 680,
+      "height": 649,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }"
+    },
+    {
+     "id": "51c8f2eabfa58a3b6b4a",
+     "mobile": {
+      "rowStart": 30,
+      "colStart": 3,
+      "rowEnd": 32,
+      "colEnd": 7,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 16,
+      "colStart": 5,
+      "rowEnd": 18,
+      "colEnd": 13,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Sharon</h4>"
+    },
+    {
+     "id": "7b5468ccd829fa46a016",
+     "mobile": {
+      "rowStart": 31,
+      "colStart": 3,
+      "rowEnd": 32,
+      "colEnd": 7,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 5,
+      "rowEnd": 18,
+      "colEnd": 13,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Program Director</p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790713973946_7715",
+     "mobile": {
+      "rowStart": 33,
+      "colStart": 2,
+      "rowEnd": 42,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 3,
+      "rowEnd": 27,
+      "colEnd": 9,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1002/1252",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/21ae94be5401",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1002,
+      "height": 1252,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"yui_3_17_2_1_1790713973946_7715\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); }"
+    },
+    {
+     "id": "9a5003deab50d5b20ae1",
+     "mobile": {
+      "rowStart": 42,
+      "colStart": 3,
+      "rowEnd": 44,
+      "colEnd": 9,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 27,
+      "colStart": 4,
+      "rowEnd": 29,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Su</h4>"
+    },
+    {
+     "id": "48ff98c460007b001fbc",
+     "mobile": {
+      "rowStart": 43,
+      "colStart": 3,
+      "rowEnd": 44,
+      "colEnd": 9,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 28,
+      "colStart": 4,
+      "rowEnd": 29,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Head Instructor</p>"
+    },
+    {
+     "id": "ec9d2bd5d560aac06118",
+     "mobile": {
+      "rowStart": 45,
+      "colStart": 2,
+      "rowEnd": 54,
+      "colEnd": 10,
+      "z": 10,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 10,
+      "rowEnd": 27,
+      "colEnd": 18,
+      "z": 9,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "57.18560074801309% 35.2022001375086%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "906/1355",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/bcda547f8978",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 906,
+      "height": 1355,
+      "alt": "",
+      "focal": [
+       0.5718560074801309,
+       0.352022001375086
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"ec9d2bd5d560aac06118\"] .image-frame { overflow: hidden; clip-path: url(#ec9d2bd5d560aac06118-system_desktop); -webkit-clip-path: url(#ec9d2bd5d560aac06118-system_desktop); }"
+    },
+    {
+     "id": "abb5446b7b5da1c9635a",
+     "mobile": {
+      "rowStart": 54,
+      "colStart": 3,
+      "rowEnd": 56,
+      "colEnd": 8,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 27,
+      "colStart": 12,
+      "rowEnd": 29,
+      "colEnd": 18,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Julie</h4>"
+    },
+    {
+     "id": "c0fc5979c4f5d73153ff",
+     "mobile": {
+      "rowStart": 55,
+      "colStart": 3,
+      "rowEnd": 56,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 28,
+      "colStart": 20,
+      "rowEnd": 29,
+      "colEnd": 26,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Assistant Instructor</p>"
+    },
+    {
+     "id": "b594477605a82d8c1f40",
+     "mobile": {
+      "rowStart": 57,
+      "colStart": 2,
+      "rowEnd": 66,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 18,
+      "rowEnd": 27,
+      "colEnd": 25,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "921/1379",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/426a5690886d",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 921,
+      "height": 1379,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"b594477605a82d8c1f40\"] .image-frame { overflow: hidden; clip-path: url(#b594477605a82d8c1f40-system_desktop); -webkit-clip-path: url(#b594477605a82d8c1f40-system_desktop); }"
+    },
+    {
+     "id": "fc386cb159d38542fdde",
+     "mobile": {
+      "rowStart": 66,
+      "colStart": 3,
+      "rowEnd": 68,
+      "colEnd": 8,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 27,
+      "colStart": 20,
+      "rowEnd": 28,
+      "colEnd": 26,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Joanne</h4>"
+    },
+    {
+     "id": "aaba2ef6a03fd3700841",
+     "mobile": {
+      "rowStart": 67,
+      "colStart": 3,
+      "rowEnd": 68,
+      "colEnd": 8,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 28,
+      "colStart": 12,
+      "rowEnd": 29,
+      "colEnd": 18,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Assistant Instructor</p>"
+    },
+    {
+     "id": "964240320fb255afe8c3",
+     "mobile": {
+      "rowStart": 70,
+      "colStart": 2,
+      "rowEnd": 72,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 32,
+      "colStart": 3,
+      "rowEnd": 35,
+      "colEnd": 25,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Interns</h2>"
+    },
+    {
+     "id": "a043e91b5ca9e73fb8ce",
+     "mobile": {
+      "rowStart": 72,
+      "colStart": 2,
+      "rowEnd": 81,
+      "colEnd": 10,
+      "z": 9,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 35,
+      "colStart": 3,
+      "rowEnd": 43,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1350/902",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/60ebe41505da",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1350,
+      "height": 902,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"a043e91b5ca9e73fb8ce\"] .image-frame { overflow: hidden; clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); -webkit-clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); }"
+    },
+    {
+     "id": "ad6c0f368981efdc9640",
+     "mobile": {
+      "rowStart": 81,
+      "colStart": 3,
+      "rowEnd": 83,
+      "colEnd": 9,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 43,
+      "colStart": 4,
+      "rowEnd": 44,
+      "colEnd": 9,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Betty Ann Akonchong</h4>"
+    },
+    {
+     "id": "c556563463eb34008508",
+     "mobile": {
+      "rowStart": 82,
+      "colStart": 3,
+      "rowEnd": 83,
+      "colEnd": 9,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 44,
+      "colStart": 4,
+      "rowEnd": 45,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"text-align: left; white-space: pre-wrap\">Program Support Intern</p>"
+    },
+    {
+     "id": "f99f563b6f8eb935d706",
+     "mobile": {
+      "rowStart": 84,
+      "colStart": 2,
+      "rowEnd": 93,
+      "colEnd": 10,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 35,
+      "colStart": 10,
+      "rowEnd": 43,
+      "colEnd": 18,
+      "z": 10,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "52.400000000000006% 18.400000000000006%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1254/1254",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/283a5e23cf60",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1254,
+      "height": 1254,
+      "alt": "",
+      "focal": [
+       0.524,
+       0.18400000000000005
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"f99f563b6f8eb935d706\"] .image-frame { overflow: hidden; clip-path: url(#f99f563b6f8eb935d706-system_desktop); -webkit-clip-path: url(#f99f563b6f8eb935d706-system_desktop); }"
+    },
+    {
+     "id": "dce4a83f428ed5ef57c0",
+     "mobile": {
+      "rowStart": 93,
+      "colStart": 3,
+      "rowEnd": 95,
+      "colEnd": 9,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 43,
+      "colStart": 11,
+      "rowEnd": 45,
+      "colEnd": 17,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Mason (Yeongwoo) Roh</h4>"
+    },
+    {
+     "id": "acd2ebfa11e93f0e3e28",
+     "mobile": {
+      "rowStart": 94,
+      "colStart": 3,
+      "rowEnd": 95,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 44,
+      "colStart": 11,
+      "rowEnd": 45,
+      "colEnd": 17,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Program Support Intern</p>"
+    },
+    {
+     "id": "f1096ce574b9a8f02d39",
+     "mobile": {
+      "rowStart": 96,
+      "colStart": 2,
+      "rowEnd": 105,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 35,
+      "colStart": 18,
+      "rowEnd": 43,
+      "colEnd": 25,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "56.00000000000001% 0%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1122/1402",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/b65a396886ee",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1122,
+      "height": 1402,
+      "alt": "",
+      "focal": [
+       0.56,
+       0
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"f1096ce574b9a8f02d39\"] .image-frame { overflow: hidden; clip-path: url(#f1096ce574b9a8f02d39-system_desktop); -webkit-clip-path: url(#f1096ce574b9a8f02d39-system_desktop); }"
+    },
+    {
+     "id": "d02159354b5238933db2",
+     "mobile": {
+      "rowStart": 105,
+      "colStart": 3,
+      "rowEnd": 107,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 43,
+      "colStart": 19,
+      "rowEnd": 45,
+      "colEnd": 24,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Sabrina Li</h4>"
+    },
+    {
+     "id": "9a385577d96b9fdedc61",
+     "mobile": {
+      "rowStart": 106,
+      "colStart": 3,
+      "rowEnd": 107,
+      "colEnd": 9,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 44,
+      "colStart": 19,
+      "rowEnd": 45,
+      "colEnd": 23,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Executive Associate Intern</p>"
+    },
+    {
+     "id": "d01d21003241ee2ddfdf",
+     "mobile": {
+      "rowStart": 108,
+      "colStart": 2,
+      "rowEnd": 117,
+      "colEnd": 10,
+      "z": 10,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 46,
+      "colStart": 3,
+      "rowEnd": 54,
+      "colEnd": 10,
+      "z": 9,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "48.7999249953122% 32.00200012500781%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1024/1536",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/dc3588674401",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1024,
+      "height": 1536,
+      "alt": "",
+      "focal": [
+       0.48799924995312205,
+       0.3200200012500781
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"d01d21003241ee2ddfdf\"] .image-frame { overflow: hidden; clip-path: url(#d01d21003241ee2ddfdf-system_desktop); -webkit-clip-path: url(#d01d21003241ee2ddfdf-system_desktop); }"
+    },
+    {
+     "id": "b23e7f0335bca0d3485b",
+     "mobile": {
+      "rowStart": 117,
+      "colStart": 3,
+      "rowEnd": 119,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 54,
+      "colStart": 4,
+      "rowEnd": 56,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Julie (Jiwoo) Park</h4>"
+    },
+    {
+     "id": "04f33512b07c0b8deaba",
+     "mobile": {
+      "rowStart": 118,
+      "colStart": 3,
+      "rowEnd": 119,
+      "colEnd": 9,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 55,
+      "colStart": 4,
+      "rowEnd": 56,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Lead Social Media &amp; Design Intern</p>"
+    },
+    {
+     "id": "558da8447e43f615d608",
+     "mobile": {
+      "rowStart": 120,
+      "colStart": 2,
+      "rowEnd": 129,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 46,
+      "colStart": 10,
+      "rowEnd": 54,
+      "colEnd": 18,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "51.82445408635038% 32.80205012813301%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "955/1086",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/e8519fb457d7",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 955,
+      "height": 1086,
+      "alt": "",
+      "focal": [
+       0.5182445408635038,
+       0.3280205012813301
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"558da8447e43f615d608\"] .image-frame { overflow: hidden; clip-path: url(#558da8447e43f615d608-system_desktop); -webkit-clip-path: url(#558da8447e43f615d608-system_desktop); }"
+    },
+    {
+     "id": "462029f376fba4ee5429",
+     "mobile": {
+      "rowStart": 129,
+      "colStart": 3,
+      "rowEnd": 131,
+      "colEnd": 9,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 54,
+      "colStart": 11,
+      "rowEnd": 56,
+      "colEnd": 17,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Amy Gao</h4>"
+    },
+    {
+     "id": "8d32f1d8ad7f4c7894d7",
+     "mobile": {
+      "rowStart": 130,
+      "colStart": 3,
+      "rowEnd": 131,
+      "colEnd": 9,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 55,
+      "colStart": 11,
+      "rowEnd": 56,
+      "colEnd": 17,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Social Media &amp; Design Intern</p>"
+    }
+   ]
+  },
+  {
+   "id": "6ac31bc4b473a556b7386412",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "surface"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 13,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 9,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "ba34bd07f25f75ed7d51",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 7,
+      "colEnd": 13,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: left; white-space: pre-wrap\">EduBud Community Chapters</h2>"
+    },
+    {
+     "id": "e4cb2e9c74e60cc5454a",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 4,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 17,
+      "rowEnd": 10,
+      "colEnd": 24,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50.966965159154185% 79.20495030939433%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1264/1522",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/6397990ea325",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1264,
+      "height": 1522,
+      "alt": "",
+      "focal": [
+       0.5096696515915419,
+       0.7920495030939434
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"e4cb2e9c74e60cc5454a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 200px; border-top-right-radius: 200px; border-bottom-left-radius: 200px; border-bottom-right-radius: 200px; }"
+    },
+    {
+     "id": "b3abeb8b4b85434bc4ae",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 5,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 14,
+      "rowEnd": 10,
+      "colEnd": 19,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1616/1080",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/5955c739fcdc",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1616,
+      "height": 1080,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"b3abeb8b4b85434bc4ae\"] .image-frame { overflow: hidden; clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); -webkit-clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); }"
+    },
+    {
+     "id": "ea395eb7ee9841f185c6",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 7,
+      "rowEnd": 12,
+      "colEnd": 11,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 15,
+      "rowEnd": 6,
+      "colEnd": 19,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "15.9007659007659% 100%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4284/5712",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/86674247c8e5",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4284,
+      "height": 5712,
+      "alt": "",
+      "focal": [
+       0.159007659007659,
+       1
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"ea395eb7ee9841f185c6\"] .image-frame { overflow: hidden; clip-path: url(#ea395eb7ee9841f185c6-system_desktop); -webkit-clip-path: url(#ea395eb7ee9841f185c6-system_desktop); }"
+    },
+    {
+     "id": "66e8ce8a9cd3d8faf71d",
+     "mobile": {
+      "rowStart": 12,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 3,
+      "rowEnd": 10,
+      "colEnd": 11,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "Meet Our Chapters",
+     "link": {
+      "href": "/community-chapters"
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a99d8bff1223a6c07336782",
+   "theme": "black-bold",
+   "classes": [
+    "has-section-divider",
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "none"
+    }
+   },
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6a99d8bff1223a6c07336782\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 16,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 11,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "b31022ad0e832faf1344",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 3,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 9,
+      "colEnd": 9,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">our Mission</h1>"
+    },
+    {
+     "id": "2ac8b8229e216da5be10",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 10,
+      "rowEnd": 12,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">Our mission at EduBud is to <span class=\"rte-text-highlight\"><strong>bridge educational disparities through mentorship, resources, and advocacy</strong>. </span>We empower underserved students with the support, guidance, and opportunities they need to succeed academically and personally. Through volunteer-driven initiatives, we foster leadership, inspire change, and help create a more <span class=\"rte-text-highlight\"><strong>equitable and inclusive future for every student</strong>.</span></h3>"
+    }
+   ]
+  },
+  {
+   "id": "6aa226b4e6cf83753aee31e0",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--large",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 12,
+     "rowMin": "24px",
+     "gap": 0
+    },
+    "desktop": {
+     "rows": 78,
+     "scale": 0.0215,
+     "gap": 0
+    }
+   },
+   "blocks": [
+    {
+     "id": "yui_3_17_2_1_1789008417244_675000",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 79,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "instagram",
+     "posts": [],
+     "html": ""
+    }
+   ]
+  }
+ ]
+}

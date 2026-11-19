@@ -1,0 +1,571 @@
+{
+ "path": "/resources",
+ "meta": {
+  "title": "Resources — EduBud International",
+  "description": "",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6ad7eb2b26656c71458b240a",
+   "theme": "black",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "image": {
+     "base": "/media/da7ae9b0c549",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1616,
+     "height": 1080,
+     "alt": "",
+     "focal": [
+      0.489311957247829,
+      0.688043002687668
+     ]
+    },
+    "overlayOpacity": 0.01
+   },
+   "grid": {
+    "mobile": {
+     "rows": 17,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 10,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "92e46ebf46377ff8b1f5",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 6,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 14,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">❋</h1>"
+    },
+    {
+     "id": "2690a7454a4323faaf79",
+     "mobile": {
+      "rowStart": 7,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 3,
+      "rowEnd": 11,
+      "colEnd": 19,
+      "z": 0,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Resources for Students &amp; Families</h1>"
+    },
+    {
+     "id": "cdd2df156dbc7df1546b",
+     "mobile": {
+      "rowStart": 15,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 20,
+      "rowEnd": 11,
+      "colEnd": 25,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "Book A Free Consultation",
+     "link": {
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSehfhqJcp2jOJPsR-ZVyEHLvAnD2f069Dyt1OHgQJSF_FNDTA/viewform",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6ad7eb2b26656c71458b240d",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 31,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 18,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "ff028f564b27df1f8af7",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 4,
+      "colEnd": 13,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">How We Can Help</h2>"
+    },
+    {
+     "id": "b1e20b60054b23bec6f1",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 9,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 4,
+      "rowEnd": 8,
+      "colEnd": 12,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">❋ Educational Guidance &amp; Family Consultations</h3>"
+    },
+    {
+     "id": "2a8e0427d3cbab2b2c2a",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 4,
+      "rowEnd": 10,
+      "colEnd": 12,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Modules are sequenced to build competencies progressively, ensuring concepts are retained and applied with confidence.</p>"
+    },
+    {
+     "id": "a103ca3a1957afda7538",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 2,
+      "rowEnd": 21,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 15,
+      "colStart": 4,
+      "rowEnd": 19,
+      "colEnd": 12,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">We help families identify potential funding opportunities and connect with resources. We can help families navigate Georgia Medicaid waiver programs and explore funding options such as CAG and CAI, when applicable, to better understand eligibility, available support, and next steps.</p><p style=\"white-space:pre-wrap;\">Resources may include scholarships, public benefits, waiver programs, and nonprofit assistance. Eligibility and availability vary by program.</p>"
+    },
+    {
+     "id": "47963711c09a34690215",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 4,
+      "rowEnd": 15,
+      "colEnd": 12,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">❋ Funding &amp; Financial Resources</h3>"
+    },
+    {
+     "id": "2fa0423bbbf8ffe9e0b8",
+     "mobile": {
+      "rowStart": 20,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 16,
+      "rowEnd": 6,
+      "colEnd": 24,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">❋ Individualized Learning Plans</h3>"
+    },
+    {
+     "id": "90fc1edb6002848a0eb3",
+     "mobile": {
+      "rowStart": 22,
+      "colStart": 2,
+      "rowEnd": 27,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 16,
+      "rowEnd": 12,
+      "colEnd": 24,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Every learner is different. We help families explore individualized learning goals and structured lesson plans tailored to a learner’s interests, abilities, communication preferences, and support needs.</p><p style=\"white-space:pre-wrap;\"></p>"
+    },
+    {
+     "id": "e38c0449ebc2560cc492",
+     "mobile": {
+      "rowStart": 26,
+      "colStart": 2,
+      "rowEnd": 29,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 16,
+      "rowEnd": 15,
+      "colEnd": 24,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">❋ Community Resources &amp; Referrals</h3>"
+    },
+    {
+     "id": "5e15defd54730d5a3f8a",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 32,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 15,
+      "colStart": 16,
+      "rowEnd": 19,
+      "colEnd": 24,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">We help families explore local educational programs, adult learning opportunities, disability services, family support networks, and community organizations that align with their needs.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6ad7eb2b26656c71458b241d",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 8,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 3,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "9795d0eeea725662dde6",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 3,
+      "rowEnd": 7,
+      "colEnd": 9,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 9,
+      "rowEnd": 3,
+      "colEnd": 19,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<pre style=\"text-align: center\"><code>Every learner has potential. Every family deserves support. Every step forward matters.</code></pre>"
+    }
+   ]
+  },
+  {
+   "id": "6ad7eb2b26656c71458b2434",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "vars": {
+    "--section-custom-height": "1vh"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 1,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": []
+  },
+  {
+   "id": "6ad7eb2b26656c71458b2440",
+   "theme": "light",
+   "classes": [],
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 0
+    },
+    "desktop": {
+     "rows": 1,
+     "scale": 0.0215,
+     "gap": 0
+    }
+   },
+   "blocks": []
+  }
+ ]
+}

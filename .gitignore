@@ -44,3 +44,11 @@ CLAUDE.local.md
 
 # Claude Code worktrees (parallel sessions), never committed.
 .claude/worktrees/
+
+# comparison output (screenshots of the original and the copy)
+scripts/compare/out/
+scripts/capture/.cache/
+
+# the website's build and generated types
+web/build/
+web/.react-router/

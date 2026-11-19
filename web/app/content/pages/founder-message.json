@@ -1,0 +1,286 @@
+{
+ "path": "/founder-message",
+ "meta": {
+  "title": "Founder Message | Empower Learning Today — Join Us — EduBud International",
+  "description": "Read the founder's message and learn about EduBud's mission to provide accessible learning opportunities for all, especially adults with disabilities.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6ab97e32492cd76c672cb210",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 28,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 25,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "8eba4bf5fa0c50ea056f",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 9,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 16,
+      "rowEnd": 19,
+      "colEnd": 26,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50.60235316176816% 67.20420026251641%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4032/3024",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/9158e4b62ba0",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4032,
+      "height": 3024,
+      "alt": "",
+      "focal": [
+       0.5060235316176815,
+       0.6720420026251641
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"8eba4bf5fa0c50ea056f\"] .image-frame { overflow: hidden; clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); -webkit-clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); }"
+    },
+    {
+     "id": "yui_3_17_2_1_1791679617058_1095",
+     "mobile": {
+      "rowStart": 9,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 14,
+      "rowEnd": 23,
+      "colEnd": 20,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2174/2898",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/30f1eba42cae",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2174,
+      "height": 2898,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"yui_3_17_2_1_1791679617058_1095\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); }"
+    },
+    {
+     "id": "3239017fc02dd5765c72",
+     "mobile": {
+      "rowStart": 16,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 5,
+      "colEnd": 13,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">A Message From Our Founder</h2>"
+    },
+    {
+     "id": "4bbd3529a64e9503678a",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 2,
+      "rowEnd": 23,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 3,
+      "rowEnd": 26,
+      "colEnd": 14,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\"><strong>“Education should be accessible to every learner, no matter their background or circumstance.”</strong></p><p style=\"white-space:pre-wrap;\">I believe this because I have seen what education can make possible in my own life.</p><p style=\"white-space:pre-wrap;\">The opportunities I have had—to attend Johns Hopkins University, learn from people who challenged me, work in hospitals, study abroad, and spend time in communities very different from my own—have shaped the person I am today. I would not be where I am without those opportunities. </p><p style=\"white-space:pre-wrap;\">I entered college during the height of the COVID-19 pandemic, a time that quickly showed me how differently people can experience the same crisis. While studying public health on the pre-med track at Johns Hopkins, I volunteered with students in Baltimore City and saw many struggle when schools moved online and support systems disappeared. In hospitals, I also met children undergoing chemotherapy who were trying to keep up with school while their families navigated treatment and uncertainty. These experiences made me realize how much a person’s ability to learn can depend on the support and opportunities around them. My friends and I started a volunteer initiative matching students for free tutoring online, spreading across the nation. We were able to reach over 15 states.</p><p style=\"white-space:pre-wrap;\">My Fulbright experience in Spain made me think about this in a different way. While teaching English and researching health inequities, I worked closely with special needs students. For many of us, there is a clear next step—college, work, or further education. But for many adults with disabilities, opportunities to continue learning, build relationships, and stay connected to their communities can become much more limited after graduation.</p><p style=\"white-space:pre-wrap;\">That question led me to take EduBud in a new direction during my gap years before medical school. We began building our in-person Learning Center, serving adults 18 and older with disabilities.</p><p style=\"white-space:pre-wrap;\">What began during the pandemic as a small effort to provide free tutoring over Zoom has grown into a nonprofit with student-led chapters, community programs, and our in-person Learning Center.</p><p style=\"white-space:pre-wrap;\">Our work has changed over time, but the reason behind it has stayed the same: <strong>I want more people to have access to opportunities that allow them to keep learning.</strong></p><p style=\"white-space:pre-wrap;\">Working on EduBud has changed how I think about my future in healthcare, but more importantly, it has changed how I think about people. I have learned how much can be missed when we do not take the time to understand the person in front of us—their experiences, their circumstances, and what matters to them.</p><p style=\"white-space:pre-wrap;\">I don't know exactly what EduBud will look like years from now. But I know that education has given me opportunities that changed my life, and I want to spend this chapter of my life helping create more of those opportunities for others.</p><p style=\"white-space:pre-wrap;\"></p><p style=\"white-space:pre-wrap;\"><strong>Clara Lim</strong><br><em>Founder &amp; Executive Director, EduBud International Inc.</em></p>"
+    },
+    {
+     "id": "a3ece2893e64b3534331",
+     "mobile": {
+      "rowStart": 23,
+      "colStart": 2,
+      "rowEnd": 29,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 21,
+      "rowEnd": 9,
+      "colEnd": 26,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "5184/3456",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/7a7af2553af8",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 5184,
+      "height": 3456,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"a3ece2893e64b3534331\"] .image-frame { overflow: hidden; clip-path: url(#a3ece2893e64b3534331-system_desktop); -webkit-clip-path: url(#a3ece2893e64b3534331-system_desktop); }"
+    }
+   ]
+  }
+ ]
+}

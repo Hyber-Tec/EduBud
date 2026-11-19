@@ -1,0 +1,214 @@
+/* The site's header, fixed at the top: logo, menu with drop-down folders, and the phone menu. */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: var(--solid-header-bg, hsla(var(--white-hsl), 1));
+  color: hsla(var(--black-hsl), 1);
+  transition: transform 0.14s ease;
+  font-size: 1rem;
+  line-height: 1em;
+}
+.site-header--hidden {
+  transform: translateY(-100%);
+}
+.header-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 1.1vw var(--site-gutter);
+}
+.header-logo {
+  display: block;
+  flex: 0 0 auto;
+}
+.header-logo img {
+  height: 90px;
+  width: auto;
+  max-height: 90px;
+}
+.header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-nav-list {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: calc((0.9 - 1) * 1.2vw + 1rem);
+  line-height: 1.3em;
+}
+.header-nav-item {
+  position: relative;
+}
+.header-nav-item + .header-nav-item {
+  margin-left: 3vw;
+}
+.header-nav-item > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1em 0;
+  text-decoration: none;
+  color: var(--nav, hsla(var(--black-hsl), 1));
+}
+.header-nav-item > a:hover {
+  opacity: 0.8;
+}
+.header-nav-folder {
+  position: absolute;
+  top: 100%;
+  left: -1em;
+  z-index: 10;
+  display: none;
+  min-width: 100%;
+  padding: 0.5em 1em;
+  background: hsla(var(--white-hsl), 1);
+  white-space: nowrap;
+}
+.header-nav-item--folder:hover .header-nav-folder,
+.header-nav-item--folder:focus-within .header-nav-folder {
+  display: block;
+}
+.header-nav-folder ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-nav-folder-item a {
+  display: inline-flex;
+  padding: 0.1em 0;
+  text-decoration: none;
+}
+.header-nav-folder-item a:hover {
+  opacity: 0.8;
+}
+.header-burger {
+  display: none;
+}
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 6vw;
+  }
+  .header-logo {
+    flex: 1;
+  }
+  .header-logo img {
+    height: 48px;
+    max-height: 48px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-burger {
+    position: relative;
+    display: block;
+    flex: 0 0 auto;
+    width: 47px;
+    height: 37px;
+    padding: 1px 6px;
+  }
+  .burger-line {
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
+  }
+  .burger-line--top {
+    top: 12px;
+  }
+  .burger-line--middle {
+    top: 18px;
+  }
+  .burger-line--bottom {
+    top: 24px;
+  }
+  .header-burger--open .burger-line--top {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  .header-burger--open .burger-line--middle {
+    opacity: 0;
+  }
+  .header-burger--open .burger-line--bottom {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  .header-menu {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--header-height);
+    background: var(--menu-bg, hsla(var(--white-hsl), 1));
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s;
+  }
+  .site-header--menu-open .header-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header-menu-nav {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+  }
+  .header-menu-list {
+    position: absolute;
+    inset: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .header-menu-list--folder {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .header-menu-list--folder.is-active {
+    transform: none;
+    opacity: 1;
+  }
+  .header-menu-nav--folder-open .header-menu-list--root {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .header-menu-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.2em 0;
+    font-size: calc((2 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+    line-height: 1.3em;
+    text-decoration: none;
+    color: var(--menu-link, hsla(var(--black-hsl), 1));
+  }
+  .chevron {
+    display: inline-block;
+    width: 0.45em;
+    height: 0.45em;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+  }
+  .chevron--right {
+    transform: rotate(-45deg);
+  }
+  .chevron--left {
+    transform: rotate(135deg);
+  }
+}

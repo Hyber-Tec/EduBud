@@ -1,0 +1,2314 @@
+{
+ "path": "/day-learning-program",
+ "meta": {
+  "title": "Day Program | Empower Growth—Join Today — EduBud International",
+  "description": "Join EduBud's Day Program to support learning, social skills, and independence for adults with disabilities in an inclusive, engaging environment. Enhance growth and community connection.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a84991363856502b0eb8244",
+   "theme": "light",
+   "classes": [
+    "has-section-divider",
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "gradient"
+    }
+   },
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6a84991363856502b0eb8244\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 23,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 23,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "157f878229c00bcab279",
+     "mobile": {
+      "rowStart": 7,
+      "colStart": 1,
+      "rowEnd": 20,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 14,
+      "rowEnd": 21,
+      "colEnd": 27,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1598/2131",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/71b16a25b515",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1598,
+      "height": 2131,
+      "alt": "A young man in a blue and white checkered shirt smiling and leaning on a wooden fence, with a background of trees and a brick building, under a partly cloudy sky.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"157f878229c00bcab279\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-bottom-left-radius: 40px; }"
+    },
+    {
+     "id": "bd61daca8d1d4d333c79",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 3,
+      "rowEnd": 15,
+      "colEnd": 15,
+      "z": 2,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Belief in Education. Potential. Growth.</h1>"
+    },
+    {
+     "id": "a7495d900ce3695e7650",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 6,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 23,
+      "rowEnd": 20,
+      "colEnd": 25,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "d05cfbebf361fc989aa0",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 1,
+      "rowEnd": 19,
+      "colEnd": 5,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 4,
+      "rowEnd": 23,
+      "colEnd": 6,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "yui_3_17_2_1_1787097597219_9119",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 8,
+      "rowEnd": 16,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 10,
+      "rowEnd": 9,
+      "colEnd": 12,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "72a74c2d96526f171dd3",
+     "mobile": {
+      "rowStart": 20,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 15,
+      "colStart": 3,
+      "rowEnd": 18,
+      "colEnd": 13,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Our <em>Fall &amp; Spring Programs</em> provide a welcoming space to learn, build meaningful connections, and grow with confidence—supporting independence, communication, friendships, and lifelong skills.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6a84991363856502b0eb8248",
+   "theme": "white",
+   "classes": [
+    "has-section-divider",
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6a84991363856502b0eb8248\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--section-custom-height": "1vh"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 3,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 3,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "6d367b51055d64cbb9ad",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 4,
+      "colEnd": 11,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 4,
+      "colEnd": 27,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "3.5",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-padding": "initial",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "marquee",
+     "items": [
+      "Learning Program",
+      "✳︎"
+     ],
+     "textStyle": "heading-1",
+     "speed": 0.5,
+     "direction": "left",
+     "container": {
+      "backgroundEnabled": false,
+      "backgroundColor": {
+       "type": "THEME_COLOR"
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       },
+       "dashLength": {
+        "unit": "px",
+        "value": 5
+       },
+       "gapLength": {
+        "unit": "px",
+        "value": 15
+       },
+       "linecap": "square"
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      },
+      "stretchedToFill": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "6a99b89505c4b846ede23c15",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 21,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 28,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "00ea015358511944d91e",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 1,
+      "rowEnd": 15,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 1,
+      "rowEnd": 29,
+      "colEnd": 27,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-video-block-stroke-color": "hsla(var(--white-hsl), 1)",
+      "--tweak-video-block-background-color": "hsla(var(--white-hsl), 1)",
+      "--tweak-video-block-radius": "0px 0px 0px 0px",
+      "--tweak-video-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "video",
+     "provider": "youtube",
+     "videoId": "y3rpCvytXz8",
+     "title": "EduBud Community Center Q&amp;A | Programs, Process &amp; Purpose",
+     "ratio": 56.49999999999999
+    },
+    {
+     "id": "b14869660c0afb58dad3",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 1,
+      "rowEnd": 6,
+      "colEnd": 11,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 6,
+      "rowEnd": 6,
+      "colEnd": 22,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">EduBud Community Center</h2>"
+    },
+    {
+     "id": "7115283b0dbd471f349e",
+     "mobile": {
+      "rowStart": 15,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 5,
+      "rowEnd": 8,
+      "colEnd": 23,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\">As young adults with disabilities transition into adulthood, access to<em> safe, inclusive, and engaging</em> opportunities often becomes limited. The EduBud Community Center provides a welcoming space where members can continue to learn, grow, connect, and contribute by offering integrated programs designed to foster development, autonomy, and sustained community participation.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6a99bbb80bcdf013ec406612",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 29,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 12,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "579ee833d639aa17dd48",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 4,
+      "rowEnd": 5,
+      "colEnd": 24,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; white-space: pre-wrap\">Supporting Individuals of All Abilities</h2>"
+    },
+    {
+     "id": "c8609600b1d31f1c79cc",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 6,
+      "rowEnd": 6,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\">EduBud is committed to providing high-quality education for everyone. Starting August 2025, we will offer in-person Adult Day Services in a safe, <em>inclusive, and supportive</em> environment for <strong>adults (ages 18 and older) </strong>with:</p>"
+    },
+    {
+     "id": "0e85523e6a779d96be13",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 3,
+      "rowEnd": 10,
+      "colEnd": 9,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "open-book",
+     "svg": "<path d=\"M99.5 99.5V.5L50 10.5.5.5v99l49.5-10 49.5 10z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "356e62be0ae78b04f9b3",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 3,
+      "rowEnd": 10,
+      "colEnd": 9,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Developmental Disabilities</h4>"
+    },
+    {
+     "id": "0d7f84f17b40156eb57e",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 9,
+      "rowEnd": 10,
+      "colEnd": 14,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "arched-window",
+     "svg": "<path d=\"M50 .5A49.5 49.5 0 00.5 50v99.5h99V50A49.5 49.5 0 0050 .5z\" />",
+     "viewBox": "0 0 100 150",
+     "stretched": true
+    },
+    {
+     "id": "4f81a7c2e2e5455609b8",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 21,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 14,
+      "rowEnd": 10,
+      "colEnd": 19,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "horizontal-right-leaning-oval",
+     "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
+     "viewBox": "0 0 150 100",
+     "stretched": true
+    },
+    {
+     "id": "79b3105928e44235453f",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 19,
+      "rowEnd": 10,
+      "colEnd": 25,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Intellectual Disabilities</h4>"
+    },
+    {
+     "id": "75804d671b576129b7bd",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 19,
+      "rowEnd": 10,
+      "colEnd": 25,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "e58dcbed213fe8ec48f2",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 9,
+      "rowEnd": 10,
+      "colEnd": 14,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"></p><h4 style=\"text-align: center; white-space: pre-wrap\">Autism Spectrum Disorders</h4>"
+    },
+    {
+     "id": "21bad934a00c9f8a117e",
+     "mobile": {
+      "rowStart": 24,
+      "colStart": 2,
+      "rowEnd": 27,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 14,
+      "rowEnd": 10,
+      "colEnd": 19,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"></p><h4 style=\"text-align: center; white-space: pre-wrap\"> Down Syndrome</h4>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788459039754_33138",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 30,
+      "colEnd": 10,
+      "z": 15,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 11,
+      "rowEnd": 13,
+      "colEnd": 17,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "SCHEDULE A FREE INITIAL CONSULTATION",
+     "link": {
+      "href": "https://forms.gle/y9d7nyE6xLaWypGf6",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a84f6d1b2b97142d684629d",
+   "theme": "dark",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 44,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 25,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "bc7518ded9623421c228",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 9,
+      "colEnd": 22,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; white-space: pre-wrap\"><strong>Blue Class Schedule</strong></h2><h4 style=\"text-align: center; white-space: pre-wrap\"><strong>Independent Living &amp; Community Skills</strong></h4><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Designed for individuals who demonstrate a <strong>higher level of independence</strong> and are ready to build upon functional, social, vocational, and community-living skills. Participants practice making choices, completing tasks more independently, communicating with others, and participating actively in community-based activities.</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>Program Hours: 10:00 AM - 2:30 PM  (Monday, Tuesday, Thursday, Friday)</strong></p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790126757345_7462",
+     "mobile": {
+      "rowStart": 15,
+      "colStart": 2,
+      "rowEnd": 23,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 16,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "8453/5748",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/46d1461ee10c",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 8453,
+      "height": 5748,
+      "alt": "Schedule for EDU BUD Community Center with days and times for various activities like meetings, academics, sports, workshops, reflection, and dismissal.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"yui_3_17_2_1_1790126757345_7462\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "cc6f820a43bc0dcc3d9d",
+     "mobile": {
+      "rowStart": 24,
+      "colStart": 2,
+      "rowEnd": 45,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 17,
+      "rowEnd": 26,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Community Skills Thursdays</h3><p class=\"rte-large\" style=\"white-space:pre-wrap;\">At EduBud, learning goes beyond the classroom! <strong>Community Skills Thursdays</strong>, held <strong>every other Thursday</strong>, give participants opportunities to practice independence, communication, social interaction, and everyday life skills in real-world settings. Outings may include visits to parks, restaurants, libraries, stores, museums, recreational activities, and other community locations. Through these experiences, participants can apply what they learn, explore their community, build confidence, and connect with their peers.</p><h3 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Fun Fridays</h3><p class=\"rte-large\" style=\"white-space:pre-wrap;\">At EduBud, learning also means making meaningful connections. <strong>Fun Fridays</strong>, held on the <strong>last Friday of each month</strong>, give participants opportunities to practice social interaction, communication, collaboration, and self-expression through shared activities and experiences. Activities may include games, themed events, group activities, special projects, and occasional community outings. Through these experiences, participants can build friendships, explore new interests, strengthen confidence, and create meaningful memories together.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6abc2f723356cf227fd0e199",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 39,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 22,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "522467d5d2cd7b60dff4",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 28,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 9,
+      "colEnd": 22,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; white-space: pre-wrap\"><strong>Green Class Schedule</strong></h2><h4 style=\"text-align: center; white-space: pre-wrap\"><strong>Supported Learning &amp; Life Skills</strong></h4><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Designed for individuals who benefit from <strong>more individualized support, repetition, structure, and hands-on instruction</strong> throughout their day. Programming focuses on foundational communication, functional academics, sensory regulation, fine motor skills, daily living skills, social participation, and increasing independence at each participant’s own pace.</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>Program Hours: 10:15 AM - 2:20 PM  (Monday, Tuesday, Thursday, Friday)</strong></p>"
+    },
+    {
+     "id": "afc8115553ae858c9657",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 23,
+      "colEnd": 16,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1792/877",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/0adac1e79610",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1792,
+      "height": 877,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"afc8115553ae858c9657\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "0c3fab393c1ce53030b2",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 40,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 17,
+      "rowEnd": 23,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\"><strong>✳︎ Sensory Wellness Learning Time</strong></h3><p class=\"rte-large\" style=\"white-space:pre-wrap;\">At EduBud, we recognize that meaningful learning also requires opportunities to slow down, regulate, and recharge. We incorporate dedicated <strong>sensory and wellness activities</strong> into the daily routine, including afternoon meditation walks and structured library time. </p><h3 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Individual AAC Learning &amp; 1:1 Communication Practice</h3><p class=\"rte-large\" style=\"white-space:pre-wrap;\">Students who use or are learning to use <strong>Augmentative and Alternative Communication (AAC)</strong> receive dedicated <strong>1:1 learning </strong>and practice opportunities based on their individual communication needs. During individualized AAC instruction, participants work on becoming familiar with their device, locating useful words and phrases, making choices, requesting preferred items or activities, expressing wants and needs, greeting others, answering simple questions, and participating in everyday interactions. </p>"
+    }
+   ]
+  },
+  {
+   "id": "6a99bf404b0af227cd827b11",
+   "theme": "dark",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 15,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 10,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "yui_3_17_2_1_1791774329563_18138",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 3,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 5,
+      "colEnd": 26,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "4",
+      "--marquee-item-spacing": "0.3em",
+      "--marquee-fade-mask": "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-padding": "initial",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "marquee",
+     "items": [
+      "Volunteer",
+      "〰️",
+      "Shadow",
+      "〰️",
+      "Intern",
+      "〰️"
+     ],
+     "textStyle": "paragraph-1",
+     "speed": 1,
+     "direction": "right",
+     "container": {
+      "backgroundEnabled": false,
+      "backgroundColor": {
+       "type": "THEME_COLOR"
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       }
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      }
+     }
+    },
+    {
+     "id": "c29220efd7658b3f7dd7",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 3,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Get Involved</h2>"
+    },
+    {
+     "id": "050216c617df608cd83c",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 11,
+      "rowEnd": 10,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Volunteer, shadow, or intern with the EduBud Community Center and be part of something meaningful! We offer flexible opportunities—whether you join us for a single community center event or a regular commitment—to match your schedule and skills. Our mission is to bring people with and without disabilities together, building authentic connections that enrich everyone. If this vision resonates with you, we’d love to welcome you to our community.</p><gen-text></gen-text>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788459039754_37905",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 16,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 3,
+      "rowEnd": 9,
+      "colEnd": 9,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "Apply",
+     "link": {
+      "href": "https://forms.gle/6v1ggZvz6jPwUjC58",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6ab32f64ab0a9c5282c4d0e3",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "none"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 22,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 15,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "1d5a40608ef8d2e95a7a",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 4,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Frequently Asked Questions</h2>"
+    },
+    {
+     "id": "3d128e43306f6421c30d",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 4,
+      "rowEnd": 16,
+      "colEnd": 13,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "30px",
+      "--accordion-item-padding-bottom": "30px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "1px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "70%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "1",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "accordion",
+     "items": [
+      {
+       "title": "Is EduBud the Right Fit?",
+       "html": "<p style=\"white-space:pre-wrap;\">Because EduBud is a community-based educational and social program, rather than a medical or intensive behavioral treatment facility, participants must be able to safely participate within our available level of staffing and support.</p>"
+      },
+      {
+       "title": "What is the process for enrollment?",
+       "html": "<p style=\"white-space:pre-wrap;\">To share information about the participant's Communication needs, Level of independence, Behavioral and emotional support needs, Medical or safety considerations, Elopement/wandering concerns, Aggression or self-injurious behaviors, if applicable, Toileting and personal-care needs, Sensory needs and triggers, Strategies that help with regulation, Allergies, medications, and emergency information. Providing complete and accurate information helps our team determine how we can best support each participant and keep everyone safe.</p>"
+      },
+      {
+       "title": "What are some program expectations?",
+       "html": "<p style=\"white-space:pre-wrap;\">Respecting peers, instructors, volunteers, and personal space, Following basic safety directions, Participating in activities at their individual ability level, Communicating needs appropriately, with support when needed, Taking turns and participating in group activities, Using appropriate strategies or requesting breaks when overwhelmed. We understand that every participant communicates, learns, and regulates differently. Needing accommodations, breaks, visual supports, repeated directions, or additional processing time is completely okay.</p>"
+      },
+      {
+       "title": "What is the difference between Blue Class and Green Class?",
+       "html": "<p style=\"white-space:pre-wrap;\">Both Blue Class and Green Class are designed to help participants build meaningful life skills, confidence, communication, and greater independence. The main difference is the level and type of support provided.</p><p style=\"white-space:pre-wrap;\">Neither class is considered “better” or “lower” than the other. Placement is based on the participant’s current level of independence, learning style, communication needs, and the amount of support they benefit from. Both programs share the same goal: helping each participant continue developing skills and becoming more independent at their own pace.</p>"
+      }
+     ],
+     "firstOpen": false,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "plus",
+     "titleClass": "",
+     "descriptionClass": "",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "iconPlacement": "right"
+    },
+    {
+     "id": "55957693db976ff1678a",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 15,
+      "rowEnd": 16,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "30px",
+      "--accordion-item-padding-bottom": "30px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "1px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "70%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "1",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "accordion",
+     "items": [
+      {
+       "title": "How important is attendance & communication?",
+       "html": "<p style=\"white-space:pre-wrap;\">Consistent attendance helps participants become familiar with their routine, instructors, and peers. Families should notify EduBud as early as possible regarding absences, late arrivals, early pickups, transportation changes, or other schedule changes. Please keep emergency contacts and important participant information up to date.</p>"
+      },
+      {
+       "title": "What does it take to qualify for Edubud?",
+       "html": "<p style=\"white-space:pre-wrap;\">A diagnosis alone does not determine whether someone is a good fit for EduBud. We look at the whole person, their strengths, interests, communication style, independence, support needs, and ability to safely participate in our community.&#160; Our goal is to create an environment where participants can belong, learn, grow, and be themselves.</p>"
+      },
+      {
+       "title": "What are other programs offered outside of the community center?",
+       "html": "<p style=\"white-space:pre-wrap;\">Edubud offers Buddy Program Projects that connect our participants with well-trained Buddy Partners who are highly skilled and prepared to work with individuals in the special needs community. Buddies provide encouragement, companionship, and support during activities, community outings, and other special social experiences. Volunteers may also participate in special events, community service projects, and other meaningful opportunities that promote friendship, independence, and inclusion. If you are interested, more information is available on our “golden bridge” tab.</p>"
+      },
+      {
+       "title": "What resources and support does EduBud provide for students and families?",
+       "html": "<p style=\"white-space:pre-wrap;\">EduBud helps students, adults with developmental and intellectual disabilities, and their families navigate educational opportunities and access individualized support. Our resources include educational consultations, individualized lesson planning, learning goal development, funding and financial resource navigation, and referrals to relevant community programs. We aim to help every learner build skills, pursue personal goals, and continue learning at every stage of life. Click here to explore our Resources for Students &amp; Families.</p>"
+      }
+     ],
+     "firstOpen": false,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "plus",
+     "titleClass": "",
+     "descriptionClass": "",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "iconPlacement": "right"
+    }
+   ]
+  },
+  {
+   "id": "6a99bfad320e8b0d940ca095",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "surface"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 24,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 25,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "6ecb0af83ce694a9d7be",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 7,
+      "rowEnd": 5,
+      "colEnd": 21,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Where to Find Us</h2>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788459039754_67171",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 16,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 10,
+      "rowEnd": 17,
+      "colEnd": 18,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "map",
+     "lat": 0,
+     "lng": 0,
+     "zoom": 13
+    },
+    {
+     "id": "c93f580da022a18ef172",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 10,
+      "rowEnd": 22,
+      "colEnd": 18,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"text-align: center; white-space: pre-wrap\">EduBud Community Center </h3><h4 style=\"text-align: center; white-space: pre-wrap\">730 Peachtree Industrial Blvd, Suwanee, GA 30024</h4>"
+    },
+    {
+     "id": "91bf545b7d4378a768f8",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 4,
+      "rowEnd": 23,
+      "colEnd": 8,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 23,
+      "colStart": 8,
+      "rowEnd": 25,
+      "colEnd": 14,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "INQUIRY FORM",
+     "link": {
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSehfhqJcp2jOJPsR-ZVyEHLvAnD2f069Dyt1OHgQJSF_FNDTA/viewform",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    },
+    {
+     "id": "8621589890bf561c002b",
+     "mobile": {
+      "rowStart": 23,
+      "colStart": 4,
+      "rowEnd": 25,
+      "colEnd": 8,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 23,
+      "colStart": 14,
+      "rowEnd": 25,
+      "colEnd": 20,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "EMAIL EDUBUD",
+     "link": {
+      "href": "mailto:info@edubud.org?",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a84991363856502b0eb8254",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 29,
+     "rowMin": "24px",
+     "gap": 0
+    },
+    "desktop": {
+     "rows": 15,
+     "scale": 0.0215,
+     "gap": 0
+    }
+   },
+   "blocks": [
+    {
+     "id": "34046ba1bb14b885b5ac",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 3,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\">If you're interested in working with us, complete the form with a few details about your project. We'll review your message and get back to you within 48 hours.</p>"
+    },
+    {
+     "id": "9cd068571f7c935e0e5f",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 4,
+      "colEnd": 13,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Get In Touch</h2>"
+    },
+    {
+     "id": "8bd7f2f937e22310dcd8",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 30,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 14,
+      "rowEnd": 16,
+      "colEnd": 26,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--form-block-border-radius": "0px 0px 0px 0px",
+      "--form-block-blend-mode": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "form",
+     "config": {
+      "useFormsJs": true,
+      "formId": "6a84991363856502b0eb823e",
+      "formName": "New Form 2 2 2",
+      "formFields": [
+       {
+        "type": "name",
+        "id": "name-yui_3_17_2_1_1553888888520_3744",
+        "locked": false,
+        "title": "Name",
+        "description": "",
+        "required": true,
+        "name": true,
+        "customConstraints": {
+         "requireFirstName": {
+          "enabled": true
+         },
+         "requireLastName": {
+          "enabled": true
+         },
+         "showFirstName": {
+          "enabled": true
+         },
+         "showLastName": {
+          "enabled": true
+         }
+        }
+       },
+       {
+        "type": "email",
+        "id": "email-yui_3_17_2_1_1553888888520_3745",
+        "locked": false,
+        "title": "Email",
+        "description": "",
+        "placeholder": "",
+        "required": true,
+        "email": true
+       },
+       {
+        "required": true,
+        "locked": false,
+        "description": "",
+        "id": "phone-1177ca6d-9b5b-478c-9a64-3ea832435b41",
+        "phone": true,
+        "type": "phone",
+        "showCountryCode": false,
+        "title": "Phone"
+       },
+       {
+        "required": true,
+        "locked": false,
+        "description": "",
+        "id": "textarea-2cd9a728-8b01-4a0c-aafa-cd10e18de202",
+        "textarea": true,
+        "type": "textarea",
+        "placeholder": "Have a question? Leave us a message and we’ll be in touch.",
+        "title": "Leave Us A Note!"
+       }
+      ],
+      "formSubmitButtonText": "Submit",
+      "formSubmissionMessage": {
+       "html": "Thank you!"
+      },
+      "successRedirect": null,
+      "disclaimerMessage": null,
+      "captchaEnabled": true,
+      "captchaTheme": 1,
+      "captchaAlignment": 1,
+      "isSmsConsentEnabled": true,
+      "businessName": null,
+      "privacyPolicyUrl": null,
+      "termsAndConditionsUrl": null,
+      "hasActiveSmsSubscription": null,
+      "sendingProfileFullySetUp": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "6aa2300590bd660b3aeca17a",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 0
+    },
+    "desktop": {
+     "rows": 1,
+     "scale": 0.0215,
+     "gap": 0
+    }
+   },
+   "blocks": []
+  }
+ ]
+}

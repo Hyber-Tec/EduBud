@@ -1,0 +1,987 @@
+{
+ "path": "/mentors-corner",
+ "meta": {
+  "title": "Mentor’s Corner | Support Education, Get Involved — EduBud International",
+  "description": "Explore educational resources and mentorship opportunities to support high school and college students. Join our community and make a difference today.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a9b1e81545b7835ca7b237f",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "vars": {
+    "--section-custom-height": "1vh"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 27,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 23,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "04403d20746e2d3a7c0a",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 4,
+      "rowEnd": 5,
+      "colEnd": 24,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"text-align: center; ; white-space:pre-wrap;\">Mentor’s Corner</h1>"
+    },
+    {
+     "id": "997f2aeede921c03fd72",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 6,
+      "rowEnd": 7,
+      "colEnd": 22,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\">Our heartfelt thanks to all our teacher and mentor volunteers. As a way to give back, we want to support you with resources for advanced highschool and college courses—because education is the most powerful tool for change!</p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788550813968_14861",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 8,
+      "rowEnd": 16,
+      "colEnd": 20,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "82.1608040201005% 67.20420026251641%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2528/1696",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/6654c5b706a9",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2528,
+      "height": 1696,
+      "alt": "Close-up of green leaves with water droplets, sunlit in the background.",
+      "focal": [
+       0.821608040201005,
+       0.6720420026251641
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"yui_3_17_2_1_1788550813968_14861\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "3e40ef7383f1b5e4ae16",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 8,
+      "rowEnd": 20,
+      "colEnd": 20,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><em>All notes and resources on this page have been carefully compiled by our dedicated volunteers, who stand by our mission and are passionate about making learning accessible. Please note that course materials and curricula may vary by state and school.</em></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><em>These resources are provided for reference only—we are not responsible for any instances of plagiarism. Please refrain from downloading or sharing them outside of our organization.</em></p>"
+    },
+    {
+     "id": "ff27cff7fc3dcfe62317",
+     "mobile": {
+      "rowStart": 25,
+      "colStart": 2,
+      "rowEnd": 27,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 20,
+      "colStart": 11,
+      "rowEnd": 22,
+      "colEnd": 17,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "INTERESTED IN CONTRIBUTING?",
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a9b1f8aff3fb8766987783f",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 53,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 23,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "yui_3_17_2_1_1788550813968_81826",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 17,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 5,
+      "rowEnd": 7,
+      "colEnd": 23,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Advanced Placement (AP) Courses</h2><p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\"><em>Click on the course title for organized notes!</em></p>"
+    },
+    {
+     "id": "577f80a80686be44a9b5",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 3,
+      "rowEnd": 22,
+      "colEnd": 7,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "0c29c9e689ce093e9ca7",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 6,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 4,
+      "rowEnd": 15,
+      "colEnd": 9,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "0% 0%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "735/1061",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/40470e254ab7",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 735,
+      "height": 1061,
+      "alt": "A bird with outstretched wings perched on a pink lotus flower in a green natural setting.",
+      "focal": [
+       0,
+       0
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"0c29c9e689ce093e9ca7\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "d8d533c9bb79f73c1561",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 9,
+      "rowEnd": 11,
+      "colEnd": 13,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1bh-x_-KOsoU58NAmEGtwE1fXWZey4brh/view?usp=sharing\">AP Human Geo</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "b28986720ca9808c380b",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 31,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 3,
+      "rowEnd": 22,
+      "colEnd": 7,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1zGYIs1ngmLnTEPzbrGTPA7OA5Ss0fvg0/view?usp=sharing\"><u>AP World History</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "85e24615e5189544e007",
+     "mobile": {
+      "rowStart": 16,
+      "colStart": 7,
+      "rowEnd": 22,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 1,
+      "rowEnd": 22,
+      "colEnd": 3,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "599/900",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/768f9219e565",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 599,
+      "height": 900,
+      "alt": "Pink lotus flowers with green leaves and buds in a pond.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"85e24615e5189544e007\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "yui_3_17_2_1_1788550813968_17816",
+     "mobile": {
+      "rowStart": 20,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 9,
+      "rowEnd": 11,
+      "colEnd": 13,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "065b3d0455200bb3ddc2",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 38,
+      "colEnd": 10,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 16,
+      "rowEnd": 22,
+      "colEnd": 20,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/17-fWmy-uF9da27wqTnoq4CIEY8kxHNP4/view?usp=sharing\">AP US History</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "17d7c99e5e647e1bbe79",
+     "mobile": {
+      "rowStart": 32,
+      "colStart": 1,
+      "rowEnd": 37,
+      "colEnd": 5,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 17,
+      "rowEnd": 15,
+      "colEnd": 21,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "736/625",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/04c3cd7cc534",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 736,
+      "height": 625,
+      "alt": "Two birds are on a pink water lily flower with yellow center, surrounded by large green leaves.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"17d7c99e5e647e1bbe79\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "039bd3320e25871fc1e7",
+     "mobile": {
+      "rowStart": 37,
+      "colStart": 2,
+      "rowEnd": 47,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 21,
+      "rowEnd": 15,
+      "colEnd": 25,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1vmieY7wwy217nwm86qqNHaax5ZdXRpoL/view?usp=drive_link\"><u>AP Calculus BC</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "74bfae0977607b753761",
+     "mobile": {
+      "rowStart": 36,
+      "colStart": 2,
+      "rowEnd": 41,
+      "colEnd": 10,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 21,
+      "rowEnd": 15,
+      "colEnd": 25,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "1775c5f95ccdf8bfa075",
+     "mobile": {
+      "rowStart": 39,
+      "colStart": 7,
+      "rowEnd": 45,
+      "colEnd": 11,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 11,
+      "rowEnd": 22,
+      "colEnd": 16,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "335/597",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/e29f6cd585f0",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 335,
+      "height": 597,
+      "alt": "A small bird perched on a green stem of a lotus plant, with two closed pink lotus buds and large green leaves in the background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"1775c5f95ccdf8bfa075\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+    },
+    {
+     "id": "4718f526fad55cb0634a",
+     "mobile": {
+      "rowStart": 44,
+      "colStart": 2,
+      "rowEnd": 54,
+      "colEnd": 10,
+      "z": 14,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 21,
+      "rowEnd": 22,
+      "colEnd": 25,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1Iodkp_tMPoLKopVRGKw1svLhlfzVYbLb/view?usp=sharing\"><u>AP Chemistry</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "79c67725e35c32011392",
+     "mobile": {
+      "rowStart": 49,
+      "colStart": 2,
+      "rowEnd": 54,
+      "colEnd": 10,
+      "z": 15,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 7,
+      "rowEnd": 22,
+      "colEnd": 11,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "16dd1c3baace992dd448",
+     "mobile": {
+      "rowStart": 50,
+      "colStart": 2,
+      "rowEnd": 53,
+      "colEnd": 10,
+      "z": 16,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 7,
+      "rowEnd": 22,
+      "colEnd": 11,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1wdG0d3aUHyUF4EpsCl0JRFc7oZolw51O/view?usp=drive_link\">AP Biology</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+    },
+    {
+     "id": "67eb8f59960fe7d16381",
+     "mobile": {
+      "rowStart": 43,
+      "colStart": 2,
+      "rowEnd": 48,
+      "colEnd": 10,
+      "z": 13,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 21,
+      "rowEnd": 22,
+      "colEnd": 25,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "a1385bfaea5416756bf7",
+     "mobile": {
+      "rowStart": 27,
+      "colStart": 2,
+      "rowEnd": 32,
+      "colEnd": 10,
+      "z": 9,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 16,
+      "rowEnd": 22,
+      "colEnd": 20,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "shape",
+     "name": "rectangle",
+     "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    }
+   ]
+  }
+ ]
+}

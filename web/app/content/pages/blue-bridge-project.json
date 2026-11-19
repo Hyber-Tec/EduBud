@@ -1,0 +1,1868 @@
+{
+ "path": "/blue-bridge-project",
+ "meta": {
+  "title": "Blue Bridge Project | Promote Inclusion Now | Join Today — EduBud International",
+  "description": "Learn about the Blue Bridge Project, a community initiative focused on promoting inclusion and social engagement among students and individuals with diverse learning needs.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a99da2ee73666265c7abbc5",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "bokeh"
+    }
+   },
+   "vars": {
+    "--section-custom-height": "1vh"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 80,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 51,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "959f4814c0991cf9e512",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 3,
+      "rowEnd": 26,
+      "colEnd": 13,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2314/1556",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/5dd5755919c3",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2314,
+      "height": 1556,
+      "alt": "Three people dressed as hot dogs and a chef, smiling and holding hot dog props, standing in front of a light-colored wall.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "css": "[data-block=\"959f4814c0991cf9e512\"] .image-frame { overflow: hidden; clip-path: url(#959f4814c0991cf9e512-system_desktop); -webkit-clip-path: url(#959f4814c0991cf9e512-system_desktop); }"
+    },
+    {
+     "id": "75346102068e4a13e549",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 3,
+      "rowEnd": 10,
+      "colEnd": 18,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Blue Bridge Project</strong></span></h1>"
+    },
+    {
+     "id": "8ac6d10f5969950977fc",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 21,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 27,
+      "colStart": 3,
+      "rowEnd": 30,
+      "colEnd": 14,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Project Aims</strong></span></h1>"
+    },
+    {
+     "id": "94ee74d1237479fa3897",
+     "mobile": {
+      "rowStart": 20,
+      "colStart": 2,
+      "rowEnd": 21,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 30,
+      "colStart": 3,
+      "rowEnd": 31,
+      "colEnd": 15,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "line"
+    },
+    {
+     "id": "eac35f6f1d5b572ad67d",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 36,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 30,
+      "colStart": 3,
+      "rowEnd": 48,
+      "colEnd": 16,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Specific Aim #1:</strong></span></span><span class=\"rte-text-color--white\"><br>Develop and evaluate the effect of the Blue Bridge Project in increasing inclusion, social engagement, and community participation among Community Center special needs students.</span></h4><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aim 1.1:</strong> Pair high school chapter leaders with Community Center special needs students, tracking engagement, participation, and feedback over one semester.</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aim 1.2:</strong> Expand the program to all chapter members in across EduBud GA high school chapters, reaching dozens of students and promoting broader inclusion.</span></p><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Specific Aim #2:</strong></span></span><span class=\"rte-text-color--white\"><br>Use the relationships formed through the Blue Bridge Project to enhance <strong>community events</strong> by preparing activities, performances, and collaborative projects, ensuring Community Center students are active participants and contributors.</span></h4><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aim 2.1:</strong> Coordinate monthly events where buddy pairs present projects, perform, or facilitate activities.</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aim 2.2:</strong> Document the events and mentorship outcomes through photos, videos, and reflections to raise awareness of inclusion in the broader community.</span></p>"
+    },
+    {
+     "id": "3780af6dcd6ee97df663",
+     "mobile": {
+      "rowStart": 36,
+      "colStart": 2,
+      "rowEnd": 38,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 14,
+      "rowEnd": 9,
+      "colEnd": 22,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Project Objective</strong></span></h3>"
+    },
+    {
+     "id": "af47d16344f68296f899",
+     "mobile": {
+      "rowStart": 38,
+      "colStart": 2,
+      "rowEnd": 63,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 14,
+      "rowEnd": 24,
+      "colEnd": 25,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>The Blue Bridge Project</strong> draws its name from two key ideas: </span><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><em>Blue</em></span></span><span class=\"rte-text-color--white\">, a color symbolizing both EduBud’s identity and international autism awareness, and <em>Bridge</em>, representing connection, specifically the building of pathways between individuals, communities, and abilities to foster a culture of true inclusion in our community.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">This student-led initiative, based at the <strong>EduBud Community Center</strong> in Suwanee, GA, is dedicated to promoting awareness, social inclusion, and meaningful relationships between highschool students and adults with diverse learning needs.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">At the core of the Blue Bridge Project is a mentorship model inspired by the original <strong>EduBud Youth Program</strong>. Each EduBud Community Center special needs student is paired with two high school chapter leader student volunteers who meet weekly for online friendship sessions. Together, they collaborate on preparations for monthly themed <strong>FUN Friday</strong> community events such as art workshops, cooking demonstrations, seasonal festivals, music performances, and talent showcases. FUN Friday will take place every last Friday of the month.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">By prioritizing authentic, person-to-person connections over symbolic gestures of awareness, the Blue Bridge Project nurtures empathy, builds social confidence, and strengthens community bonds. The result, we hope, will be a more inclusive environment where everyone can grow together, creating lasting friendships.</span></p>"
+    },
+    {
+     "id": "5a3c3ab379cf450be47e",
+     "mobile": {
+      "rowStart": 66,
+      "colStart": 2,
+      "rowEnd": 80,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 34,
+      "colStart": 17,
+      "rowEnd": 45,
+      "colEnd": 25,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "80.2788844621514% 60.00375023438964%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2970/1974",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/670f3d1679eb",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2970,
+      "height": 1974,
+      "alt": "Group of diverse young people sitting outdoors in an autumn forest, engaging in an activity, wearing black hoodies with a community center logo, and facing away from the camera.",
+      "focal": [
+       0.8027888446215139,
+       0.6000375023438964
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"5a3c3ab379cf450be47e\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+    },
+    {
+     "id": "yui_3_17_2_1_1788549573664_7615",
+     "mobile": {
+      "rowStart": 63,
+      "colStart": 2,
+      "rowEnd": 69,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 25,
+      "colStart": 19,
+      "rowEnd": 31,
+      "colEnd": 25,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--white-hsl), 0.48)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--white-hsl), 0.48)"
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    }
+   ]
+  },
+  {
+   "id": "6acc557b7fc2092825f27515",
+   "theme": "black",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 12,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 22,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "678e7dc4f6c3e4c6ded7",
+     "mobile": {
+      "rowStart": 9,
+      "colStart": 1,
+      "rowEnd": 13,
+      "colEnd": 11,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 1,
+      "rowEnd": 23,
+      "colEnd": 27,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "8",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-padding": "initial",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "darken",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "marquee",
+     "items": [
+      "Big Ideas, Real Impact. "
+     ],
+     "textStyle": "heading-1",
+     "speed": 1,
+     "direction": "left",
+     "container": {
+      "backgroundEnabled": false,
+      "backgroundColor": {
+       "type": "THEME_COLOR"
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       },
+       "dashLength": {
+        "unit": "px",
+        "value": 5
+       },
+       "gapLength": {
+        "unit": "px",
+        "value": 15
+       },
+       "linecap": "square"
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "darken",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      },
+      "stretchedToFill": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "6a99e2bf41ab1f2c7a75e1be",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "none"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 38,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 16,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "fa7f01ca16dfa8ebf517",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 3,
+      "colEnd": 10,
+      "z": 13,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 18,
+      "z": 13,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: start; ; white-space:pre-wrap;\">Process</h2>"
+    },
+    {
+     "id": "5f20e9352bda969276ef",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 10,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 9,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Interview</strong></span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Selected applicants will receive an email with detailed interview guidelines and scheduling information. The interview is designed to assess a well-rounded picture of each candidate. Students will be evaluated across four main areas:</span></p><ul><li><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Skills &amp; Experiences – Academic abilities, prior tutoring or leadership roles, and relevant involvement.</span></p></li><li><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Personality &amp; Communication – Attitude, empathy, and ability to engage with younger students.</span></p></li><li><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Creative Thinking &amp; Problem-Solving – Responses to real-world or program-based scenarios.</span></p></li><li><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Commitment &amp; Reliability – Dedication to consistency and responsibility as a volunteer.</span></p></li></ul>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788469368916_7455",
+     "mobile": {
+      "rowStart": 19,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 10,
+      "z": 14,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 10,
+      "rowEnd": 10,
+      "colEnd": 17,
+      "z": 14,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Submit Application</strong></p><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Applicants must complete the online application thoroughly and thoughtfully. This is your opportunity to highlight your academic strengths, prior experiences, and personal motivation for joining the EduBud Youth Program. Incomplete or rushed applications may not be considered.</p>"
+    },
+    {
+     "id": "d2ba5058b4cfa66d21c8",
+     "mobile": {
+      "rowStart": 27,
+      "colStart": 2,
+      "rowEnd": 39,
+      "colEnd": 10,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 18,
+      "rowEnd": 14,
+      "colEnd": 26,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Training &amp; Orientation</strong></p><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Applicants who are accepted will participate in a structured training program. Training includes:</p><ul><li><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Mentorship Best Practices – Guidance on how to effectively support and encourage their buddy.</p></li><li><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Program Expectations – Clear overview of responsibilities, weekly schedules, and reporting.</p></li><li><p style=\"white-space:pre-wrap;\" class=\"rte-large\">“Get to Know Your Buddy” Timeline – Activities and milestones designed to help new mentors build strong connections with their assigned buddy in the first few weeks.</p></li></ul>"
+    }
+   ]
+  },
+  {
+   "id": "6a99e4153235862a9fde4d56",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 25,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 17,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "e1b521fc1a68f7b150d2",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 18,
+      "colEnd": 14,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "46.800000000000004% 6.399999999999995%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1228/1228",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "image",
+     "picture": {
+      "base": "/media/c231b80363d8",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1228,
+      "height": 1228,
+      "alt": "A group of nine young friends smiling and posing outdoors in front of trees. They are dressed casually, with one making a peace sign.",
+      "focal": [
+       0.468,
+       0.06399999999999995
+      ]
+     },
+     "stretched": true,
+     "css": "[data-block=\"e1b521fc1a68f7b150d2\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+    },
+    {
+     "id": "6aa17569ac57765996f2",
+     "mobile": {
+      "rowStart": 12,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 15,
+      "rowEnd": 17,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>2025 </strong></span><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Finalists:</strong></span></span></h2><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Top Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Kevin Lee</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aidan Park</strong> (12th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Mason (Yeongwoo) Roh</strong> (12th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Bottom Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Julie (Jiwoo) Park</strong> (12th, North Gwinnett)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Elise Park</strong> (10th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Lilly (Hyerin) Roh</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Anna (Namkyung) Kim</strong> (12th, Alpharetta)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Rachel Kim</strong> (12th, North Gwinnett)</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "6aa238dd7c2ec7636c4be060",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "gradient"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 19,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 19,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "af2c5b33cbe562d402ed",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 4,
+      "colEnd": 22,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h2 style=\"text-align: center; white-space: pre-wrap\">Glimpse of Blue Bridge</h2></span></div>"
+    },
+    {
+     "id": "112cdbf44631a043c4c1",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 8,
+      "rowEnd": 7,
+      "colEnd": 20,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align:center;white-space:pre-wrap;\">We believe in doing things differently—with intention, with passion, and with people at the center of it all. Every detail here reflects that mindset.</p>"
+    },
+    {
+     "id": "3ff458007cc97debec9a",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 1,
+      "rowEnd": 20,
+      "colEnd": 14,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-video-block-radius": "0px 0px 0px 0px",
+      "--tweak-video-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "video",
+     "provider": "youtube",
+     "videoId": "T__EP2Emx6o",
+     "title": "Blue Bridge Secret Santa: Cha Cha Masters ",
+     "ratio": 56.49999999999999
+    },
+    {
+     "id": "d912c0e97139d85d4ccb",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 14,
+      "rowEnd": 20,
+      "colEnd": 27,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-video-block-radius": "0px 0px 0px 0px",
+      "--tweak-video-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "video",
+     "provider": "youtube",
+     "videoId": "XkXw_V4SkaI",
+     "title": "In Full Bloom",
+     "ratio": 56.49999999999999
+    }
+   ]
+  },
+  {
+   "id": "6a99dd00a70b143bfbb719db",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic"
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 34,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 30,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "yui_3_17_2_1_1791775912698_13097",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 3,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 3,
+      "colEnd": 27,
+      "z": 11,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "1.5",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+      "--stroke-style": "solid",
+      "--stroke-thickness": "2px",
+      "--tweak-marquee-block-stroke-color": "hsla(var(--white-hsl), 1)",
+      "--tweak-marquee-block-background-color": "hsla(var(--white-hsl), 1)",
+      "--tweak-marquee-block-padding": "1% 3% 1% 3%",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "marquee",
+     "items": [
+      "Blue Bridge Project",
+      "〰️"
+     ],
+     "textStyle": "heading-1",
+     "speed": 1,
+     "direction": "left",
+     "container": {
+      "backgroundEnabled": true,
+      "backgroundColor": {
+       "type": "SITE_PALETTE_COLOR",
+       "sitePaletteColor": {
+        "colorName": "white",
+        "alphaModifier": 1
+       }
+      },
+      "stroke": {
+       "style": "solid",
+       "color": {
+        "type": "SITE_PALETTE_COLOR",
+        "sitePaletteColor": {
+         "colorName": "white",
+         "alphaModifier": 1
+        }
+       },
+       "thickness": {
+        "value": 2,
+        "unit": "px"
+       }
+      },
+      "padding": {
+       "top": {
+        "unit": "%",
+        "value": 1
+       },
+       "bottom": {
+        "unit": "%",
+        "value": 1
+       },
+       "left": {
+        "value": 3,
+        "unit": "%"
+       },
+       "right": {
+        "value": 3,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": true,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "unit": "px",
+        "value": 15
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      }
+     }
+    },
+    {
+     "id": "76c660a1f0a2aa634864",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 3,
+      "rowEnd": 8,
+      "colEnd": 25,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Blue Bridge Project Impact</h2>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788468400827_9199",
+     "mobile": {
+      "rowStart": 7,
+      "colStart": 1,
+      "rowEnd": 13,
+      "colEnd": 11,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 5,
+      "rowEnd": 18,
+      "colEnd": 11,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(209.52, 100%, 87.65%, 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(209.52, 100%, 87.65%, 1)"
+     },
+     "type": "shape",
+     "name": "tv",
+     "svg": "<path d=\"M90 95a190 190 0 01-80 0 8 8 0 01-5-5 188 188 0 010-80 8 8 0 015-5 190 190 0 0180 0 8 8 0 015 5 188 188 0 010 80 8 8 0 01-5 5z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "de6ea969dae34998e975",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 12,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 5,
+      "rowEnd": 14,
+      "colEnd": 11,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">01<br>Build Meaningful Connections</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+    },
+    {
+     "id": "6acec0cfcbdd9398a65d",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 6,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Create lasting friendships and mentorships between high school students and Community Center participants.</p>"
+    },
+    {
+     "id": "e706536f4da7101e698f",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 1,
+      "rowEnd": 23,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 11,
+      "rowEnd": 18,
+      "colEnd": 17,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(218, 100%, 94.12%, 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(218, 100%, 94.12%, 1)"
+     },
+     "type": "shape",
+     "name": "tv",
+     "svg": "<path d=\"M90 95a190 190 0 01-80 0 8 8 0 01-5-5 188 188 0 010-80 8 8 0 015-5 190 190 0 0180 0 8 8 0 015 5 188 188 0 010 80 8 8 0 01-5 5z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "f528b7ede18c8175b24c",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 12,
+      "rowEnd": 14,
+      "colEnd": 16,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">02<br>Celebrate Every Ability</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+    },
+    {
+     "id": "0ec1fb424231717d17bf",
+     "mobile": {
+      "rowStart": 16,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 19,
+      "colStart": 8,
+      "rowEnd": 22,
+      "colEnd": 20,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\">Ultimately, the Blue Bridge Project will create <strong>a ripple effect of awareness, empathy, and inclusion</strong>, moving communities toward a more connected, understanding, and supportive environment for all learners.</p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1791775912698_20266",
+     "mobile": {
+      "rowStart": 23,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 13,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 23,
+      "colStart": 1,
+      "rowEnd": 31,
+      "colEnd": 27,
+      "z": 12,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "8",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-background-color": "hsla(0, 0%, 100%, 1)",
+      "--tweak-marquee-block-padding": "3% 0% 3% 0%",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "type": "marquee",
+     "items": [
+      "2024-2025 fun friday",
+      "*"
+     ],
+     "textStyle": "heading-1",
+     "speed": 1,
+     "direction": "right",
+     "container": {
+      "backgroundEnabled": true,
+      "backgroundColor": {
+       "type": "CUSTOM_COLOR",
+       "customColor": {
+        "userFormat": "rgb",
+        "hslaValue": {
+         "hue": 0,
+         "saturation": 0,
+         "lightness": 1,
+         "alpha": 1
+        }
+       }
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       }
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      }
+     }
+    },
+    {
+     "id": "bd0a749125185409ac1a",
+     "mobile": {
+      "rowStart": 25,
+      "colStart": 1,
+      "rowEnd": 31,
+      "colEnd": 11,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 17,
+      "rowEnd": 18,
+      "colEnd": 23,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--white-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
+     },
+     "type": "shape",
+     "name": "tv",
+     "svg": "<path d=\"M90 95a190 190 0 01-80 0 8 8 0 01-5-5 188 188 0 010-80 8 8 0 015-5 190 190 0 0180 0 8 8 0 015 5 188 188 0 010 80 8 8 0 01-5 5z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": true
+    },
+    {
+     "id": "a8c652c8605c288fa5df",
+     "mobile": {
+      "rowStart": 26,
+      "colStart": 2,
+      "rowEnd": 30,
+      "colEnd": 10,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 17,
+      "rowEnd": 14,
+      "colEnd": 23,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">03<br>Grow Community Engagement</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+    },
+    {
+     "id": "1f61a3d4c1ba8d642d5e",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 31,
+      "colEnd": 10,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 12,
+      "rowEnd": 16,
+      "colEnd": 16,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Highlight the talents, strengths, and contributions of adults with diverse learning needs.</p>"
+    },
+    {
+     "id": "97bc18ffa405b3227c26",
+     "mobile": {
+      "rowStart": 32,
+      "colStart": 2,
+      "rowEnd": 34,
+      "colEnd": 10,
+      "z": 11,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 18,
+      "rowEnd": 16,
+      "colEnd": 22,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Encourage greater participation and connection through monthly Community Center events.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6aa23ae2c238d65b982b8fba",
+   "theme": "",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 0
+    },
+    "desktop": {
+     "rows": 1,
+     "scale": 0.0215,
+     "gap": 0
+    }
+   },
+   "blocks": []
+  },
+  {
+   "id": "6a99dc4d324aa121925c3bfb",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 18,
+     "rowMin": "24px",
+     "gap": 11
+    },
+    "desktop": {
+     "rows": 15,
+     "scale": 0.0215,
+     "gap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "3e8b6b461a2c65815d99",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 4,
+      "colEnd": 22,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "text",
+     "html": "<h1 style=\"text-align: center; white-space: pre-wrap\">Who We Are</h1>"
+    },
+    {
+     "id": "9f212ebf8fb7b3d3820f",
+     "mobile": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 5,
+      "colStart": 6,
+      "rowEnd": 13,
+      "colEnd": 22,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "10px",
+      "--accordion-item-padding-bottom": "15px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "2px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "70%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "1",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "type": "accordion",
+     "items": [
+      {
+       "title": "Our approach",
+       "html": "<p style=\"white-space:pre-wrap;\">We believe in keeping things simple, smart, and human. Every project starts with listening and ends with something we're proud to share.</p>"
+      },
+      {
+       "title": "Our values",
+       "html": "<p style=\"white-space:pre-wrap;\">Integrity, creativity, and empathy shape the way we work. These aren't just words—they’re the foundation of everything we build.</p>"
+      },
+      {
+       "title": "Our story",
+       "html": "<p style=\"white-space:pre-wrap;\">What began as a passion project has evolved into something more. We’re proud of where we’ve been and even more excited for what’s ahead. What sets us apart isn’t just our process—it’s the intention behind it. We take time to understand, explore, and create with purpose at every turn.</p>"
+      }
+     ],
+     "firstOpen": true,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "plus",
+     "titleClass": "rte-large",
+     "descriptionClass": "rte-large",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "iconPlacement": "right"
+    },
+    {
+     "id": "c3e7eab6abbe933f10a6",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 6,
+      "z": 2,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "desktop": {
+      "rowStart": 14,
+      "colStart": 6,
+      "rowEnd": 16,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1"
+     },
+     "varsMobile": {},
+     "type": "button",
+     "label": "Get Started",
+     "kind": "secondary",
+     "size": "large",
+     "alignment": "left",
+     "stretched": true
+    }
+   ]
+  }
+ ]
+}
