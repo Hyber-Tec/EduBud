@@ -376,6 +376,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         descriptionClass: textClass(desc),
         titleAlign: ul?.getAttribute('data-accordion-title-alignment') ?? 'left',
         descriptionAlign: ul?.getAttribute('data-accordion-description-alignment') ?? 'left',
+        descriptionPlacement: ul?.getAttribute('data-accordion-description-placement') ?? 'left',
         iconPlacement: (ul?.getAttribute('data-accordion-icon-placement') as 'right') ?? 'right',
       }
     }

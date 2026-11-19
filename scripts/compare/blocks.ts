@@ -45,6 +45,11 @@ async function collect(url: string, width: number, side: 'original' | 'ours'): P
   const page = await ctx.newPage()
   await page.goto(url, { waitUntil: 'networkidle', timeout: 90_000 }).catch(() => undefined)
   await page.evaluate('document.fonts.ready')
+  // The original draws its forms after the page has loaded (until then, a shorter placeholder): wait for them.
+  if (side === 'original')
+    await page
+      .waitForFunction(`[...document.querySelectorAll('.sqs-block-form')].every((b) => b.querySelector('form'))`, undefined, { timeout: 15_000 })
+      .catch(() => console.warn(`  ! ${url}: a form wasn't drawn in time`))
   const boxes = (await page.evaluate(COLLECT(side))) as Box[]
   await browser.close()
   return boxes

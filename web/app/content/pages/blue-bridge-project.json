@@ -1987,6 +1987,7 @@
      "descriptionClass": "rte-large",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "center",
      "iconPlacement": "right"
     },
     {

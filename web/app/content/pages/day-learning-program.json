@@ -2097,6 +2097,7 @@
      "descriptionClass": "",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "left",
      "iconPlacement": "right"
     },
     {
@@ -2175,6 +2176,7 @@
      "descriptionClass": "",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "left",
      "iconPlacement": "right"
     }
    ]

@@ -193,7 +193,9 @@
 .accordion-title {
   margin: 0;
 }
+/* The title's lines are the font's own height ("normal"), as on the original: DM Sans rounds to whole pixels. */
 .accordion-title button {
+  line-height: normal;
   display: flex;
   width: 100%;
   align-items: center;
@@ -250,10 +252,25 @@
 .accordion-item[data-open] .arrow {
   transform: translateY(25%) rotate(-135deg);
 }
+/* The open item's drop-down keeps its description's margins inside it (it hides what overflows, as the original's). */
+.accordion-dropdown {
+  overflow: hidden;
+}
+/* The description: at most 300px wide, but never narrower than its width setting (the setting wins on wider blocks),
+   placed left, center or right. A large or small one has 1rem above and below, as a paragraph of that size has. */
 .accordion-description {
+  margin: 0;
+  text-align: var(--description-text-align, left);
   padding: var(--accordion-description-padding-top, 0) var(--accordion-description-padding-right, 0) var(--accordion-description-padding-bottom, 30px)
     var(--accordion-description-padding-left, 0);
-  max-width: var(--accordion-description-width, 100%);
+  box-sizing: border-box;
+  max-width: 300px;
+  min-width: var(--accordion-description-width, 100%);
+}
+.accordion-description.rte-large,
+.accordion-description.rte-small {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Scrolling text */
@@ -307,6 +324,10 @@
 /* Forms, measured on the original: pill fields filled with the theme's form color, labels with "(required)" faded. */
 .form {
   --form-small: min(calc((0.9 - 1) * 1.2vw + 1rem), max(calc((0.9 - 1) * 0.012 * var(--site-max-width) + 1rem), calc(0.9 * 1rem)));
+  /* The theme's field colors, and the original's easing for its fields' hover and focus. */
+  --field-fill: var(--form-fill, hsla(var(--white-hsl), 1));
+  --field-border: var(--form-border, hsla(var(--black-hsl), 1));
+  --field-ease: cubic-bezier(0.33, 1, 0.68, 1);
   font-size: 1rem;
   line-height: 1.3em;
   color: var(--form-title, var(--p2));
@@ -350,7 +371,9 @@
 }
 .form-caption {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  letter-spacing: -0.03em;
   gap: 0 0.504em;
   margin: 4px 0 0;
   padding: 0 0 2px;
@@ -360,7 +383,12 @@
 .form-required {
   font-size: var(--form-small);
   line-height: 1.3em;
+  letter-spacing: -0.03em;
   opacity: 0.7;
+}
+/* A phone number's title is a fieldset's legend on the original, where "(required)" sits on a 1em line. */
+.form-field--phone .form-required {
+  line-height: 1;
 }
 .form-caption .form-required {
   line-height: 1;
@@ -374,13 +402,25 @@
   line-height: 1.3em;
   letter-spacing: inherit;
   color: var(--form-input, var(--p2));
-  background: var(--form-fill, hsla(var(--lightAccent-hsl), 0.8));
+  /* The field's fill at 80%, full on hover and focus; its border shows on hover (55%) and focus (100%). */
+  background: color-mix(in srgb, var(--field-fill) 80%, transparent);
   border: 1px solid transparent;
-  border-radius: 24.586px;
+  border-radius: calc(10px + 1.3em * 0.66);
   padding: 10px 20px;
   outline: none;
   -webkit-appearance: none;
   appearance: none;
+  transition:
+    border-color 0.2s var(--field-ease),
+    background-color 0.15s var(--field-ease);
+}
+.form-input:hover {
+  background-color: var(--field-fill);
+  border-color: color-mix(in srgb, var(--field-border) 55%, transparent);
+}
+.form-input:focus {
+  background-color: var(--field-fill);
+  border-color: var(--field-border);
 }
 .form-textarea {
   height: 100px;
@@ -390,6 +430,7 @@
   margin: 6px 0 4px;
   font-size: var(--form-small);
   line-height: 1.3em;
+  letter-spacing: -0.03em;
 }
 .form-checkbox {
   display: inline-flex;
@@ -398,22 +439,73 @@
   padding: 0 4px 0 0;
   cursor: pointer;
 }
+/* The checkbox, as the original draws it: a 15px circle filled like the fields, a ring (1px at 55%; 2px and full on
+   hover or once checked), and a tick that wipes in from the left. The tick (::before) is also what the label's text
+   lines up with, so it's there unchecked too, masked out. */
 .form-checkbox input {
   -webkit-appearance: none;
   appearance: none;
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 15px;
   height: 15px;
   margin: 0;
+  padding: 0;
   border: 2px solid transparent;
   border-radius: 300px;
-  background: var(--form-fill, hsla(var(--lightAccent-hsl), 0.8));
+  background-color: color-mix(in srgb, var(--field-fill) 80%, transparent);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.15s var(--field-ease);
 }
+.form-checkbox input::before {
+  content: '';
+  display: block;
+  width: 75%;
+  height: 75%;
+  background-color: var(--form-accessory, hsla(var(--black-hsl), 1));
+  clip-path: polygon(13.29% 49.19%, 3.89% 59.8%, 40.98% 90%, 96.95% 21.23%, 86.94% 13.08%, 85.97% 12.29%, 38.95% 70.07%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0 50%, #fff 50%);
+  mask-image: linear-gradient(90deg, transparent 0 50%, #fff 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+  transition:
+    mask-position 0.2s 0.1s var(--field-ease),
+    -webkit-mask-position 0.2s 0.1s var(--field-ease);
+}
+.form-checkbox input:checked::before {
+  -webkit-mask-position: -100% 0;
+  mask-position: -100% 0;
+}
+.form-checkbox input::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid color-mix(in srgb, var(--field-border) 55%, transparent);
+  border-radius: inherit;
+  transition:
+    border-width 0.075s var(--field-ease),
+    border-color 0.2s var(--field-ease);
+}
+.form-checkbox input:hover,
+.form-checkbox input:focus-visible,
 .form-checkbox input:checked {
-  background: var(--form-accent, hsla(var(--black-hsl), 1));
+  background-color: var(--field-fill);
+}
+.form-checkbox input:hover::after,
+.form-checkbox input:focus-visible::after,
+.form-checkbox input:checked::after {
+  border-width: 2px;
+  border-color: var(--field-border);
 }
 .form-button-wrapper {
   display: block;
@@ -436,4 +528,30 @@
 /* Accordion titles keep no margin of their own, whatever their tag. */
 .accordion .accordion-title {
   margin: 0;
+}
+
+.accordion[data-description-placement='center'] .accordion-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion[data-description-placement='right'] .accordion-description {
+  margin-left: auto;
+}
+.accordion[data-description-align='center'] {
+  --description-text-align: center;
+}
+.accordion[data-description-align='right'] {
+  --description-text-align: right;
+}
+.accordion[data-title-align='center'] .accordion-title-text {
+  text-align: center;
+}
+.accordion[data-title-align='right'] .accordion-title-text {
+  text-align: right;
+}
+.accordion-title-text {
+  padding-right: var(--accordion-icon-size, 14px);
+}
+.accordion-title button {
+  gap: 0;
 }

@@ -9,7 +9,12 @@ export function AccordionBlock({ block }: { block: Data }) {
   const Title = block.titleTag ?? 'p'
   return (
     <div className="block accordion-block">
-      <ul className={`accordion accordion--icon-${block.iconPlacement}`} data-title-align={block.titleAlign} data-description-align={block.descriptionAlign}>
+      <ul
+        className={`accordion accordion--icon-${block.iconPlacement}`}
+        data-title-align={block.titleAlign}
+        data-description-align={block.descriptionAlign}
+        data-description-placement={block.descriptionPlacement}
+      >
         {block.items.map((item, i) => {
           const isOpen = open.includes(i)
           return (

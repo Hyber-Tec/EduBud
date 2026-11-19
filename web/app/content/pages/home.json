@@ -218,6 +218,7 @@
      "descriptionClass": "",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "left",
      "iconPlacement": "right"
     },
     {
@@ -748,6 +749,7 @@
      "descriptionClass": "rte-large",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "left",
      "iconPlacement": "right"
     }
    ]
@@ -1677,6 +1679,7 @@
      "descriptionClass": "rte-large",
      "titleAlign": "left",
      "descriptionAlign": "left",
+     "descriptionPlacement": "center",
      "iconPlacement": "right"
     },
     {

@@ -135,6 +135,8 @@ export interface AccordionBlock extends BlockBase {
   descriptionClass: string
   titleAlign: string
   descriptionAlign: string
+  /** Where the description sits when narrower than the item: left, center or right. */
+  descriptionPlacement: string
   iconPlacement: 'left' | 'right'
 }
 
