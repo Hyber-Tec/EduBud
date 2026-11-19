@@ -105,3 +105,26 @@ export function visibleSize(fov: number, aspect: number, distance: number): { wi
   const height = 2 * Math.tan((fov * (Math.PI / 180)) / 2) * distance
   return { width: height * aspect, height }
 }
+
+/** An orthographic projection of the box from `left` to `right`, `bottom` to `top`, `near` to `far`. */
+export function ortho(out: Mat4, left: number, right: number, bottom: number, top: number, near: number, far: number): Mat4 {
+  const lr = 1 / (left - right)
+  const bt = 1 / (bottom - top)
+  const nf = 1 / (near - far)
+  identity(out)
+  out[0] = -2 * lr
+  out[5] = -2 * bt
+  out[10] = 2 * nf
+  out[12] = (left + right) * lr
+  out[13] = (top + bottom) * bt
+  out[14] = (far + near) * nf
+  return out
+}
+
+/** `v` made one long. A zero vector has no direction: NaN, which is what the original's shaders get then. */
+export function normalize([x, y, z]: Vec3): [number, number, number] {
+  let len = x * x + y * y + z * z
+  if (!(len > 0)) return [NaN, NaN, NaN]
+  len = 1 / Math.sqrt(len)
+  return [x * len, y * len, z * len]
+}
