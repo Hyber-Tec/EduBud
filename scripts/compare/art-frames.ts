@@ -139,7 +139,7 @@ interface Side {
   select: (id: string) => string
 }
 
-async function open(browser: Browser, name: Side['name'], url: string, width: number, scale: number, sections: ArtSection[], css = ''): Promise<Side> {
+async function open(browser: Browser, name: Side['name'], url: string, width: number, scale: number, sections: ArtSection[], pageKinds: string[], css = ''): Promise<Side> {
   const ctx = await browser.newContext({
     viewport: { width, height: HEIGHTS[width] ?? 900 },
     deviceScaleFactor: scale,
@@ -156,7 +156,8 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
     const file = new URL(req.url()).pathname.split('/').pop() ?? ''
     const kind =
       name === 'original' ? /^background-([a-z]+)\.[0-9a-f]+\.js$/.exec(file)?.[1] : /^([a-z]+)-[\w-]+\.js$/.exec(file)?.[1]
-    if (kind && !KINDS.includes(kind) && (name === 'original' || kinds.includes(kind))) return route.abort()
+    // Ours: only this page's kinds of art left out of --kinds (our files are named after their modules, a page's too).
+    if (kind && !KINDS.includes(kind) && (name === 'original' || pageKinds.includes(kind))) return route.abort()
     // The original's kinds wait their turn (see above).
     if (name === 'original' && kind && KINDS.includes(kind)) return new Promise<void>((resolve) => held.push({ kind, release: () => resolve(route.continue()) }))
     if (css && req.resourceType() === 'document' && req.url() === url) {
@@ -229,11 +230,11 @@ function moved(a: PNG | undefined, b: PNG): number | undefined {
 }
 
 async function main() {
-  const pagesWithArt: [string, ArtSection[]][] = []
+  const pagesWithArt: [string, ArtSection[], string[]][] = []
   for (const p of args.pages ? args.pages.split(',') : ALL_PAGES) {
     const all = await artOf(p).catch(() => [])
     const mine = all.filter((s) => KINDS.includes(s.kind))
-    if (mine.length) pagesWithArt.push([p, mine])
+    if (mine.length) pagesWithArt.push([p, mine, [...new Set(all.map((s) => s.kind))]])
   }
   let server
   const ours = args.ours ?? `http://127.0.0.1:${args.port}`
@@ -244,12 +245,12 @@ async function main() {
   await mkdir(OUT, { recursive: true })
   const browser = await chromium.launch()
   const report: any[] = []
-  for (const [pagePath, sections] of pagesWithArt)
+  for (const [pagePath, sections, pageKinds] of pagesWithArt)
     for (const width of args.widths!.split(',').map(Number))
       for (const scale of args.scales!.split(',').map(Number)) {
         const label = `${pagePath} @${width}×${scale}`
         console.log(label, sections.map((s) => `${s.kind}:${s.id.slice(-4)}`).join(' '))
-        const original = await open(browser, 'original', ORIGINAL + pagePath, width, scale, sections)
+        const original = await open(browser, 'original', ORIGINAL + pagePath, width, scale, sections, pageKinds)
         // With --same-size, our art is drawn in boxes the size of the original's (where our layout differs).
         let css = ''
         if (args['same-size'])
@@ -259,7 +260,7 @@ async function main() {
             )) as number[]
             css += `section[data-section="${s.id}"] .section-background-canvas { right: auto !important; bottom: auto !important; width: ${w}px !important; height: ${h}px !important; }\n`
           }
-        const sides = [original, await open(browser, 'ours', ours + pagePath, width, scale, sections, css)]
+        const sides = [original, await open(browser, 'ours', ours + pagePath, width, scale, sections, pageKinds, css)]
         const stages = [await sides[0].page.evaluate(STAGES_ORIGINAL), await sides[1].page.evaluate(STAGES_OURS)]
         const sameStages = JSON.stringify(stages[0]) === JSON.stringify(stages[1])
         if (!sameStages) console.warn(`  ! canvases shared differently: ${JSON.stringify(stages)}`)
@@ -307,7 +308,8 @@ async function main() {
           Promise.race([
             side.page.evaluate(`new Promise((resolve) => {
               const node = document.querySelector(${JSON.stringify(side.select(id))} + ' .section-background-canvas')
-              node.closest('section').scrollIntoView({ block: 'start' })
+              // At once: the original scrolls smoothly (its CSS), which would take its art on screen frames later than ours.
+              node.closest('section').scrollIntoView({ block: 'start', behavior: 'instant' })
               const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); ro.observe(node) } })
               const ro = new ResizeObserver(() => { ro.disconnect(); resolve(true) })
               io.observe(node)

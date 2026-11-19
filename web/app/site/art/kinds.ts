@@ -9,4 +9,6 @@ export const KINDS: Record<string, () => Promise<{ create: CreateArt }>> = {
   bokeh: () => import('./bokeh'),
   gradient: () => import('./gradient'),
   contours: () => import('./contours'),
+  isometric: () => import('./isometric'),
+  surface: () => import('./surface'),
 }
