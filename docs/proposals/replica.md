@@ -1,6 +1,6 @@
 # Proposal: a copy of edubud.org in our own code
 
-**Status: proposed on 2026-11-18, waiting for the owner's OK.** Nothing is built until then. Step 1 of the brief: a copy
+**Status: approved on 2026-11-18, with the owner's answers in [`../DECISIONS.md`](../DECISIONS.md) §3** (no Korean; the shop and donations as a view only; the forms store nothing yet; pictures and videos in the repository, not Cloud Storage). Step 1 of the brief: a copy
 of EduBud's website that a visitor can't tell from the original, on https://edubud-hybertec.web.app, before any of
 the features.
 
