@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
 import { Block } from './Block'
 import { poseProps, useMotion } from './motion'
+import { phoneChange, phoneLayout } from './phoneLayout'
 import { focal, Img } from './Picture'
 import { GallerySection } from './sections/GallerySection'
 import { ListSection } from './sections/ListSection'
@@ -10,12 +11,12 @@ type Vars = CSSProperties & Record<`--${string}`, string | number | undefined>
 
 const area = (a: Area) => `${a.rowStart} / ${a.colStart} / ${a.rowEnd} / ${a.colEnd}`
 
-/** A block's place on the grid at both widths, as CSS variables our stylesheet reads. */
-function blockStyle(b: BlockData): Vars {
+/** A block's place on the grid at both widths (on phones, as phoneLayout places it), as CSS variables our stylesheet reads. */
+function blockStyle(b: BlockData, phone: Area): Vars {
   return {
-    '--area-m': area(b.mobile),
+    '--area-m': area(phone),
     '--area-d': area(b.desktop),
-    '--z-m': b.mobile.z,
+    '--z-m': phone.z,
     '--z-d': b.desktop.z,
     '--justify-m': b.mobile.justify,
     '--justify-d': b.desktop.justify,
@@ -48,12 +49,19 @@ function sectionCss(section: SectionData): string {
 }
 
 /** A block in its place on the grid, with its animations if it has any. */
-function FeBlock({ block: b }: { block: BlockData }) {
+function FeBlock({ block: b, phone }: { block: BlockData; phone: Area }) {
   const ref = useRef<HTMLDivElement>(null)
   useMotion(ref, b.motion)
-  const classes = ['fe-block', `fe-block--${b.type}`, b.background && 'fe-block--bg', b.motion && 'fe-block--motion', b.motion?.appear && 'fe-block--appear']
+  const classes = [
+    'fe-block',
+    `fe-block--${b.type}`,
+    b.background && 'fe-block--bg',
+    b.motion && 'fe-block--motion',
+    b.motion?.appear && 'fe-block--appear',
+    phoneChange(b.id)?.hide && 'fe-block--phone-hidden',
+  ]
   return (
-    <div ref={ref} className={classes.filter(Boolean).join(' ')} data-block={b.id} style={blockStyle(b)}>
+    <div ref={ref} className={classes.filter(Boolean).join(' ')} data-block={b.id} style={blockStyle(b, phone)}>
       <Block block={b} />
     </div>
   )
@@ -141,8 +149,9 @@ export function dividerAbove(sections: SectionData[], index: number): string | u
 export function Section({ section, index, below }: { section: SectionData; index: number; below?: string }) {
   const css = sectionCss(section)
   const g = section.grid
+  const phone = phoneLayout(section)
   const gridStyle: Vars = {
-    '--rows-m': g.mobile.rows,
+    '--rows-m': phone.rows,
     '--row-min-m': g.mobile.rowMin,
     '--rows-d': g.desktop.rows,
     '--row-scale': g.desktop.scale,
@@ -168,7 +177,7 @@ export function Section({ section, index, below }: { section: SectionData; index
           {!section.kind && (
           <div className="fe-grid" style={gridStyle}>
             {section.blocks.map((b) => (
-              <FeBlock key={b.id} block={b} />
+              <FeBlock key={b.id} block={b} phone={phone.areas.get(b.id)!} />
             ))}
           </div>
           )}

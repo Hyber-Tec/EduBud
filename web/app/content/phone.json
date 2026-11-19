@@ -1,0 +1,106 @@
+{
+  "about": "Our own changes to the original's phone layout (below 768px wide), written by hand: the capture never writes this file, and nothing here changes wider screens. Blocks are named by their ids, under the page they're on. 'area' is the block's place on the phone grid ([first row, first column, row after its last, column after its last], numbered as the original numbers them); 'z' its layer; 'hide' hides it on phones; 'zoom' marks a picture of text that opens full size when tapped. Sections are named by their ids too, with the number of rows their phone grid has. Each says what it fixes. The rules every page follows are in site/phoneLayout.ts and site/styles/phone.css.",
+  "pages": {
+    "/day-learning-program": {
+      "blocks": {
+        "a7495d900ce3695e7650": {
+          "why": "The green flower on the photo's corner starts with the photo, one row lower: it sat under the end of the heading 'Belief in Education. Potential. Growth.' once the heading had room to grow.",
+          "area": [7, 2, 12, 6]
+        },
+        "e58dcbed213fe8ec48f2": {
+          "why": "'Autism Spectrum Disorders' sits on its own shape, the second, as on computers (the original's phone layout leaves that shape empty and the last label without one), drawn over it.",
+          "area": [14, 2, 17, 10],
+          "z": 6
+        },
+        "21bad934a00c9f8a117e": {
+          "why": "'Down Syndrome' sits on the third shape, as on computers.",
+          "area": [17, 2, 21, 10]
+        },
+        "79b3105928e44235453f": {
+          "why": "'Intellectual Disabilities' sits on the fourth shape, as on computers.",
+          "area": [21, 2, 24, 10]
+        },
+        "yui_3_17_2_1_1788459039754_33138": {
+          "why": "The consultation button follows the last shape, one row below it, as before (the labels above now end three rows sooner).",
+          "area": [25, 2, 27, 10]
+        },
+        "yui_3_17_2_1_1790126757345_7462": {
+          "why": "The Blue Class schedule is a picture of a table, too small to read on a phone: it opens full size.",
+          "zoom": true
+        },
+        "afc8115553ae858c9657": {
+          "why": "The Green Class schedule is a picture of a table: it opens full size.",
+          "zoom": true
+        }
+      },
+      "sections": {
+        "6a99bbb80bcdf013ec406612": {
+          "why": "Three rows fewer, as the button moved up three rows.",
+          "rows": 26
+        }
+      }
+    },
+    "/summer-program": {
+      "blocks": {
+        "bca3575abe0ba69c016c": {
+          "why": "The camp schedule is a picture of a table: it opens full size.",
+          "zoom": true
+        }
+      }
+    },
+    "/support-us": {
+      "blocks": {
+        "17e430599811fee11532": {
+          "why": "The sponsorship levels are a picture of a table: it opens full size.",
+          "zoom": true
+        }
+      }
+    },
+    "/blue-bridge-project": {
+      "blocks": {
+        "e706536f4da7101e698f": {
+          "why": "Card 02 holds its own description, which is shorter than the paragraph the original's phone layout put on it: it's as tall as card 01.",
+          "area": [13, 1, 19, 11]
+        },
+        "1f61a3d4c1ba8d642d5e": {
+          "why": "'Highlight the talents…' is card 02's description (as on computers); the original's phone layout put it on card 03.",
+          "area": [16, 2, 19, 10]
+        },
+        "bd0a749125185409ac1a": {
+          "why": "Card 03 follows card 02, as on computers.",
+          "area": [19, 1, 25, 11]
+        },
+        "a8c652c8605c288fa5df": {
+          "why": "Card 03's title, on card 03.",
+          "area": [20, 2, 24, 10]
+        },
+        "97bc18ffa405b3227c26": {
+          "why": "'Encourage greater participation…' is card 03's description (as on computers); the original's phone layout left it below the cards, on the moving background, where it was hard to read.",
+          "area": [22, 2, 25, 10]
+        },
+        "0ec1fb424231717d17bf": {
+          "why": "'Ultimately…' closes the section below the three cards, as on computers; the original's phone layout put it on card 02.",
+          "area": [26, 2, 30, 10]
+        },
+        "yui_3_17_2_1_1791775912698_20266": {
+          "why": "The scrolling band ends the section, as on computers.",
+          "area": [31, 2, 33, 10]
+        }
+      },
+      "sections": {
+        "6a99dd00a70b143bfbb719db": {
+          "why": "One row fewer: the section ends after the band.",
+          "rows": 33
+        }
+      }
+    },
+    "/golden-bridge-project": {
+      "blocks": {
+        "39edf1cc1c2418445134": {
+          "why": "The white flower sat under the start of 'Highlighted Events…': it moves into the space just above.",
+          "area": [90, 2, 94, 5]
+        }
+      }
+    }
+  }
+}

@@ -47,7 +47,9 @@ export const PAGES = [
   '/founder-message',
 ]
 
+// Not strict: the other capture scripts import this file, and their own options (art.ts's --widths) aren't listed here.
 const { values: args } = parseArgs({
+  strict: false,
   options: { only: { type: 'string' }, refresh: { type: 'boolean' }, 'no-media': { type: 'boolean' } },
 })
 
@@ -764,7 +766,7 @@ async function captureFonts(html: string) {
 }
 
 async function main() {
-  const only = args.only
+  const only = typeof args.only === 'string' ? args.only : undefined
   const list = only ? [only] : PAGES
   await mkdir(path.join(CONTENT, 'pages'), { recursive: true })
 

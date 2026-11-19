@@ -4,8 +4,9 @@
  * original draws it, at a phone's, a tablet's and a computer's width, with the section's text hidden, and the copy
  * shows the picture that fits the window (web/public/media/art/<section>/<width>.jpg, listed in content/art.json).
  *
- *   npx tsx scripts/capture/art.ts            # every page's art (after npm run capture)
- *   npx tsx scripts/capture/art.ts --only /   # one page's (the footer's comes with the homepage)
+ *   npx tsx scripts/capture/art.ts                # every page's art (after npm run capture)
+ *   npx tsx scripts/capture/art.ts --only /       # one page's (the footer's comes with the homepage)
+ *   npx tsx scripts/capture/art.ts --widths 390   # only the phones' pictures
  */
 import { existsSync } from 'node:fs'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
@@ -24,7 +25,7 @@ export const ART_WIDTHS = [
   { width: 1920, scale: 1, upTo: undefined },
 ]
 
-const { values: args } = parseArgs({ options: { only: { type: 'string' } } })
+const { values: args } = parseArgs({ options: { only: { type: 'string' }, widths: { type: 'string' } } })
 
 export interface ArtImage {
   src: string
@@ -57,12 +58,15 @@ async function main() {
   for (const p of args.only ? [args.only] : PAGES) {
     const sections = await sectionsWithArt(p)
     if (!sections.length) continue
-    for (const { width, scale, upTo } of ART_WIDTHS) {
+    const widths = args.widths ? ART_WIDTHS.filter((w) => args.widths!.split(',').includes(String(w.width))) : ART_WIDTHS
+    for (const { width, scale, upTo } of widths) {
       const ctx = await browser.newContext({ viewport: { width, height: 900 }, deviceScaleFactor: scale, isMobile: width < 768, hasTouch: width < 768 })
       const page = await ctx.newPage()
       await page.goto(ORIGIN + p, { waitUntil: 'networkidle', timeout: 90_000 }).catch(() => undefined)
-      // Only the art: no header, text, blocks or pause buttons over it.
-      await page.addStyleTag({ content: '#header, .content-wrapper, .background-pause-button, .grecaptcha-badge { visibility: hidden !important; }' })
+      // Only the art: no header, text, blocks or pause buttons over it. Everything inside the content is hidden too: the
+      // original draws its text highlights (underlines, circles) and its forms' button labels visible on their own,
+      // and they'd be left in the picture, out of place wherever the text moves.
+      await page.addStyleTag({ content: '#header, .content-wrapper, .content-wrapper *, .background-pause-button, .grecaptcha-badge { visibility: hidden !important; }' })
       for (const { id, kind } of sections) {
         const el = page.locator(`section[data-section-id="${id}"]`).first()
         if (!(await el.count())) {

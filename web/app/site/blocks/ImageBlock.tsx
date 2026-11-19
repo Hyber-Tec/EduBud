@@ -1,5 +1,7 @@
 import type { ImageBlock as Data } from '~/content/types'
+import { phoneChange } from '../phoneLayout'
 import { focal, Img } from '../Picture'
+import { ZoomPicture } from '../ZoomPicture'
 
 export function ImageBlock({ block }: { block: Data }) {
   const img = (
@@ -22,6 +24,8 @@ export function ImageBlock({ block }: { block: Data }) {
           img
         )}
         <div className="image-overlay" />
+        {/* A picture of text opens full size on phones (content/phone.json). */}
+        {phoneChange(block.id)?.zoom && <ZoomPicture picture={block.picture} />}
       </div>
       {block.maskSvg && <div className="image-mask-defs" aria-hidden="true" dangerouslySetInnerHTML={{ __html: block.maskSvg }} />}
     </div>
