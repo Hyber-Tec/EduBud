@@ -171,6 +171,14 @@
 .button-block--right {
   align-items: flex-end;
 }
+/* A button's lines follow its alignment setting when its text wraps (a narrow "Learn More" on a tablet), as on the
+   original; on one line the text is centered either way. */
+.button-block--left .button {
+  text-align: left;
+}
+.button-block--right .button {
+  text-align: right;
+}
 /* A stretched button fills its block, its text centered, with no padding above or below (as measured). */
 .button-block--stretched {
   justify-content: stretch;
