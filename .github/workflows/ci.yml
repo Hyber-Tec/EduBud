@@ -5,14 +5,15 @@
 # permissions, and only when Hosting changed. A change to the docs alone runs the repository guard and deploys nothing.
 # No keys: the deploy signs in to Google Cloud through Workload Identity Federation (docs/DEPLOY.md), as
 # github-deploy@ for main and github-preview@ (Hosting only) for pull requests. The ruleset on main requires the check
-# job by name ("Checks").
+# job by name ("Checks"). The deploy also gets the Instagram feed's newest posts (docs/INSTAGRAM.md); the Instagram
+# workflow starts a run on main when there are new ones.
 name: CI
 
 on:
   pull_request:
   push:
     branches: [main]
-  # Run by hand on main, it checks and deploys everything.
+  # Run by hand on main (or by the Instagram workflow, for new posts), it checks and deploys everything.
   workflow_dispatch:
 
 # A new push to the same pull request cancels the run still going for the previous push; runs on main queue, so they
@@ -114,6 +115,25 @@ jobs:
         if: steps.modules.outputs.cache-hit != 'true'
         run: npm ci --prefix web
 
+      # Before the build: main's also reads Instagram's token from Secret Manager for the next step.
+      - name: Sign in to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/257015720209/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: ${{ github.event_name == 'pull_request' && 'github-preview' || 'github-deploy' }}@edubud-hybertec.iam.gserviceaccount.com
+          token_format: ${{ github.event_name != 'pull_request' && 'access_token' || '' }}
+
+      # Once EduBud's account is connected (docs/INSTAGRAM.md): main's deploy reads the newest posts and their pictures
+      # from Instagram, so a merge never drops them; a preview copies the live website's. If neither can be read, or
+      # before the account is connected, the website shows the posts read from the original.
+      - name: The Instagram feed
+        if: vars.INSTAGRAM_FEED == 'on'
+        env:
+          INSTAGRAM: ${{ github.event_name != 'pull_request' && 'on' || '' }}
+          GOOGLE_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: node web/scripts/instagram.mjs build
+
       # main's build gets EduBud's Google Maps key (a browser key that only works on EduBud's addresses, so the map is
       # Google's map code as on the original); a pull request's preview isn't one of those addresses and keeps the
       # keyless embed.
@@ -127,12 +147,6 @@ jobs:
         with:
           path: ~/.npm/_npx
           key: npx-firebase-tools-15.32.1-${{ runner.os }}-${{ runner.arch }}
-
-      - name: Sign in to Google Cloud
-        uses: google-github-actions/auth@v3
-        with:
-          workload_identity_provider: projects/257015720209/locations/global/workloadIdentityPools/github/providers/github-actions
-          service_account: ${{ github.event_name == 'pull_request' && 'github-preview' || 'github-deploy' }}@edubud-hybertec.iam.gserviceaccount.com
 
       - name: Deploy to https://edubud-hybertec.web.app
         if: github.event_name != 'pull_request'

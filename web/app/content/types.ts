@@ -248,6 +248,22 @@ export interface InstagramBlock extends BlockBase {
   html: string
 }
 
+/**
+ * A post of the Instagram feed: its picture and caption, and for a video, Instagram's player. The snapshot's come from
+ * the original (widgets.json); the newest, once EduBud's account is connected, from Instagram (content/instagram.ts).
+ */
+export interface InstagramPost {
+  /** Instagram's id for it (the posts read from Instagram). */
+  id?: string
+  kind: 'image' | 'video'
+  picture: Picture
+  /** The caption, as plain text. */
+  description: string
+  /** A video's post on Instagram, and the player Instagram gives for embedding it (the lightbox shows it). */
+  href?: string
+  embed?: { src: string; width: number; height: number }
+}
+
 /** A block the copy draws from a picture of the original (used where a live widget can't be copied). */
 export interface SnapshotBlock extends BlockBase {
   type: 'snapshot'

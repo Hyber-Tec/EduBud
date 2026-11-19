@@ -1,17 +1,11 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { createPortal } from 'react-dom'
-import type { InstagramBlock as Data, Picture } from '~/content/types'
+import { newestInstagramPosts } from '~/content/instagram'
+import type { InstagramBlock as Data, InstagramPost as Post, Picture } from '~/content/types'
 import widgets from '~/content/widgets.json'
 import { focal, pictureSrc, srcSet } from '../Picture'
 
-/** A post of the feed, as scripts/capture/widgets.ts saved it: its picture, its caption, and for a video, Instagram's player. */
-interface Post {
-  kind: 'image' | 'video'
-  picture: Picture
-  description: string
-  href?: string
-  embed?: { src: string; width: number; height: number }
-}
+/** The feed as scripts/capture/widgets.ts read it from the original: how it's laid out, and the posts it showed then. */
 interface Feed {
   perRow: number
   aspectRatio: string
@@ -30,12 +24,13 @@ function tileRatio(ratio: string): string {
 
 /**
  * The Instagram feed: Squarespace keeps a copy of each post and shows them as a grid of tiles (4 a row, 2 on phones);
- * a tile opens the post in a dark lightbox, a picture with its caption or Instagram's own player for a video.
+ * a tile opens the post in a dark lightbox, a picture with its caption or Instagram's own player for a video. The
+ * posts are EduBud's newest once its account is connected (docs/INSTAGRAM.md), else the ones read from the original.
  */
 export function InstagramBlock({ block }: { block: Data }) {
   const feed = (widgets.instagram as unknown as Record<string, Feed>)[block.id]
   const [open, setOpen] = useState<number | null>(null)
-  const posts = feed?.posts ?? []
+  const posts = newestInstagramPosts ?? feed?.posts ?? []
   const vars: Vars = { '--ig-cols': feed?.perRow ?? 4, '--ig-gap': `${feed?.gap ?? 0}px`, '--ig-ratio': tileRatio(feed?.aspectRatio ?? '1 / 1') }
   const openAt = (i: number) => feed?.lightbox !== false && setOpen(i)
   return (

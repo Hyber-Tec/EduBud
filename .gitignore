@@ -52,3 +52,6 @@ scripts/capture/.cache/
 # the website's build and generated types
 web/build/
 web/.react-router/
+# the Instagram feed's newest posts and their pictures, fetched before a build (web/scripts/instagram.mjs)
+web/app/content/instagram.json
+web/public/media/instagram/

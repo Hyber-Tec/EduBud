@@ -20,12 +20,13 @@ if [ -n "$envs" ]; then
   status=1
 fi
 
-# Secrets: private keys, service-account files, Google API keys, GitHub tokens.
+# Secrets: private keys, service-account files, Google API keys, GitHub tokens, Instagram tokens.
 if git grep -nIE \
   -e '-----BEGIN [A-Z ]*PRIVATE KEY-----' \
   -e '"type": *"service_account"' \
   -e 'AIza[0-9A-Za-z_-]{35}' \
   -e 'gh[opsur]_[0-9A-Za-z]{36}' \
+  -e 'IG(AA|QV|QW)[0-9A-Za-z_-]{60,}' \
   -- . ':(exclude)scripts/check-repo.sh'; then
   echo 'A tracked file holds a secret-looking value (above). Move it to a local .env file or a GitHub secret.'
   status=1
