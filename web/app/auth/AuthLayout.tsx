@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import { LuArrowLeft } from 'react-icons/lu'
-import { Link } from 'react-router'
 import { Button } from '~/components/ui/button'
 import site from '~/content/site.json'
 import type { Picture } from '~/content/types'
@@ -35,8 +34,8 @@ interface Props {
  * EduBud's photos with its line "Together, We Grow Stronger". On phones and tablets, the form alone. EduBud's logo is
  * at the top and goes back to the site, as does "Back to site".
  *
- * Links back to the copy of the site are plain `<a>`s: they load its pages afresh, as the copy's own links do. The
- * link between log in and sign up stays in the app (React Router's `<Link>`).
+ * Every link here is a plain `<a>` that loads its page afresh, as the copy's own links do (so the browser scrolls as
+ * it does on the original: a new page at its top, Back where you were).
  */
 export function AuthLayout({ title, intro, children, other }: Props) {
   return (
@@ -61,12 +60,12 @@ export function AuthLayout({ title, intro, children, other }: Props) {
             <div className="mt-8">{children}</div>
             <p className="mt-8 text-center text-sm">
               {other.question}{' '}
-              <Link
-                to={other.to}
+              <a
+                href={other.to}
                 className="rounded-sm font-bold underline underline-offset-4 hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               >
                 {other.link}
-              </Link>
+              </a>
             </p>
           </div>
         </main>
