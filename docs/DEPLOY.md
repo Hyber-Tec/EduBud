@@ -96,6 +96,23 @@ sign-in will.
   `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`,
   `VITE_FIREBASE_APP_ID` (set 2026-11-18). Change one with `gh secret set <NAME> --repo Hyber-Tec/EduBud`.
 
+## Google Maps key
+
+The map on Day Learning Program is Google's map code, as on the original, with EduBud's own key (created 2026-11-19 in
+`edubud-hybertec`, Google Cloud console → APIs & Services → Credentials, "EduBud website - Maps JavaScript API
+(browser)"; billing is HyberTec's account, as Sky Arc's). It's a browser key, so it ends up in the page, which is why
+it's locked down: it works only for the Maps JavaScript API and only on `https://edubud-hybertec.web.app/*`,
+`https://edubud-hybertec.firebaseapp.com/*`, `https://edubud.org/*`, `https://www.edubud.org/*` and
+`http://localhost:5173/*` / `http://localhost:5179/*` (the dev server and `scripts/compare/serve.ts`). Its use is free
+at EduBud's size (Google's "Dynamic Maps": 10,000 loads a month free).
+
+- **CI:** the Actions secret `GOOGLE_MAPS_API_KEY`, given only to `main`'s build as `VITE_GOOGLE_MAPS_KEY`. A pull
+  request's preview isn't one of the key's addresses, so it's built without it and shows Google's keyless embed.
+- **Local:** `VITE_GOOGLE_MAPS_KEY=…` in the git-ignored `web/.env.local` (`gcloud services api-keys get-key-string`
+  on the key, as a project owner). Without it, the keyless embed.
+- **When edubud.org moves here:** its addresses are already allowed. Another address needs adding to the key's
+  restrictions first.
+
 ## What Hosting serves
 
 `web/build/client`: each page prerendered to its own HTML file, the copy's and the app's (`/login`, `/signup`), as

@@ -60,3 +60,17 @@ After comparing the copy with edubud.org side by side:
 - **Phones are ours to improve (below 768px):** the original's phone view isn't good enough. Same content and the same
   look (fonts, colours, pictures, shapes), nothing new; easier to read and to tap. Desktop and tablet layouts stay the
   original's.
+
+## 5. The open questions answered (the owner, 2026-11-19, evening)
+
+- **The animated backgrounds (Q6):** make them move exactly like the original's, in our own code (the original's
+  settings, read from its pages; never Squarespace's code).
+- **The map (Q6):** a key of EduBud's own in `edubud-hybertec`, billed to HyberTec's account like Sky Arc's (not Sky
+  Arc's key: keys stay per project). Done: the map is Google's map code with the original's options (`docs/DEPLOY.md`,
+  "Google Maps key").
+- **The Instagram feed (Q6):** it should update itself. EduBud's account owner connects it once.
+- **Search (Q6):** our call: a search page like the original's, so the "page not found" page's link works.
+- **The original's faults (Q7):** not copied. We copy how the original looks and behaves, and improve where it
+  misbehaves; EduBud may ask for changes later.
+- **The header (Q8):** stays as it is, drop-downs with their lines and photos, and "Log In".
+
