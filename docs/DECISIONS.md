@@ -29,7 +29,17 @@ matching section, with the date.
 - **One step at a time:** step 1 is the copy of the website, proposed first ([`proposals/replica.md`](proposals/replica.md))
   and built once the owner approves; the features come after the owner has compared the copy with the original.
 
-## 3. The copy of the website
+## 3. The copy of the website (the owner, 2026-11-18)
 
-Waiting for the owner's read of [`proposals/replica.md`](proposals/replica.md). Its questions are in
-[`QUESTIONS.md`](QUESTIONS.md).
+- **Go as proposed** ([`proposals/replica.md`](proposals/replica.md)): rebuild edubud.org in our own code from a capture
+  of the live site, React and TypeScript with Vite and React Router's prerendering, on Firebase; checked against the
+  original page by page at five widths, with one side-by-side report. The goal: identical for visitors.
+- **No Korean (Q1):** the language picker is removed, as on Sky Arc. English only, everywhere.
+- **The shop and donations look the same, and do nothing yet (Q2, Q3):** the product pages, cart and donation form are
+  copied as they look; buying or donating doesn't work for now. Payments (Stripe, EduBud's own account) are a later
+  talk with the founder.
+- **The forms (Q4):** they look, check and thank like today, but store nothing until the forms inbox; they become
+  real before the domain moves.
+- **Pictures and videos in this repository (Q5):** they're on the public website anyway, and the repository goes
+  private later. No Cloud Storage for them.
+- **EduBud doesn't edit the Squarespace site:** no need to ask the founder to hold changes (E1 dropped).

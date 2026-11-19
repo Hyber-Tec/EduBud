@@ -5,7 +5,7 @@ and the question leaves this page. Until then the project uses the default named
 
 ## For the owner
 
-The replica proposal's questions come with it ([`proposals/replica.md`](proposals/replica.md)).
+Nothing open. The replica proposal's questions (Q1–Q5) are answered in [`DECISIONS.md`](DECISIONS.md) §3.
 
 ## For EduBud
 

@@ -117,9 +117,10 @@ to put the new updates on the mobile phone. That's something that I'll tell you 
 - **Self-contained** (the owner, 2026-11-18): a student intern may learn on this repository. Don't copy Sky Arc's or
   HyberCRM's code into it wholesale without asking the owner; reusing their patterns and ideas is fine. Keep it
   readable for a newcomer: plain names, short files, a comment where the why isn't obvious.
-- **Languages:** the original has a language picker (English and Korean), but its Korean doesn't work today (its
-  translation service has used up its word limit). What our copy does with it is decided in `docs/DECISIONS.md` §3
-  once the owner has read the replica proposal. Until then: English, with the picker drawn as on the original.
+- **English only** (the owner, 2026-11-18, `docs/DECISIONS.md` §3): no Korean anywhere, and no language picker (the
+  original's is left out, as on Sky Arc). Don't add another language unless the owner asks.
+- **Money waits** (`docs/DECISIONS.md` §3): the shop's cart and the donation form look like the original's, but nothing
+  takes payment until the owner and EduBud choose how (Stripe, EduBud's own account, later).
 
 ## Owner and production
 
