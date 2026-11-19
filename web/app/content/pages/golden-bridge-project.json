@@ -18,19 +18,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a86054712ea765f1081d4c4/390.jpg",
+       "width": 780,
+       "height": 3102,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a86054712ea765f1081d4c4/1024.jpg",
+       "width": 1536,
+       "height": 1645,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a86054712ea765f1081d4c4/1920.jpg",
+       "width": 1920,
+       "height": 1268
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 39,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 20,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -73,6 +94,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"de77995635f2e6e5c7b7\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"de77995635f2e6e5c7b7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/978da9aa407e",
@@ -94,8 +116,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"de77995635f2e6e5c7b7\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "b57619abf9dc451414d0",
@@ -120,11 +141,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b57619abf9dc451414d0\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Golden Bridge Project</span></h2>"
     },
@@ -160,11 +183,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"8a8e8c7c9c2c90b85253\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -194,11 +231,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c603a5531280bdc4cc52\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">The <strong>Golden Bridge Project</strong> is a  leadership and mentorship program connecting high school and college student volunteers with adults with disabilities through through consistent, individualized relationships and activities.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Inspired by EduBud’s <strong>2025–2026 </strong></span><a href=\"/blue-bridge-project\"><span class=\"rte-text-color--black\"><strong>Blue Bridge Project</strong></span></a><span class=\"rte-text-color--black\">, the program reflects EduBud’s growing commitment to inclusion and belonging. It brings together individuals with diverse abilities, strengths, and support needs, creating opportunities to build meaningful relationships and grow together.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Inspired by the symbolism of a <strong>bridge</strong>, the program connects students through shared experiences, collaboration, and service. <strong>Gold</strong> represents worth, potential, achievement, and the belief that everyone deserves the opportunity to grow, contribute, and shine.</span></p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">Through friendship, leadership development, and community service, Golden Bridge is designed to work toward shared goals while building lasting bridges of understanding, belonging, and opportunity.</span></p>"
     },
@@ -239,6 +278,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--black-hsl), 1)"
      },
+     "css": "[data-block=\"yui_3_17_2_1_1791683894803_92553\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<path />",
@@ -268,11 +308,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4c7901598756c7163d77\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span class=\"rte-text-color--white\">REGISTER NOW</span></p>"
     }
@@ -290,19 +332,40 @@
    ],
    "background": {
     "art": {
-     "kind": "gradient"
+     "kind": "gradient",
+     "images": [
+      {
+       "src": "/media/art/6aa244ded671872e7410e5e2/390.jpg",
+       "width": 780,
+       "height": 3355,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6aa244ded671872e7410e5e2/1024.jpg",
+       "width": 1536,
+       "height": 1190,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6aa244ded671872e7410e5e2/1920.jpg",
+       "width": 1920,
+       "height": 1237
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 46,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 22,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -329,11 +392,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"336932e17102a4c02ba1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\">How It All Began</span></h2><p style=\"white-space:pre-wrap;\"><strong>Golden Bridge began with a simple idea: meaningful relationships can create meaningful opportunities.</strong> </p><p style=\"white-space:pre-wrap;\">After seeing the impact of EduBud’s Blue Bridge Project, we wanted to build a project that could create more consistent, individualized connections between student volunteers and adults with diverse disabilities.</p>"
     },
@@ -371,11 +436,13 @@
       "--block-transform": "none",
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-video-block-padding": "initial",
       "--tweak-video-block-radius": "0px 0px 0px 0px",
       "--tweak-video-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"48a8693c26fdb5eb819e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"48a8693c26fdb5eb819e\"] { mix-blend-mode: var(--tweak-video-block-blend); border-radius: var(--tweak-video-block-radius); }\n[data-block=\"48a8693c26fdb5eb819e\"] > .block { border-width: 0; }\n@media (max-width: 767px) { [data-block=\"48a8693c26fdb5eb819e\"] > .block { background-color: transparent; } }\n@media (max-width: 767px) { [data-block=\"48a8693c26fdb5eb819e\"] .video-frame { background-color: var(--tweak-video-block-background-color); } }",
      "type": "video",
      "provider": "native",
      "file": {
@@ -420,11 +487,13 @@
       "--block-transform": "none",
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-video-block-padding": "initial",
       "--tweak-video-block-radius": "0px 0px 0px 0px",
       "--tweak-video-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"801965e83a607aa5ae4f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"801965e83a607aa5ae4f\"] { mix-blend-mode: var(--tweak-video-block-blend); border-radius: var(--tweak-video-block-radius); }\n[data-block=\"801965e83a607aa5ae4f\"] > .block { border-width: 0; }\n@media (max-width: 767px) { [data-block=\"801965e83a607aa5ae4f\"] > .block { background-color: transparent; } }\n@media (max-width: 767px) { [data-block=\"801965e83a607aa5ae4f\"] .video-frame { background-color: var(--tweak-video-block-background-color); } }",
      "type": "video",
      "provider": "native",
      "file": {
@@ -449,19 +518,40 @@
    ],
    "background": {
     "art": {
-     "kind": "gradient"
+     "kind": "gradient",
+     "images": [
+      {
+       "src": "/media/art/6a8606ba7d65b475ad8ae9cc/390.jpg",
+       "width": 780,
+       "height": 2908,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a8606ba7d65b475ad8ae9cc/1024.jpg",
+       "width": 1536,
+       "height": 1559,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a8606ba7d65b475ad8ae9cc/1920.jpg",
+       "width": 1920,
+       "height": 1288
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 39,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 23,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -502,6 +592,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--black-hsl), 0.96)"
      },
+     "css": "[data-block=\"f0e4e737d27b0e5420d0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<path />",
@@ -531,11 +622,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"068e7e2acdeb9bcbbc45\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--custom\" style=\"color: #EFBD00;\">The Golden Bridge Project is designed to:</span></h2>"
     },
@@ -563,6 +656,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -579,6 +673,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787168088672_4382\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1787168088672_4382\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: left; white-space: pre-wrap\"><span class=\"rte-text-color--custom\" style=\"color: #EFBD00;\">Each buddy team will work toward both individualized goals tailored to the EduBud student's interests, strengths, and needs, as well as larger program-wide initiatives that promote inclusion, service, and community impact.</span></p><p class=\"rte-large\" style=\"text-align: left; white-space: pre-wrap\"><span class=\"rte-text-color--custom\" style=\"color: #EFBD00;\"><em>*This program is intended for students seeking a deeper level of commitment and leadership experience beyond traditional volunteer service.</em></span></p>"
     },
@@ -619,6 +714,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"yui_3_17_2_1_1790129589742_15422\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -649,6 +745,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -665,6 +762,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"61971d432fda6778c491\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"61971d432fda6778c491\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Build Inclusion &amp; Belonging</strong></span></p>"
     },
@@ -705,6 +803,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"bd57f5a540329c2a04ad\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -735,6 +834,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -751,6 +851,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ace4e40cc83ad4aeed7f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"ace4e40cc83ad4aeed7f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Celebrate individual strengths</strong></span></p>"
     },
@@ -791,6 +892,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"e6759cd48a0a4fa8161c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -821,6 +923,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -837,6 +940,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790129589742_16832\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1790129589742_16832\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Foster meaningful friendships</strong></span></p>"
     },
@@ -877,6 +981,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"648a203ea7f0a1dada1a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -907,6 +1012,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -923,6 +1029,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3707405a51ae15cfe508\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"3707405a51ae15cfe508\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Develop Student Leadership</strong></span></p>"
     },
@@ -963,6 +1070,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"675400d8eabe3b641cbb\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -993,6 +1101,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1009,6 +1118,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"337a2bb27e31d8c2d0df\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"337a2bb27e31d8c2d0df\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Connect &amp; Serve Community</strong></span></p>"
     },
@@ -1049,6 +1159,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
+     "css": "[data-block=\"df764a60a504792d6a32\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -1079,6 +1190,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1095,6 +1207,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"090b58fc8571c38701c6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"090b58fc8571c38701c6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--black\"><strong>Explore New Interests</strong></span></p>"
     }
@@ -1112,19 +1225,40 @@
    ],
    "background": {
     "art": {
-     "kind": "contours"
+     "kind": "contours",
+     "images": [
+      {
+       "src": "/media/art/6a9b1b5e8a953c53b7485228/390.jpg",
+       "width": 780,
+       "height": 2472,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9b1b5e8a953c53b7485228/1024.jpg",
+       "width": 1536,
+       "height": 1265,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9b1b5e8a953c53b7485228/1920.jpg",
+       "width": 1920,
+       "height": 1109
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 31,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 17,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1167,6 +1301,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"08fdda9fc06f36044f45\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"08fdda9fc06f36044f45\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e99b40fb25c0",
@@ -1188,8 +1323,7 @@
        0.5520345021563848
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"08fdda9fc06f36044f45\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "yui_3_17_2_1_1791683894803_84187",
@@ -1228,6 +1362,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"yui_3_17_2_1_1791683894803_84187\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<path />",
@@ -1257,13 +1392,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b7c26ce48866b783b858\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>2026 </strong></span><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\"><strong>Finalists:</strong></span></span></h2><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\">Top Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Mason (Yeongwoo) Roh</strong> (UC Santa Barbara)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Kevin Lee</strong> (11th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Lilly (Hyerin) Roh</strong> (11th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Chloe (Jiho) Park</strong> (11th, North Gwinnett High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Jimmy (Hyunwoo) Kang</strong> (10th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Eyan Gribble</strong> (12th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\">Bottom Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Julie (Jiwoo) Park</strong> (University of Georgia)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Elise Park</strong> (11th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Hameed AI-Hajj</strong> (University of Pittsburg)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Chloe Nguyen</strong> (12th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Grace Kim</strong> (10th, Johns Creek High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Caren Lee</strong> (12th, Johns Creek High)</span></p>"
+     "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>2026 </strong></span><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--white-hsl), 1)\" class=\"rte-highlight rte-highlight--circle\"><span class=\"rte-text-color--black\"><strong>Finalists:</strong></span></span></h2><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\">Top Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Mason (Yeongwoo) Roh</strong> (UC Santa Barbara)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Kevin Lee</strong> (11th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Lilly (Hyerin) Roh</strong> (11th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Chloe (Jiho) Park</strong> (11th, North Gwinnett High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Jimmy (Hyunwoo) Kang</strong> (10th, Lambert High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Eyan Gribble</strong> (12th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\">Bottom Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Julie (Jiwoo) Park</strong> (University of Georgia)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Elise Park</strong> (11th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Hameed AI-Hajj</strong> (University of Pittsburg)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Chloe Nguyen</strong> (12th, Peachtree Ridge High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Grace Kim</strong> (10th, Johns Creek High)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Caren Lee</strong> (12th, Johns Creek High)</span></p>"
     }
    ]
   },
@@ -1281,12 +1418,14 @@
     "mobile": {
      "rows": 38,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 21,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1313,11 +1452,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d5a7aa3112109967568f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--custom\" style=\"color: #EFBD00;\">Eligibility &amp; Commitment</span></h2>"
     },
@@ -1353,11 +1494,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(45, 100%, 45.49%, 1)"
      },
+     "css": "[data-block=\"yui_3_17_2_1_1787168088672_8319\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1388,6 +1543,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1404,6 +1560,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787168088672_7911\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1787168088672_7911\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Age/Education:</h4><h4 style=\"white-space:pre-wrap;\">15+ or rising 10th grader, or currently enrolled in college.</h4>"
     },
@@ -1439,11 +1596,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(45, 100%, 45.49%, 1)"
      },
+     "css": "[data-block=\"42bbb56594c94605fd90\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1474,6 +1645,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1490,6 +1662,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"869dda68d70e88873b3d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"869dda68d70e88873b3d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Program Commitment:</h4><h4 style=\"white-space:pre-wrap;\">Participate for the full year, <strong>September 2026–May 2027</strong>.</h4>"
     },
@@ -1525,11 +1698,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(45, 100%, 45.49%, 1)"
      },
+     "css": "[data-block=\"0d4a8fcd3357c6a9d56a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1560,6 +1747,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1576,6 +1764,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"247d01d2a069a306285f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"247d01d2a069a306285f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Training:</h4><h4 style=\"white-space:pre-wrap;\">Attend the required <strong>August 2026 orientation and training</strong>.</h4>"
     },
@@ -1611,11 +1800,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(45, 100%, 45.49%, 1)"
      },
+     "css": "[data-block=\"5add4ee07bfa66a7f285\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1646,6 +1849,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1662,6 +1866,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f680eb096db2b6341c60\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"f680eb096db2b6341c60\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Character:</h4><h4 style=\"white-space:pre-wrap;\">Demonstrate maturity, professionalism, &amp; commitment.</h4>"
     },
@@ -1697,11 +1902,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(45, 100%, 45.49%, 1)"
      },
+     "css": "[data-block=\"4ace14c012034c796d31\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1732,6 +1951,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1748,6 +1968,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"776f5c3ee61fb08ba47f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"776f5c3ee61fb08ba47f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Expectation:</h4><h4 style=\"white-space:pre-wrap;\">Fulfill all program responsibilities &amp; commitments.</h4>"
     }
@@ -1765,19 +1986,40 @@
    ],
    "background": {
     "art": {
-     "kind": "gradient"
+     "kind": "gradient",
+     "images": [
+      {
+       "src": "/media/art/6a860da7e9cea7444b95e5e3/390.jpg",
+       "width": 780,
+       "height": 2876,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a860da7e9cea7444b95e5e3/1024.jpg",
+       "width": 1536,
+       "height": 1373,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a860da7e9cea7444b95e5e3/1920.jpg",
+       "width": 1920,
+       "height": 1364
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 38,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 22,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1804,11 +2046,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"23504e1baae84df76fb6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">How to Join</span></h2>"
     },
@@ -1844,11 +2088,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"dfe612f3f1552c7c8d98\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1879,6 +2137,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1895,6 +2154,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"de2bd68592141e72eaa9\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"de2bd68592141e72eaa9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">01 — Review</span></h4><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">Review the program information, requirements, and volunteer commitments.</span></h4>"
     },
@@ -1930,11 +2190,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"986b7517c384be5c767b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -1965,6 +2239,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -1981,6 +2256,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0166b3c0c6a26407e2ba\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"0166b3c0c6a26407e2ba\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">02 — Apply</span></h4><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">Complete and submit the online application.</span></h4>"
     },
@@ -2016,11 +2292,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"c77ebeac1187440c87d9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -2051,6 +2341,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2067,6 +2358,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"275615364e85ea256fb6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"275615364e85ea256fb6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">03 — Interview</span></h4><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">Selected applicants will be invited to an interview.</span></h4>"
     },
@@ -2102,11 +2394,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"4ae76be1e197f6227fa1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -2137,6 +2443,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2153,6 +2460,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"eeca985ff81f106a675c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"eeca985ff81f106a675c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">04 — Get Trained</span></h4><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">Accepted volunteers attend orientation and training in <strong>August 2026</strong>.</span></h4>"
     },
@@ -2188,11 +2496,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--white-hsl), 1)"
      },
+     "css": "[data-block=\"28c3ef8cdbebbd0624e0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "flower",
      "svg": "<path d=\"M61.2 84.8c6.3 19.6-28.7 19.6-22.4 0-26.7 19.6-43.2 3-23.6-23.6-19.6 6.3-19.6-28.7 0-22.4-19.6-26.7-3-43.2 23.6-23.6-6.3-19.6 28.7-19.6 22.4 0 26.7-19.6 43.2-3 23.6 23.6 19.6-6.3 19.6 28.7 0 22.4 19.6 26.7 3 43.2-23.6 23.6z\" />",
@@ -2223,6 +2545,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2239,6 +2562,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"21c703cdd64d1fe00c60\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"21c703cdd64d1fe00c60\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">05 — Get Started</span></h4><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">Volunteer service officially begins in <strong>September 2026</strong>.</span></h4>"
     }
@@ -2256,19 +2580,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a860e7438be134d9cf5c3cc/390.jpg",
+       "width": 780,
+       "height": 5228,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a860e7438be134d9cf5c3cc/1024.jpg",
+       "width": 1536,
+       "height": 3491,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a860e7438be134d9cf5c3cc/1920.jpg",
+       "width": 1920,
+       "height": 3430
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 72,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 65,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -2296,6 +2641,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2312,6 +2658,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787168088672_94989\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1787168088672_94989\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h1 style=\"text-align: center; ; white-space:pre-wrap;\">Your Golden Bridge Journey</h1>"
     },
@@ -2354,6 +2701,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0cbf3291bcd71108e31a\"] .image-frame { overflow: hidden; clip-path: url(#0cbf3291bcd71108e31a-system_desktop); -webkit-clip-path: url(#0cbf3291bcd71108e31a-system_desktop); }\n[data-block=\"0cbf3291bcd71108e31a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/df8955ae613c",
@@ -2375,8 +2723,7 @@
        0.69604350271892
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"0cbf3291bcd71108e31a\"] .image-frame { overflow: hidden; clip-path: url(#0cbf3291bcd71108e31a-system_desktop); -webkit-clip-path: url(#0cbf3291bcd71108e31a-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "a5db4fa8bc0e7ba5f25a",
@@ -2410,11 +2757,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"a5db4fa8bc0e7ba5f25a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -2444,11 +2805,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"579679a55893a71a2d63\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">1 EduBud Community Center Student Buddy<strong> </strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>+ </strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">2 High School/College Volunteer Buddies</p>"
     },
@@ -2475,11 +2838,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8303cc1682facceb951c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">Buddy Teams</h4>"
     },
@@ -2518,6 +2883,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"038dd738add27271c63a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Learn More",
      "link": {
@@ -2568,6 +2934,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f9f5a429ae4c57cc88c7\"] .image-frame { overflow: hidden; clip-path: url(#f9f5a429ae4c57cc88c7-system_desktop); -webkit-clip-path: url(#f9f5a429ae4c57cc88c7-system_desktop); }\n[data-block=\"f9f5a429ae4c57cc88c7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/88856f29c35e",
@@ -2589,8 +2956,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"f9f5a429ae4c57cc88c7\"] .image-frame { overflow: hidden; clip-path: url(#f9f5a429ae4c57cc88c7-system_desktop); -webkit-clip-path: url(#f9f5a429ae4c57cc88c7-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "856c6de681f1e3625b71",
@@ -2624,11 +2990,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"856c6de681f1e3625b71\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -2658,11 +3038,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b5738bd9efcdc16298c6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">Program Timeline</h4>"
     },
@@ -2689,11 +3071,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"51e2cb07bfa90ad9f027\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">September 2026 – May 2027</p>"
     },
@@ -2736,6 +3120,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"98c12f70b126e48816d2\"] .image-frame { overflow: hidden; clip-path: url(#98c12f70b126e48816d2-system_desktop); -webkit-clip-path: url(#98c12f70b126e48816d2-system_desktop); }\n[data-block=\"98c12f70b126e48816d2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/de4d3be3590b",
@@ -2757,8 +3142,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"98c12f70b126e48816d2\"] .image-frame { overflow: hidden; clip-path: url(#98c12f70b126e48816d2-system_desktop); -webkit-clip-path: url(#98c12f70b126e48816d2-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "330b3bb140f450506779",
@@ -2792,11 +3176,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"330b3bb140f450506779\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -2826,11 +3224,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e356e1c75545d89987d1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">Weekly Zoom Meetings</h4>"
     },
@@ -2857,11 +3257,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f38af9876cd7934bab5e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">1 hour weekly 15 min. partner planning + 45 min. buddy session</p>"
     },
@@ -2904,6 +3306,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e420befeda3e44911973\"] .image-frame { overflow: hidden; clip-path: url(#e420befeda3e44911973-system_desktop); -webkit-clip-path: url(#e420befeda3e44911973-system_desktop); }\n[data-block=\"e420befeda3e44911973\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/fce0889c31e7",
@@ -2925,8 +3328,7 @@
        0.6240390024376523
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"e420befeda3e44911973\"] .image-frame { overflow: hidden; clip-path: url(#e420befeda3e44911973-system_desktop); -webkit-clip-path: url(#e420befeda3e44911973-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "e71b65371e366de1f817",
@@ -2951,11 +3353,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e71b65371e366de1f817\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">Annual Events</h4>"
     },
@@ -2982,11 +3386,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"04f0f3eae9014c9dd978\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">2 major events<br>Holiday Celebration • End-of-Year Gala</p>"
     },
@@ -3029,6 +3435,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"70c4119a7cc721939cd9\"] .image-frame { overflow: hidden; clip-path: url(#70c4119a7cc721939cd9-system_desktop); -webkit-clip-path: url(#70c4119a7cc721939cd9-system_desktop); }\n[data-block=\"70c4119a7cc721939cd9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/1e08936f58db",
@@ -3050,8 +3457,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"70c4119a7cc721939cd9\"] .image-frame { overflow: hidden; clip-path: url(#70c4119a7cc721939cd9-system_desktop); -webkit-clip-path: url(#70c4119a7cc721939cd9-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "cbbe86931504cdaaed1d",
@@ -3085,11 +3491,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"cbbe86931504cdaaed1d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3119,11 +3539,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"525e098e014f39beeef1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">Community Engagement</h4>"
     },
@@ -3150,11 +3572,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6230a402cf000b0f9173\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">2 additional service and engagement events</p>"
     },
@@ -3190,11 +3614,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(43.7, 100%, 68.24%, 1)"
      },
+     "css": "[data-block=\"a299dda7c12f90aac1e8\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3225,6 +3663,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3241,6 +3680,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"969f15cefe3f13d9bea9\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"969f15cefe3f13d9bea9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\">For undergraduate college students attending school outside of Georgia or participants with approved circumstances, a <strong><em>fully virtual participation option may be available upon approval. </em></strong>Please note that because relationship-building and community engagement are central components of the program, priority will be given to applicants who are able to participate in the standard hybrid model. Requests for fully virtual participation will be reviewed on a case-by-case basis. Applicants interested in the virtual option should indicate this in their application and be prepared to discuss their circumstances during the interview process.</p>"
     }
@@ -3258,19 +3698,40 @@
    ],
    "background": {
     "art": {
-     "kind": "contours"
+     "kind": "contours",
+     "images": [
+      {
+       "src": "/media/art/6a86141eeaa7400ef0c065df/390.jpg",
+       "width": 780,
+       "height": 7302,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a86141eeaa7400ef0c065df/1024.jpg",
+       "width": 1536,
+       "height": 2392,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a86141eeaa7400ef0c065df/1920.jpg",
+       "width": 1920,
+       "height": 2435
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 100,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 43,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -3297,11 +3758,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f1eb60794e7fd46a9023\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Monthly Themes</h2>"
     },
@@ -3328,11 +3791,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b5662c4390eb5e55d0d5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>September</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Getting to Know You</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Personal interests</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Create \"All About Me\" presentation</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Set buddy friendship goals</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">In-Person Meeting</p>"
     },
@@ -3367,9 +3832,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e7fae6b06a68f459f5b5\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3399,13 +3878,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b7e0c4f03797b6d73ec2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>October</strong></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong><em>Community Awareness</em></strong></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Learn about community resources</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Reflect on personal strengths and interests</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Create a digital resume highlighting skills</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Minor Community Event:</strong></span></span></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://www.suwanee.com/Home/Components/Calendar/Event/3123/19\"><strong>Dinner &amp; A BOOvie</strong></a></p>"
+     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>October</strong></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong><em>Community Awareness</em></strong></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Learn about community resources</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Reflect on personal strengths and interests</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Create a digital resume highlighting skills</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><span style=\"--hl-thickness: 1em; --hl-color: hsla(230.85, 47.2%, 24.5%, 1)\" class=\"rte-highlight rte-highlight--marker\"><span class=\"rte-text-color--white\"><strong>Minor Community Event:</strong></span></span></p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://www.suwanee.com/Home/Components/Calendar/Event/3123/19\"><strong>Dinner &amp; A BOOvie</strong></a></p>"
     },
     {
      "id": "d43fdaa57074b45e2acc",
@@ -3438,9 +3919,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d43fdaa57074b45e2acc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3470,11 +3965,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b1f1ab2f785c3438d654\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>November</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Gratitude Project</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Thank-you cards</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Volunteer appreciation gifts</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Community kindness challenge</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">In-Person Meeting</p>"
     },
@@ -3509,9 +4006,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"09534c984f14bfd563f6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3541,13 +4052,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2c37d8757bfbe7d27d24\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>December</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Holiday Celebration Planning</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Plan Christmas party activities</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Decorations</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Games committee</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Holiday performance</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Major Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>Annual Holiday Celebration</strong></p>"
+     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>December</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Holiday Celebration Planning</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Plan Christmas party activities</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Decorations</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Games committee</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Holiday performance</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span style=\"--hl-thickness: 1em; --hl-color: hsla(230.85, 47.2%, 24.5%, 1)\" class=\"rte-highlight rte-highlight--marker\"><span class=\"rte-text-color--white\"><strong>Major Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>Annual Holiday Celebration</strong></p>"
     },
     {
      "id": "6762c328b987339c0845",
@@ -3580,9 +4093,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6762c328b987339c0845\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3612,11 +4139,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"fa8af3c17e790f76e2b4\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>January</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>New Year Goal Setting</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Vision board</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Personal growth goals</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Independent living goals</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">In-Person Meeting</p>"
     },
@@ -3651,9 +4180,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ae03a9051445b2cee4e6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3683,11 +4226,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b12d03f859f9ed556a40\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>February</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Friendship &amp; Communication</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Conversation Skills</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Friendship Challenges</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Valentine's Activities</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Valentine's Care Day</p>"
     },
@@ -3722,9 +4267,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b4db091e4f38abfcf429\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3754,11 +4313,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6c825f4abd908dc14596\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>March</strong></p><p style=\"text-align: center; white-space: pre-wrap\"><strong><em>Leadership Development</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Student-Led Meetings</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Public Speaking Practice</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Event Planning</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Team Leadership Activities</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">In-Person Meeting</p>"
     },
@@ -3793,9 +4354,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"61a06e6eae3b7b51834f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3825,13 +4400,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"60b8043300d053324677\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>April</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Community Service Project</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Donation drive</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Care packages</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Awareness campaign</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Minor Community Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>Nature Walk / 5K</strong></p>"
+     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>April</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Community Service Project</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Donation drive</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Care packages</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Awareness campaign</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span style=\"--hl-thickness: 1em; --hl-color: hsla(230.85, 47.2%, 24.5%, 1)\" class=\"rte-highlight rte-highlight--marker\"><span class=\"rte-text-color--white\"><strong>Minor Community Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>Nature Walk / 5K</strong></p>"
     },
     {
      "id": "32cca88b204b2d122430",
@@ -3864,9 +4441,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"32cca88b204b2d122430\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3896,13 +4487,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c6512f97b8b05a6abd92\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>May</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Reflection &amp; Celebration</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">End-of-year presentation</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Awards</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Graduation recognition</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\"><strong>Major Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>End-Of-Year Gala</strong></p>"
+     "html": "<p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>May</strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong><em>Reflection &amp; Celebration</em></strong></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">End-of-year presentation</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Awards</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">Graduation recognition</p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><span style=\"--hl-thickness: 1em; --hl-color: hsla(230.85, 47.2%, 24.5%, 1)\" class=\"rte-highlight rte-highlight--marker\"><span class=\"rte-text-color--white\"><strong>Major Event:</strong></span></span></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><strong>End-Of-Year Gala</strong></p>"
     },
     {
      "id": "dc722b874b147c52a6d2",
@@ -3935,9 +4528,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"dc722b874b147c52a6d2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -3968,6 +4575,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3984,6 +4592,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0d8083c6cbb728a39203\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"0d8083c6cbb728a39203\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"><strong><em>Highlighted Events: </em></strong><em>Shared program events where both the Golden Bridge Project and Evergreen Project will come together throughout the year to strengthen the larger EduBud community.</em></p>"
     },
@@ -4018,9 +4627,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"39edf1cc1c2418445134\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -4058,9 +4681,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"379334f0e1d7a3eba1a9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -4071,6 +4708,7 @@
   },
   {
    "id": "6acae43f319e28120c779aaa",
+   "kind": "gallery",
    "theme": "white-bold",
    "classes": [
     "background-width--full-bleed",
@@ -4083,12 +4721,14 @@
     "mobile": {
      "rows": 1,
      "rowMin": "24px",
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     },
     "desktop": {
      "rows": 1,
      "scale": 0.0215,
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     }
    },
    "blocks": []

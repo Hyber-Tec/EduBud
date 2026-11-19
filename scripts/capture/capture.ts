@@ -24,6 +24,10 @@ export const ORIGIN = 'https://www.edubud.org'
 const ROOT = path.resolve(import.meta.dirname, '../..')
 const CONTENT = path.join(ROOT, 'web/app/content')
 const CACHE = path.join(import.meta.dirname, '.cache')
+/** The pictures art.ts took of each section's animated art. */
+const artIndex: Record<string, { images: { src: string; width: number; height: number; upTo?: number }[] }> = existsSync(path.join(CONTENT, 'art.json'))
+  ? JSON.parse(await readFile(path.join(CONTENT, 'art.json'), 'utf8'))
+  : {}
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36'
 
 /** The pages the copy has: the sitemap's, Founder Message (public, not in the menu), and the shop's. */
@@ -67,24 +71,78 @@ const json = (raw: string | null): any => {
   }
 }
 
-/** The custom properties a block's own <style> tags set on it, for both widths and for phones. */
-function blockVars(styleText: string, blockId: string): { vars: Vars; varsMobile: Vars; rules: { sel: string; decls: [string, string][]; bp: string }[] } {
+/** The original's selectors inside a block, and the element of ours each one styles. */
+const BLOCK_PARTS: [RegExp, string][] = [
+  [/^\.sqs-html-content$/, ' .rte'],
+  [/^\.fluid-image-container(\.visitor-mode)?$/, ' .image-frame'],
+  [/^\.intrinsic$/, ' .video-frame'],
+  [/^\.accordion-items-container$/, ' .accordion'],
+  [/^\.Marquee$/, ' .marquee-block'],
+]
+
+/**
+ * A block's settings from its own <style> tags: the custom properties it sets (on itself or its parts, which ours
+ * inherit), for both widths and for phones, and its other rules (corners, blending, padding) moved to our elements.
+ */
+function blockVars(styleText: string, blockId: string): { vars: Vars; varsMobile: Vars; rules: { sel: string; decls: [string, string][]; bp: string }[]; css: string } {
   const vars: Vars = {}
   const varsMobile: Vars = {}
   const rules: { sel: string; decls: [string, string][]; bp: string }[] = []
-  const own = [`#block-${blockId}`, `.fe-block-${blockId}`]
+  const css: string[] = []
+  const ownId = `#block-${blockId}`
+  const ownFe = `.fe-block-${blockId}`
   walkRules(parseCss(styleText), (sel, decls, bp) => {
-    const selectors = sel.split(',').map((s) => s.trim())
-    if (selectors.some((s) => own.includes(s))) {
-      for (const [k, v] of decls) {
-        if (!k.startsWith('--')) continue
-        if (bp === 'mobile') varsMobile[k] = v
-        else if (bp === 'all') vars[k] = v
-      }
-    }
     rules.push({ sel, decls, bp })
+    for (const one of sel.split(',').map((x) => x.trim())) {
+      const own = one.startsWith(ownId) ? ownId : one.startsWith(ownFe) ? ownFe : null
+      if (!own) continue
+      const rest = one.slice(own.length).trim()
+      for (const [k, v] of decls) if (k.startsWith('--')) (bp === 'mobile' ? varsMobile : bp === 'all' ? vars : {})[k] = v
+      // Where the rule's other declarations go in our markup.
+      let target: string | null = null
+      if (!rest) target = own === ownFe ? '' : ' > .block'
+      else for (const [re, ours] of BLOCK_PARTS) if (re.test(rest)) target = ours
+      if (target === null) continue
+      const plain = decls.filter(([k]) => !k.startsWith('--') && !['box-sizing', 'height', 'width', 'display'].includes(k))
+      if (!plain.length) continue
+      const rule = `[data-block="${blockId}"]${target} { ${plain.map(([k, v]) => `${k}: ${v};`).join(' ')} }`
+      css.push(bp === 'mobile' ? `@media (max-width: 767px) { ${rule} }` : bp === 'desktop' ? `@media (min-width: 768px) { ${rule} }` : rule)
+    }
   })
-  return { vars, varsMobile, rules }
+  return { vars, varsMobile, rules, css: css.join('\n') }
+}
+
+/** A palette or custom color from the original's settings, as CSS. */
+function colorCss(c: any): string | undefined {
+  if (!c) return undefined
+  if (c.sitePaletteColor?.colorName) return `hsla(var(--${c.sitePaletteColor.colorName}-hsl), ${c.sitePaletteColor.alphaModifier ?? 1})`
+  const h = c.customColor?.hslaValue ?? c.hslaValue
+  if (h) return `hsla(${h.hue}, ${(h.saturation * 100).toFixed(1)}%, ${(h.lightness * 100).toFixed(1)}%, ${h.alpha ?? 1})`
+  if (typeof c.customColor === 'string') return c.customColor
+  return undefined
+}
+
+/**
+ * Text "highlights" (underlines, markers, circles…) are drawn by the original's script from settings kept beside the
+ * text. Each becomes a span with our class and its settings as variables, which blocks.css draws.
+ */
+function applyTextAttributes(content: Element, scope: Element, blockId: string) {
+  const script =
+    scope.querySelector('script.TextAttributes-props') ??
+    scope.ownerDocument?.querySelector(`script[id="data-context-${blockId}"]`) ??
+    scope.closest('section')?.querySelector(`script[id="data-context-${blockId}"]`)
+  const raw = script?.textContent
+  const attrs: Record<string, any> = {}
+  for (const a of json(raw ?? null) ?? []) attrs[a.id] = a
+  content.querySelectorAll('[data-text-attribute-id]').forEach((span) => {
+    const a = attrs[span.getAttribute('data-text-attribute-id') ?? '']
+    if (!a) return
+    span.setAttribute('class', `rte-highlight rte-highlight--${a.shape ?? 'underline'}`)
+    const vars = [`--hl-thickness: ${a.thickness?.value ?? 0.1}${a.thickness?.unit ?? 'em'}`]
+    const color = colorCss(a.color)
+    if (color) vars.push(`--hl-color: ${color}`)
+    span.setAttribute('style', vars.join('; '))
+  })
 }
 
 /** Text HTML as our components show it: Squarespace's attributes dropped, its text classes renamed `rte-…`. */
@@ -132,7 +190,7 @@ const EMPTY_AREA: Area = { rowStart: 1, colStart: 2, rowEnd: 2, colEnd: 3, z: 0 
 
 /** A section's grid and its blocks' places, from the grid's own <style>. */
 function parseGrid(styleText: string, feId: string): { grid: Grid; areas: Record<string, { mobile: Area; desktop: Area }> } {
-  const grid: Grid = { mobile: { rows: 1, rowMin: '24px', gap: 0 }, desktop: { rows: 1, scale: 0.0215, gap: 0 } }
+  const grid: Grid = { mobile: { rows: 1, rowMin: '24px', gap: 0, colGap: 0 }, desktop: { rows: 1, scale: 0.0215, gap: 0, colGap: 0 } }
   const areas: Record<string, { mobile: Area; desktop: Area }> = {}
   const get = (id: string) => (areas[id] ??= { mobile: { ...EMPTY_AREA }, desktop: { ...EMPTY_AREA } })
   walkRules(parseCss(styleText), (sel, decls, bp) => {
@@ -148,10 +206,11 @@ function parseGrid(styleText: string, feId: string): { grid: Grid; areas: Record
               grid.mobile.rowMin = m[2].trim()
             }
           }
-        } else if (k === 'row-gap') {
+        } else if (k === 'row-gap' || k === 'column-gap') {
           const g = parseFloat(v)
-          if (target === 'desktop') grid.desktop.gap = g
-          else grid.mobile.gap = grid.desktop.gap = g
+          const key = k === 'row-gap' ? 'gap' : 'colGap'
+          if (target === 'desktop') grid.desktop[key] = g
+          else grid.mobile[key] = grid.desktop[key] = g
         } else if (k === '--row-height-scaling-factor') {
           grid.desktop.scale = Number(v)
         }
@@ -208,13 +267,16 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
   if (!id || !sqs) return null
   const def = sqs.getAttribute('data-definition-name') ?? ''
   const kind = def.replace('website.components.', '') || (sqs.classList.contains('instagram-block') ? 'instagram' : 'unknown')
-  const { vars, varsMobile, rules } = blockVars(styleText(feBlock), id)
+  const { vars, varsMobile, rules, css: ownCss } = blockVars(styleText(feBlock), id)
   const area = areas[id] ?? { mobile: { ...EMPTY_AREA }, desktop: { ...EMPTY_AREA } }
-  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile }
+  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined }
 
   switch (kind) {
-    case 'html':
-      return { ...base, type: 'text', html: cleanHtml(sqs.querySelector('.sqs-html-content')) }
+    case 'html': {
+      const content = sqs.querySelector('.sqs-html-content')
+      if (content) applyTextAttributes(content, sqs, id)
+      return { ...base, type: 'text', html: cleanHtml(content) }
+    }
 
     case 'imageFluid': {
       const img = sqs.querySelector('img[data-src], img')
@@ -228,19 +290,12 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         alt: img.getAttribute('alt') ?? '',
         focal: focal.length === 2 && focal.every((n) => !Number.isNaN(n)) ? [focal[0], focal[1]] : undefined,
       })
-      const css = scopedCss(rules, id, (sel) => {
-        const m = sel.match(new RegExp(`^#block-${id}\\s+(.+)$`))
-        if (!m) return null
-        if (m[1].includes('.fluid-image-container')) return ' .image-frame'
-        return null
-      })
       return {
         ...base,
         type: 'image',
         picture: pic,
         link: link(sqs.querySelector('a[href]')),
         stretched: root?.getAttribute('data-is-image-stretched') === 'true',
-        css: css || undefined,
       }
     }
 
@@ -383,7 +438,7 @@ export function parseSection(sec: Element, doc: Document): Section {
   const context = json(sec.getAttribute('data-current-context')) ?? {}
   const classes = (sec.getAttribute('class') ?? '')
     .split(/\s+/)
-    .filter((c) => /^(section-height--|content-width--|background-width--|vertical-alignment--|horizontal-alignment--|has-section-divider)/.test(c))
+    .filter((c) => /^(section-height--|content-width--|background-width--|vertical-alignment--|horizontal-alignment--)/.test(c))
 
   const background: SectionBackground = {}
   const mode = styles.backgroundMode as string | undefined
@@ -410,8 +465,10 @@ export function parseSection(sec: Element, doc: Document): Section {
     }
   }
   if (mode === 'generative' || sec.querySelector('.background-fx-canvas')) {
-    // Animated art drawn in the page; the capture's browser pass (art.ts) takes its pictures.
-    background.art = { kind: styles.generative?.type ?? context.backgroundMediaEffect?.type ?? 'art', desktop: undefined as never, mobile: undefined as never }
+    // Animated art drawn in the page: art.ts takes its pictures (content/art.json); until then, the theme's color.
+    const kind = styles.generative?.type ?? context.backgroundMediaEffect?.type ?? 'art'
+    const shot = artIndex[id]
+    if (kind !== 'none') background.art = { kind, images: shot?.images ?? [] }
   }
   if (typeof styles.imageOverlayOpacity === 'number' && (background.image || background.video)) {
     background.overlayOpacity = styles.imageOverlayOpacity
@@ -437,13 +494,21 @@ export function parseSection(sec: Element, doc: Document): Section {
     if (b) blocks.push(b)
   }
 
+  const dv = context.divider
+  const dividerHeight = dv?.enabled && dv.type !== 'none' ? `${dv.height?.value ?? 0}${dv.height?.unit ?? 'vw'}` : undefined
+  if (dividerHeight) classes.push('has-section-divider')
+  if (dividerHeight) classes.push(`divider--${dv.type}${dv.isFlipY ? '-flip-y' : ''}${dv.isFlipX ? '-flip-x' : ''}`)
+  const vars = { ...(sectionVars(styles) ?? {}), ...(dividerHeight ? { '--divider-height': dividerHeight } : {}) }
+  const sqspSection = sec.getAttribute('data-sqsp-section')
+  const kind = sqspSection === 'gallery' ? 'gallery' : sqspSection === 'auto-layout' ? 'list' : undefined
   return {
     id,
+    ...(kind ? { kind } : {}),
     theme: (sec.getAttribute('data-section-theme') ?? '') as Theme,
     classes,
     background: Object.keys(background).length ? background : undefined,
     divider,
-    vars: sectionVars(styles),
+    vars: Object.keys(vars).length ? vars : undefined,
     grid,
     blocks,
   }
@@ -452,7 +517,7 @@ export function parseSection(sec: Element, doc: Document): Section {
 /** Section settings our CSS reads: a custom height and content width. */
 function sectionVars(styles: any): Vars | undefined {
   const v: Vars = {}
-  if (styles.sectionHeight === 'section-height--custom' && styles.customSectionHeight) v['--section-custom-height'] = `${styles.customSectionHeight}vh`
+  if (styles.sectionHeight === 'section-height--custom') v['--section-custom-height'] = `${styles.customSectionHeight ?? 0}vh`
   if (styles.contentWidth === 'content-width--custom' && styles.customContentWidth) v['--section-custom-width'] = `${styles.customContentWidth}%`
   return Object.keys(v).length ? v : undefined
 }

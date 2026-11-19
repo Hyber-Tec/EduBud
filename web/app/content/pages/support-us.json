@@ -10,7 +10,6 @@
    "id": "6ab9874978a58f2e44e03332",
    "theme": "light",
    "classes": [
-    "has-section-divider",
     "background-width--full-bleed",
     "section-height--custom",
     "content-width--wide",
@@ -20,16 +19,21 @@
    "divider": {
     "clipPath": "<clippath id=\"section-divider-6ab9874978a58f2e44e03332\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
+   "vars": {
+    "--section-custom-height": "0vh"
+   },
    "grid": {
     "mobile": {
      "rows": 17,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 15,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -56,11 +60,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3b7d9a1becd8daabe08d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Support Us</h1>"
     },
@@ -103,6 +109,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e7c0c62c9ca7d3509f36\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-bottom-left-radius: 40px; }\n[data-block=\"e7c0c62c9ca7d3509f36\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/dbfd070a801b",
@@ -124,8 +131,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"e7c0c62c9ca7d3509f36\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-bottom-left-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "75b6d3b6b1a9a54fee83",
@@ -159,11 +165,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
+     "css": "[data-block=\"75b6d3b6b1a9a54fee83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -202,11 +222,25 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
+     "css": "[data-block=\"58e69831184774708117\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -236,11 +270,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e19706a3c35d0eb21e30\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>There are many ways to help create more opportunities for our community.</strong></p><p style=\"white-space:pre-wrap;\">Whether you give your time, resources, expertise, or financial support, your involvement helps EduBud continue creating educational and community experiences for learners of all ages and backgrounds.</p>"
     }
@@ -250,7 +286,6 @@
    "id": "6ab9874978a58f2e44e03336",
    "theme": "white",
    "classes": [
-    "has-section-divider",
     "background-width--full-bleed",
     "section-height--custom",
     "content-width--wide",
@@ -267,12 +302,14 @@
     "mobile": {
      "rows": 1,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 2,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -320,6 +357,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"27cba3fb7434076b2f6b\"] > .block { padding: var(--tweak-marquee-block-padding); }\n[data-block=\"27cba3fb7434076b2f6b\"] { mix-blend-mode: var(--tweak-marquee-block-blend); border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] > .block { border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "marquee",
      "items": [
       "Make An Impact",
@@ -420,12 +458,14 @@
     "mobile": {
      "rows": 24,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 9,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -476,11 +516,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"fa2aef7f7b9f28373f7a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Our Positive Impact</h4>"
     },
@@ -523,6 +565,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"210c1fd61933c93e9e9e\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"210c1fd61933c93e9e9e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/5abb57bc94c7",
@@ -544,8 +587,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"210c1fd61933c93e9e9e\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "15637396c103f413569f",
@@ -586,6 +628,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"15637396c103f413569f\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"15637396c103f413569f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e91067b61f8e",
@@ -607,8 +650,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"15637396c103f413569f\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "e4166f0bcdade5c40a5a",
@@ -634,11 +676,13 @@
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
       "--tweak-text-block-background-color": "hsla(var(--darkAccent-hsl), 1)",
+      "--tweak-text-block-padding": "15% 15% 15% 15%",
       "--tweak-text-block-radius": "20px 20px 20px 20px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e4166f0bcdade5c40a5a\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"e4166f0bcdade5c40a5a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e4166f0bcdade5c40a5a\"] > .block { border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--white\">50K+</span></h4></span></div><div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><p style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">People Reached</span></p></span></div>"
     },
@@ -681,6 +725,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ce142ef6d8d644c7fe83\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"ce142ef6d8d644c7fe83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/0b6c97b401f3",
@@ -702,8 +747,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ce142ef6d8d644c7fe83\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "7b04ad499a3be8c18e89",
@@ -744,6 +788,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7b04ad499a3be8c18e89\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"7b04ad499a3be8c18e89\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/a5a7da3b6dcb",
@@ -765,8 +810,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"7b04ad499a3be8c18e89\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     }
    ]
   },
@@ -784,12 +828,14 @@
     "mobile": {
      "rows": 45,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 26,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -816,11 +862,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3e9df49982b9b8829d2e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"text-align: center; white-space: pre-wrap\">Sponsorship Opportunities</h2><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Partner with EduBud to support meaningful programs, expand educational opportunities, and help us create lasting impact in our community.</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>Choose a level of support that works for your organization and helps us expand opportunities for the people we serve.</strong></p>"
     },
@@ -863,6 +911,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"17e430599811fee11532\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"17e430599811fee11532\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d2bd1dbad1b0",
@@ -884,8 +933,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"17e430599811fee11532\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     },
     {
      "id": "b22ec32474054d22a620",
@@ -910,11 +958,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b22ec32474054d22a620\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h3 style=\"text-align: center; white-space: pre-wrap\"><strong>Custom Partnerships</strong></h3><p style=\"text-align: center; white-space: pre-wrap\"><strong>Have another idea? We would love to hear it.</strong></p><p style=\"text-align: center; white-space: pre-wrap\">Every organization has different resources and strengths. We are happy to work with sponsors to create a partnership that aligns with their goals while supporting EduBud’s mission.</p>"
     },
@@ -953,6 +1003,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790543724655_11878\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Sponsor EduBud",
      "link": {
@@ -987,11 +1038,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5bc3c0df28b57ea1f62e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h3 style=\"text-align: center; white-space: pre-wrap\"><strong>Thank you to our sponsors:</strong></h3>"
     },
@@ -1034,6 +1087,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790718594083_7901\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"yui_3_17_2_1_1790718594083_7901\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/a4a0c8d29b16",
@@ -1059,8 +1113,7 @@
       "href": "https://bonjil.com/?srsltid=AU7gw4XlTC22upEuD6458OJ7DkpeC2U7VvAzF96TSpXJiDpYvt7hLXXz",
       "newWindow": true
      },
-     "stretched": false,
-     "css": "[data-block=\"yui_3_17_2_1_1790718594083_7901\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     },
     {
      "id": "bcab8eb72d3f92e21cad",
@@ -1101,6 +1154,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bcab8eb72d3f92e21cad\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"bcab8eb72d3f92e21cad\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/5297efae3b0f",
@@ -1126,8 +1180,7 @@
       "href": "http://www.edugrowacademy.com/",
       "newWindow": true
      },
-     "stretched": false,
-     "css": "[data-block=\"bcab8eb72d3f92e21cad\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     },
     {
      "id": "1dc32b91ba4508cf6a40",
@@ -1168,6 +1221,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1dc32b91ba4508cf6a40\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"1dc32b91ba4508cf6a40\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/46a32beab7d8",
@@ -1193,8 +1247,7 @@
       "href": "https://skyarcacademy.com/",
       "newWindow": true
      },
-     "stretched": false,
-     "css": "[data-block=\"1dc32b91ba4508cf6a40\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     },
     {
      "id": "003842cd7dec20918ca3",
@@ -1235,6 +1288,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"003842cd7dec20918ca3\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"003842cd7dec20918ca3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/38000430ef76",
@@ -1260,8 +1314,7 @@
       "href": "https://www.instagram.com/tidyduo_atl/",
       "newWindow": true
      },
-     "stretched": false,
-     "css": "[data-block=\"003842cd7dec20918ca3\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     },
     {
      "id": "8d0ef849385578a5c710",
@@ -1302,6 +1355,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8d0ef849385578a5c710\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"8d0ef849385578a5c710\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2034fa20cd27",
@@ -1327,8 +1381,7 @@
       "href": "https://thenanoom.com/",
       "newWindow": true
      },
-     "stretched": false,
-     "css": "[data-block=\"8d0ef849385578a5c710\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     }
    ]
   },
@@ -1346,12 +1399,14 @@
     "mobile": {
      "rows": 9,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 7,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1402,11 +1457,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d20b10095df9f0959e62\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Volunteer, shadow, or intern with the EduBud Community Center and be part of something meaningful! We offer flexible opportunities—whether you join us for a single community center event or a regular commitment—to match your schedule and skills. Our mission is to bring people with and without disabilities together, building authentic connections that enrich everyone. If this vision resonates with you, we’d love to welcome you to our community.</p><gen-text></gen-text>"
     },
@@ -1433,11 +1490,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"460bd57ef1776782d7a9\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Volunteer. Shadow. Intern.</h2>"
     },
@@ -1476,6 +1535,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c466678449445a10612e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Apply",
      "link": {
@@ -1503,12 +1563,14 @@
     "mobile": {
      "rows": 30,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 13,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1562,11 +1624,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"542a0f33ff8fff8e81a7\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Make a Donation</h2>"
     },
@@ -1609,6 +1673,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8f84880917a43cd0ba25\"] .image-frame { overflow: hidden; clip-path: url(#8f84880917a43cd0ba25-system_desktop); -webkit-clip-path: url(#8f84880917a43cd0ba25-system_desktop); }\n[data-block=\"8f84880917a43cd0ba25\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/b29466be01c7",
@@ -1630,8 +1695,7 @@
        0.9760610038127383
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"8f84880917a43cd0ba25\"] .image-frame { overflow: hidden; clip-path: url(#8f84880917a43cd0ba25-system_desktop); -webkit-clip-path: url(#8f84880917a43cd0ba25-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "33b9a7b80fb2eebef877",
@@ -1672,6 +1736,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"33b9a7b80fb2eebef877\"] .image-frame { overflow: hidden; clip-path: url(#33b9a7b80fb2eebef877-system_desktop); -webkit-clip-path: url(#33b9a7b80fb2eebef877-system_desktop); }\n[data-block=\"33b9a7b80fb2eebef877\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/80c9990a8cca",
@@ -1693,8 +1758,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"33b9a7b80fb2eebef877\"] .image-frame { overflow: hidden; clip-path: url(#33b9a7b80fb2eebef877-system_desktop); -webkit-clip-path: url(#33b9a7b80fb2eebef877-system_desktop); }"
+     "stretched": false
     }
    ]
   }

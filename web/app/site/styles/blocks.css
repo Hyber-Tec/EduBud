@@ -26,9 +26,16 @@
   max-width: none;
   object-fit: var(--image-component-object-fit, cover);
 }
+/* A picture that keeps its own shape sits inside its block, as large as the block allows, centered. */
+.image-block:not(.image-block--stretched) {
+  container-type: size;
+  align-items: center;
+  justify-content: center;
+}
 .image-block:not(.image-block--stretched) .image-frame {
+  width: min(100cqw, calc(100cqh * (var(--image-component-native-aspect-ratio, 1))));
   height: auto;
-  aspect-ratio: var(--image-component-native-aspect-ratio);
+  aspect-ratio: var(--image-component-native-aspect-ratio, 1);
 }
 .image-overlay {
   position: absolute;
@@ -55,7 +62,10 @@
     display: block !important;
   }
 }
+/* Shapes fill their block's area without making it taller (only text grows the grid's rows). */
 .shape-block .shape {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   fill: var(--shape-block-background-color, var(--shape-bg));
@@ -213,7 +223,12 @@
   justify-content: center;
   overflow: hidden;
 }
+/* The scrolling line sits across the middle of its block without making the block taller. */
 .marquee {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
   display: flex;
   width: max-content;
   animation: marquee calc(60s / var(--marquee-speed, 1)) linear infinite;
@@ -226,7 +241,8 @@
   flex: 0 0 auto;
 }
 .marquee-item {
-  --v: var(--heading-1-size-value);
+  --v: var(--marquee-font-size-value, var(--heading-1-size-value));
+  padding-right: var(--marquee-item-spacing, 0.5em) !important;
   margin: 0;
   padding: 0;
   font-family: var(--heading-font);
@@ -235,15 +251,6 @@
   text-transform: capitalize;
   white-space: pre;
   color: var(--marquee-h, var(--h1));
-}
-h2.marquee-item {
-  --v: var(--heading-2-size-value);
-}
-h3.marquee-item {
-  --v: var(--heading-3-size-value);
-}
-h4.marquee-item {
-  --v: var(--heading-4-size-value);
 }
 @keyframes marquee {
   to {

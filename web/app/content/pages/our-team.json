@@ -38,7 +38,26 @@
      ]
     },
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/390.jpg",
+       "width": 780,
+       "height": 3744,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1024.jpg",
+       "width": 1536,
+       "height": 1559,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1920.jpg",
+       "width": 1920,
+       "height": 1394
+      }
+     ]
     },
     "overlayOpacity": 0.65
    },
@@ -46,12 +65,14 @@
     "mobile": {
      "rows": 46,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 20,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -78,11 +99,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1f9c79ccfa5eefc47695\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Who We Are</h1>"
     },
@@ -109,11 +132,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"87a262190ff74b067584\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">EduBud International Inc. is built on the belief that education is the foundation for a better future. Our mission is to instill in our students the power of education and encourage them to use their knowledge and talents to support further communities.</h4><h4 style=\"white-space:pre-wrap;\">Below is our Diversity, Equity, and Inclusion (DEI) Statement.</h4>"
     },
@@ -140,11 +165,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e8bdec13ed4686bde1f2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>DEI Statement.</strong></p>"
     },
@@ -171,11 +198,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"212a6b7c5ba579ce7bd8\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\">At <strong><em>EduBud,</em></strong> we are dedicated to promoting <em>diversity, equity, and inclusion</em> in all that we do. </p><p style=\"white-space:pre-wrap;\">We believe that a truly transformative education is one that recognizes and celebrates the uniqueness of every individual. Our mission is to provide access to educational resources, mentorship, and leadership opportunities for all students, particularly those from marginalized, underrepresented, and underserved communities, both locally and globally. We actively work to dismantle barriers to education, advocating for equitable opportunities that empower students of all backgrounds—regardless of race, ethnicity, gender, ability, or socioeconomic status. We are committed to creating a learning environment where all voices are heard, valued, and respected. By embracing diverse perspectives, we enrich the learning experience and encourage innovation, collaboration, and empathy. EduBud also prioritizes creating spaces where students feel a strong sense of belonging, fostering an atmosphere that supports their growth, development, and aspirations. We recognize that true inclusion requires intentional action, and we continuously strive to ensure that our programs, resources, and partnerships reflect our core values of diversity and equity. Through our work, we aim to contribute to a more inclusive educational landscape, where every student has the opportunity to thrive, succeed, and lead change.</p>"
     },
@@ -218,6 +247,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6325e45ffeb718cbf5e7\"] .image-frame { overflow: hidden; clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); -webkit-clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); }\n[data-block=\"6325e45ffeb718cbf5e7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/68a283df6918",
@@ -239,8 +269,7 @@
        0.64
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"6325e45ffeb718cbf5e7\"] .image-frame { overflow: hidden; clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); -webkit-clip-path: url(#6325e45ffeb718cbf5e7-system_desktop); }"
+     "stretched": false
     }
    ]
   },
@@ -258,12 +287,14 @@
     "mobile": {
      "rows": 22,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 13,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -306,6 +337,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"820a7c4bd82422fdbb0a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n[data-block=\"820a7c4bd82422fdbb0a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/74ce1ff19e99",
@@ -327,8 +359,7 @@
        0.6640415025939121
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"820a7c4bd82422fdbb0a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }"
+     "stretched": true
     },
     {
      "id": "yui_3_17_2_1_1790190058840_9521",
@@ -367,6 +398,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
+     "css": "[data-block=\"yui_3_17_2_1_1790190058840_9521\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "horizontal-right-leaning-oval",
      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
@@ -396,11 +428,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0f4c7d51083c2b247475\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Founder &amp; Executive Director</h2>"
     },
@@ -427,11 +461,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e99ccb0a6bb79efd1c3d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Clara Lim</strong></h4>"
     },
@@ -470,6 +506,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5b73a1801ded6a85a4cd\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Founder's Message",
      "link": {
@@ -494,19 +531,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a9b2778521028217d3284de/390.jpg",
+       "width": 780,
+       "height": 9502,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9b2778521028217d3284de/1024.jpg",
+       "width": 1536,
+       "height": 3120,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9b2778521028217d3284de/1920.jpg",
+       "width": 1920,
+       "height": 3098
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 130,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 56,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -533,11 +591,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5fef25e62d9cb0871701\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Learning Center Leadership</h1>"
     },
@@ -584,6 +644,7 @@
       "--image-component-overlay-opacity": "0",
       "--image-component-native-aspect-ratio": "1086/1448"
      },
+     "css": "[data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }\n[data-block=\"e32524ecbc41911d3dcc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/5a57676341fc",
@@ -605,8 +666,7 @@
        0.08800550034377153
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"e32524ecbc41911d3dcc\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }"
+     "stretched": true
     },
     {
      "id": "a17afffd6efa58553c89",
@@ -631,11 +691,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a17afffd6efa58553c89\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Sunny</h4>"
     },
@@ -662,11 +724,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2e078a9809dbabd30658\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Operational Director</p>"
     },
@@ -713,6 +777,7 @@
       "--image-component-overlay-opacity": "0",
       "--image-component-native-aspect-ratio": "680/649"
      },
+     "css": "[data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }\n[data-block=\"77ecc3cee1b4943efd97\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/4dac74ed244b",
@@ -734,8 +799,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; }\n@media (max-width: 767px) { [data-block=\"77ecc3cee1b4943efd97\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } }"
+     "stretched": true
     },
     {
      "id": "51c8f2eabfa58a3b6b4a",
@@ -760,11 +824,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"51c8f2eabfa58a3b6b4a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Sharon</h4>"
     },
@@ -791,11 +857,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7b5468ccd829fa46a016\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Program Director</p>"
     },
@@ -838,6 +906,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790713973946_7715\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); }\n[data-block=\"yui_3_17_2_1_1790713973946_7715\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/21ae94be5401",
@@ -859,8 +928,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"yui_3_17_2_1_1790713973946_7715\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1790713973946_7715-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "9a5003deab50d5b20ae1",
@@ -885,11 +953,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"9a5003deab50d5b20ae1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Su</h4>"
     },
@@ -916,11 +986,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"48ff98c460007b001fbc\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Head Instructor</p>"
     },
@@ -963,6 +1035,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ec9d2bd5d560aac06118\"] .image-frame { overflow: hidden; clip-path: url(#ec9d2bd5d560aac06118-system_desktop); -webkit-clip-path: url(#ec9d2bd5d560aac06118-system_desktop); }\n[data-block=\"ec9d2bd5d560aac06118\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/bcda547f8978",
@@ -984,8 +1057,7 @@
        0.352022001375086
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"ec9d2bd5d560aac06118\"] .image-frame { overflow: hidden; clip-path: url(#ec9d2bd5d560aac06118-system_desktop); -webkit-clip-path: url(#ec9d2bd5d560aac06118-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "abb5446b7b5da1c9635a",
@@ -1010,11 +1082,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"abb5446b7b5da1c9635a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Julie</h4>"
     },
@@ -1041,11 +1115,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c0fc5979c4f5d73153ff\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Assistant Instructor</p>"
     },
@@ -1088,6 +1164,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b594477605a82d8c1f40\"] .image-frame { overflow: hidden; clip-path: url(#b594477605a82d8c1f40-system_desktop); -webkit-clip-path: url(#b594477605a82d8c1f40-system_desktop); }\n[data-block=\"b594477605a82d8c1f40\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/426a5690886d",
@@ -1109,8 +1186,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"b594477605a82d8c1f40\"] .image-frame { overflow: hidden; clip-path: url(#b594477605a82d8c1f40-system_desktop); -webkit-clip-path: url(#b594477605a82d8c1f40-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "fc386cb159d38542fdde",
@@ -1135,11 +1211,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"fc386cb159d38542fdde\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ms. Joanne</h4>"
     },
@@ -1166,11 +1244,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"aaba2ef6a03fd3700841\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Assistant Instructor</p>"
     },
@@ -1197,11 +1277,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"964240320fb255afe8c3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Interns</h2>"
     },
@@ -1244,6 +1326,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a043e91b5ca9e73fb8ce\"] .image-frame { overflow: hidden; clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); -webkit-clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); }\n[data-block=\"a043e91b5ca9e73fb8ce\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/60ebe41505da",
@@ -1265,8 +1348,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"a043e91b5ca9e73fb8ce\"] .image-frame { overflow: hidden; clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); -webkit-clip-path: url(#a043e91b5ca9e73fb8ce-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "ad6c0f368981efdc9640",
@@ -1291,11 +1373,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ad6c0f368981efdc9640\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Betty Ann Akonchong</h4>"
     },
@@ -1322,11 +1406,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c556563463eb34008508\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: left; white-space: pre-wrap\">Program Support Intern</p>"
     },
@@ -1369,6 +1455,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f99f563b6f8eb935d706\"] .image-frame { overflow: hidden; clip-path: url(#f99f563b6f8eb935d706-system_desktop); -webkit-clip-path: url(#f99f563b6f8eb935d706-system_desktop); }\n[data-block=\"f99f563b6f8eb935d706\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/283a5e23cf60",
@@ -1390,8 +1477,7 @@
        0.18400000000000005
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"f99f563b6f8eb935d706\"] .image-frame { overflow: hidden; clip-path: url(#f99f563b6f8eb935d706-system_desktop); -webkit-clip-path: url(#f99f563b6f8eb935d706-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "dce4a83f428ed5ef57c0",
@@ -1416,11 +1502,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"dce4a83f428ed5ef57c0\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Mason (Yeongwoo) Roh</h4>"
     },
@@ -1447,11 +1535,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"acd2ebfa11e93f0e3e28\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Program Support Intern</p>"
     },
@@ -1494,6 +1584,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f1096ce574b9a8f02d39\"] .image-frame { overflow: hidden; clip-path: url(#f1096ce574b9a8f02d39-system_desktop); -webkit-clip-path: url(#f1096ce574b9a8f02d39-system_desktop); }\n[data-block=\"f1096ce574b9a8f02d39\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/b65a396886ee",
@@ -1515,8 +1606,7 @@
        0
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"f1096ce574b9a8f02d39\"] .image-frame { overflow: hidden; clip-path: url(#f1096ce574b9a8f02d39-system_desktop); -webkit-clip-path: url(#f1096ce574b9a8f02d39-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "d02159354b5238933db2",
@@ -1541,11 +1631,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d02159354b5238933db2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Sabrina Li</h4>"
     },
@@ -1572,11 +1664,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"9a385577d96b9fdedc61\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Executive Associate Intern</p>"
     },
@@ -1619,6 +1713,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d01d21003241ee2ddfdf\"] .image-frame { overflow: hidden; clip-path: url(#d01d21003241ee2ddfdf-system_desktop); -webkit-clip-path: url(#d01d21003241ee2ddfdf-system_desktop); }\n[data-block=\"d01d21003241ee2ddfdf\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/dc3588674401",
@@ -1640,8 +1735,7 @@
        0.3200200012500781
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"d01d21003241ee2ddfdf\"] .image-frame { overflow: hidden; clip-path: url(#d01d21003241ee2ddfdf-system_desktop); -webkit-clip-path: url(#d01d21003241ee2ddfdf-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "b23e7f0335bca0d3485b",
@@ -1666,11 +1760,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b23e7f0335bca0d3485b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Julie (Jiwoo) Park</h4>"
     },
@@ -1697,11 +1793,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"04f33512b07c0b8deaba\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Lead Social Media &amp; Design Intern</p>"
     },
@@ -1744,6 +1842,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"558da8447e43f615d608\"] .image-frame { overflow: hidden; clip-path: url(#558da8447e43f615d608-system_desktop); -webkit-clip-path: url(#558da8447e43f615d608-system_desktop); }\n[data-block=\"558da8447e43f615d608\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e8519fb457d7",
@@ -1765,8 +1864,7 @@
        0.3280205012813301
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"558da8447e43f615d608\"] .image-frame { overflow: hidden; clip-path: url(#558da8447e43f615d608-system_desktop); -webkit-clip-path: url(#558da8447e43f615d608-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "462029f376fba4ee5429",
@@ -1791,11 +1889,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"462029f376fba4ee5429\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Amy Gao</h4>"
     },
@@ -1822,11 +1922,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8d32f1d8ad7f4c7894d7\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Social Media &amp; Design Intern</p>"
     }
@@ -1844,19 +1946,40 @@
    ],
    "background": {
     "art": {
-     "kind": "surface"
+     "kind": "surface",
+     "images": [
+      {
+       "src": "/media/art/6ac31bc4b473a556b7386412/390.jpg",
+       "width": 780,
+       "height": 1188,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6ac31bc4b473a556b7386412/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6ac31bc4b473a556b7386412/1920.jpg",
+       "width": 1920,
+       "height": 701
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 13,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 9,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1883,11 +2006,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ba34bd07f25f75ed7d51\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"text-align: left; white-space: pre-wrap\">EduBud Community Chapters</h2>"
     },
@@ -1930,6 +2055,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e4cb2e9c74e60cc5454a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 200px; border-top-right-radius: 200px; border-bottom-left-radius: 200px; border-bottom-right-radius: 200px; }\n[data-block=\"e4cb2e9c74e60cc5454a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/6397990ea325",
@@ -1951,8 +2077,7 @@
        0.7920495030939434
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"e4cb2e9c74e60cc5454a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 200px; border-top-right-radius: 200px; border-bottom-left-radius: 200px; border-bottom-right-radius: 200px; }"
+     "stretched": true
     },
     {
      "id": "b3abeb8b4b85434bc4ae",
@@ -1993,6 +2118,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b3abeb8b4b85434bc4ae\"] .image-frame { overflow: hidden; clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); -webkit-clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); }\n[data-block=\"b3abeb8b4b85434bc4ae\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/5955c739fcdc",
@@ -2014,8 +2140,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"b3abeb8b4b85434bc4ae\"] .image-frame { overflow: hidden; clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); -webkit-clip-path: url(#b3abeb8b4b85434bc4ae-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "ea395eb7ee9841f185c6",
@@ -2056,6 +2181,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ea395eb7ee9841f185c6\"] .image-frame { overflow: hidden; clip-path: url(#ea395eb7ee9841f185c6-system_desktop); -webkit-clip-path: url(#ea395eb7ee9841f185c6-system_desktop); }\n[data-block=\"ea395eb7ee9841f185c6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/86674247c8e5",
@@ -2077,8 +2203,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ea395eb7ee9841f185c6\"] .image-frame { overflow: hidden; clip-path: url(#ea395eb7ee9841f185c6-system_desktop); -webkit-clip-path: url(#ea395eb7ee9841f185c6-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "66e8ce8a9cd3d8faf71d",
@@ -2115,6 +2240,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"66e8ce8a9cd3d8faf71d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Meet Our Chapters",
      "link": {
@@ -2131,31 +2257,32 @@
    "id": "6a99d8bff1223a6c07336782",
    "theme": "black-bold",
    "classes": [
-    "has-section-divider",
     "background-width--full-bleed",
     "section-height--medium",
     "content-width--wide",
     "horizontal-alignment--center",
-    "vertical-alignment--middle"
+    "vertical-alignment--middle",
+    "has-section-divider",
+    "divider--slanted-flip-y"
    ],
-   "background": {
-    "art": {
-     "kind": "none"
-    }
-   },
    "divider": {
     "clipPath": "<clippath id=\"section-divider-6a99d8bff1223a6c07336782\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--divider-height": "8vw"
    },
    "grid": {
     "mobile": {
      "rows": 16,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 11,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -2182,11 +2309,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b31022ad0e832faf1344\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">our Mission</h1>"
     },
@@ -2213,13 +2342,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2ac8b8229e216da5be10\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h3 style=\"white-space:pre-wrap;\">Our mission at EduBud is to <span class=\"rte-text-highlight\"><strong>bridge educational disparities through mentorship, resources, and advocacy</strong>. </span>We empower underserved students with the support, guidance, and opportunities they need to succeed academically and personally. Through volunteer-driven initiatives, we foster leadership, inspire change, and help create a more <span class=\"rte-text-highlight\"><strong>equitable and inclusive future for every student</strong>.</span></h3>"
+     "html": "<h3 style=\"white-space:pre-wrap;\">Our mission at EduBud is to <span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underlineCurve\"><strong>bridge educational disparities through mentorship, resources, and advocacy</strong>. </span>We empower underserved students with the support, guidance, and opportunities they need to succeed academically and personally. Through volunteer-driven initiatives, we foster leadership, inspire change, and help create a more <span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><strong>equitable and inclusive future for every student</strong>.</span></h3>"
     }
    ]
   },
@@ -2237,12 +2368,14 @@
     "mobile": {
      "rows": 12,
      "rowMin": "24px",
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     },
     "desktop": {
      "rows": 78,
      "scale": 0.0215,
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     }
    },
    "blocks": [

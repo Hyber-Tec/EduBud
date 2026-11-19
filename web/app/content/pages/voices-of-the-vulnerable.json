@@ -18,7 +18,26 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/390.jpg",
+       "width": 780,
+       "height": 6052,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/1024.jpg",
+       "width": 1536,
+       "height": 2895,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/1920.jpg",
+       "width": 1920,
+       "height": 2140
+      }
+     ]
     }
    },
    "vars": {
@@ -28,12 +47,14 @@
     "mobile": {
      "rows": 80,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 38,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -60,11 +81,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1200b47b5574cdf12f43\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Voices of the Vulnerable</h1>"
     },
@@ -107,6 +130,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"13a38b65ed2de8df086b\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"13a38b65ed2de8df086b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/995c8990f3c6",
@@ -128,8 +152,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"13a38b65ed2de8df086b\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "d13c69003692319b4986",
@@ -154,11 +177,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d13c69003692319b4986\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h3 style=\"white-space:pre-wrap;\">2025 VV Project</h3>"
     },
@@ -209,11 +234,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"906506b927443c850954\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"text-align: start; ; white-space:pre-wrap;\">The <strong>Voices of the Vulnerable (VV) Service Project</strong> is taking place in Spain in June 2024 in collaboration with the NGO, <em>Soñar Despierto.</em> This unique initiative offers students a chance to immerse themselves in impactful, hands-on service, engaging with local communities and making a genuine difference. Through the VV Project, we aim to redefine what it means to serve by guiding students to leverage their unique skills to uplift vulnerable populations.</p>"
     },
@@ -240,13 +267,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c1748a13e6fff3ae759e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"></span>Through this immersive experience, you’ll:</h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#1   Learn to Understand and Address Real Community Needs</strong><br>Engage deeply with local communities, learning firsthand about their challenges and discovering effective ways to help.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#2  Apply Your Personal Talents to Drive Change</strong><br>Use your unique strengths—whether academic, athletic, artistic, or leadership-based—to make a lasting impact.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#3  Develop Empathy and Social Responsibility</strong><br>Build a meaningful connection with underserved communities, fostering a greater sense of empathy and social awareness.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#4  Gain Practical Leadership Experience</strong><br>Take on leadership roles and gain skills that will prepare you for future projects and initiatives.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#5  Enhance Your College Application with Quality Service</strong><br>Stand out by demonstrating your commitment to meaningful, authentic service.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#6  Connect with Like-Minded Peers</strong><br>Form bonds with other passionate students who share your drive to create positive change</p>"
+     "html": "<h4 style=\"white-space:pre-wrap;\"><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"></span>Through this immersive experience, you’ll:</h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#1   Learn to Understand and Address Real Community Needs</strong><br>Engage deeply with local communities, learning firsthand about their challenges and discovering effective ways to help.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#2  Apply Your Personal Talents to Drive Change</strong><br>Use your unique strengths—whether academic, athletic, artistic, or leadership-based—to make a lasting impact.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#3  Develop Empathy and Social Responsibility</strong><br>Build a meaningful connection with underserved communities, fostering a greater sense of empathy and social awareness.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#4  Gain Practical Leadership Experience</strong><br>Take on leadership roles and gain skills that will prepare you for future projects and initiatives.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#5  Enhance Your College Application with Quality Service</strong><br>Stand out by demonstrating your commitment to meaningful, authentic service.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#6  Connect with Like-Minded Peers</strong><br>Form bonds with other passionate students who share your drive to create positive change</p>"
     },
     {
      "id": "yui_3_17_2_1_1788547953470_45453",
@@ -283,6 +312,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788547953470_45453\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "CLICK HERE FOR THE VV PROJECT OVERVIEW",
      "kind": "primary",
@@ -313,11 +343,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ef6db13d943e0289b72f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Apply Now for Your Chance to Join:</strong></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>Early Admission:</strong> October 2024</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>Regular Admission:</strong> January 2024</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><em>*Apply today for a chance to join the 2025 Voices of the Vulnerable Service Project!</em>*</p>"
     },
@@ -356,6 +388,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3b78755e7e5d8552fafc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "APPLY NOW",
      "kind": "primary",
@@ -402,6 +435,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7467df90afadd7351dab\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"7467df90afadd7351dab\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/670f3d1679eb",
@@ -423,8 +457,7 @@
        0.6000375023438964
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"7467df90afadd7351dab\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     }
    ]
   },
@@ -442,12 +475,14 @@
     "mobile": {
      "rows": 77,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 21,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -490,6 +525,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bf9b8cb29827b437b175\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"bf9b8cb29827b437b175\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/9069b192c964",
@@ -511,8 +547,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"bf9b8cb29827b437b175\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "fb67b9b5c6dd99a2d0fd",
@@ -537,13 +572,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"fb67b9b5c6dd99a2d0fd\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\"><strong>2025 </strong><span class=\"rte-text-highlight\"><strong>Grantees:</strong></span></h2><ol><li><h4 style=\"white-space:pre-wrap;\">Lila Chen </h4></li><li><h4 style=\"white-space:pre-wrap;\">Mateo Alvarez </h4></li><li><h4 style=\"white-space:pre-wrap;\">Sofia Rossi </h4></li><li><h4 style=\"white-space:pre-wrap;\">Allison Kang</h4></li><li><h4 style=\"white-space:pre-wrap;\">Isabella Garcias</h4></li><li><h4 style=\"white-space:pre-wrap;\">Rachel Lee </h4></li><li><h4 style=\"white-space:pre-wrap;\">Hana Kim</h4></li><li><h4 style=\"white-space:pre-wrap;\">Emily Thompson </h4></li><li><h4 style=\"white-space:pre-wrap;\">Lucas Oliveira </h4></li><li><h4 style=\"white-space:pre-wrap;\">Kai Wang </h4></li></ol>"
+     "html": "<h2 style=\"white-space:pre-wrap;\"><strong>2025 </strong><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><strong>Grantees:</strong></span></h2><ol><li><h4 style=\"white-space:pre-wrap;\">Lila Chen </h4></li><li><h4 style=\"white-space:pre-wrap;\">Mateo Alvarez </h4></li><li><h4 style=\"white-space:pre-wrap;\">Sofia Rossi </h4></li><li><h4 style=\"white-space:pre-wrap;\">Allison Kang</h4></li><li><h4 style=\"white-space:pre-wrap;\">Isabella Garcias</h4></li><li><h4 style=\"white-space:pre-wrap;\">Rachel Lee </h4></li><li><h4 style=\"white-space:pre-wrap;\">Hana Kim</h4></li><li><h4 style=\"white-space:pre-wrap;\">Emily Thompson </h4></li><li><h4 style=\"white-space:pre-wrap;\">Lucas Oliveira </h4></li><li><h4 style=\"white-space:pre-wrap;\">Kai Wang </h4></li></ol>"
     },
     {
      "id": "ecb67247f9d3557573b2",
@@ -580,6 +617,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ecb67247f9d3557573b2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "CLICK HERE FOR THE VV PROJECT GALLERY",
      "kind": "primary",
@@ -626,6 +664,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8471ecc80ec8ad1c8435\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"8471ecc80ec8ad1c8435\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/3ddb4e6c3ad2",
@@ -647,8 +686,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"8471ecc80ec8ad1c8435\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "a306d6e073637ef829c4",
@@ -689,6 +727,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a306d6e073637ef829c4\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"a306d6e073637ef829c4\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d71e35b932e1",
@@ -710,8 +749,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a306d6e073637ef829c4\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "a864f9a34ffd0b40fc0c",
@@ -752,6 +790,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a864f9a34ffd0b40fc0c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"a864f9a34ffd0b40fc0c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e98dbe04f3b3",
@@ -773,8 +812,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a864f9a34ffd0b40fc0c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "6941fd73f4e8ee75ca06",
@@ -815,6 +853,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6941fd73f4e8ee75ca06\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"6941fd73f4e8ee75ca06\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/543635360ec3",
@@ -836,8 +875,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"6941fd73f4e8ee75ca06\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     },
     {
      "id": "f5209feacc67806aee62",
@@ -878,6 +916,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f5209feacc67806aee62\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"f5209feacc67806aee62\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/cf34c278396f",
@@ -899,8 +938,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"f5209feacc67806aee62\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }"
+     "stretched": true
     }
    ]
   }

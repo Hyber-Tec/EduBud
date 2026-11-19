@@ -20,12 +20,14 @@
     "mobile": {
      "rows": 28,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 25,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -68,6 +70,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8eba4bf5fa0c50ea056f\"] .image-frame { overflow: hidden; clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); -webkit-clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); }\n[data-block=\"8eba4bf5fa0c50ea056f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/9158e4b62ba0",
@@ -89,8 +92,7 @@
        0.6720420026251641
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"8eba4bf5fa0c50ea056f\"] .image-frame { overflow: hidden; clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); -webkit-clip-path: url(#8eba4bf5fa0c50ea056f-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "yui_3_17_2_1_1791679617058_1095",
@@ -131,6 +133,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1791679617058_1095\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); }\n[data-block=\"yui_3_17_2_1_1791679617058_1095\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/30f1eba42cae",
@@ -152,8 +155,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"yui_3_17_2_1_1791679617058_1095\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1791679617058_1095-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "3239017fc02dd5765c72",
@@ -178,11 +180,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3239017fc02dd5765c72\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">A Message From Our Founder</h2>"
     },
@@ -209,11 +213,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4bbd3529a64e9503678a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\"><strong>“Education should be accessible to every learner, no matter their background or circumstance.”</strong></p><p style=\"white-space:pre-wrap;\">I believe this because I have seen what education can make possible in my own life.</p><p style=\"white-space:pre-wrap;\">The opportunities I have had—to attend Johns Hopkins University, learn from people who challenged me, work in hospitals, study abroad, and spend time in communities very different from my own—have shaped the person I am today. I would not be where I am without those opportunities. </p><p style=\"white-space:pre-wrap;\">I entered college during the height of the COVID-19 pandemic, a time that quickly showed me how differently people can experience the same crisis. While studying public health on the pre-med track at Johns Hopkins, I volunteered with students in Baltimore City and saw many struggle when schools moved online and support systems disappeared. In hospitals, I also met children undergoing chemotherapy who were trying to keep up with school while their families navigated treatment and uncertainty. These experiences made me realize how much a person’s ability to learn can depend on the support and opportunities around them. My friends and I started a volunteer initiative matching students for free tutoring online, spreading across the nation. We were able to reach over 15 states.</p><p style=\"white-space:pre-wrap;\">My Fulbright experience in Spain made me think about this in a different way. While teaching English and researching health inequities, I worked closely with special needs students. For many of us, there is a clear next step—college, work, or further education. But for many adults with disabilities, opportunities to continue learning, build relationships, and stay connected to their communities can become much more limited after graduation.</p><p style=\"white-space:pre-wrap;\">That question led me to take EduBud in a new direction during my gap years before medical school. We began building our in-person Learning Center, serving adults 18 and older with disabilities.</p><p style=\"white-space:pre-wrap;\">What began during the pandemic as a small effort to provide free tutoring over Zoom has grown into a nonprofit with student-led chapters, community programs, and our in-person Learning Center.</p><p style=\"white-space:pre-wrap;\">Our work has changed over time, but the reason behind it has stayed the same: <strong>I want more people to have access to opportunities that allow them to keep learning.</strong></p><p style=\"white-space:pre-wrap;\">Working on EduBud has changed how I think about my future in healthcare, but more importantly, it has changed how I think about people. I have learned how much can be missed when we do not take the time to understand the person in front of us—their experiences, their circumstances, and what matters to them.</p><p style=\"white-space:pre-wrap;\">I don't know exactly what EduBud will look like years from now. But I know that education has given me opportunities that changed my life, and I want to spend this chapter of my life helping create more of those opportunities for others.</p><p style=\"white-space:pre-wrap;\"></p><p style=\"white-space:pre-wrap;\"><strong>Clara Lim</strong><br><em>Founder &amp; Executive Director, EduBud International Inc.</em></p>"
     },
@@ -256,6 +262,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a3ece2893e64b3534331\"] .image-frame { overflow: hidden; clip-path: url(#a3ece2893e64b3534331-system_desktop); -webkit-clip-path: url(#a3ece2893e64b3534331-system_desktop); }\n[data-block=\"a3ece2893e64b3534331\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/7a7af2553af8",
@@ -277,8 +284,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"a3ece2893e64b3534331\"] .image-frame { overflow: hidden; clip-path: url(#a3ece2893e64b3534331-system_desktop); -webkit-clip-path: url(#a3ece2893e64b3534331-system_desktop); }"
+     "stretched": false
     }
    ]
   }

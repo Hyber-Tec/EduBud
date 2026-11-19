@@ -20,6 +20,13 @@
 
 html {
   font-size: 17px;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -103,6 +110,9 @@ button {
   --v: var(--heading-4-size-value);
   color: var(--h4);
 }
+.marquee-item {
+  line-height: 1.4em !important;
+}
 .rte h1,
 .rte h2,
 .rte h3,
@@ -122,15 +132,21 @@ button {
 .rte p {
   margin: 1rem 0;
 }
+.rte-large,
 .rte .rte-large,
 .rte p.rte-large,
 .rte-large p {
+  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+  line-height: 1.3em;
   --v: var(--large-text-size-value);
   color: var(--p1);
 }
+.rte-small,
 .rte .rte-small,
 .rte p.rte-small,
 .rte-small p {
+  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+  line-height: 1.3em;
   --v: var(--small-text-size-value);
   color: var(--p3);
 }
@@ -178,16 +194,50 @@ button {
 .rte-text-color--black {
   color: hsla(var(--black-hsl), 1);
 }
-.rte-text-highlight {
-  background-color: hsla(var(--accent-hsl), 1);
+/* Highlights drawn behind text (blocks' "text attributes"): an underline at 90% of each line, or a marker band. */
+.rte-highlight {
+  --hl-color-used: var(--hl-color, currentColor);
+  background-image: linear-gradient(var(--hl-color-used), var(--hl-color-used));
+  background-repeat: no-repeat;
+  background-size: 100% var(--hl-thickness, 0.1em);
+  background-position: 0 calc(90% + 0.4 * var(--hl-thickness, 0.1em));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.rte-highlight--marker {
+  background-size: 100% 55%;
+  background-position: 0 85%;
+}
+.rte-highlight--circle {
+  background: none;
+  border: var(--hl-thickness, 0.1em) solid var(--hl-color-used);
+  border-radius: 50%;
+  padding: 0.1em 0.3em;
+  margin: 0 -0.3em;
+}
+.rte-highlight--underlineCurve,
+.rte-highlight--scribble {
+  background: none;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--hl-color-used);
+  text-decoration-thickness: var(--hl-thickness, 0.1em);
+  text-underline-offset: 0.2em;
+}
+.rte-highlight a {
+  text-decoration: none;
 }
 
 /* Text scaled to fill its block (fitText sets each line's size). */
 .rte-scaled-text-container {
   display: block;
 }
+.rte-scaled-text-container {
+  line-height: 0;
+}
 .rte-scaled-text {
   display: inline-block;
+  vertical-align: top;
   white-space: nowrap;
   visibility: hidden;
 }
@@ -205,6 +255,10 @@ button {
   .rte h4,
   .rte p,
   .rte li,
+  .rte-large,
+  .rte-small,
+  .rte .rte-large,
+  .rte .rte-small,
   .marquee-item {
     font-size: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
   }

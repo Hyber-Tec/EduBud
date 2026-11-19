@@ -32,9 +32,9 @@ export interface Area {
 }
 
 export interface Grid {
-  mobile: { rows: number; rowMin: string; gap: number }
+  mobile: { rows: number; rowMin: string; gap: number; colGap: number }
   /** Desktop rows grow with the container: `container width × scale` at the least. */
-  desktop: { rows: number; scale: number; gap: number }
+  desktop: { rows: number; scale: number; gap: number; colGap: number }
 }
 
 /** A picture, in the widths Squarespace serves it (`/media/<id>/<width>.<ext>`). */
@@ -219,13 +219,18 @@ export type Block =
 export interface SectionBackground {
   image?: Picture
   video?: VideoFile & { filter?: string; speed?: number }
-  /** Animated art the original draws in the page (Squarespace's "generative" backgrounds), as pictures of it. */
-  art?: { desktop: Picture; mobile: Picture; kind: string }
+  /**
+   * Animated art the original draws in the page (Squarespace's "generative" backgrounds), as pictures of it taken at
+   * a few widths (scripts/capture/art.ts); each shown up to its `upTo` window width.
+   */
+  art?: { kind: string; images: { src: string; width: number; height: number; upTo?: number }[] }
   overlayOpacity?: number
 }
 
 export interface Section {
   id: string
+  /** A grid of blocks (most sections), a gallery of pictures, or an "auto layout" list of items. */
+  kind?: 'gallery' | 'list'
   theme: Theme
   /** Layout classes: height, content width, alignment, background width. */
   classes: string[]

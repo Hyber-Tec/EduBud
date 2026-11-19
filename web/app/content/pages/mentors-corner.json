@@ -18,7 +18,26 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a9b1e81545b7835ca7b237f/390.jpg",
+       "width": 780,
+       "height": 2122,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9b1e81545b7835ca7b237f/1024.jpg",
+       "width": 1536,
+       "height": 1563,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9b1e81545b7835ca7b237f/1920.jpg",
+       "width": 1920,
+       "height": 1313
+      }
+     ]
     }
    },
    "vars": {
@@ -28,12 +47,14 @@
     "mobile": {
      "rows": 27,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 23,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -60,11 +81,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"04403d20746e2d3a7c0a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"text-align: center; ; white-space:pre-wrap;\">Mentor’s Corner</h1>"
     },
@@ -91,11 +114,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"997f2aeede921c03fd72\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\">Our heartfelt thanks to all our teacher and mentor volunteers. As a way to give back, we want to support you with resources for advanced highschool and college courses—because education is the most powerful tool for change!</p>"
     },
@@ -138,6 +163,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788550813968_14861\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"yui_3_17_2_1_1788550813968_14861\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/6654c5b706a9",
@@ -159,8 +185,7 @@
        0.6720420026251641
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"yui_3_17_2_1_1788550813968_14861\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "3e40ef7383f1b5e4ae16",
@@ -185,11 +210,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3e40ef7383f1b5e4ae16\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><em>All notes and resources on this page have been carefully compiled by our dedicated volunteers, who stand by our mission and are passionate about making learning accessible. Please note that course materials and curricula may vary by state and school.</em></p><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\"><em>These resources are provided for reference only—we are not responsible for any instances of plagiarism. Please refrain from downloading or sharing them outside of our organization.</em></p>"
     },
@@ -228,6 +255,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ff27cff7fc3dcfe62317\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "INTERESTED IN CONTRIBUTING?",
      "kind": "primary",
@@ -251,12 +279,14 @@
     "mobile": {
      "rows": 53,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 23,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -284,6 +314,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -300,6 +331,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788550813968_81826\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1788550813968_81826\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Advanced Placement (AP) Courses</h2><p style=\"text-align: center; ; white-space:pre-wrap;\" class=\"rte-large\"><em>Click on the course title for organized notes!</em></p>"
     },
@@ -337,6 +369,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"577f80a80686be44a9b5\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -382,6 +415,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0c29c9e689ce093e9ca7\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"0c29c9e689ce093e9ca7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/40470e254ab7",
@@ -403,8 +437,7 @@
        0
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"0c29c9e689ce093e9ca7\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "d8d533c9bb79f73c1561",
@@ -429,13 +462,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d8d533c9bb79f73c1561\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1bh-x_-KOsoU58NAmEGtwE1fXWZey4brh/view?usp=sharing\">AP Human Geo</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1bh-x_-KOsoU58NAmEGtwE1fXWZey4brh/view?usp=sharing\">AP Human Geo</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
     {
      "id": "b28986720ca9808c380b",
@@ -460,11 +495,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b28986720ca9808c380b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1zGYIs1ngmLnTEPzbrGTPA7OA5Ss0fvg0/view?usp=sharing\"><u>AP World History</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
@@ -507,6 +544,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"85e24615e5189544e007\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"85e24615e5189544e007\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/768f9219e565",
@@ -528,8 +566,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"85e24615e5189544e007\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "yui_3_17_2_1_1788550813968_17816",
@@ -565,6 +602,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788550813968_17816\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -594,13 +632,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"065b3d0455200bb3ddc2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/17-fWmy-uF9da27wqTnoq4CIEY8kxHNP4/view?usp=sharing\">AP US History</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/17-fWmy-uF9da27wqTnoq4CIEY8kxHNP4/view?usp=sharing\">AP US History</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
     {
      "id": "17d7c99e5e647e1bbe79",
@@ -641,6 +681,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"17d7c99e5e647e1bbe79\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"17d7c99e5e647e1bbe79\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/04c3cd7cc534",
@@ -662,8 +703,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"17d7c99e5e647e1bbe79\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "039bd3320e25871fc1e7",
@@ -688,11 +728,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"039bd3320e25871fc1e7\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1vmieY7wwy217nwm86qqNHaax5ZdXRpoL/view?usp=drive_link\"><u>AP Calculus BC</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
@@ -730,6 +772,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"74bfae0977607b753761\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -775,6 +818,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1775c5f95ccdf8bfa075\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"1775c5f95ccdf8bfa075\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e29f6cd585f0",
@@ -796,8 +840,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"1775c5f95ccdf8bfa075\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "4718f526fad55cb0634a",
@@ -822,11 +865,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4718f526fad55cb0634a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1Iodkp_tMPoLKopVRGKw1svLhlfzVYbLb/view?usp=sharing\"><u>AP Chemistry</u></a></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
@@ -864,6 +909,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"79c67725e35c32011392\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -893,13 +939,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"16dd1c3baace992dd448\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-highlight\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1wdG0d3aUHyUF4EpsCl0JRFc7oZolw51O/view?usp=drive_link\">AP Biology</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><a target=\"_blank\" href=\"https://drive.google.com/file/d/1wdG0d3aUHyUF4EpsCl0JRFc7oZolw51O/view?usp=drive_link\">AP Biology</a></span></h4><p style=\"text-align: center; white-space: pre-wrap\" class=\"rte-large\">AB Full Academic Year</p>"
     },
     {
      "id": "67eb8f59960fe7d16381",
@@ -935,6 +983,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"67eb8f59960fe7d16381\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -975,6 +1024,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a1385bfaea5416756bf7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",

@@ -47,6 +47,7 @@ export const ALL_WIDTHS = [1920, 1440, 1024, 768, 390]
 const HEIGHTS: Record<number, number> = { 1920: 1080, 1440: 900, 1024: 1366, 768: 1024, 390: 844 }
 
 const { values: args } = parseArgs({
+  allowPositionals: true,
   options: {
     pages: { type: 'string' },
     widths: { type: 'string' },
@@ -73,7 +74,7 @@ const MIME: Record<string, string> = {
 }
 
 /** Serves the build as Firebase Hosting does: `/a` is `a/index.html`, an unknown address the 404 page. */
-function serve(port: number): Promise<http.Server> {
+export function serve(port: number): Promise<http.Server> {
   const server = http.createServer((req, res) => {
     const url = decodeURIComponent((req.url ?? '/').split('?')[0])
     const candidates = [path.join(BUILD, url), path.join(BUILD, url, 'index.html'), path.join(BUILD, url + '.html')]
@@ -207,7 +208,9 @@ function escapeHtml(s: string) {
   return s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]!)
 }
 
-main().catch((e) => {
-  console.error(e)
-  process.exit(1)
-})
+if (process.argv[1] && path.resolve(process.argv[1]) === import.meta.filename) {
+  main().catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })
+}

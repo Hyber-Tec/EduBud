@@ -22,8 +22,10 @@
 .section-height--large {
   min-height: 100vh;
 }
+/* A custom height: the original's percentage of the window, and no padding of its own. */
 .section-height--custom {
-  min-height: var(--section-custom-height, 66vh);
+  min-height: var(--section-custom-height, 0);
+  --section-pad: 0px;
 }
 .vertical-alignment--top {
   align-items: flex-start;
@@ -31,18 +33,35 @@
 .vertical-alignment--bottom {
   align-items: flex-end;
 }
+.page-section {
+  --section-pad: 6.6vmax;
+}
+.section-height--small {
+  --section-pad: 3.3vmax;
+}
+.section-height--large {
+  --section-pad: 10vmax;
+}
 .content-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 6.6vmax 0;
+  padding: var(--section-pad) 0;
 }
-.section-height--small > .content-wrapper {
-  padding: 3.3vmax 0;
+
+/* A section whose bottom edge curves (the original's "rounded" divider, 4vw deep): its background is masked by a
+   rectangle and, along the bottom, the curve; its content keeps clear of the curve. */
+.has-section-divider > .section-border {
+  -webkit-mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E") bottom / 100% var(--divider-height, 0px) no-repeat;
+  mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E") bottom / 100% var(--divider-height, 0px) no-repeat;
 }
-.section-height--large > .content-wrapper {
-  padding: 10vmax 0;
+.has-section-divider > .content-wrapper {
+  padding-bottom: calc(var(--section-pad) + var(--divider-height, 0px));
 }
 .content {
   width: 100%;
@@ -72,31 +91,26 @@
   inset: 0;
   background: var(--bg);
 }
-.section-divider-defs {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
 .background-width--inset {
   padding: var(--site-gutter);
 }
 
 /* The grid. */
 .fe-grid {
-  --grid-gutter: calc(var(--mobile-gutter) - var(--gap));
-  --cell-max-width: calc((var(--site-max-width) - (var(--gap) * 7)) / 8);
+  --grid-gutter: calc(var(--mobile-gutter) - var(--col-gap));
+  --cell-max-width: calc((var(--site-max-width) - (var(--col-gap) * 7)) / 8);
   display: grid;
   position: relative;
   grid-template-rows: repeat(var(--rows-m), minmax(var(--row-min-m), auto));
   grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
   row-gap: var(--gap);
-  column-gap: var(--gap);
+  column-gap: var(--col-gap);
   overflow-x: clip;
 }
 @media (min-width: 768px) {
   .fe-grid {
-    --grid-gutter: calc(var(--site-gutter) - var(--gap));
-    --cell-max-width: calc((var(--site-max-width) - (var(--gap) * 23)) / 24);
+    --grid-gutter: calc(var(--site-gutter) - var(--col-gap));
+    --cell-max-width: calc((var(--site-max-width) - (var(--col-gap) * 23)) / 24);
     --inset-padding: 0vw;
     --container-width: min(var(--site-max-width), calc(100vw - var(--site-gutter) * 2 - var(--inset-padding)));
     grid-template-rows: repeat(var(--rows-d), minmax(calc(var(--container-width) * var(--row-scale)), auto));

@@ -10,7 +10,6 @@
    "id": "6a849920e87c6b6301040531",
    "theme": "white-bold",
    "classes": [
-    "has-section-divider",
     "background-width--full-bleed",
     "section-height--custom",
     "content-width--wide",
@@ -20,16 +19,21 @@
    "divider": {
     "clipPath": "<clippath id=\"section-divider-6a849920e87c6b6301040531\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
+   "vars": {
+    "--section-custom-height": "0vh"
+   },
    "grid": {
     "mobile": {
      "rows": 22,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 22,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -72,6 +76,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7dc519102428d18657f1\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"7dc519102428d18657f1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/41868636faa1",
@@ -93,8 +98,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"7dc519102428d18657f1\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "71ebff1c22fb080557b2",
@@ -127,9 +131,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"71ebff1c22fb080557b2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -167,9 +185,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787103139021_3920\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -199,11 +231,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5cc938cd33153111f8de\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: center; white-space: pre-wrap\"><strong><em>Only Good Things Grow Here!</em></strong></p>"
     },
@@ -230,11 +264,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4164774006b6134b0d10\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Camp Bud &amp; Bloom</h1>"
     },
@@ -261,11 +297,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1e5794648b212d182898\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Our EduBud <em>Bud &amp; Bloom</em> Summer Camp offers EduBud students a fun, engaging summer filled with learning, creativity, friendship, and meaningful community experiences.</p>"
     }
@@ -275,7 +313,6 @@
    "id": "6a849920e87c6b6301040535",
    "theme": "white",
    "classes": [
-    "has-section-divider",
     "background-width--full-bleed",
     "section-height--custom",
     "content-width--wide",
@@ -292,12 +329,14 @@
     "mobile": {
      "rows": 3,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 3,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -344,6 +383,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8804755d7df042b8f20f\"] { mix-blend-mode: var(--tweak-marquee-block-blend); border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"8804755d7df042b8f20f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "marquee",
      "items": [
       "BUD & BLOOM SUMMER CAMP",
@@ -466,12 +506,14 @@
     "mobile": {
      "rows": 14,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -498,11 +540,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bf3ad5f95a144aeafa2b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">A summer filled with friendship, creativity, discovery, and new possibilities.</h2>"
     },
@@ -542,11 +586,13 @@
       "--accordion-divider-opacity": "0.2",
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-accordion-block-padding": "initial",
       "--tweak-accordion-block-radius": "0px 0px 0px 0px",
       "--tweak-accordion-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"22435bf4463ba52fbf31\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
      "type": "accordion",
      "items": [
       {
@@ -588,21 +634,18 @@
     "horizontal-alignment--center",
     "vertical-alignment--middle"
    ],
-   "background": {
-    "art": {
-     "kind": "none"
-    }
-   },
    "grid": {
     "mobile": {
      "rows": 32,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 18,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -629,11 +672,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"525a9fbd68244ab93065\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Camp Schedule</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\">Each day of our summer camp combines structured activities with opportunities to learn, create, and explore the community.</p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Program Hours: 10:00 AM - 2:30 PM  (Monday, Tuesday, Wednesday, Thursday)</strong></p><p style=\"white-space:pre-wrap;\"></p><h4 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Terrific Thursdays</h4><p class=\"rte-large\" style=\"white-space:pre-wrap;\">During our Summer Program, <strong>Terrific Thursdays</strong> are designed to give participants something special to look forward to, with activities that encourage friendship, socialization, independence, and FUN! Participants may enjoy community outings, themed activities, games, special events, recreational experiences, group projects, and opportunities to explore new places with their EduBud friends. Activities may vary each week depending on weather, scheduling, transportation, participant needs, and availability. Terrific Thursdays are all about getting out, trying new things, building confidence, and making amazing summer memories together!</p>"
     },
@@ -676,6 +721,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bca3575abe0ba69c016c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"bca3575abe0ba69c016c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2f71e4c63e52",
@@ -697,8 +743,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"bca3575abe0ba69c016c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": false
     }
    ]
   },
@@ -714,19 +759,40 @@
    ],
    "background": {
     "art": {
-     "kind": "gradient"
+     "kind": "gradient",
+     "images": [
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/390.jpg",
+       "width": 780,
+       "height": 2182,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/1024.jpg",
+       "width": 1536,
+       "height": 1034,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/1920.jpg",
+       "width": 1920,
+       "height": 956
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 22,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 14,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -753,11 +819,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"9ff47e1d201170e0685a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Frequently Asked Questions</h2>"
     },
@@ -798,11 +866,13 @@
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
       "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-padding": "initial",
       "--tweak-accordion-block-radius": "0px 0px 0px 0px",
       "--tweak-accordion-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4bd107c0ba263b8a44aa\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
      "type": "accordion",
      "items": [
       {
@@ -869,11 +939,13 @@
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
       "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-padding": "initial",
       "--tweak-accordion-block-radius": "0px 0px 0px 0px",
       "--tweak-accordion-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"417d7d39d9e6446b0f76\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
      "type": "accordion",
      "items": [
       {
@@ -919,12 +991,14 @@
     "mobile": {
      "rows": 22,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 12,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -951,11 +1025,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6d025aa3c681f977cea5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Get In Touch</h2>"
     },
@@ -982,11 +1058,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ce66860252d20b6e738a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">If you're interested in working with us, complete the form with a few details about your project. We'll review your message and get back to you within 48 hours.</p>"
     },
@@ -1013,6 +1091,7 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--form-block-padding": "initial",
       "--form-block-border-radius": "0px 0px 0px 0px",
       "--form-block-blend-mode": "normal",
       "--blur-value": "blur(15px)",
@@ -1029,6 +1108,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6343cc73ab16b3f01da2\"] { mix-blend-mode: var(--form-block-blend-mode\n    ); border-radius: var(--form-block-border-radius); }\n[data-block=\"6343cc73ab16b3f01da2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "form",
      "config": {
       "useFormsJs": true,
@@ -1110,6 +1190,7 @@
   },
   {
    "id": "6aa232ed8d256f6e84b81513",
+   "kind": "gallery",
    "theme": "",
    "classes": [
     "background-width--full-bleed",
@@ -1122,12 +1203,14 @@
     "mobile": {
      "rows": 1,
      "rowMin": "24px",
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     },
     "desktop": {
      "rows": 1,
      "scale": 0.0215,
-     "gap": 0
+     "gap": 0,
+     "colGap": 0
     }
    },
    "blocks": []

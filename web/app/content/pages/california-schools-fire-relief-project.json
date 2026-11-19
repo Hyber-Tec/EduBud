@@ -18,7 +18,26 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a9aed099e4d5b18c7709747/390.jpg",
+       "width": 780,
+       "height": 6177,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9aed099e4d5b18c7709747/1024.jpg",
+       "width": 1536,
+       "height": 1826,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9aed099e4d5b18c7709747/1920.jpg",
+       "width": 1920,
+       "height": 1553
+      }
+     ]
     }
    },
    "vars": {
@@ -28,12 +47,14 @@
     "mobile": {
      "rows": 84,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 28,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -60,11 +81,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"9b7136f28b0f6200b641\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"text-align: center; ; white-space:pre-wrap;\">California Schools Fire Relief Project</h1>"
     },
@@ -107,6 +130,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a7a7cb7e38eb22dc0e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"a7a7cb7e38eb22dc0e7c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/53e2753194e6",
@@ -128,8 +152,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a7a7cb7e38eb22dc0e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "c61d2d18936e2064bb95",
@@ -154,11 +177,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c61d2d18936e2064bb95\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h3 style=\"text-align: start; ; white-space:pre-wrap;\"><strong>Project Objective</strong></h3>"
     },
@@ -209,13 +234,15 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3676f6897edc720f20af\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p class=\"rte-large\" style=\"text-align: start; ; white-space:pre-wrap;\">This initiative was launched to provide support to <em>schools, teachers, and students</em> impacted by wildfires. Led by our dedicated California-based chapter teams, we work through donations and volunteer efforts to <span class=\"rte-text-highlight\"><strong>supply essential classroom resources, deliver emotional support programs, and help rebuild safe learning environments.</strong></span> Our commitment is to support affected communities in their recovery, ensuring that students can continue their education without interruption.</p>"
+     "html": "<p class=\"rte-large\" style=\"text-align: start; ; white-space:pre-wrap;\">This initiative was launched to provide support to <em>schools, teachers, and students</em> impacted by wildfires. Led by our dedicated California-based chapter teams, we work through donations and volunteer efforts to <span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><strong>supply essential classroom resources, deliver emotional support programs, and help rebuild safe learning environments.</strong></span> Our commitment is to support affected communities in their recovery, ensuring that students can continue their education without interruption.</p>"
     },
     {
      "id": "bed3ee93d1cd32550161",
@@ -240,11 +267,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bed3ee93d1cd32550161\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"text-align: start; ; white-space:pre-wrap;\" class=\"rte-large\">This initiative was led by our EduBud Irvine Chapter, which organized a successful can drive across nearby schools, <strong><em>collecting over 5,000 cans</em></strong> to donate to the <em>Family Forward</em> weekend food pantry. In addition, they <strong><em>raised more than $7,000</em></strong> to support students from families who lost their homes to fires.</p>"
     },
@@ -287,6 +316,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6b1f05f623f8bd946e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"6b1f05f623f8bd946e7c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/96d067ab7362",
@@ -308,8 +338,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"6b1f05f623f8bd946e7c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "acb91cbb51f74efc28ae",
@@ -350,6 +379,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"acb91cbb51f74efc28ae\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"acb91cbb51f74efc28ae\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2378e967d306",
@@ -371,8 +401,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"acb91cbb51f74efc28ae\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     },
     {
      "id": "282987d8888cad494cdd",
@@ -413,6 +442,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"282987d8888cad494cdd\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"282987d8888cad494cdd\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/3bb5b93b3168",
@@ -434,8 +464,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"282987d8888cad494cdd\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }"
+     "stretched": true
     }
    ]
   }

@@ -43,12 +43,14 @@
     "mobile": {
      "rows": 17,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 15,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -75,11 +77,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a45a5ab820e01a0c7d86\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--accent\">❋</span></h1>"
     },
@@ -106,11 +110,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5fa6384592288c97d74c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Bring EduBud to Your Community</h1>"
     },
@@ -149,6 +155,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d213e53be61c9efc77d4\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "button",
      "label": "Start A Chapter",
      "link": {
@@ -174,19 +181,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a849ab2564571243dd99383/390.jpg",
+       "width": 780,
+       "height": 3122,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a849ab2564571243dd99383/1024.jpg",
+       "width": 1536,
+       "height": 1499,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a849ab2564571243dd99383/1920.jpg",
+       "width": 1920,
+       "height": 1262
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 27,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 20,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -229,6 +257,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787153337924_17740\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1787153337924_17740-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1787153337924_17740-system_desktop); }\n[data-block=\"yui_3_17_2_1_1787153337924_17740\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/b15183ae1813",
@@ -250,8 +279,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"yui_3_17_2_1_1787153337924_17740\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1787153337924_17740-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1787153337924_17740-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "2fc8f87a90b69e4dc22a",
@@ -276,11 +304,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2fc8f87a90b69e4dc22a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Why Start an EduBud Chapter?</h2>"
     },
@@ -307,11 +337,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"16d6c690a8c80e8fc1e5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">An EduBud Chapter unites members in their school community to advance our mission and values through local initiatives. Our chapters work on a wide range of projects aimed at closing educational gaps through advocacy, education, and leadership.</h4>"
     },
@@ -338,11 +370,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"75d99008871fa4aff961\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><em>❋ COMMUNITY</em></h4>"
     },
@@ -369,11 +403,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"65a6c3d8098607a66097\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Community is built through connection, collaboration, and shared experiences. As an EduBud chapter leader, you’ll bring students and community members together while creating opportunities for service, partnership, and inclusion.</p>"
     },
@@ -400,11 +436,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"41c73b6e4002bf6f1c7a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><em>❋ LEADERSHIP</em></h4>"
     },
@@ -431,11 +469,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a94d094d3cd1d6d61878\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Leadership is more than guiding others. It’s inspiring action and creating change. By starting an EduBud chapter, you’ll develop real-world leadership skills while organizing initiatives, building community, and empowering others to lead.</p>"
     },
@@ -462,11 +502,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"35b916a73e30d946ba95\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><em>❋ IMPACT</em></h4>"
     },
@@ -493,11 +535,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3b79c3b86d5c2c265627\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Making an impact is about turning compassion into action. Through an EduBud chapter, you’ll create meaningful opportunities for individuals with disabilities while contributing to a more inclusive and connected community.</p>"
     },
@@ -524,11 +568,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"55e91d48e440a8758117\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><em>❋ GROWTH</em></h4>"
     },
@@ -555,11 +601,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"994e81a88a35981b7a9d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Growth comes from taking on new challenges and experiences. An EduBud chapter gives you the opportunity to build communication, teamwork, organization, and problem-solving skills while discovering your own strengths.</p>"
     }
@@ -579,12 +627,14 @@
     "mobile": {
      "rows": 44,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 26,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -611,11 +661,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"64a7fa0bb092c0816604\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h1 style=\"text-align: center; white-space: pre-wrap\">Our Community</h1>"
     },
@@ -655,9 +707,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ab893b04722f74484cbc\"] .image-frame { overflow: hidden; clip-path: url(#ab893b04722f74484cbc-system_desktop); -webkit-clip-path: url(#ab893b04722f74484cbc-system_desktop); }\n[data-block=\"ab893b04722f74484cbc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/b441b1d9a822",
@@ -679,8 +745,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"ab893b04722f74484cbc\"] .image-frame { overflow: hidden; clip-path: url(#ab893b04722f74484cbc-system_desktop); -webkit-clip-path: url(#ab893b04722f74484cbc-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "7e4080568b1f13f82f82",
@@ -705,11 +770,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7e4080568b1f13f82f82\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Alpharetta High</h4>"
     },
@@ -736,11 +803,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"31753b19a28eee0c1296\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Alpharetta, GA</p>"
     },
@@ -780,9 +849,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"430e0ec080d63521fc83\"] .image-frame { overflow: hidden; clip-path: url(#430e0ec080d63521fc83-system_desktop); -webkit-clip-path: url(#430e0ec080d63521fc83-system_desktop); }\n[data-block=\"430e0ec080d63521fc83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2b23789117f0",
@@ -804,8 +887,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"430e0ec080d63521fc83\"] .image-frame { overflow: hidden; clip-path: url(#430e0ec080d63521fc83-system_desktop); -webkit-clip-path: url(#430e0ec080d63521fc83-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "671f2d2159b318078ee8",
@@ -830,11 +912,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"671f2d2159b318078ee8\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Buford High </h4>"
     },
@@ -861,11 +945,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2d5c8a68f36b22436a0d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Buford, GA</p>"
     },
@@ -905,9 +991,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2588f370a649780b2133\"] .image-frame { overflow: hidden; clip-path: url(#2588f370a649780b2133-system_desktop); -webkit-clip-path: url(#2588f370a649780b2133-system_desktop); }\n[data-block=\"2588f370a649780b2133\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/58574923e15d",
@@ -929,8 +1029,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"2588f370a649780b2133\"] .image-frame { overflow: hidden; clip-path: url(#2588f370a649780b2133-system_desktop); -webkit-clip-path: url(#2588f370a649780b2133-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "6b7a80d88c5575ef4bb1",
@@ -955,11 +1054,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"6b7a80d88c5575ef4bb1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Chamblee High </h4>"
     },
@@ -986,11 +1087,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2f0662c919170105af3a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Chamblee, GA</p>"
     },
@@ -1030,9 +1133,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1cff90d85d0d1a033b7d\"] .image-frame { overflow: hidden; clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); -webkit-clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); }\n[data-block=\"1cff90d85d0d1a033b7d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2297c219190c",
@@ -1054,8 +1171,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"1cff90d85d0d1a033b7d\"] .image-frame { overflow: hidden; clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); -webkit-clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "62a9b4d93a970ac8ea71",
@@ -1080,11 +1196,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"62a9b4d93a970ac8ea71\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Johns Creek High </h4>"
     },
@@ -1111,11 +1229,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"425fbf2e87fa5cc18681\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Johns Creek, GA</p>"
     },
@@ -1155,9 +1275,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4a7bcd095a8495affc3e\"] .image-frame { overflow: hidden; clip-path: url(#4a7bcd095a8495affc3e-system_desktop); -webkit-clip-path: url(#4a7bcd095a8495affc3e-system_desktop); }\n[data-block=\"4a7bcd095a8495affc3e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/babd8fbad832",
@@ -1179,8 +1313,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"4a7bcd095a8495affc3e\"] .image-frame { overflow: hidden; clip-path: url(#4a7bcd095a8495affc3e-system_desktop); -webkit-clip-path: url(#4a7bcd095a8495affc3e-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "f2a32cf42583618ecc81",
@@ -1205,11 +1338,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f2a32cf42583618ecc81\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Lambert High</h4>"
     },
@@ -1236,11 +1371,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a0aac21ec04d0e2090ea\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Suwanee, GA</p>"
     },
@@ -1280,9 +1417,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c2ff7e18ef679c01ad8e\"] .image-frame { overflow: hidden; clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); -webkit-clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); }\n[data-block=\"c2ff7e18ef679c01ad8e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/f05b9e1440b3",
@@ -1304,8 +1455,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"c2ff7e18ef679c01ad8e\"] .image-frame { overflow: hidden; clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); -webkit-clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "937f19fce21e7fba801b",
@@ -1330,11 +1480,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"937f19fce21e7fba801b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\"><strong>North Gwinnett High</strong></h4>"
     },
@@ -1361,11 +1513,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"11d6e75db75fc1b505f5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Suwanee, GA</p>"
     },
@@ -1405,9 +1559,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0cb163d5f385d6e7007c\"] .image-frame { overflow: hidden; clip-path: url(#0cb163d5f385d6e7007c-system_desktop); -webkit-clip-path: url(#0cb163d5f385d6e7007c-system_desktop); }\n[data-block=\"0cb163d5f385d6e7007c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/ae029b45d129",
@@ -1429,8 +1597,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"0cb163d5f385d6e7007c\"] .image-frame { overflow: hidden; clip-path: url(#0cb163d5f385d6e7007c-system_desktop); -webkit-clip-path: url(#0cb163d5f385d6e7007c-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "4ed19119a4cf00cb2494",
@@ -1455,11 +1622,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4ed19119a4cf00cb2494\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Peachtree Ridge High</h4>"
     },
@@ -1486,11 +1655,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"13810e19f49a88b0a4a5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Suwanee, GA</p>"
     }
@@ -1506,21 +1677,18 @@
     "horizontal-alignment--center",
     "vertical-alignment--middle"
    ],
-   "background": {
-    "art": {
-     "kind": "none"
-    }
-   },
    "grid": {
     "mobile": {
      "rows": 38,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 20,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1547,11 +1715,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0d2bc0deb179d21c16d0\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Our GA State Student Leadership Team</h2>"
     },
@@ -1594,6 +1764,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788464483756_22158\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"yui_3_17_2_1_1788464483756_22158\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e4a8b0748c95",
@@ -1615,8 +1786,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"yui_3_17_2_1_1788464483756_22158\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "06cf4da8affd4ec58db3",
@@ -1641,11 +1811,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"06cf4da8affd4ec58db3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Elise Park</h4>"
     },
@@ -1672,11 +1844,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0dcd7af7c1019cfbb04d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">GA State President</p>"
     },
@@ -1719,6 +1893,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f6da392964369f541f8f\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"f6da392964369f541f8f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/9162f1e5ffb2",
@@ -1740,8 +1915,7 @@
        0.8000500031251954
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"f6da392964369f541f8f\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "97689d75d05adfba7a93",
@@ -1766,11 +1940,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"97689d75d05adfba7a93\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">GA State Vice President of Chapter Relations &amp; Programs</p>"
     },
@@ -1797,11 +1973,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bcc1948c1d900f295ae9\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Kevin Lee</h4>"
     },
@@ -1844,6 +2022,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ec9277efa69fc774152a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"ec9277efa69fc774152a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/af53359585d5",
@@ -1865,8 +2044,7 @@
        0.8160510031876993
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ec9277efa69fc774152a\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }"
+     "stretched": true
     },
     {
      "id": "8a3c4d4a5e974ccf3b60",
@@ -1891,11 +2069,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"8a3c4d4a5e974ccf3b60\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President of Outreach &amp; Communications</p>"
     },
@@ -1922,11 +2102,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5cd0dddcf3b3e2b51062\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Lilly (Hyerin ) Roh</h4>"
     }
@@ -1944,19 +2126,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a85df0cffc83c62215189aa/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85df0cffc83c62215189aa/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85df0cffc83c62215189aa/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -1983,11 +2186,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"14dc6e9e12d18be506d7\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Alpharetta High School</h2>"
     },
@@ -2030,6 +2235,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787158264733_31605\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1787158264733_31605-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1787158264733_31605-system_desktop); }\n[data-block=\"yui_3_17_2_1_1787158264733_31605\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/ff5dd6d490f8",
@@ -2051,8 +2257,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"yui_3_17_2_1_1787158264733_31605\"] .image-frame { overflow: hidden; clip-path: url(#yui_3_17_2_1_1787158264733_31605-system_desktop); -webkit-clip-path: url(#yui_3_17_2_1_1787158264733_31605-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "32cb58fa187930efd1f0",
@@ -2090,9 +2295,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"32cb58fa187930efd1f0\"] .image-frame { overflow: hidden; clip-path: url(#32cb58fa187930efd1f0-system_desktop); -webkit-clip-path: url(#32cb58fa187930efd1f0-system_desktop); }\n[data-block=\"32cb58fa187930efd1f0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/a2db537fb21f",
@@ -2114,8 +2333,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"32cb58fa187930efd1f0\"] .image-frame { overflow: hidden; clip-path: url(#32cb58fa187930efd1f0-system_desktop); -webkit-clip-path: url(#32cb58fa187930efd1f0-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "yui_3_17_2_1_1787158264733_33599",
@@ -2141,6 +2359,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2157,6 +2376,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787158264733_33599\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1787158264733_33599\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Reagan Gunnels </h4>"
     },
@@ -2199,6 +2419,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"36cdcc0d0a35b2db7c31\"] .image-frame { overflow: hidden; clip-path: url(#36cdcc0d0a35b2db7c31-system_desktop); -webkit-clip-path: url(#36cdcc0d0a35b2db7c31-system_desktop); }\n[data-block=\"36cdcc0d0a35b2db7c31\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/13565743c7ce",
@@ -2220,8 +2441,7 @@
        0.13600850053128322
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"36cdcc0d0a35b2db7c31\"] .image-frame { overflow: hidden; clip-path: url(#36cdcc0d0a35b2db7c31-system_desktop); -webkit-clip-path: url(#36cdcc0d0a35b2db7c31-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "b51c86234bf063fc1103",
@@ -2247,6 +2467,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2263,6 +2484,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b51c86234bf063fc1103\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"b51c86234bf063fc1103\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -2305,6 +2527,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a676dafd07f32927701a\"] .image-frame { overflow: hidden; clip-path: url(#a676dafd07f32927701a-system_desktop); -webkit-clip-path: url(#a676dafd07f32927701a-system_desktop); }\n[data-block=\"a676dafd07f32927701a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e5964d846680",
@@ -2326,8 +2549,7 @@
        0.08001000125015623
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a676dafd07f32927701a\"] .image-frame { overflow: hidden; clip-path: url(#a676dafd07f32927701a-system_desktop); -webkit-clip-path: url(#a676dafd07f32927701a-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "d758703088c44878cd6e",
@@ -2353,6 +2575,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2369,6 +2592,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d758703088c44878cd6e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"d758703088c44878cd6e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Oliviah Moten</h4>"
     },
@@ -2396,6 +2620,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2412,6 +2637,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"00d9511fba6748edb950\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"00d9511fba6748edb950\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Shai Dayan</h4>"
     },
@@ -2439,6 +2665,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2455,6 +2682,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c4c69b295793cee56e75\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c4c69b295793cee56e75\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -2482,6 +2710,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2498,6 +2727,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2bad86a4bb081ee0fd8a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"2bad86a4bb081ee0fd8a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }
@@ -2515,19 +2745,40 @@
    ],
    "background": {
     "art": {
-     "kind": "surface"
+     "kind": "surface",
+     "images": [
+      {
+       "src": "/media/art/6a85e8f15f15d00cfa235083/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85e8f15f15d00cfa235083/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85e8f15f15d00cfa235083/1920.jpg",
+       "width": 1920,
+       "height": 803
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 11,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -2554,11 +2805,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"24cc8f761ada82df5996\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Buford High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"></p>"
     },
@@ -2601,6 +2854,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ab70e86ba7a7fa76c197\"] .image-frame { overflow: hidden; clip-path: url(#ab70e86ba7a7fa76c197-system_desktop); -webkit-clip-path: url(#ab70e86ba7a7fa76c197-system_desktop); }\n[data-block=\"ab70e86ba7a7fa76c197\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/63a038faee02",
@@ -2622,8 +2876,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ab70e86ba7a7fa76c197\"] .image-frame { overflow: hidden; clip-path: url(#ab70e86ba7a7fa76c197-system_desktop); -webkit-clip-path: url(#ab70e86ba7a7fa76c197-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "2f342381d22d61467423",
@@ -2661,9 +2914,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2f342381d22d61467423\"] .image-frame { overflow: hidden; clip-path: url(#2f342381d22d61467423-system_desktop); -webkit-clip-path: url(#2f342381d22d61467423-system_desktop); }\n[data-block=\"2f342381d22d61467423\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d2fd6cbd024f",
@@ -2685,8 +2952,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"2f342381d22d61467423\"] .image-frame { overflow: hidden; clip-path: url(#2f342381d22d61467423-system_desktop); -webkit-clip-path: url(#2f342381d22d61467423-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "bdd36b0143813ac043a6",
@@ -2712,6 +2978,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2728,6 +2995,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bdd36b0143813ac043a6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"bdd36b0143813ac043a6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Shanaya Patel</h4>"
     },
@@ -2770,6 +3038,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bcabfaa0a56aa154598f\"] .image-frame { overflow: hidden; clip-path: url(#bcabfaa0a56aa154598f-system_desktop); -webkit-clip-path: url(#bcabfaa0a56aa154598f-system_desktop); }\n[data-block=\"bcabfaa0a56aa154598f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/699bbc780b10",
@@ -2791,8 +3060,7 @@
        0
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"bcabfaa0a56aa154598f\"] .image-frame { overflow: hidden; clip-path: url(#bcabfaa0a56aa154598f-system_desktop); -webkit-clip-path: url(#bcabfaa0a56aa154598f-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "aca0d60849ccd21152f2",
@@ -2818,6 +3086,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2834,6 +3103,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"aca0d60849ccd21152f2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"aca0d60849ccd21152f2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -2876,6 +3146,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ae75f20ae64c7bdb1562\"] .image-frame { overflow: hidden; clip-path: url(#ae75f20ae64c7bdb1562-system_desktop); -webkit-clip-path: url(#ae75f20ae64c7bdb1562-system_desktop); }\n[data-block=\"ae75f20ae64c7bdb1562\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/ebf9d1807e2c",
@@ -2897,8 +3168,7 @@
        0.05600350021876366
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ae75f20ae64c7bdb1562\"] .image-frame { overflow: hidden; clip-path: url(#ae75f20ae64c7bdb1562-system_desktop); -webkit-clip-path: url(#ae75f20ae64c7bdb1562-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "d480fa42e90755947975",
@@ -2924,6 +3194,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2940,6 +3211,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d480fa42e90755947975\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"d480fa42e90755947975\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Amyra Noorani</h4>"
     },
@@ -2967,6 +3239,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -2983,6 +3256,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ef7790d9e786235d2aea\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"ef7790d9e786235d2aea\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -3010,6 +3284,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3026,6 +3301,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5ad88b2776358c287bde\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"5ad88b2776358c287bde\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Angela Son</h4>"
     },
@@ -3053,6 +3329,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3069,6 +3346,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"760d879522ca599a628c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"760d879522ca599a628c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }
@@ -3086,19 +3364,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a85ef2d2a475456919f7669/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85ef2d2a475456919f7669/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85ef2d2a475456919f7669/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -3125,11 +3424,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"56cec6f52acc2b9f90b5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Chamblee High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"></p>"
     },
@@ -3172,6 +3473,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0b0e4440257f580633e9\"] .image-frame { overflow: hidden; clip-path: url(#0b0e4440257f580633e9-system_desktop); -webkit-clip-path: url(#0b0e4440257f580633e9-system_desktop); }\n[data-block=\"0b0e4440257f580633e9\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/196975a44a2d",
@@ -3193,8 +3495,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"0b0e4440257f580633e9\"] .image-frame { overflow: hidden; clip-path: url(#0b0e4440257f580633e9-system_desktop); -webkit-clip-path: url(#0b0e4440257f580633e9-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "c68253b79cc419c35141",
@@ -3232,9 +3533,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c68253b79cc419c35141\"] .image-frame { overflow: hidden; clip-path: url(#c68253b79cc419c35141-system_desktop); -webkit-clip-path: url(#c68253b79cc419c35141-system_desktop); }\n[data-block=\"c68253b79cc419c35141\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/39cce501acf3",
@@ -3256,8 +3571,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"c68253b79cc419c35141\"] .image-frame { overflow: hidden; clip-path: url(#c68253b79cc419c35141-system_desktop); -webkit-clip-path: url(#c68253b79cc419c35141-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "4366e6e7201e37f9a9e5",
@@ -3283,6 +3597,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3299,6 +3614,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4366e6e7201e37f9a9e5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"4366e6e7201e37f9a9e5\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Soyee Min</h4>"
     },
@@ -3326,6 +3642,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3342,6 +3659,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"0da9b01471623e8fa736\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"0da9b01471623e8fa736\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -3369,6 +3687,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3385,6 +3704,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"98e542d3bbd94de53553\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"98e542d3bbd94de53553\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Angela Son</h4>"
     },
@@ -3412,6 +3732,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3428,6 +3749,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4cf4dcd231874b7c8168\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"4cf4dcd231874b7c8168\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -3455,6 +3777,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3471,6 +3794,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"e5738275615e82e9e202\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e5738275615e82e9e202\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ruhi Yadwad</h4>"
     },
@@ -3498,6 +3822,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3514,6 +3839,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"57b45e338b28a6fa0120\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"57b45e338b28a6fa0120\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     },
@@ -3556,6 +3882,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"1a957f2f3c0376c49317\"] .image-frame { overflow: hidden; clip-path: url(#1a957f2f3c0376c49317-system_desktop); -webkit-clip-path: url(#1a957f2f3c0376c49317-system_desktop); }\n[data-block=\"1a957f2f3c0376c49317\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d4cb553c2523",
@@ -3577,8 +3904,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"1a957f2f3c0376c49317\"] .image-frame { overflow: hidden; clip-path: url(#1a957f2f3c0376c49317-system_desktop); -webkit-clip-path: url(#1a957f2f3c0376c49317-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "2fafa94931f937af455d",
@@ -3619,6 +3945,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2fafa94931f937af455d\"] .image-frame { overflow: hidden; clip-path: url(#2fafa94931f937af455d-system_desktop); -webkit-clip-path: url(#2fafa94931f937af455d-system_desktop); }\n[data-block=\"2fafa94931f937af455d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/309077f73e4e",
@@ -3640,8 +3967,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"2fafa94931f937af455d\"] .image-frame { overflow: hidden; clip-path: url(#2fafa94931f937af455d-system_desktop); -webkit-clip-path: url(#2fafa94931f937af455d-system_desktop); }"
+     "stretched": true
     }
    ]
   },
@@ -3657,19 +3983,40 @@
    ],
    "background": {
     "art": {
-     "kind": "isometric"
+     "kind": "isometric",
+     "images": [
+      {
+       "src": "/media/art/6a85f0722da7474915f88f37/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85f0722da7474915f88f37/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85f0722da7474915f88f37/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -3696,11 +4043,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"48d8bfe5b8a642e9003d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Johns Creek High School</h2>"
     },
@@ -3743,6 +4092,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d2c57852ded57d04808a\"] .image-frame { overflow: hidden; clip-path: url(#d2c57852ded57d04808a-system_desktop); -webkit-clip-path: url(#d2c57852ded57d04808a-system_desktop); }\n[data-block=\"d2c57852ded57d04808a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/0d537657cc9e",
@@ -3764,8 +4114,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"d2c57852ded57d04808a\"] .image-frame { overflow: hidden; clip-path: url(#d2c57852ded57d04808a-system_desktop); -webkit-clip-path: url(#d2c57852ded57d04808a-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "11280c5f95f515f393e0",
@@ -3803,9 +4152,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"11280c5f95f515f393e0\"] .image-frame { overflow: hidden; clip-path: url(#11280c5f95f515f393e0-system_desktop); -webkit-clip-path: url(#11280c5f95f515f393e0-system_desktop); }\n[data-block=\"11280c5f95f515f393e0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d5f2901dcd2b",
@@ -3827,8 +4190,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"11280c5f95f515f393e0\"] .image-frame { overflow: hidden; clip-path: url(#11280c5f95f515f393e0-system_desktop); -webkit-clip-path: url(#11280c5f95f515f393e0-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "01d9ab182be257b502db",
@@ -3854,6 +4216,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3870,6 +4233,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"01d9ab182be257b502db\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"01d9ab182be257b502db\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Caren Lee</h4>"
     },
@@ -3897,6 +4261,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -3913,6 +4278,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d0ff4a98a9e7b050f69d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"d0ff4a98a9e7b050f69d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -3955,6 +4321,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"36d7f49ac8f0a61d8de5\"] .image-frame { overflow: hidden; clip-path: url(#36d7f49ac8f0a61d8de5-system_desktop); -webkit-clip-path: url(#36d7f49ac8f0a61d8de5-system_desktop); }\n[data-block=\"36d7f49ac8f0a61d8de5\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/44be77e55586",
@@ -3976,8 +4343,7 @@
        1
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"36d7f49ac8f0a61d8de5\"] .image-frame { overflow: hidden; clip-path: url(#36d7f49ac8f0a61d8de5-system_desktop); -webkit-clip-path: url(#36d7f49ac8f0a61d8de5-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "13e2d5057b557e206a14",
@@ -4018,6 +4384,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"13e2d5057b557e206a14\"] .image-frame { overflow: hidden; clip-path: url(#13e2d5057b557e206a14-system_desktop); -webkit-clip-path: url(#13e2d5057b557e206a14-system_desktop); }\n[data-block=\"13e2d5057b557e206a14\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/f7ef070dbc92",
@@ -4039,8 +4406,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"13e2d5057b557e206a14\"] .image-frame { overflow: hidden; clip-path: url(#13e2d5057b557e206a14-system_desktop); -webkit-clip-path: url(#13e2d5057b557e206a14-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "5b08062fc0fa4004e070",
@@ -4066,6 +4432,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4082,6 +4449,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5b08062fc0fa4004e070\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"5b08062fc0fa4004e070\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Grace Kim</h4>"
     },
@@ -4109,6 +4477,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4125,6 +4494,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c2dd6d7241526b0361f1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c2dd6d7241526b0361f1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -4152,6 +4522,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4168,6 +4539,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"22d7dec65717d74fb45b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"22d7dec65717d74fb45b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Justin Kim</h4>"
     },
@@ -4195,6 +4567,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4211,6 +4584,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"7b5130b0b3e523f3daa3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"7b5130b0b3e523f3daa3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }
@@ -4228,19 +4602,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a85f1384654205d1950cfc4/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85f1384654205d1950cfc4/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85f1384654205d1950cfc4/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -4267,11 +4662,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"58bd55f9b303a4d82002\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Lambert High School</h2>"
     },
@@ -4314,6 +4711,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a5c01acc3e27b6928859\"] .image-frame { overflow: hidden; clip-path: url(#a5c01acc3e27b6928859-system_desktop); -webkit-clip-path: url(#a5c01acc3e27b6928859-system_desktop); }\n[data-block=\"a5c01acc3e27b6928859\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/688944d2d445",
@@ -4335,8 +4733,7 @@
        0.28800000000000003
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a5c01acc3e27b6928859\"] .image-frame { overflow: hidden; clip-path: url(#a5c01acc3e27b6928859-system_desktop); -webkit-clip-path: url(#a5c01acc3e27b6928859-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "76055851aafa90a70d00",
@@ -4374,9 +4771,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"76055851aafa90a70d00\"] .image-frame { overflow: hidden; clip-path: url(#76055851aafa90a70d00-system_desktop); -webkit-clip-path: url(#76055851aafa90a70d00-system_desktop); }\n[data-block=\"76055851aafa90a70d00\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/e47065203372",
@@ -4398,8 +4809,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"76055851aafa90a70d00\"] .image-frame { overflow: hidden; clip-path: url(#76055851aafa90a70d00-system_desktop); -webkit-clip-path: url(#76055851aafa90a70d00-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "3b906797418de22fd236",
@@ -4425,6 +4835,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4441,6 +4852,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"3b906797418de22fd236\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"3b906797418de22fd236\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Kevin Lee</h4>"
     },
@@ -4483,6 +4895,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"d67eaef2b0dfb3cb1beb\"] .image-frame { overflow: hidden; clip-path: url(#d67eaef2b0dfb3cb1beb-system_desktop); -webkit-clip-path: url(#d67eaef2b0dfb3cb1beb-system_desktop); }\n[data-block=\"d67eaef2b0dfb3cb1beb\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/cfb69ae2577a",
@@ -4504,8 +4917,7 @@
        0.21601350084380277
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"d67eaef2b0dfb3cb1beb\"] .image-frame { overflow: hidden; clip-path: url(#d67eaef2b0dfb3cb1beb-system_desktop); -webkit-clip-path: url(#d67eaef2b0dfb3cb1beb-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "bea8d5a0f2b73150d3e4",
@@ -4531,6 +4943,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4547,6 +4960,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"bea8d5a0f2b73150d3e4\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"bea8d5a0f2b73150d3e4\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -4589,6 +5003,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ed6da92b6e372968534a\"] .image-frame { overflow: hidden; clip-path: url(#ed6da92b6e372968534a-system_desktop); -webkit-clip-path: url(#ed6da92b6e372968534a-system_desktop); }\n[data-block=\"ed6da92b6e372968534a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/5007ec8b2653",
@@ -4610,8 +5025,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"ed6da92b6e372968534a\"] .image-frame { overflow: hidden; clip-path: url(#ed6da92b6e372968534a-system_desktop); -webkit-clip-path: url(#ed6da92b6e372968534a-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "c6116ae9bd5f76ea6396",
@@ -4637,6 +5051,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4653,6 +5068,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c6116ae9bd5f76ea6396\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c6116ae9bd5f76ea6396\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Lilly (Hyerin) Roh</h4>"
     },
@@ -4680,6 +5096,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4696,6 +5113,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5df838d9d2e469d02039\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"5df838d9d2e469d02039\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -4723,6 +5141,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4739,6 +5158,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"35344070c7f7e0e974ea\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"35344070c7f7e0e974ea\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ryan Koh</h4>"
     },
@@ -4766,6 +5186,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -4782,6 +5203,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ca6ab835787c64e5c86d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"ca6ab835787c64e5c86d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }
@@ -4799,19 +5221,40 @@
    ],
    "background": {
     "art": {
-     "kind": "isometric"
+     "kind": "isometric",
+     "images": [
+      {
+       "src": "/media/art/6a85f2152da7474915f91534/390.jpg",
+       "width": 780,
+       "height": 1686,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85f2152da7474915f91534/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85f2152da7474915f91534/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -4838,11 +5281,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2a2ecc76a56230ff00a5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">North Gwinnett High School</h2>"
     },
@@ -4885,6 +5330,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"4edb254d86dcbefb0955\"] .image-frame { overflow: hidden; clip-path: url(#4edb254d86dcbefb0955-system_desktop); -webkit-clip-path: url(#4edb254d86dcbefb0955-system_desktop); }\n[data-block=\"4edb254d86dcbefb0955\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/51d92c29cc59",
@@ -4906,8 +5352,7 @@
        0.17600000000000005
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"4edb254d86dcbefb0955\"] .image-frame { overflow: hidden; clip-path: url(#4edb254d86dcbefb0955-system_desktop); -webkit-clip-path: url(#4edb254d86dcbefb0955-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "a4a9dab7cbc55de23328",
@@ -4945,9 +5390,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a4a9dab7cbc55de23328\"] .image-frame { overflow: hidden; clip-path: url(#a4a9dab7cbc55de23328-system_desktop); -webkit-clip-path: url(#a4a9dab7cbc55de23328-system_desktop); }\n[data-block=\"a4a9dab7cbc55de23328\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/4b77ff8bb392",
@@ -4969,8 +5428,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"a4a9dab7cbc55de23328\"] .image-frame { overflow: hidden; clip-path: url(#a4a9dab7cbc55de23328-system_desktop); -webkit-clip-path: url(#a4a9dab7cbc55de23328-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "f7549bf1fffd4b76a4f4",
@@ -4996,6 +5454,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5012,6 +5471,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f7549bf1fffd4b76a4f4\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"f7549bf1fffd4b76a4f4\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Alicia Lee</h4>"
     },
@@ -5054,6 +5514,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"49beff8cd730f39924ce\"] .image-frame { overflow: hidden; clip-path: url(#49beff8cd730f39924ce-system_desktop); -webkit-clip-path: url(#49beff8cd730f39924ce-system_desktop); }\n[data-block=\"49beff8cd730f39924ce\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/2ec76bb3cff7",
@@ -5075,8 +5536,7 @@
        0.23199999999999998
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"49beff8cd730f39924ce\"] .image-frame { overflow: hidden; clip-path: url(#49beff8cd730f39924ce-system_desktop); -webkit-clip-path: url(#49beff8cd730f39924ce-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "b871d76d8f11f950ee80",
@@ -5102,6 +5562,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5118,6 +5579,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"b871d76d8f11f950ee80\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"b871d76d8f11f950ee80\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -5160,6 +5622,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"a2312ae7c163cfcfaad3\"] .image-frame { overflow: hidden; clip-path: url(#a2312ae7c163cfcfaad3-system_desktop); -webkit-clip-path: url(#a2312ae7c163cfcfaad3-system_desktop); }\n[data-block=\"a2312ae7c163cfcfaad3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/d478ea8a934e",
@@ -5181,8 +5644,7 @@
        0.29600000000000004
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"a2312ae7c163cfcfaad3\"] .image-frame { overflow: hidden; clip-path: url(#a2312ae7c163cfcfaad3-system_desktop); -webkit-clip-path: url(#a2312ae7c163cfcfaad3-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "857bcebf088662402a7f",
@@ -5208,6 +5670,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5224,6 +5687,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"857bcebf088662402a7f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"857bcebf088662402a7f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Chloe (Jiho) Park</h4>"
     },
@@ -5251,6 +5715,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5267,6 +5732,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"45381b67bdc93e3d607e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"45381b67bdc93e3d607e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -5294,6 +5760,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5310,6 +5777,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"71205ca5f8e04c1194a1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"71205ca5f8e04c1194a1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Heidi Kerns</h4>"
     },
@@ -5337,6 +5805,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5353,6 +5822,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"5a4ce07bf592385610d2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"5a4ce07bf592385610d2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }
@@ -5370,19 +5840,40 @@
    ],
    "background": {
     "art": {
-     "kind": "conic"
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a85f2ec6242666d3bd792e1/390.jpg",
+       "width": 780,
+       "height": 1734,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a85f2ec6242666d3bd792e1/1024.jpg",
+       "width": 1536,
+       "height": 891,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a85f2ec6242666d3bd792e1/1920.jpg",
+       "width": 1920,
+       "height": 752
+      }
+     ]
     }
    },
    "grid": {
     "mobile": {
      "rows": 21,
      "rowMin": "24px",
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     },
     "desktop": {
      "rows": 10,
      "scale": 0.0215,
-     "gap": 11
+     "gap": 11,
+     "colGap": 11
     }
    },
    "blocks": [
@@ -5409,11 +5900,13 @@
      "vars": {
       "--stroke-style": "none",
       "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f3822748bee8de570e74\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Peachtree Ridge High School</h2>"
     },
@@ -5456,6 +5949,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"f644547b67ef843c9a6a\"] .image-frame { overflow: hidden; clip-path: url(#f644547b67ef843c9a6a-system_desktop); -webkit-clip-path: url(#f644547b67ef843c9a6a-system_desktop); }\n[data-block=\"f644547b67ef843c9a6a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/a71c9e7ac9d4",
@@ -5477,8 +5971,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"f644547b67ef843c9a6a\"] .image-frame { overflow: hidden; clip-path: url(#f644547b67ef843c9a6a-system_desktop); -webkit-clip-path: url(#f644547b67ef843c9a6a-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "2ca43063eea4c0fded3f",
@@ -5516,9 +6009,23 @@
       "--skew-y": "0deg",
       "--origin-x": "50%",
       "--origin-y": "50%",
-      "--block-transform": "none"
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
      },
      "varsMobile": {},
+     "css": "[data-block=\"2ca43063eea4c0fded3f\"] .image-frame { overflow: hidden; clip-path: url(#2ca43063eea4c0fded3f-system_desktop); -webkit-clip-path: url(#2ca43063eea4c0fded3f-system_desktop); }\n[data-block=\"2ca43063eea4c0fded3f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/82842a618c31",
@@ -5540,8 +6047,7 @@
        0.5
       ]
      },
-     "stretched": false,
-     "css": "[data-block=\"2ca43063eea4c0fded3f\"] .image-frame { overflow: hidden; clip-path: url(#2ca43063eea4c0fded3f-system_desktop); -webkit-clip-path: url(#2ca43063eea4c0fded3f-system_desktop); }"
+     "stretched": false
     },
     {
      "id": "80442f25f01415708db3",
@@ -5567,6 +6073,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5583,6 +6090,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"80442f25f01415708db3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"80442f25f01415708db3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Eyan Gribble</h4>"
     },
@@ -5625,6 +6133,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"821efb74d7cca2431ec6\"] .image-frame { overflow: hidden; clip-path: url(#821efb74d7cca2431ec6-system_desktop); -webkit-clip-path: url(#821efb74d7cca2431ec6-system_desktop); }\n[data-block=\"821efb74d7cca2431ec6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/da6e2bb04eb9",
@@ -5646,8 +6155,7 @@
        0.352022001375086
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"821efb74d7cca2431ec6\"] .image-frame { overflow: hidden; clip-path: url(#821efb74d7cca2431ec6-system_desktop); -webkit-clip-path: url(#821efb74d7cca2431ec6-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "26276cfa4d8843ec3e78",
@@ -5673,6 +6181,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5689,6 +6198,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"26276cfa4d8843ec3e78\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"26276cfa4d8843ec3e78\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">President</p>"
     },
@@ -5731,6 +6241,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"656c5aa4bd9318c6138b\"] .image-frame { overflow: hidden; clip-path: url(#656c5aa4bd9318c6138b-system_desktop); -webkit-clip-path: url(#656c5aa4bd9318c6138b-system_desktop); }\n[data-block=\"656c5aa4bd9318c6138b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "image",
      "picture": {
       "base": "/media/70edc2e66aa6",
@@ -5752,8 +6263,7 @@
        0.5
       ]
      },
-     "stretched": true,
-     "css": "[data-block=\"656c5aa4bd9318c6138b\"] .image-frame { overflow: hidden; clip-path: url(#656c5aa4bd9318c6138b-system_desktop); -webkit-clip-path: url(#656c5aa4bd9318c6138b-system_desktop); }"
+     "stretched": true
     },
     {
      "id": "c90aeb2042ce457516cb",
@@ -5779,6 +6289,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5795,6 +6306,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c90aeb2042ce457516cb\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c90aeb2042ce457516cb\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Chloe Nguyen</h4>"
     },
@@ -5822,6 +6334,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5838,6 +6351,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"c84db3b13d01e564040b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c84db3b13d01e564040b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Vice President</p>"
     },
@@ -5865,6 +6379,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5881,6 +6396,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"ebba528abb155a7cf5f6\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"ebba528abb155a7cf5f6\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<h4 style=\"white-space:pre-wrap;\">Ethan Yang</h4>"
     },
@@ -5908,6 +6424,7 @@
       "--stroke-style": "none",
       "--stroke-thickness": "2px",
       "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
       "--tweak-text-block-radius": "0px 0px 0px 0px",
       "--tweak-text-block-blend": "normal",
       "--blur-value": "blur(15px)",
@@ -5924,6 +6441,7 @@
       "--block-transform": "none"
      },
      "varsMobile": {},
+     "css": "[data-block=\"38d39016a87257159457\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"38d39016a87257159457\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
      "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Secretary</p>"
     }

@@ -2,6 +2,8 @@ import type { CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
 import { Block } from './Block'
 import { focal, Img } from './Picture'
+import { GallerySection } from './sections/GallerySection'
+import { ListSection } from './sections/ListSection'
 
 type Vars = CSSProperties & Record<`--${string}`, string | number | undefined>
 
@@ -51,10 +53,14 @@ function Background({ section }: { section: SectionData }) {
           style={{ filter: bg.video.filter }}
         />
       )}
-      {bg.art?.desktop && bg.art.mobile && (
+      {bg.art && bg.art.images.length > 0 && (
         <picture>
-          <source media="(max-width: 767px)" srcSet={`${bg.art.mobile.base}/${bg.art.mobile.widths.at(-1)}.${bg.art.mobile.ext}`} />
-          <img className="section-background-media" src={`${bg.art.desktop.base}/${bg.art.desktop.widths.at(-1)}.${bg.art.desktop.ext}`} alt="" />
+          {bg.art.images
+            .filter((i) => i.upTo)
+            .map((i) => (
+              <source key={i.src} media={`(max-width: ${i.upTo}px)`} srcSet={i.src} />
+            ))}
+          <img className="section-background-media" src={bg.art.images[bg.art.images.length - 1].src} alt="" loading="lazy" decoding="async" />
         </picture>
       )}
       {bg.overlayOpacity !== undefined && <div className="section-background-overlay" style={{ opacity: bg.overlayOpacity }} />}
@@ -71,21 +77,24 @@ export function Section({ section, index }: { section: SectionData; index: numbe
     '--rows-d': g.desktop.rows,
     '--row-scale': g.desktop.scale,
     '--gap': `${g.mobile.gap}px`,
+    '--col-gap': `${g.mobile.colGap ?? g.mobile.gap}px`,
   }
   return (
     <section
-      className={['page-section', index === 0 ? 'first-section' : '', ...section.classes].filter(Boolean).join(' ')}
+      className={['page-section', index === 0 ? 'first-section' : '', section.kind ? `${section.kind}-section` : '', ...section.classes].filter(Boolean).join(' ')}
       data-theme={section.theme}
       data-section={section.id}
       style={section.vars as Vars}
     >
       {css && <style>{css}</style>}
-      <div className="section-border" style={section.divider ? { clipPath: `url(#divider-${section.id})` } : undefined}>
+      <div className="section-border">
         <Background section={section} />
       </div>
-      {section.divider && <svg className="section-divider-defs" aria-hidden="true" dangerouslySetInnerHTML={{ __html: section.divider.clipPath.replace(/id="[^"]*"/, `id="divider-${section.id}"`) }} />}
       <div className="content-wrapper">
         <div className="content">
+          {section.kind === 'gallery' && <GallerySection section={section} />}
+          {section.kind === 'list' && <ListSection section={section} />}
+          {!section.kind && (
           <div className="fe-grid" style={gridStyle}>
             {section.blocks.map((b) => (
               <div key={b.id} className={`fe-block fe-block--${b.type}`} data-block={b.id} style={blockStyle(b)}>
@@ -93,6 +102,7 @@ export function Section({ section, index }: { section: SectionData; index: numbe
               </div>
             ))}
           </div>
+          )}
         </div>
       </div>
     </section>

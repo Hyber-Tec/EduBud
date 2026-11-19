@@ -1,0 +1,728 @@
+{
+ "6a84836130d8d32f1f3a1c16": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a84836130d8d32f1f3a1c16/390.jpg",
+    "width": 780,
+    "height": 1188,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a84836130d8d32f1f3a1c16/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a84836130d8d32f1f3a1c16/1920.jpg",
+    "width": 1920,
+    "height": 676
+   }
+  ]
+ },
+ "6a845e1ed2630e2ffe1eb747": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6a845e1ed2630e2ffe1eb747/390.jpg",
+    "width": 780,
+    "height": 2046,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a845e1ed2630e2ffe1eb747/1024.jpg",
+    "width": 1536,
+    "height": 1258,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a845e1ed2630e2ffe1eb747/1920.jpg",
+    "width": 1920,
+    "height": 1160
+   }
+  ]
+ },
+ "6a8365db6575752e1a10fdd9": {
+  "kind": "isometric",
+  "images": [
+   {
+    "src": "/media/art/6a8365db6575752e1a10fdd9/390.jpg",
+    "width": 780,
+    "height": 2103,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a8365db6575752e1a10fdd9/1024.jpg",
+    "width": 1536,
+    "height": 1208,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a8365db6575752e1a10fdd9/1920.jpg",
+    "width": 1920,
+    "height": 1126
+   }
+  ]
+ },
+ "6a84991363856502b0eb8244": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6a84991363856502b0eb8244/390.jpg",
+    "width": 780,
+    "height": 1778,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a84991363856502b0eb8244/1024.jpg",
+    "width": 1536,
+    "height": 1310,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a84991363856502b0eb8244/1920.jpg",
+    "width": 1920,
+    "height": 1294
+   }
+  ]
+ },
+ "6a84f6d1b2b97142d684629d": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a84f6d1b2b97142d684629d/390.jpg",
+    "width": 780,
+    "height": 3500,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a84f6d1b2b97142d684629d/1024.jpg",
+    "width": 1536,
+    "height": 2241,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a84f6d1b2b97142d684629d/1920.jpg",
+    "width": 1920,
+    "height": 1517
+   }
+  ]
+ },
+ "6abc2f723356cf227fd0e199": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6abc2f723356cf227fd0e199/390.jpg",
+    "width": 780,
+    "height": 3021,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6abc2f723356cf227fd0e199/1024.jpg",
+    "width": 1536,
+    "height": 1991,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6abc2f723356cf227fd0e199/1920.jpg",
+    "width": 1920,
+    "height": 1364
+   }
+  ]
+ },
+ "6a99bfad320e8b0d940ca095": {
+  "kind": "surface",
+  "images": [
+   {
+    "src": "/media/art/6a99bfad320e8b0d940ca095/390.jpg",
+    "width": 780,
+    "height": 1906,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a99bfad320e8b0d940ca095/1024.jpg",
+    "width": 1536,
+    "height": 1338,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a99bfad320e8b0d940ca095/1920.jpg",
+    "width": 1920,
+    "height": 1390
+   }
+  ]
+ },
+ "6a850e6abab541593f7b10b3": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6a850e6abab541593f7b10b3/390.jpg",
+    "width": 780,
+    "height": 2182,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a850e6abab541593f7b10b3/1024.jpg",
+    "width": 1536,
+    "height": 1034,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a850e6abab541593f7b10b3/1920.jpg",
+    "width": 1920,
+    "height": 956
+   }
+  ]
+ },
+ "6a849ab2564571243dd99383": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a849ab2564571243dd99383/390.jpg",
+    "width": 780,
+    "height": 3122,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a849ab2564571243dd99383/1024.jpg",
+    "width": 1536,
+    "height": 1499,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a849ab2564571243dd99383/1920.jpg",
+    "width": 1920,
+    "height": 1262
+   }
+  ]
+ },
+ "6a85df0cffc83c62215189aa": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a85df0cffc83c62215189aa/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85df0cffc83c62215189aa/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85df0cffc83c62215189aa/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a85e8f15f15d00cfa235083": {
+  "kind": "surface",
+  "images": [
+   {
+    "src": "/media/art/6a85e8f15f15d00cfa235083/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85e8f15f15d00cfa235083/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85e8f15f15d00cfa235083/1920.jpg",
+    "width": 1920,
+    "height": 803
+   }
+  ]
+ },
+ "6a85ef2d2a475456919f7669": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a85ef2d2a475456919f7669/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85ef2d2a475456919f7669/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85ef2d2a475456919f7669/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a85f0722da7474915f88f37": {
+  "kind": "isometric",
+  "images": [
+   {
+    "src": "/media/art/6a85f0722da7474915f88f37/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85f0722da7474915f88f37/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85f0722da7474915f88f37/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a85f1384654205d1950cfc4": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a85f1384654205d1950cfc4/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85f1384654205d1950cfc4/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85f1384654205d1950cfc4/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a85f2152da7474915f91534": {
+  "kind": "isometric",
+  "images": [
+   {
+    "src": "/media/art/6a85f2152da7474915f91534/390.jpg",
+    "width": 780,
+    "height": 1686,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85f2152da7474915f91534/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85f2152da7474915f91534/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a85f2ec6242666d3bd792e1": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a85f2ec6242666d3bd792e1/390.jpg",
+    "width": 780,
+    "height": 1734,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a85f2ec6242666d3bd792e1/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a85f2ec6242666d3bd792e1/1920.jpg",
+    "width": 1920,
+    "height": 752
+   }
+  ]
+ },
+ "6a86054712ea765f1081d4c4": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a86054712ea765f1081d4c4/390.jpg",
+    "width": 780,
+    "height": 3102,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a86054712ea765f1081d4c4/1024.jpg",
+    "width": 1536,
+    "height": 1645,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a86054712ea765f1081d4c4/1920.jpg",
+    "width": 1920,
+    "height": 1268
+   }
+  ]
+ },
+ "6aa244ded671872e7410e5e2": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6aa244ded671872e7410e5e2/390.jpg",
+    "width": 780,
+    "height": 3355,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6aa244ded671872e7410e5e2/1024.jpg",
+    "width": 1536,
+    "height": 1190,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6aa244ded671872e7410e5e2/1920.jpg",
+    "width": 1920,
+    "height": 1237
+   }
+  ]
+ },
+ "6a8606ba7d65b475ad8ae9cc": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6a8606ba7d65b475ad8ae9cc/390.jpg",
+    "width": 780,
+    "height": 2908,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a8606ba7d65b475ad8ae9cc/1024.jpg",
+    "width": 1536,
+    "height": 1559,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a8606ba7d65b475ad8ae9cc/1920.jpg",
+    "width": 1920,
+    "height": 1288
+   }
+  ]
+ },
+ "6a9b1b5e8a953c53b7485228": {
+  "kind": "contours",
+  "images": [
+   {
+    "src": "/media/art/6a9b1b5e8a953c53b7485228/390.jpg",
+    "width": 780,
+    "height": 2472,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a9b1b5e8a953c53b7485228/1024.jpg",
+    "width": 1536,
+    "height": 1265,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a9b1b5e8a953c53b7485228/1920.jpg",
+    "width": 1920,
+    "height": 1109
+   }
+  ]
+ },
+ "6a860da7e9cea7444b95e5e3": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6a860da7e9cea7444b95e5e3/390.jpg",
+    "width": 780,
+    "height": 2876,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a860da7e9cea7444b95e5e3/1024.jpg",
+    "width": 1536,
+    "height": 1373,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a860da7e9cea7444b95e5e3/1920.jpg",
+    "width": 1920,
+    "height": 1364
+   }
+  ]
+ },
+ "6a860e7438be134d9cf5c3cc": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a860e7438be134d9cf5c3cc/390.jpg",
+    "width": 780,
+    "height": 5228,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a860e7438be134d9cf5c3cc/1024.jpg",
+    "width": 1536,
+    "height": 3491,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a860e7438be134d9cf5c3cc/1920.jpg",
+    "width": 1920,
+    "height": 3430
+   }
+  ]
+ },
+ "6a86141eeaa7400ef0c065df": {
+  "kind": "contours",
+  "images": [
+   {
+    "src": "/media/art/6a86141eeaa7400ef0c065df/390.jpg",
+    "width": 780,
+    "height": 7302,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a86141eeaa7400ef0c065df/1024.jpg",
+    "width": 1536,
+    "height": 2392,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a86141eeaa7400ef0c065df/1920.jpg",
+    "width": 1920,
+    "height": 2435
+   }
+  ]
+ },
+ "6a99da2ee73666265c7abbc5": {
+  "kind": "bokeh",
+  "images": [
+   {
+    "src": "/media/art/6a99da2ee73666265c7abbc5/390.jpg",
+    "width": 780,
+    "height": 6751,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a99da2ee73666265c7abbc5/1024.jpg",
+    "width": 1536,
+    "height": 3528,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a99da2ee73666265c7abbc5/1920.jpg",
+    "width": 1920,
+    "height": 2725
+   }
+  ]
+ },
+ "6a99e4153235862a9fde4d56": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a99e4153235862a9fde4d56/390.jpg",
+    "width": 780,
+    "height": 2013,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a99e4153235862a9fde4d56/1024.jpg",
+    "width": 1536,
+    "height": 1107,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a99e4153235862a9fde4d56/1920.jpg",
+    "width": 1920,
+    "height": 1109
+   }
+  ]
+ },
+ "6aa238dd7c2ec7636c4be060": {
+  "kind": "gradient",
+  "images": [
+   {
+    "src": "/media/art/6aa238dd7c2ec7636c4be060/390.jpg",
+    "width": 780,
+    "height": 1664,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6aa238dd7c2ec7636c4be060/1024.jpg",
+    "width": 1536,
+    "height": 1090,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6aa238dd7c2ec7636c4be060/1920.jpg",
+    "width": 1920,
+    "height": 1211
+   }
+  ]
+ },
+ "6a99dd00a70b143bfbb719db": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a99dd00a70b143bfbb719db/390.jpg",
+    "width": 780,
+    "height": 2646,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a99dd00a70b143bfbb719db/1024.jpg",
+    "width": 1536,
+    "height": 1534,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a99dd00a70b143bfbb719db/1920.jpg",
+    "width": 1920,
+    "height": 1519
+   }
+  ]
+ },
+ "6a9aed099e4d5b18c7709747": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a9aed099e4d5b18c7709747/390.jpg",
+    "width": 780,
+    "height": 6177,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a9aed099e4d5b18c7709747/1024.jpg",
+    "width": 1536,
+    "height": 1826,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a9aed099e4d5b18c7709747/1920.jpg",
+    "width": 1920,
+    "height": 1553
+   }
+  ]
+ },
+ "6a9b12e54f27a842cd378e8e": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a9b12e54f27a842cd378e8e/390.jpg",
+    "width": 780,
+    "height": 6052,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a9b12e54f27a842cd378e8e/1024.jpg",
+    "width": 1536,
+    "height": 2895,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a9b12e54f27a842cd378e8e/1920.jpg",
+    "width": 1920,
+    "height": 2140
+   }
+  ]
+ },
+ "6a9b1e81545b7835ca7b237f": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a9b1e81545b7835ca7b237f/390.jpg",
+    "width": 780,
+    "height": 2122,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a9b1e81545b7835ca7b237f/1024.jpg",
+    "width": 1536,
+    "height": 1563,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a9b1e81545b7835ca7b237f/1920.jpg",
+    "width": 1920,
+    "height": 1313
+   }
+  ]
+ },
+ "6a971b5c6c7a5f31e93dfa2a": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/390.jpg",
+    "width": 780,
+    "height": 3744,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1024.jpg",
+    "width": 1536,
+    "height": 1559,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1920.jpg",
+    "width": 1920,
+    "height": 1394
+   }
+  ]
+ },
+ "6a9b2778521028217d3284de": {
+  "kind": "conic",
+  "images": [
+   {
+    "src": "/media/art/6a9b2778521028217d3284de/390.jpg",
+    "width": 780,
+    "height": 9502,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6a9b2778521028217d3284de/1024.jpg",
+    "width": 1536,
+    "height": 3120,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6a9b2778521028217d3284de/1920.jpg",
+    "width": 1920,
+    "height": 3098
+   }
+  ]
+ },
+ "6ac31bc4b473a556b7386412": {
+  "kind": "surface",
+  "images": [
+   {
+    "src": "/media/art/6ac31bc4b473a556b7386412/390.jpg",
+    "width": 780,
+    "height": 1188,
+    "upTo": 767
+   },
+   {
+    "src": "/media/art/6ac31bc4b473a556b7386412/1024.jpg",
+    "width": 1536,
+    "height": 891,
+    "upTo": 1279
+   },
+   {
+    "src": "/media/art/6ac31bc4b473a556b7386412/1920.jpg",
+    "width": 1920,
+    "height": 701
+   }
+  ]
+ }
+}
