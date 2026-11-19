@@ -28,15 +28,16 @@ jobs:
   check:
     name: Checks
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     outputs:
       code: ${{ steps.changes.outputs.code }}
       hosting: ${{ steps.changes.outputs.hosting }}
     steps:
-      # The whole history, to list the changed files.
+      # The commit and its parent: enough to list the changed files (a push to main is one squashed commit); when it
+      # isn't, scripts/ci-changes.sh checks and deploys everything.
       - uses: actions/checkout@v7
         with:
-          fetch-depth: 0
+          fetch-depth: 2
 
       - name: No people's data or secrets in the repository
         run: bash scripts/check-repo.sh
@@ -49,8 +50,30 @@ jobs:
           BEFORE: ${{ github.event.before }}
         run: bash scripts/ci-changes.sh
 
-      # The website's install (cached by its lock file), typecheck, tests and build join here, behind
-      # steps.changes.outputs.code, when the copy of the website lands (docs/proposals/replica.md).
+      - uses: actions/setup-node@v7
+        if: steps.changes.outputs.code == 'true'
+        with:
+          node-version: 22
+
+      # The website's packages, kept between runs by its lock file, so a run whose lock file didn't change skips
+      # `npm ci`.
+      - name: The website's packages
+        if: steps.changes.outputs.code == 'true'
+        id: modules
+        uses: actions/cache@v6
+        with:
+          path: |
+            web/node_modules
+            !web/node_modules/.vite
+          key: modules-web-${{ runner.os }}-${{ runner.arch }}-node22-${{ hashFiles('web/package-lock.json') }}
+
+      - name: Install
+        if: steps.changes.outputs.code == 'true' && steps.modules.outputs.cache-hit != 'true'
+        run: npm ci --prefix web
+
+      - name: Typecheck and build the website
+        if: steps.changes.outputs.code == 'true'
+        run: npm --prefix web run typecheck && npm --prefix web run build
 
   deploy:
     name: Deploy
@@ -61,7 +84,7 @@ jobs:
         (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
         (github.event_name != 'pull_request' && github.ref == 'refs/heads/main'))
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     concurrency:
       group: deploy-${{ github.event.pull_request.number || 'live' }}
       cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -75,6 +98,24 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 22
+
+      # The website is built again here, from the same commit (a few seconds), rather than handed over as an artifact:
+      # its pictures make it a few hundred MB.
+      - name: The website's packages
+        id: modules
+        uses: actions/cache@v6
+        with:
+          path: |
+            web/node_modules
+            !web/node_modules/.vite
+          key: modules-web-${{ runner.os }}-${{ runner.arch }}-node22-${{ hashFiles('web/package-lock.json') }}
+
+      - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
+        run: npm ci --prefix web
+
+      - name: Build the website
+        run: npm --prefix web run build
 
       - name: The Firebase CLI
         uses: actions/cache@v6

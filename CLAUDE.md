@@ -143,17 +143,22 @@ to put the new updates on the mobile phone. That's something that I'll tell you 
 
 | Path | What |
 |---|---|
-| `public/` | What Hosting serves today: a holding page, until the copy of the website lands (its layout comes with it, `docs/proposals/replica.md`). |
+| `web/` | The website (React 19, TypeScript, React Router 7 in framework mode with every page prerendered, Vite). `app/routes/` the pages (`page.tsx` draws any content page; `store.tsx`, `product.tsx`, `cart.tsx` the shop; `not-found.tsx`); `app/site/` how they're drawn: `Section.tsx` (a section, its background and its grid), `Block.tsx` and `blocks/` (text, pictures, shapes, buttons, accordions, scrolling text, videos, forms, maps, the donation form, the Instagram feed), `sections/` (galleries, lists), `shop/`, `Header.tsx`, `Footer.tsx`, `styles/` (our CSS; `themes.css` and `fonts.css` are written by the capture); `app/content/` the content, read from the original by `scripts/capture` (`pages/*.json`, `site.json` for the header and footer, `shop/`, `art.json`, and the types in `types.ts`); `public/media/` the original's pictures and videos, in every width it serves; `public/fonts/` its fonts (SIL Open Font License). |
 | `docs/` | The map of every doc is `README.md`. At the top, the living ones: `DECISIONS.md` (the owner's answers), `QUESTIONS.md` (open questions), `TODO.md` (the owner's to-do, a short checklist) and `DEPLOY.md` (how `main` reaches Firebase). In folders: `proposals/` (proposals, kept after they're decided) and `internal/` (the private notes, git-ignored here: "Local files"). |
-| `scripts/` | `check-repo.sh` (CI's guard: no people's data or secrets), `ci-changes.sh` (what a change needs checked and deployed), `internal-docs.sh` (keeps `docs/internal/` up to date when a session starts). |
+| `scripts/capture/` | Reads edubud.org into `web/app/content/` and `web/public/`: `capture.ts` (the pages, their sections, grids, blocks and settings; the header and footer; the fonts and theme colors; the pictures and videos), `art.ts` (pictures of the animated backgrounds), `shop.ts` (the shop), and the widgets' and galleries' own. The pages it fetched are cached in `.cache/` (git-ignored). |
+| `scripts/compare/` | Checks the copy against the original: `compare.ts` (full-page screenshots of both at five widths, the pixels that differ, text and links; the original's screenshots are cached), `blocks.ts` and `all-blocks.sh` (each section's and block's place and size on both), `serve.ts` (serves the build as Firebase Hosting does), `crop.ts`. They run on our computers, never in CI. |
+| `scripts/` | Also `check-repo.sh` (CI's guard: no people's data or secrets), `ci-changes.sh` (what a change needs checked and deployed), `internal-docs.sh` (keeps `docs/internal/` up to date when a session starts). |
 | `.github/` | `workflows/ci.yml` (checks every pull request and `main`, deploys `main`, previews pull requests), `CODEOWNERS` (the shared files). |
-| `firebase.json`, `.firebaserc` | Hosting's settings, and the project. |
+| `firebase.json`, `.firebaserc` | Hosting's settings (the folders' redirects, headers), and the project. |
 
 ## Commands
 
-- Checks, as CI runs them: `bash scripts/check-repo.sh`.
-- What CI would check and deploy for your branch: `bash scripts/ci-changes.sh --base origin/main`.
-- The website's own commands (install, run, build, compare with edubud.org) come with the copy of the website.
+- Install once: `npm ci && npm ci --prefix web` (Node 22 or later).
+- `npm run dev` → the website at http://localhost:5173 while you work on it.
+- `npm run build` → `web/build/client` (what Hosting serves); `npx tsx scripts/compare/serve.ts 5179` serves it as Hosting does.
+- Checks, as CI runs them: `bash scripts/check-repo.sh`, `npm run typecheck`, `npm run build`. What CI would check and deploy for your branch: `bash scripts/ci-changes.sh --base origin/main`.
+- Compare with the original: `npm run compare -- --pages /,/our-team --widths 1440,390` (screenshots and differences in `scripts/compare/out/<name>/index.html`); `npx tsx scripts/compare/blocks.ts --page /our-team --width 390` (which blocks sit differently); `WIDTHS="1440 390" bash scripts/compare/all-blocks.sh` (every page). Load edubud.org gently: the original's screenshots are cached in `scripts/compare/out/_original/` (`--fresh` takes them again).
+- Read the original again (only when it changed): `npm run capture` (then `npx tsx scripts/capture/art.ts` for the animated backgrounds); `-- --no-media` for the content only.
 
 ## Conventions
 

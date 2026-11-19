@@ -8,7 +8,7 @@
 #   bash scripts/ci-changes.sh --base <ref>     # what CI would do for HEAD against <ref>, e.g. origin/main
 #
 # Prints why, and writes to GITHUB_OUTPUT (and the run's summary):
-#   code=true|false     the checks (none yet beyond the guard: the website's typecheck, tests and build come with it)
+#   code=true|false     the website's typecheck and build
 #   hosting=true|false  Hosting deploys: main goes live, a pull request gets its preview link
 set -uo pipefail
 cd "$(git rev-parse --show-toplevel)"
@@ -59,8 +59,8 @@ else
       .github/workflows/*|scripts/ci-changes.sh|firebase.json|.firebaserc)
         code=true; hosting=true
         why_code="${why_code:-$f}"; why_hosting="${why_hosting:-$f}" ;;
-      # What Hosting serves.
-      public/*)
+      # The website: what Hosting serves.
+      web/*)
         code=true; hosting=true
         why_code="${why_code:-$f}"; why_hosting="${why_hosting:-$f}" ;;
       # Docs and settings that change nothing that runs: the repository guard alone.
