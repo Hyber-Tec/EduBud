@@ -1,0 +1,137 @@
+/*
+ * The search page (routes/search.tsx), as the original's: under the header, a white field with a magnifier, outlined
+ * while it has the focus; below it the pages found, between faint lines, each its name and an excerpt (the words found
+ * in italics), a product with its picture beside. Its sizes follow the page's text size (17px, 16px below 992px).
+ */
+.search-page {
+  padding-top: 30px;
+}
+
+/* The field fills the white box, so a click anywhere in it reaches the field; the magnifier sits in its left padding,
+   15px in. The text is 30px (24px on phones, phone.css). The original's box has the padding and the field 1px 2px
+   of its own: the same places. */
+.search-box {
+  position: relative;
+  margin: 0 0 50px;
+  background: #fff;
+  border: 1px solid #aaa;
+}
+.search-box:focus-within {
+  outline: 2px solid var(--nav);
+  outline-offset: 4px;
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  color: #000;
+  pointer-events: none;
+}
+.search-input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 16px 17px 16px 62px;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font: 400 30px var(--body-font);
+  letter-spacing: normal;
+  color: #000;
+}
+.search-input::placeholder {
+  color: #eee;
+  opacity: 1;
+}
+.search-input::selection {
+  color: #fff;
+  background: #000;
+}
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* The results fade out (0.1 s) while a search starts, and back in (0.15 s) with the new ones. */
+.search-output {
+  transition: opacity 0.15s linear;
+}
+.search-output.is-fading {
+  opacity: 0;
+  transition-duration: 0.1s;
+}
+/* 10px under the results or "no results", as the original's (its empty "See more" row); with neither, it merges into
+   the field's margin. */
+.search-output::after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+}
+/* "No results" (the original's small print). */
+.search-notice {
+  font-size: 12px;
+  color: #000;
+}
+
+.search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(200, 200, 200, 0.35);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.35);
+}
+.search-result {
+  position: relative;
+  display: flex;
+  padding: 1.5em 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+.search-result + .search-result {
+  border-top: 1px solid rgba(200, 200, 200, 0.35);
+}
+/* A product's picture: a square fifth of the width, cropped to fill it. */
+.search-result-picture {
+  flex: none;
+  width: 20%;
+  padding-right: 20px;
+}
+.search-result-picture img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+/* The text takes the other four fifths, picture or not, as when the original's script draws results after typing.
+   (When its server draws them, for a query in the address, they take the whole width: a difference within it.) */
+.search-result-main {
+  width: 80%;
+}
+.search-result-title {
+  margin: 0 0 0.5em;
+  font: 400 1.5em/1.3em var(--body-font);
+  letter-spacing: inherit;
+}
+/* The whole result is the link's target (the original's results are clickable anywhere); the keyboard's focus line
+   goes around all of it. */
+.search-result-title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.search-result-title a:focus-visible {
+  outline: none;
+}
+.search-result:has(a:focus-visible) {
+  outline: 2px solid var(--nav);
+  outline-offset: 4px;
+}
+.search-result-excerpt {
+  line-height: 1.4em;
+}

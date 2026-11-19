@@ -133,6 +133,30 @@
     padding-bottom: 48px;
   }
 
+  /* ---------- The search page ---------- */
+
+  /* The field's text 24px, as the original's on phones. The results as wide as the page (the original's take four
+     fifths of a column 20px in from each side: 232px on a 390px phone), their lines spaced like the rest of the text, a
+     product's picture larger, and "no results" as large as other text. */
+  .search-input {
+    font-size: 24px;
+  }
+  .search-result-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .search-result-excerpt {
+    line-height: 1.45em;
+  }
+  .search-result-picture {
+    width: 30%;
+    max-width: 120px;
+    padding-right: 16px;
+  }
+  .search-notice {
+    font-size: 1rem;
+  }
+
   /* ---------- Hand-written changes (content/phone.json) ---------- */
 
   .fe-block--phone-hidden {

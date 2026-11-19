@@ -8,6 +8,7 @@ export default [
     route('products-store', 'routes/store.tsx'),
     route('products-store/p/:product', 'routes/product.tsx'),
     route('cart', 'routes/cart.tsx'),
+    route('search', 'routes/search.tsx'),
     route('404', 'routes/not-found.tsx', { id: 'not-found' }),
     route(':slug', 'routes/page.tsx', { id: 'page' }),
     // Any other address (`/a/b`): Firebase Hosting serves 404.html there, and this keeps it the copy's "page not

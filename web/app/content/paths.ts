@@ -1,4 +1,5 @@
-// The site's addresses: the pages read from the original, the shop's and the "page not found" page; and the app's.
+// The site's addresses: the pages read from the original, the shop's, the search page and the "page not found" page;
+// and the app's.
 
 /** Content pages, by address, and the file each one's content is in (`pages/<slug>.json`). */
 export const PAGES: Record<string, string> = {
@@ -29,7 +30,10 @@ export const SHOP_PATHS = [
   '/cart',
 ]
 
+/** The search page, as the original's (its address carries the query: `/search?q=summer`). */
+export const SEARCH_PATH = '/search'
+
 /** The app's pages, what we add next to the copy (routes/app-layout.tsx): prerendered too, though not the original's. */
 export const APP_PATHS = ['/login', '/signup']
 
-export const PRERENDER = [...Object.keys(PAGES), ...Object.keys(ALIASES), ...SHOP_PATHS, '/404', ...APP_PATHS]
+export const PRERENDER = [...Object.keys(PAGES), ...Object.keys(ALIASES), ...SHOP_PATHS, SEARCH_PATH, '/404', ...APP_PATHS]
