@@ -127,10 +127,13 @@ function Player({ src, poster, duration, aspectRatio }: { src: string; poster: s
     indicatorTimer.current = window.setTimeout(() => setIndicator(null), 600)
   }
 
+  /** The keys work while one of the player's buttons has the focus (the player itself takes none, as the original's). */
   function onKey(e: KeyboardEvent) {
     const v = video.current
     if (!v || (e.target as HTMLElement).closest('input, .vp-menu')) return
     const key = e.key.toLowerCase()
+    // Space and Enter on a button press that button, nothing more.
+    if ((key === ' ' || key === 'enter') && (e.target as HTMLElement).closest('button')) return
     if (key === ' ' || key === 'k') toggle()
     else if (key === 'arrowleft') skip(-SKIP_S)
     else if (key === 'arrowright') skip(SKIP_S)
@@ -173,7 +176,6 @@ function Player({ src, poster, duration, aspectRatio }: { src: string; poster: s
       data-hidden={(playing && hidden) || undefined}
       data-touch={touch || undefined}
       data-fullscreen={fullscreen || undefined}
-      tabIndex={0}
       onPointerMove={(e) => e.pointerType === 'mouse' && wake()}
       onPointerLeave={() => playing && !menu && setHidden(true)}
       onPointerUp={onSurface}
