@@ -1,20 +1,10 @@
-import { useEffect } from 'react'
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 import type { Route } from './+types/root'
-import { fitText } from './site/fitText'
-import { Footer } from './site/Footer'
-import { Header } from './site/Header'
 import './site/styles/fonts.css'
-import './site/styles/themes.css'
-import './site/styles/base.css'
-import './site/styles/sections.css'
-import './site/styles/blocks.css'
-import './site/styles/header.css'
-import './site/styles/shop.css'
-import './site/styles/widgets.css'
-import './site/styles/galleries.css'
-import './site/styles/motion.css'
-import NotFound from './routes/not-found'
+
+// The document every page shares: its head, EduBud's fonts and the scripts. How a page looks comes from its layout,
+// which imports its own CSS: routes/site-layout.tsx for the copy of edubud.org, routes/app-layout.tsx for the app.
+// React Router links a layout's CSS only on the pages inside it, so one layout's styles never reach another's pages.
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', href: '/favicon.ico' },
@@ -32,9 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Header />
-        <main id="page">{children}</main>
-        <Footer />
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -43,11 +31,25 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  useEffect(() => fitText(), [])
   return <Outlet />
 }
 
+/**
+ * The last resort, for an error no layout catches (the copy's draws its own "page not found" page). No layout's CSS
+ * is linked here, so this page carries its few styles itself.
+ */
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
-  if (isRouteErrorResponse(error) && error.status === 404) return <NotFound />
-  return <NotFound />
+  const notFound = isRouteErrorResponse(error) && error.status === 404
+  return (
+    <main style={{ maxWidth: '36rem', margin: '0 auto', padding: '4rem 1.5rem', fontFamily: "'DM Sans', sans-serif", lineHeight: 1.5, color: 'hsl(63 61% 7%)' }}>
+      <h1 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700 }}>{notFound ? 'Page not found' : 'Something went wrong'}</h1>
+      <p>
+        {notFound ? "We couldn't find the page you were looking for." : "This page couldn't be shown. Please try again in a moment."}{' '}
+        <a href="/" style={{ color: 'inherit' }}>
+          Go to the homepage
+        </a>
+        .
+      </p>
+    </main>
+  )
 }

@@ -98,8 +98,9 @@ sign-in will.
 
 ## What Hosting serves
 
-`web/build/client`: each page prerendered to its own HTML file (`web/scripts/flatten.mjs` also writes `a/b/index.html`
-as `a/b.html`, which `cleanUrls` serves for `/a/b`), `404.html` for any unknown address, the pictures, videos and fonts.
+`web/build/client`: each page prerendered to its own HTML file, the copy's and the app's (`/login`, `/signup`), as
+`web/app/content/paths.ts` lists them (`web/scripts/flatten.mjs` also writes `a/b/index.html` as `a/b.html`, which
+`cleanUrls` serves for `/a/b`); `404.html` for any unknown address; the pictures, videos and fonts.
 The menu's folders (`/learning-center`, `/initiatives`, `/current-projects`, `/past-projects`, `/about-us`) redirect
 to their first page with a 302, as on the original.
 
