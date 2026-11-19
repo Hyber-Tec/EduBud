@@ -43,3 +43,20 @@ matching section, with the date.
 - **Pictures and videos in this repository (Q5):** they're on the public website anyway, and the repository goes
   private later. No Cloud Storage for them.
 - **EduBud doesn't edit the Squarespace site:** no need to ask the founder to hold changes (E1 dropped).
+
+## 4. Behaviour, the header and phones (the owner, 2026-11-19)
+
+After comparing the copy with edubud.org side by side:
+
+- **Behave the same, not only look the same:** everything a visitor hovers, opens or watches move (accordions sliding
+  open, the scrolling text's speed, hovers, slideshows, lightboxes, forms) moves like the original's: the same timing,
+  easing and triggers. A difference is a bug, as CLAUDE.md's UI rule says.
+- **Better drop-downs (ours, not the original's):** a folder in the header opens a card listing its pages, each with
+  one of its pictures and a line from its own text (`web/app/site/menu.ts`), when the pointer rests on it, on a click
+  or tap, or from the keyboard. EduBud may reword the lines.
+- **"Log In" in the header, after About Us, and a log-in page:** a temporary start. Nothing signs in yet; the sign-in
+  itself is still step 2 and waits for the owner. From 960px down the full-screen menu replaces the header's links,
+  which no longer fit next to the button; on phones the menu opens its folders in place, with "Log In" at the bottom.
+- **Phones are ours to improve (below 768px):** the original's phone view isn't good enough. Same content and the same
+  look (fonts, colours, pictures, shapes), nothing new; easier to read and to tap. Desktop and tablet layouts stay the
+  original's.
