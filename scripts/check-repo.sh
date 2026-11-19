@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Fails when the repository tracks people's data or a secret (CLAUDE.md, "Secrets"). EduBud's sheets, form answers and
+# anything else with volunteers' or participants' details stay on the owner's machine and in the private notes; tests
+# use made-up people in tests/fixtures/.
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+status=0
+
+# Spreadsheets, exports and documents: only made-up fixtures may be tracked.
+files="$(git ls-files | grep -Ei '\.(pdf|xlsx?|xlsm|csv|tsv|numbers|ods|docx?)$' | grep -v '^tests/fixtures/' || true)"
+if [ -n "$files" ]; then
+  printf 'Tracked files that look like client material (made-up fixtures belong in tests/fixtures/):\n%s\n' "$files"
+  status=1
+fi
+
+# Environment files: only the empty examples may be tracked.
+envs="$(git ls-files | grep -E '(^|/)\.env' | grep -v '\.example$' || true)"
+if [ -n "$envs" ]; then
+  printf 'Tracked environment files (keep them local, e.g. .env.local):\n%s\n' "$envs"
+  status=1
+fi
+
+# Secrets: private keys, service-account files, Google API keys, GitHub tokens.
+if git grep -nIE \
+  -e '-----BEGIN [A-Z ]*PRIVATE KEY-----' \
+  -e '"type": *"service_account"' \
+  -e 'AIza[0-9A-Za-z_-]{35}' \
+  -e 'gh[opsur]_[0-9A-Za-z]{36}' \
+  -- . ':(exclude)scripts/check-repo.sh'; then
+  echo 'A tracked file holds a secret-looking value (above). Move it to a local .env file or a GitHub secret.'
+  status=1
+fi
+
+[ "$status" -eq 0 ] && echo 'No client material or secrets are tracked.'
+exit "$status"

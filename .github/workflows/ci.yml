@@ -1,0 +1,107 @@
+# Checks every pull request before it can reach main, and main after each merge. Then Hosting: main deploys to
+# https://edubud-hybertec.web.app, and a pull request from this repository gets a preview link for 7 days.
+# Written as if the repository were private (Hyber-Tec's rules for GitHub Actions; docs/DEPLOY.md, "What CI checks"):
+# one job checks, and only what a change touches (scripts/ci-changes.sh); the deploy runs apart, with its own
+# permissions, and only when Hosting changed. A change to the docs alone runs the repository guard and deploys nothing.
+# No keys: the deploy signs in to Google Cloud through Workload Identity Federation (docs/DEPLOY.md), as
+# github-deploy@ for main and github-preview@ (Hosting only) for pull requests. The ruleset on main requires the check
+# job by name ("Checks").
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # Run by hand on main, it checks and deploys everything.
+  workflow_dispatch:
+
+# A new push to the same pull request cancels the run still going for the previous push; runs on main queue, so they
+# deploy in the order they were merged.
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      code: ${{ steps.changes.outputs.code }}
+      hosting: ${{ steps.changes.outputs.hosting }}
+    steps:
+      # The whole history, to list the changed files.
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: No people's data or secrets in the repository
+        run: bash scripts/check-repo.sh
+
+      # Its summary says what it found, and why.
+      - name: What this change needs checked and deployed
+        id: changes
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+        run: bash scripts/ci-changes.sh
+
+      # The website's install (cached by its lock file), typecheck, tests and build join here, behind
+      # steps.changes.outputs.code, when the copy of the website lands (docs/proposals/replica.md).
+
+  deploy:
+    name: Deploy
+    needs: check
+    # main: live. A pull request: its preview, only from a branch of this repository (a fork's run gets no sign-in).
+    if: >-
+      needs.check.outputs.hosting == 'true' && (
+        (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) ||
+        (github.event_name != 'pull_request' && github.ref == 'refs/heads/main'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: deploy-${{ github.event.pull_request.number || 'live' }}
+      cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+    permissions:
+      contents: read
+      id-token: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: The Firebase CLI
+        uses: actions/cache@v6
+        with:
+          path: ~/.npm/_npx
+          key: npx-firebase-tools-15.32.1-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Sign in to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/257015720209/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: ${{ github.event_name == 'pull_request' && 'github-preview' || 'github-deploy' }}@edubud-hybertec.iam.gserviceaccount.com
+
+      - name: Deploy to https://edubud-hybertec.web.app
+        if: github.event_name != 'pull_request'
+        run: npx --yes firebase-tools@15.32.1 deploy --only hosting --project edubud-hybertec --non-interactive
+
+      # One comment per pull request, updated on each push.
+      - name: The pull request's preview link
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          npx --yes firebase-tools@15.32.1 hosting:channel:deploy "pr-$PR" --expires 7d --project edubud-hybertec --non-interactive --json > channel.json
+          url=$(node -p 'Object.values(require("./channel.json").result)[0].url')
+          body="**Preview:** $url (for \`${SHA:0:7}\`, kept 7 days after the last push)"
+          echo "$body" >> "$GITHUB_STEP_SUMMARY"
+          gh pr comment "$PR" --edit-last --create-if-none --body "$body"
