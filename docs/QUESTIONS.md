@@ -42,6 +42,13 @@ being resized.
 
 *Default: as ours does now.* Say if you'd rather copy any of them too.
 
+### Q8. The new header's words and pictures
+
+The header's drop-downs are ours now (`DECISIONS.md` §4). Under each page's name they show one of its pictures and a
+short line taken from its own text, for example "A welcoming space to learn, connect and grow" for Day Learning
+Program (`web/app/site/menu.ts`). *Default: those lines and pictures.* Say if EduBud wants other words or pictures, or
+none.
+
 ## For EduBud
 
 Nothing yet. Questions for EduBud are numbered (E1, E2, …) so their answers can be matched; the message itself, with
