@@ -1,0 +1,91 @@
+{
+ "path": "/products-store/p/edubud-community-center-tote",
+ "meta": {
+  "title": "EduBud Community Center Tote — EduBud International",
+  "description": "  Carry the EduBud spirit wherever you go with our Community Center tote—a practical everyday essential inspired by    connection, inclusion, and belonging.    Made to bring the mission with you, it’s a simple way to represent a community where everyone has a place to connect, grow, and shine.  "
+ },
+ "theme": "light",
+ "breadcrumb": [
+  {
+   "title": "Shop",
+   "href": "/products-store"
+  },
+  {
+   "title": "EduBud Community Center Tote",
+   "href": "/products-store/p/edubud-community-center-tote"
+  }
+ ],
+ "title": "EduBud Community Center Tote",
+ "price": "$20.00",
+ "description": "<p style=\"white-space:pre-wrap;\"><span>Carry the EduBud spirit wherever you go with our Community Center tote—a practical everyday essential inspired by </span><strong><span>connection, inclusion, and belonging.</span></strong><span> Made to bring the mission with you, it’s a simple way to represent a community where everyone has a place to connect, grow, and shine.</span></p>",
+ "pictures": [
+  {
+   "base": "/media/0d1804332646",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2700,
+   "height": 1790,
+   "alt": "Screenshot 2026-09-02 at 2.30.42 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/a2b2f0be4e80",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 1950,
+   "height": 1970,
+   "alt": "Screenshot 2026-09-02 at 2.29.52 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/c3f14fd30beb",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2964,
+   "height": 1974,
+   "alt": "Screenshot 2026-09-02 at 2.30.12 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "button": "Add To Cart",
+ "vars": {
+  "--product-gallery-arrow-size": "3vw",
+  "--product-gallery-aspect-ratio": "3 / 4",
+  "--product-gallery-width": "50%",
+  "--product-content-horizontal-spacing": "3vw",
+  "--product-content-form-width": "100%"
+ }
+}

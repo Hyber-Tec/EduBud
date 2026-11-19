@@ -1,0 +1,14 @@
+{
+ "path": "/cart",
+ "meta": {
+  "title": "EduBud International",
+  "description": ""
+ },
+ "theme": "white",
+ "title": "Shopping Cart",
+ "emptyMessage": "You have nothing in your shopping cart.",
+ "button": {
+  "label": "Continue Shopping",
+  "href": "/"
+ }
+}
