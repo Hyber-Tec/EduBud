@@ -38,6 +38,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+/* Going to a place on the page (a link to an anchor, the skip link, a script's scroll) glides there, as on the
+   original, whose header script sets this on the page as it starts; not for visitors who ask for less motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 body {
   margin: 0;
   /* The site's own background (its root theme's: the mint), which shows where no section covers the page. */

@@ -383,6 +383,8 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         alt: img.getAttribute('alt') ?? '',
         focal: focal.length === 2 && focal.every((n) => !Number.isNaN(n)) ? [focal[0], focal[1]] : undefined,
       })
+      // An effect on the picture (film grain…), which site/art/ draws from its settings.
+      const effect = json(sqs.querySelector('.imageEffectContainer')?.getAttribute('data-effect') ?? null)
       return {
         ...base,
         type: 'image',
@@ -391,6 +393,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         stretched: root?.getAttribute('data-is-image-stretched') === 'true',
         maskSvg: [...sqs.querySelectorAll('svg[data-image-mask-id]')].map((m) => m.outerHTML.replace(/\s+/g, ' ')).join('') || undefined,
         ...imagePosition(root?.getAttribute('class') ?? ''),
+        ...(effect?.type && effect.type !== 'none' ? { effect } : {}),
       }
     }
 

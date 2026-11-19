@@ -257,7 +257,13 @@
       ]
      },
      "stretched": false,
-     "maskSvg": "<svg data-image-mask-id=\"6325e45ffeb718cbf5e7-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"6325e45ffeb718cbf5e7-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
+     "maskSvg": "<svg data-image-mask-id=\"6325e45ffeb718cbf5e7-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"6325e45ffeb718cbf5e7-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>",
+     "effect": {
+      "type": "filmGrain",
+      "intensity": 50,
+      "shadow": 0,
+      "speed": 100
+     }
     }
    ]
   },

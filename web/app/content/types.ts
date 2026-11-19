@@ -128,6 +128,11 @@ export interface ImageBlock extends BlockBase {
   maskSvg?: string
   /** Where the picture sits when it's narrower than its block (its "image position"); the middle when not set. */
   position?: 'left' | 'right'
+  /**
+   * An effect on the picture, as the original stores it (its effect box's `data-effect`, e.g. `{ type: 'filmGrain',
+   * intensity: 50, shadow: 0, speed: 100 }`), which site/art/ draws.
+   */
+  effect?: GenerativeSettings
 }
 
 export interface ShapeBlock extends BlockBase {

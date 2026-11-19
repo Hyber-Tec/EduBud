@@ -49,6 +49,12 @@
 .image-frame--masked {
   --image-component-native-aspect-ratio: 1;
 }
+/* The box an effect on the picture draws in (site/art/filmGrain.ts): over the picture, under its overlay. */
+.image-effect {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 /* A color over the picture, as strong as its setting (some pictures are covered whole: the mint frames). */
 .image-overlay {
   position: absolute;
