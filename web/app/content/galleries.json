@@ -1,0 +1,2511 @@
+{
+ "6aa2300590bd660b3aeca17a": {
+  "type": "gallery",
+  "design": "grid",
+  "width": "full-bleed",
+  "animation": "scale-up",
+  "captions": false,
+  "lightbox": false,
+  "columns": 3,
+  "aspectRatio": "square",
+  "gutter": 0,
+  "items": [
+   {
+    "picture": {
+     "base": "/media/87a5f0c52b0a",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two people standing in a room, giving a presentation projected on the wall, which features a cartoonish diagram with a mouth, teeth, and an arrow pointing to a cupcake, with a caption about eating with their mouth.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/47bfc9e1ff69",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A group of nine people standing indoors, posing for a photo. They are wearing aprons and holding drinks, with a mountain landscape projected on the wall behind them.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/5caa91251bf1",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young men are posing inside a large dinosaur-themed photo frame with an open mouth, resembling a T-Rex. They are smiling and standing close together.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/3561c26f74ce",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5184,
+     "height": 3456,
+     "alt": "Four young people, two males and two females, are smiling and posing together in a well-lit room with white walls and a drop ceiling. They are dressed semi-formally, with the males in shirts and the females in dresses. One of the women has her arm ar",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)75vw,50vw"
+   },
+   {
+    "picture": {
+     "base": "/media/550e6032e1ea",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A man with glasses and a black watch, wearing a red jacket, is sitting at a white desk, holding a laptop with a spreadsheet on the screen. The background shows a beige wall, a doorway with glass panels, and a thermostat on the wall.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/cfca6074e9ea",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1338,
+     "height": 1792,
+     "alt": "Three men standing in front of a fire truck posing for a photo. Two of the men are making peace signs with their hands, and all three are holding small items in their hands. They are wearing white T-shirts and fire helmets.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/d4e6e8935bc9",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A young man wearing a cream-colored sweater sitting indoors with a white balloon floating above him. There are chairs, a basket with colored toys, a red bag, and other furniture in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/115fe60b1fdc",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A person standing in front of a presentation slide with colorful emotion images and words on a classroom or lecture room wall.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/05a7fbbc5bc0",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5184,
+     "height": 3456,
+     "alt": "Group of four people standing in front of a balloon decoration with a sign that says \"Class\". The group includes two men, a woman, and a young boy. They are smiling and making peace signs.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)75vw,50vw"
+   },
+   {
+    "picture": {
+     "base": "/media/d4eaa6d2ff8e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4896,
+     "height": 3672,
+     "alt": "Two young people, a woman with dark hair and a man with short dark hair, taking a selfie outside in front of a brick building and green trees on a sunny day.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/c97dfb539298",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 586,
+     "height": 960,
+     "alt": "IMG_2089.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/d261e0fd22f5",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "A person wearing a safari hat, sunglasses, and safari clothing standing with arms crossed, surrounded by colorful paintings of African animals and scenes, on a red floor covering against a plain white wall.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/afef5f34374d",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5184,
+     "height": 3456,
+     "alt": "Two people, a woman and a man, are at an event. The woman is wearing a black dress and holding papers and a microphone, laughing. The man is in a white shirt with a black bowtie, looking down and smiling. They are standing in front of a plain wall wi",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)75vw,50vw"
+   },
+   {
+    "picture": {
+     "base": "/media/84878de1b5b8",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5184,
+     "height": 3456,
+     "alt": "A smiling person in a white shirt and black bowtie making a peace sign with their fingers at an indoor event. In the background, there are two women, one smiling and the other slightly blurred, seated near a vending machine and decorated walls with p",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)75vw,50vw"
+   },
+   {
+    "picture": {
+     "base": "/media/c0aa15d29a05",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A young man and woman sitting together at a table, making heart shapes with their hands, smiling, in a room with green walls, windows, and a partially visible flag.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/4e3a52cc8c3e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young men are standing in front of a large screen displaying a presentation slide titled 'Rule 1' about fire safety. The man on the right wears a white t-shirt with 'EduBud community center' printed on the back. The other person wears red shorts.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/0bd43a3d96d3",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1344,
+     "height": 1784,
+     "alt": "A group of students wearing EduBud community center T-shirts gathered around a firefighter inside a fire station, listening to the firefighter explain fire equipment from a fire truck.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/8c77ae8df144",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of eight young people standing outdoors in front of a house, holding badminton rackets and a volleyball, smiling and making peace signs.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/ecc20f7ec9e3",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A person is pointing at a large projected calendar on a wall in a room that appears to be an office or classroom. The calendar features months, days, and emoji icons, with a colorful top border that has cute water droplet characters.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/54c095ad300e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A person working on a visual activity at a desk, with various craft supplies such as scissors, glue, and small colorful items. The activity sheet on the desk contains illustrations and instructions.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/23a51cbb47a8",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4942,
+     "height": 4284,
+     "alt": "A group of people celebrating a birthday or special occasion, standing behind a table with a cake and party decorations, including balloons and a birthday banner in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)57.6797385620915vw,38.453159041394336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/a2e4cd8e1cd9",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of five young men standing indoors in front of a large blue sign with instructions for shopping, returning, Walmart Pay, pharmacy, and item pickup.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/95beaf898384",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Young man smiling and holding a small red and pink plush toy, with a woman in the background making a peace sign with her fingers, both in a room with a large window and a unsharp TV screen showing a landscape.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/eabf9e1fd0f3",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A man in a blue shirt is painting on a large piece of paper using various paints and brushes. The paper has colorful handprints and painted designs, including red, yellow, and green paint. The focus is on his side profile, and he appears to be engage",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/22a1e9e3c29a",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A young man smiling and holding a sheet of paper with a drawing of himself, in a classroom or office setting.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/19f871e68fd0",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "A young man with dark hair wearing a colorful plaid shirt sitting at a white table with a red binder, papers, and writing utensils. In the foreground are small soccer balls in black and white, orange, and black. The background is a simple off-white w",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/edd927ae93c0",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "A person with short black hair sitting at a white desk, writing in a notebook, near a window with a view of green trees outside, with colorful paper pumpkins on the windowsill.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/f3a63d4423d7",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Three young men standing together indoors, smiling and making peace signs. The man in the middle is wearing a white t-shirt with text, beige shorts, and a lanyard with a badge. The man on the left is in a striped shirt and light-colored pants, while ",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/b5aee4a04df5",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two men sitting at a white table, working on a craft project with small cups of colored paint, a glass jar, and paper towels. One man is wearing glasses and a black shirt, the other has dark hair and a watch.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/4e5f2216d111",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A young woman and a young man sit together at a table, engaged in a learning activity that involves pointing at laminated words and symbols on a sheet of paper and a colorful sheet with lines. The woman's hair is dark and straight, and she is wearing",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/99866029cc11",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1302,
+     "height": 1692,
+     "alt": "People walking out of a Kroger grocery store, some smiling and pushing a shopping cart filled with grocery bags.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/26cac8ef517e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_0013.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/0baf56a13ead",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "DBB4CCCE-FE25-4581-8E3E-207AE44A9C76.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/714621201668",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "151E9426-C721-4942-B038-54F5D9015065.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/99efa8df8280",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "IMG_0407.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/f9fa98a4bfec",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_0561.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/0704a6740f31",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "IMG_1727.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)66.66666666666666vw,44.44444444444444vw"
+   },
+   {
+    "picture": {
+     "base": "/media/5fa558bd102e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_1610.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   },
+   {
+    "picture": {
+     "base": "/media/7ef0be11103f",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_1387.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,33.333333333333336vw"
+   }
+  ]
+ },
+ "6aa232ed8d256f6e84b81513": {
+  "type": "gallery",
+  "design": "reel",
+  "width": "full-bleed",
+  "animation": "none",
+  "captions": false,
+  "lightbox": false,
+  "controls": "overflow-side",
+  "cropping": false,
+  "viewportHeight": 100,
+  "items": [
+   {
+    "picture": {
+     "base": "/media/0a00f5639517",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young men sitting at a table in a bookstore, looking at a book together. The bookstore has shelves filled with books in the background, and a bag of snacks is on the table.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/bb744e14ba79",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of people around a table in a workshop making pottery with clay and pottery molds.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/710fb013aef2",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "A group of seven young people standing outdoors on a sunny day, smiling and posing for a photo, with green trees, a blue sky, and buildings in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "133.33333333333331vh"
+   },
+   {
+    "picture": {
+     "base": "/media/285a89ad467f",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Group of young students and an older man posing together in a room with white walls and windows, some making peace signs.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/07826a6d5330",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of young people participating in a game in an indoor gym or recreation room, with cones and large red and green balls, some people smiling and observing.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/86ceadefef18",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Group of people standing inside a police department, with a sign that says 'POLICE DEPARTMENT' above them. The group includes children and adults, some in uniforms and others in casual clothing, posing for a photo.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/26cf6419c371",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young people standing indoors with white walls and small rectangular windows, holding signs that say 'EAT MOAR CHIKIN' and making peace signs.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   },
+   {
+    "picture": {
+     "base": "/media/053e77ca10c6",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1324,
+     "height": 1770,
+     "alt": "Two young men walking hand in hand outdoors on a sunny day, with trees and a blue sky in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "74.80225988700565vh"
+   },
+   {
+    "picture": {
+     "base": "/media/91846ee41b46",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1342,
+     "height": 1802,
+     "alt": "A young man with short black hair is reading a colorful comic book or magazine inside a room. In the background, two children are sitting on a red couch, one with a tablet and the other reading a book. The room has cartoon animal wall decorations and",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "74.47280799112099vh"
+   },
+   {
+    "picture": {
+     "base": "/media/a0b222811ac1",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2374,
+     "height": 1660,
+     "alt": "A group of nine people, including individuals in firefighter uniforms and casual clothing, standing in front of a fire truck inside a garage or fire station. Some are making peace signs and smiling.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "143.0120481927711vh"
+   },
+   {
+    "picture": {
+     "base": "/media/6d331fa3a038",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1336,
+     "height": 1780,
+     "alt": "A group of young people with shopping carts in a grocery store aisle, with broccoli and other produce visible in the foreground and signs in Chinese characters overhead.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75.0561797752809vh"
+   },
+   {
+    "picture": {
+     "base": "/media/b342ecdeda0e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1352,
+     "height": 1796,
+     "alt": "A young girl with short dark hair and a pink shirt plays with a wooden bead maze toy at a library. In the background, there are people sitting at tables and browsing bookshelves.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75.27839643652561vh"
+   },
+   {
+    "picture": {
+     "base": "/media/cd99b2422b7b",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young men are making pottery together in a ceramics class, smiling and enjoying the activity in a bright room with shelves holding various ceramic bowls and decorative items.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "75vh"
+   }
+  ]
+ },
+ "6acae43f319e28120c779aaa": {
+  "type": "gallery",
+  "design": "masonry",
+  "width": "full-bleed",
+  "animation": "none",
+  "captions": false,
+  "lightbox": false,
+  "columns": 4,
+  "gutter": 0,
+  "items": [
+   {
+    "picture": {
+     "base": "/media/81152aff5bef",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1616,
+     "height": 1080,
+     "alt": "A85A2110-EBFF-4FE8-BFAB-528484925A9E.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/8e97904cdfbb",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_1035.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1ab8e46817bd",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3404,
+     "height": 1848,
+     "alt": "Screenshot 2026-09-21 at 6.42.58 PM.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/e5d69e8a6120",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1320,
+     "height": 2682,
+     "alt": "IMG_0612 3.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/b72e41243195",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1920,
+     "height": 1280,
+     "alt": "IMG_0968.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/2998bb424178",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3416,
+     "height": 1904,
+     "alt": "Screenshot 2026-09-16 at 6.00.02 PM.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1791682374184rjm",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2204,
+     "height": 2939,
+     "alt": "IMG_9258+3.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/e037647b521f",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_0999.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/79f691fcd6e3",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3408,
+     "height": 1882,
+     "alt": "Screenshot 2026-09-16 at 5.51.33 PM.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/6c17fc747cee",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "IMG_1451.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1794173317763bf1",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2500,
+     "height": 2098,
+     "alt": "IMG_9261.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/6263f2df6455",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_1530.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1791682000049xvr",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1206,
+     "height": 2064,
+     "alt": "IMG_2127.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/93a65e7371a1",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_9263.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/616c2296ddf5",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "IMG_0994.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1794173225916hfg",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2346,
+     "height": 2013,
+     "alt": "IMG_1454.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/17941734409670to",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2500,
+     "height": 2196,
+     "alt": "IMG_9300+3.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1f3570152b71",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1920,
+     "height": 1280,
+     "alt": "IMG_0944.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/505132d056a5",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2868,
+     "height": 1320,
+     "alt": "IMG_9427.PNG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1794173403839mku",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2500,
+     "height": 1867,
+     "alt": "IMG_0993.jpg",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/179417338580608t",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2500,
+     "height": 2303,
+     "alt": "IMG_1538.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/265f94e97e68",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4896,
+     "height": 3672,
+     "alt": "IMG_1519.JPG",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   },
+   {
+    "picture": {
+     "base": "/media/1794173264051e4n",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 2500,
+     "height": 2023,
+     "alt": "IMG_1447.png",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    },
+    "sizes": "(max-width:768px)50vw,(max-width:992px)33.333333333333336vw,25vw"
+   }
+  ]
+ },
+ "6aa23ae2c238d65b982b8fba": {
+  "type": "gallery",
+  "design": "strips",
+  "width": "full-bleed",
+  "animation": "none",
+  "captions": false,
+  "lightbox": false,
+  "gutter": 0,
+  "rowHeight": 300,
+  "items": [
+   {
+    "picture": {
+     "base": "/media/c6d080125b72",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1920,
+     "height": 1280,
+     "alt": "Group of diverse people dressed in costumes and casual clothing, some holding food and props, standing in front of a beige brick wall with partially visible words 'Inclusive' and 'Limitless' and a fire alarm.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/465f244c4dcf",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "Group of young people celebrating Christmas, wearing Santa hats, festive sweaters, and holiday accessories, standing in front of a red Christmas backdrop with decorations.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/939f46ee65a8",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "Group of young people standing indoors, holding bouquets of flowers, smiling for a photo at a celebration or event.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/fc297d16f0ed",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "A group of people posing together inside a store, with holiday decorations and shelves stocked with products around them.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/9c2132277d2c",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A group of young people, mostly women, standing outdoors under trees with fall foliage, in front of a white tent during the daytime.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/951af6576628",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Two young women wearing white T-shirts with the Edbury logo, smiling and taking a selfie at an outdoor event. The background shows a tent, trees, and other people.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/01608de5783b",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Table with various greeting cards featuring colorful illustrations of snowmen, owls, trees, animals, and holiday themes, along with a black bag labeled 'Edwards Community Center,' a smartphone, and a cardboard box labeled 'Edubd Cards.'",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/fa0407eda4c7",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of young people standing outdoors under a large tree at a festival or fair, holding pamphlets and making peace signs, with tents and other people in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/39a9129ce208",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "People gathered around a table with various types of food, including sushi, fruit, vegetables, and fried snacks, during a holiday celebration with Christmas hats and decorations.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/ea4ae9ec2a48",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "People at an outdoor craft event with tables filled with beads, jewelry making supplies, and children drawing or crafting. Tents and other event booths are visible in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/82b11f19deb6",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1920,
+     "height": 1280,
+     "alt": "Three people dressed in animal and explorer costumes posing with peace signs against a beige wall.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/8e835500f464",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Three young people holding decorated Christmas cards outdoors at a festive event, with other people, tents, and trees in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/5ba45564a6d8",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1920,
+     "height": 1280,
+     "alt": "A group of teenagers standing near lockers in a school hallway, one boy with dark hair smiling at the camera, another boy with glasses looking down, and a girl with long hair smiling.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/2fd34d0c05f3",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Two young men sitting at a table decorated for a celebration, with gift bags and party decorations. One man is wearing an aviation-themed jacket, sunglasses, and giving a thumbs-up. The other is wearing a black jacket and holding a phone. There are t",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/e6d04802b924",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Group of young people at an outdoor arts and crafts table, with supplies like paint, beads, and coloring pages, under a canopy in a park with trees and a pathway in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/34d7b249b177",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4032,
+     "height": 3024,
+     "alt": "A group of people standing under a white canopy at an outdoor event with a clear blue sky in the background. Some people are smiling and looking at the camera, and there are various colorful signs and items on the table in front of them.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/1947ec904e43",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A woman with dark hair and a white shirt is drawing on a young girl's face, while another woman with blonde hair holds the girl. They are sitting at a table under a tent at an outdoor event during autumn. The background shows a park with trees, other",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/2117063a67b5",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A child wearing a giraffe costume holding binoculars up to their eyes in a room with other people in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/50c251078416",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "Children and adults at an outdoor craft activity table, under a canopy, with items like beads, paints, and paper, with trees and tents in the background during fall.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/688a3cb84b27",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A group of children and adults gathered around a table at an outdoor community event, engaging in arts and crafts, with a large banner in the background that reads 'EDUBUB Community Center'.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/19925feb4f16",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Two people standing in front of colorful artwork at an art gallery. The person on the left is a young woman with long dark hair, wearing a gray hoodie and sweatpants. The person on the right is an older man wearing sunglasses, a wide-brimmed hat, a b",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/f1cc093ac6d0",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "People at an outdoor event engaging in conversations near a table with pamphlets and a game wheel. Tents and other people are visible in the background, with a clear blue sky and trees surrounding the area.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/6d6db3eae65a",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Three women sitting at a table under a white canopy tent at an outdoor event, surrounded by various snacks and candies, with trees and blue sky in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/117e59447311",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "A person standing in front of colorful artwork and making a heart shape with their hands, while a person on the right takes a photo.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/dd47c93d520e",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1206,
+     "height": 1564,
+     "alt": "Two women smiling and hugging a person in a large snowman costume with a red heart on its head at an outdoor event.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/6757da8828c1",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1344,
+     "height": 1780,
+     "alt": "Three smiling people holding colorful holiday-themed stickers at an outdoor event with booths and inflatable rides in the background.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/11d0bcb44e67",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 1334,
+     "height": 1764,
+     "alt": "Group of young people taking a selfie indoors, smiling, with one person wearing colorful face paint resembling a clown or joker.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/7cddffd04552",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Two people are creating artwork on large sheets of white paper, using colorful paint strokes in red, yellow, green, blue, purple, and orange. They are seated on the floor, with painting supplies like paint cups, brushes, and paper towels nearby. One ",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/5a3e540bdef4",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 3024,
+     "height": 4032,
+     "alt": "Group of young people, three women, and one man, sitting and standing together at an outdoor event under a canopy tent, smiling and posing for the photo. They are casually dressed, some wearing hats and t-shirts with a leaf logo.",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/ba5e6f347ef9",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 4284,
+     "height": 5712,
+     "alt": "A group of people attending an indoor presentation with a large screen displaying a biography of Eric, including his strengths and personal development points. The room has a white ceiling with fluorescent lights and some people are standing while ot",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   },
+   {
+    "picture": {
+     "base": "/media/d2967f3b0ded",
+     "ext": "webp",
+     "widths": [
+      100,
+      300,
+      500,
+      750,
+      1000,
+      1500,
+      2500
+     ],
+     "width": 5712,
+     "height": 4284,
+     "alt": "A group of young people sitting and standing around a table with checkered tablecloths during a celebration. Some are making peace signs and smiling at the camera, with party decorations and gift-wrapped boxes on the table. There is a bright, spaciou",
+     "focal": [
+      0.5,
+      0.5
+     ]
+    }
+   }
+  ]
+ },
+ "6ad7eb2b26656c71458b2440": {
+  "type": "list",
+  "layout": "banner-slideshow",
+  "infinite": true,
+  "layoutWidth": "full-bleed",
+  "titleAlign": "left",
+  "bodyAlign": "left",
+  "cardVertical": "middle",
+  "cardHorizontal": "center",
+  "paddingTop": "0vmax",
+  "paddingBottom": "0vmax",
+  "minSlideHeight": "50vh",
+  "slidePadding": [
+   "4%",
+   "4%",
+   "2%",
+   "4%"
+  ],
+  "spaceBetweenSlides": {
+   "value": 0,
+   "unit": "px"
+  },
+  "spaceBelowTitle": "4%",
+  "slideContentWidth": "100%",
+  "navigation": "arrows",
+  "navigationPlacement": "bottom",
+  "navigationAlignment": "right",
+  "navigationOffset": "3vw",
+  "titleSize": 2.3,
+  "bodySize": 1.2,
+  "titleTag": "h2",
+  "colors": {
+   "title": "hsla(var(--black-hsl),1)",
+   "description": "hsla(var(--black-hsl),1)",
+   "arrow": "hsla(var(--safeInverseDarkAccent-hsl),1)",
+   "arrowBackground": "hsla(var(--safeDarkAccent-hsl),1)"
+  },
+  "items": [
+   {
+    "title": "\"Thank you for bringing out the hidden gem within each of us.\"",
+    "html": "<p style=\"white-space:pre-wrap;\">— Teresa <em>(Parent of an EduBud student)</em></p>"
+   },
+   {
+    "title": "\"One of the most meaningful parts of EduBud has been seeing Derren build connections with people who genuinely want to get to know them.\"",
+    "html": "<p style=\"white-space:pre-wrap;\">— Lisa <em>(Parent of an EduBud student)</em></p>"
+   },
+   {
+    "title": "\"What makes EduBud special is the way everyone gets to know one another. We aren’t just showing up to volunteer hours; we’re building relationships, sharing memories, and becoming part of each other’s lives. It feels like a family where everyone has a place.\"",
+    "html": "<p style=\"white-space:pre-wrap;\">— Rachel <em>(Volunteer from Blue Bridge Project)</em></p>"
+   }
+  ]
+ }
+}
