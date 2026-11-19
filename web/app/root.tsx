@@ -1,4 +1,4 @@
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts } from 'react-router'
 import type { Route } from './+types/root'
 import './site/styles/fonts.css'
 
@@ -23,7 +23,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
-        <ScrollRestoration />
+        {/* No <ScrollRestoration>: every page is a full page load, as on the original, so the browser scrolls as it
+            does there (a new page at its top, Back to where you were). React Router's would put a page that links to
+            itself (the logo, on the home page) back where it was scrolled. */}
         <Scripts />
       </body>
     </html>
