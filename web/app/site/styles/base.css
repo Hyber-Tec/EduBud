@@ -64,8 +64,10 @@ svg {
   display: block;
   max-width: 100%;
 }
+/* Links aren't underlined, as on the original, except in text (below). */
 a {
   color: inherit;
+  text-decoration: none;
 }
 button {
   font: inherit;
@@ -101,7 +103,7 @@ button {
 .rte code,
 .rte-large,
 .rte-small,
-.marquee-item {
+.marquee-text {
   --fs: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
   font-size: var(--fs);
 }
@@ -119,7 +121,7 @@ button {
   .rte code,
   .rte-large,
   .rte-small,
-  .marquee-item {
+  .marquee-text {
     --fs: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
   }
 }
@@ -135,11 +137,7 @@ button {
 .rte h3,
 .accordion h3,
 .rte h4,
-.accordion h4,
-.marquee h1,
-.marquee h2,
-.marquee h3,
-.marquee h4 {
+.accordion h4 {
   font-family: var(--heading-font);
   font-weight: 700;
   font-style: normal;
@@ -177,9 +175,6 @@ button {
 .rte h4,
 .accordion h4 {
   line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
-}
-.marquee-item {
-  line-height: 1.4em !important;
 }
 .rte p,
 .rte li {
@@ -219,6 +214,17 @@ button {
 }
 .rte a {
   color: var(--link);
+}
+/* Links in text blocks and list descriptions: the original's 1px underline, 0.2em below the text, in the link's color.
+   A colored stretch inside a link draws its own underline in its own color (white text, white line). */
+.text-block a,
+.list-item-description a {
+  text-decoration: underline solid currentColor 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+[class^='rte-text-color--'] {
+  text-decoration: inherit;
 }
 .rte h1 a,
 .rte h2 a,
@@ -298,20 +304,20 @@ button {
   text-decoration-thickness: var(--hl-thickness, 0.1em);
   text-underline-offset: 0.2em;
 }
-.rte-highlight a {
+/* Links inside highlighted text aren't underlined (the highlight is their line), as on the original. */
+.rte-highlight a,
+.rte-text-highlight a {
   text-decoration: none;
 }
 
 /* Text scaled to fill its block (fitText sets each line's size). */
+/* A scaled line keeps its paragraph's line box (so a small line is as tall as a line of text, its words on the
+   baseline), and shows once it's been sized. */
 .rte-scaled-text-container {
   display: block;
 }
-.rte-scaled-text-container {
-  line-height: 0;
-}
 .rte-scaled-text {
   display: inline-block;
-  vertical-align: top;
   white-space: nowrap;
   visibility: hidden;
 }

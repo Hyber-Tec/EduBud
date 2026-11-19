@@ -37,6 +37,14 @@
   height: auto;
   aspect-ratio: var(--image-component-native-aspect-ratio, 1);
 }
+/* A picture narrower than its block sits where its "image position" says: the middle, or the left or right edge (the
+   block is a column, so across is `align-items`). */
+.image-block.image-block--left {
+  align-items: flex-start;
+}
+.image-block.image-block--right {
+  align-items: flex-end;
+}
 /* A masked picture's frame is square (the original's masks are drawn in a square); the photo covers it. */
 .image-frame--masked {
   --image-component-native-aspect-ratio: 1;
@@ -163,6 +171,14 @@
 .button-block--right {
   align-items: flex-end;
 }
+/* A button's lines follow its alignment setting when its text wraps (a narrow "Learn More" on a tablet), as on the
+   original; on one line the text is centered either way. */
+.button-block--left .button {
+  text-align: left;
+}
+.button-block--right .button {
+  text-align: right;
+}
 /* A stretched button fills its block, its text centered, with no padding above or below (as measured). */
 .button-block--stretched {
   justify-content: stretch;
@@ -244,6 +260,11 @@
   text-align: left;
   padding: var(--accordion-item-padding-top, 30px) var(--accordion-item-padding-right, 0) var(--accordion-item-padding-bottom, 30px) var(--accordion-item-padding-left, 0);
 }
+/* From the keyboard, the title gets the original's ring: 2px in its color, just inside its edge. */
+.accordion-title button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
 .accordion--icon-left .accordion-title button {
   flex-direction: row-reverse;
 }
@@ -257,40 +278,51 @@
   height: var(--accordion-icon-size, 14px);
   color: var(--acc-icon, currentColor);
 }
+/* The icons turn as the original's do, in 0.25s (its accordion's own stylesheet; site.css's 0.2s is overridden): the
+   plus's second line lies down to make a minus (from 90° to 0°), and the arrow's box turns half a circle. */
 .plus,
-.plus-h,
-.plus-v {
+.arrow-container {
   position: absolute;
   inset: 0;
 }
 .plus-h,
 .plus-v {
-  background: currentColor;
-  margin: auto;
-  transition: transform 0.2s ease;
-}
-.plus-h {
+  position: absolute;
+  inset: 0;
   height: var(--accordion-icon-thickness, 1px);
+  margin: auto 0;
+  background: currentColor;
+  transition: transform 0.25s;
 }
 .plus-v {
-  width: var(--accordion-icon-thickness, 1px);
-}
-.accordion-item[data-open] .plus-v {
   transform: rotate(90deg);
 }
+.accordion-item[data-open] .plus-v {
+  transform: rotate(0deg);
+}
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s;
+}
+.accordion-item[data-open] .arrow-container {
+  transform: rotate(-180deg);
+}
 .arrow {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 70%;
-  height: 70%;
+  box-sizing: border-box;
+  width: 70.71067%;
+  height: 70.71067%;
   border-right: var(--accordion-icon-thickness, 1px) solid currentColor;
   border-bottom: var(--accordion-icon-thickness, 1px) solid currentColor;
   transform: translateY(-25%) rotate(45deg);
-  transition: transform 0.2s ease;
 }
-.accordion-item[data-open] .arrow {
-  transform: translateY(25%) rotate(-135deg);
+@media (prefers-reduced-motion: reduce) {
+  .plus-v,
+  .arrow-container,
+  .accordion-dropdown {
+    transition: none !important;
+  }
 }
 /* The open item's drop-down keeps its description's margins inside it (it hides what overflows, as the original's). */
 .accordion-dropdown {
@@ -313,41 +345,58 @@
   margin-bottom: 1rem;
 }
 
-/* Scrolling text */
+/* Scrolling text (blocks/MarqueeBlock.tsx): one line of the block's text style, its items measured once (hidden),
+   then written along an SVG path. A heading style takes the heading font, a paragraph style the text font, each with
+   its own color from the section's theme. */
 .marquee-block {
   justify-content: center;
   overflow: hidden;
 }
-/* The scrolling line: as tall as its text's line (a waving one adds its wave's depth). */
 .marquee {
   position: relative;
-  display: flex;
-  width: max-content;
-  animation: marquee calc(60s / var(--marquee-speed, 1)) linear infinite;
 }
-.marquee--right {
-  animation-direction: reverse;
-}
-.marquee-track {
-  display: flex;
-  flex: 0 0 auto;
-}
-.marquee-item {
+/* One line; a space at an item's end doesn't count (as on the original: "Big Ideas, Real Impact. "). */
+.marquee-text {
   --v: var(--marquee-font-size-value, var(--heading-1-size-value));
-  padding-right: var(--marquee-item-spacing, 0.5em) !important;
-  margin: 0;
-  padding: 0;
+  line-height: 1.4em;
+  white-space: nowrap;
+}
+.marquee--heading {
   font-family: var(--heading-font);
   font-weight: 700;
+  font-style: normal;
   letter-spacing: -0.04em;
   text-transform: capitalize;
-  white-space: pre;
   color: var(--marquee-h, var(--h1));
 }
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
+.marquee--paragraph {
+  font-family: var(--body-font);
+  font-weight: 300;
+  text-transform: none;
+  color: var(--marquee-p, var(--p2));
+}
+.marquee-measure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: max-content;
+  visibility: hidden;
+  pointer-events: none;
+}
+.marquee-item {
+  flex: 0 0 auto;
+  margin: 0 var(--marquee-item-spacing, 0.5em) 0 0;
+}
+/* The line fades out at both ends when the block asks for it. */
+.marquee-display {
+  -webkit-mask-image: var(--marquee-fade-mask, none);
+  mask-image: var(--marquee-fade-mask, none);
+}
+.marquee-svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
 }
 
 /* Lines: a 1px rule with 8px above and below, as the original's, so a line block is at least 17px tall (taller than

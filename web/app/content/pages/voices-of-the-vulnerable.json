@@ -153,7 +153,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "d13c69003692319b4986",
@@ -458,7 +459,8 @@
        0.6000375023438964
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     }
    ]
   },
@@ -548,7 +550,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "fb67b9b5c6dd99a2d0fd",
@@ -687,7 +690,8 @@
        1
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "a306d6e073637ef829c4",
@@ -750,7 +754,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "a864f9a34ffd0b40fc0c",
@@ -813,7 +818,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "6941fd73f4e8ee75ca06",
@@ -876,7 +882,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "f5209feacc67806aee62",
@@ -939,7 +946,8 @@
        1
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     }
    ]
   }

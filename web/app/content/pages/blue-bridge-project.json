@@ -121,7 +121,8 @@
       ]
      },
      "stretched": false,
-     "maskSvg": "<svg data-image-mask-id=\"959f4814c0991cf9e512-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"959f4814c0991cf9e512-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
+     "maskSvg": "<svg data-image-mask-id=\"959f4814c0991cf9e512-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"959f4814c0991cf9e512-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>",
+     "position": "left"
     },
     {
      "id": "75346102068e4a13e549",
@@ -373,7 +374,8 @@
        0.6000375023438964
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "yui_3_17_2_1_1788549573664_7615",
@@ -878,7 +880,8 @@
        0.06399999999999995
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "6aa17569ac57765996f2",
