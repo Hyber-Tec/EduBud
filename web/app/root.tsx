@@ -48,6 +48,8 @@ export default function App() {
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  // The footer's scaled text (its big "EDUBUD") shows once fitText has sized it, on this page as on the others.
+  useEffect(() => fitText(), [])
   if (isRouteErrorResponse(error) && error.status === 404) return <NotFound />
   return <NotFound />
 }
