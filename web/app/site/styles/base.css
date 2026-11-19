@@ -311,15 +311,13 @@ button {
 }
 
 /* Text scaled to fill its block (fitText sets each line's size). */
+/* A scaled line keeps its paragraph's line box (so a small line is as tall as a line of text, its words on the
+   baseline), and shows once it's been sized. */
 .rte-scaled-text-container {
   display: block;
 }
-.rte-scaled-text-container {
-  line-height: 0;
-}
 .rte-scaled-text {
   display: inline-block;
-  vertical-align: top;
   white-space: nowrap;
   visibility: hidden;
 }
