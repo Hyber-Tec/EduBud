@@ -3,8 +3,8 @@ import type { Route } from './+types/root'
 import './site/styles/fonts.css'
 
 // The document every page shares: its head, EduBud's fonts and the scripts. How a page looks comes from its layout,
-// which imports its own CSS: routes/site-layout.tsx for the copy of edubud.org. React Router links a layout's CSS
-// only on the pages inside it, so one layout's styles never reach another's pages.
+// which imports its own CSS: routes/site-layout.tsx for the copy of edubud.org, routes/app-layout.tsx for the app.
+// React Router links a layout's CSS only on the pages inside it, so one layout's styles never reach another's pages.
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', href: '/favicon.ico' },

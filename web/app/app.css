@@ -1,0 +1,167 @@
+/*
+ * The app's styles: what we add next to the copy of edubud.org (the log-in and sign-up pages now; the point tracker,
+ * the forms inbox, the calendar and the admin pages later). Tailwind CSS with shadcn/ui's components, in EduBud's
+ * fonts and colours. Only the app's pages link this file (routes/app-layout.tsx imports it), and the copy's CSS
+ * (site/styles/) is only linked on the copy's pages, so neither reaches the other.
+ */
+@import 'tailwindcss' source(none);
+
+/* Where Tailwind looks for class names: the app's files, never the copy's. A new folder or page of the app goes here. */
+@source './components';
+@source './auth';
+@source './routes/{app-layout,login,signup}.tsx';
+
+/* The app has no dark theme yet: `dark:` styles apply only inside an element with the `dark` class, which nothing has. */
+@custom-variant dark (&:is(.dark *));
+
+/* shadcn/ui's state variants, which its components use (from shadcn's tailwind.css, kept here so the app doesn't need
+   the shadcn package at all). */
+@custom-variant data-open {
+  &:where([data-state='open']),
+  &:where([data-open]:not([data-open='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-closed {
+  &:where([data-state='closed']),
+  &:where([data-closed]:not([data-closed='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-checked {
+  &:where([data-state='checked']),
+  &:where([data-checked]:not([data-checked='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-unchecked {
+  &:where([data-state='unchecked']),
+  &:where([data-unchecked]:not([data-unchecked='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-selected {
+  &:where([data-selected='true']) {
+    @slot;
+  }
+}
+@custom-variant data-disabled {
+  &:where([data-disabled='true']),
+  &:where([data-disabled]:not([data-disabled='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-active {
+  &:where([data-state='active']),
+  &:where([data-active]:not([data-active='false'])) {
+    @slot;
+  }
+}
+@custom-variant data-horizontal {
+  &:where([data-orientation='horizontal']) {
+    @slot;
+  }
+}
+@custom-variant data-vertical {
+  &:where([data-orientation='vertical']) {
+    @slot;
+  }
+}
+
+/*
+ * EduBud's colours (CLAUDE.md, "Brand and logos"), and shadcn/ui's names for how they're used. Text keeps a contrast of
+ * at least 4.5:1 with its background, and the edges of fields 3:1. Mint, light mint and dark green are too light for
+ * text on white: they're for backgrounds and accents, with near-black text on them.
+ */
+:root {
+  --mint: hsl(158 85% 54%);
+  --dark-green: hsl(161 75% 40%);
+  --light-mint: hsl(158 100% 82%);
+  --near-black: hsl(63 61% 7%);
+  --white: hsl(0 0% 100%);
+
+  --background: var(--white);
+  --foreground: var(--near-black);
+  --card: var(--white);
+  --card-foreground: var(--near-black);
+  --popover: var(--white);
+  --popover-foreground: var(--near-black);
+  /* Main buttons: near-black with white text, as the site's. */
+  --primary: var(--near-black);
+  --primary-foreground: var(--white);
+  --secondary: var(--light-mint);
+  --secondary-foreground: var(--near-black);
+  /* Quiet backgrounds (a disabled field) and quiet text: 5.8:1 on white. */
+  --muted: hsl(158 40% 97%);
+  --muted-foreground: hsl(60 5% 38%);
+  /* What lights up under the pointer: light mint, softened. */
+  --accent: hsl(158 100% 91%);
+  --accent-foreground: var(--near-black);
+  /* Errors: 6.5:1 on white. */
+  --destructive: hsl(0 70% 42%);
+  /* Lines between things, and the edges of fields (3.5:1 on white). */
+  --border: hsl(60 9% 88%);
+  --input: hsl(60 5% 52%);
+  /* The keyboard's focus: near-black (17:1 on white). */
+  --ring: var(--near-black);
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  /* EduBud's fonts, served from /fonts (site/styles/fonts.css, which root.tsx loads on every page). They come in two
+     weights only: DM Sans light (300) and bold (700), Bricolage Grotesque bold (700) for headings. */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-weight-*: initial;
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+
+  /* Only EduBud's colours and shadcn's names for them: Tailwind's own palette (bg-gray-100, text-red-600, …) is off. */
+  --color-*: initial;
+  --color-mint: var(--mint);
+  --color-dark-green: var(--dark-green);
+  --color-light-mint: var(--light-mint);
+  --color-near-black: var(--near-black);
+  --color-white: var(--white);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background font-light text-foreground antialiased;
+  }
+  /* Buttons show they can be pressed (Tailwind's reset gives them the arrow). */
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}

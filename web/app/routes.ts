@@ -14,4 +14,6 @@ export default [
     // found" page once the page's scripts run, inside this layout and with its CSS.
     route('*', 'routes/not-found.tsx', { id: 'not-found-other' }),
   ]),
+  // What we add next to the copy: the app's pages, with the app's CSS (routes/app-layout.tsx) and none of the copy's.
+  layout('routes/app-layout.tsx', [route('login', 'routes/login.tsx'), route('signup', 'routes/signup.tsx')]),
 ] satisfies RouteConfig
