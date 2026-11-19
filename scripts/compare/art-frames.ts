@@ -1,10 +1,11 @@
 /**
- * Compares the animated backgrounds (web/app/site/art/) with the original's, pixel for pixel, at the same moments.
+ * Compares the animated backgrounds (web/app/site/art/), and the effects on image blocks' pictures (film grain), with
+ * the original's, pixel for pixel, at the same moments.
  *
  * Both sites run on a fake clock (Playwright's page.clock: Date, performance.now, timers and requestAnimationFrame),
  * paused from the start and moved forward the same way on both, so their frames have the same timestamps. For each
- * page, window width and pixel ratio, it reads what each art section shows (its drawing, from the canvas showing it)
- * on both sites, and counts the pixels that differ:
+ * page, window width and pixel ratio, it reads what each art section (or block) shows (its drawing, from the canvas
+ * showing it) on both sites, and counts the pixels that differ:
  *
  * - "first": the first frame, drawn for every section when its art starts, at 16 ms;
  * - then, for each section, scrolled into view: its frames at the given moments (ms) after it starts playing;
@@ -13,8 +14,9 @@
  *
  * The original starts each kind's sections as soon as that kind's code arrives, so which sections share a canvas
  * changes from one load to the next. Here it's made to start them in the order ours always takes (kinds in the order
- * they first appear on the page), by holding each kind's code until the kinds before it have started. Kinds left out
- * of --kinds aren't loaded on either site. Bokeh places its discs at random: both sites get the same random numbers
+ * they first appear on the page), by holding each kind's code until the kinds before it have started (not an image
+ * block's: its block starts its effect twice, and holding the code would leave both running). Kinds left out of
+ * --kinds aren't loaded on either site. Bokeh places its discs at random: both sites get the same random numbers
  * (Math.random is replaced by a seeded one, started again when the discs are made).
  *
  * Runs on our computers, never in CI: it loads edubud.org, one page at a time, and refuses every request but GET.
@@ -26,6 +28,7 @@
  *   npx tsx scripts/compare/art-frames.ts --reduced-motion         # for visitors who ask for less motion
  *   npx tsx scripts/compare/art-frames.ts --resize-to 1024         # also after the window is resized, and back
  *   npx tsx scripts/compare/art-frames.ts --pages /our-team --kinds parallax --scrolls 200,600,1200,0,600,200
+ *   npx tsx scripts/compare/art-frames.ts --pages /our-team --kinds filmGrain   # an image block's effect
  *
  * Where our layout makes a section a different size, its art is drawn at that size and can't match; --same-size
  * draws it at the original's, to compare the drawing alone, and keeps the original's at the size it starts with (on
@@ -78,19 +81,28 @@ const SCROLL_MOMENTS = args['scroll-moments']!.split(',').map(Number)
 const FOLLOW_SCROLL = ['parallax']
 const OUT = path.join(ROOT, 'scripts/compare/out/art-frames', args.name!)
 
+/** A section's art, or an image block's effect (`block`). */
 interface ArtSection {
   id: string
   kind: string
+  block?: boolean
 }
 
-/** A page's art sections in page order (the footer's last), from our content. */
+/** A page's art in page order (each section's, then its blocks'; the footer's last), from our content. */
 async function artOf(pagePath: string): Promise<ArtSection[]> {
   const slug = pagePath === '/' ? 'home' : pagePath.slice(1).replace(/\//g, '__')
   const page = JSON.parse(await readFile(path.join(CONTENT, 'pages', `${slug}.json`), 'utf8'))
   const site = JSON.parse(await readFile(path.join(CONTENT, 'site.json'), 'utf8'))
-  return [...page.sections, ...site.footer]
-    .filter((s: any) => s.background?.art?.settings)
-    .map((s: any) => ({ id: s.id, kind: s.background.art.settings.type }))
+  return [...page.sections, ...site.footer].flatMap((s: any) => [
+    ...(s.background?.art?.settings ? [{ id: s.id, kind: s.background.art.settings.type }] : []),
+    ...(s.blocks ?? []).filter((b: any) => b.effect).map((b: any) => ({ id: b.id, kind: b.effect.type, block: true })),
+  ])
+}
+
+/** The box a section's art (or a block's effect) is drawn in, on each site. */
+const BOX = {
+  original: (a: ArtSection) => (a.block ? `#block-${a.id} .imageEffectContainer` : `section[data-section-id="${a.id}"] .section-background-canvas`),
+  ours: (a: ArtSection) => (a.block ? `[data-block="${a.id}"] .image-effect` : `section[data-section="${a.id}"] .section-background-canvas`),
 }
 
 /** A seeded Math.random, started again when bokeh makes its discs (its first Float32Array of 100,000 × 3 numbers). */
@@ -113,11 +125,16 @@ const FRAME_CLOCK = `(() => {
   window.requestAnimationFrame = (cb) => raf((t) => { window.__lastFrame = t; cb(t) })
 })()`
 
-/** Reads what a section's art shows: its own canvas, or the shared one moved into it (its top left corner). */
+/**
+ * Reads what a section's art (or a block's effect) shows: its own canvas, or the shared one moved into its box (its
+ * top left corner). On the original, its runtime says which canvases are the drawing's: an image block's own canvas
+ * can be out of the page (its block, starting its effect twice, empties the box after the second has drawn there).
+ */
 const READ = `((sel) => {
-  const node = document.querySelector(sel + ' .section-background-canvas')
+  const node = document.querySelector(sel)
   if (!node) return null
-  const [own, shared] = node.querySelectorAll('canvas')
+  const piece = (window.__sqsWebGL?.controllers ?? []).flatMap((c) => c.content.map((x) => [x, c])).find(([x]) => x.node === node)
+  const [own, shared] = piece ? [piece[0].canvas, piece[1].webglCanvas] : node.querySelectorAll('canvas')
   if (!own) return { node: [node.offsetWidth, node.offsetHeight] }
   const showsShared = own.style.display === 'none' && !!shared
   const tmp = document.createElement('canvas')
@@ -134,13 +151,10 @@ const READ = `((sel) => {
   }
 })`
 
-/**
- * The original's art drawn in section backgrounds (its runtime also draws the effects on some image blocks, on the
- * same canvases, which we don't compare).
- */
-const BACKGROUND_ART = `(window.__sqsWebGL?.controllers ?? []).map((c) => c.content.filter((x) => x.node?.classList.contains('background-fx-canvas')))`
+/** The original's art on each of its canvases: sections' backgrounds and image blocks' effects. */
+const ART = `(window.__sqsWebGL?.controllers ?? []).map((c) => c.content.filter((x) => x.node?.matches('.background-fx-canvas, .imageEffectContainer')))`
 /** Which sections share each canvas, in order: the original's (its runtime's own list) or ours (data-stage). */
-const STAGES_ORIGINAL = `(() => ${BACKGROUND_ART}.filter((art) => art.length).map((art) => art.map((x) => x.node.closest('section').dataset.sectionId)))()`
+const STAGES_ORIGINAL = `(() => ${ART}.filter((art) => art.length).map((art) => art.map((x) => x.node.closest('section').dataset.sectionId)))()`
 const STAGES_OURS = `(() => {
   const by = new Map()
   for (const n of document.querySelectorAll('[data-stage]')) {
@@ -154,7 +168,7 @@ const STAGES_OURS = `(() => {
 interface Side {
   name: 'original' | 'ours'
   page: Page
-  select: (id: string) => string
+  box: (art: ArtSection) => string
 }
 
 async function open(browser: Browser, name: Side['name'], url: string, width: number, scale: number, sections: ArtSection[], pageKinds: string[], css = ''): Promise<Side> {
@@ -172,14 +186,14 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
     const req = route.request()
     if (req.method() !== 'GET') return route.abort()
     const file = new URL(req.url()).pathname.split('/').pop() ?? ''
+    // The kind a script is (the original's image blocks' effects in kebab case: image-effect-film-grain.js).
+    const blockEffect = name === 'original' ? /^image-effect-([a-z-]+)\.js$/.exec(file)?.[1].replace(/-([a-z])/g, (_, c: string) => c.toUpperCase()) : undefined
     const kind =
-      name === 'original' ? /^background-(?:image-fx-)?([a-z]+)\.[0-9a-f]+\.js$/.exec(file)?.[1] : /^([a-z]+)-[\w-]+\.js$/.exec(file)?.[1]
+      blockEffect ?? (name === 'original' ? /^background-(?:image-fx-)?([a-z]+)\.[0-9a-f]+\.js$/.exec(file)?.[1] : /^([a-zA-Z]+)-[\w-]+\.js$/.exec(file)?.[1])
     // Ours: only this page's kinds of art left out of --kinds (our files are named after their modules, a page's too).
     if (kind && !KINDS.includes(kind) && (name === 'original' || pageKinds.includes(kind))) return route.abort()
-    // The original's effects on image blocks (Our Team's film grain), which we don't draw, would take canvas places.
-    if (name === 'original' && /^image-effect-[a-z-]+\.js$/.test(file)) return route.abort()
-    // The original's kinds wait their turn (see above).
-    if (name === 'original' && kind && KINDS.includes(kind)) return new Promise<void>((resolve) => held.push({ kind, release: () => resolve(route.continue()) }))
+    // The original's kinds wait their turn (see above), but not its image blocks'.
+    if (name === 'original' && kind && KINDS.includes(kind) && !blockEffect) return new Promise<void>((resolve) => held.push({ kind, release: () => resolve(route.continue()) }))
     if (css && req.resourceType() === 'document' && req.url() === url) {
       const res = await route.fetch()
       return route.fulfill({ response: res, body: (await res.text()).replace('</head>', `<style>${css}</style></head>`) })
@@ -194,7 +208,7 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90_000 })
 
   // Start the kinds in turn, and wait until all their sections have started.
-  const started = () => page.evaluate(name === 'original' ? `${BACKGROUND_ART}.flat().length` : `document.querySelectorAll('[data-stage]').length`) as Promise<number>
+  const started = () => page.evaluate(name === 'original' ? `${ART}.flat().length` : `document.querySelectorAll('[data-stage]').length`) as Promise<number>
   let expected = 0
   for (const kind of kinds) {
     expected += sections.filter((s) => s.kind === kind).length
@@ -203,8 +217,10 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
       await page.waitForTimeout(250)
     }
   }
+  // (An image block's effect is made twice as it starts, the first let go a moment later.)
+  if (sections.some((s) => s.block)) await page.waitForTimeout(1000)
   if ((await started()) !== sections.length) console.warn(`  ! ${name}: ${await started()} of ${sections.length} sections started`)
-  return { name, page, select: (id) => (name === 'original' ? `section[data-section-id="${id}"]` : `section[data-section="${id}"]`) }
+  return { name, page, box: BOX[name] }
 }
 
 type Shot = { png?: string | null; node: number[]; draw?: number[]; shows?: string; shared?: unknown[] | null; frame?: number }
@@ -278,11 +294,11 @@ async function main() {
           for (const s of sections) {
             // (The original's keeps its size to the fraction of a pixel: any change would tell its art it was resized.)
             const [w, h, exactW, exactH] = (await original.page.evaluate(
-              `(() => { const n = document.querySelector('${original.select(s.id)} .section-background-canvas'); const r = n.getBoundingClientRect(); return [n.offsetWidth, n.offsetHeight, r.width, r.height] })()`,
+              `(() => { const n = document.querySelector('${original.box(s)}'); const r = n.getBoundingClientRect(); return [n.offsetWidth, n.offsetHeight, r.width, r.height] })()`,
             )) as number[]
-            const size = (w: number, h: number) => `.section-background-canvas { right: auto !important; bottom: auto !important; width: ${w}px !important; height: ${h}px !important; }`
-            css += `section[data-section="${s.id}"] ${size(w, h)}\n`
-            await original.page.addStyleTag({ content: `section[data-section-id="${s.id}"] ${size(exactW, exactH)}` })
+            const size = (w: number, h: number) => `{ right: auto !important; bottom: auto !important; width: ${w}px !important; height: ${h}px !important; }`
+            css += `${BOX.ours(s)} ${size(w, h)}\n`
+            await original.page.addStyleTag({ content: `${original.box(s)} ${size(exactW, exactH)}` })
           }
         const sides = [original, await open(browser, 'ours', ours + pagePath, width, scale, sections, pageKinds, css)]
         const stages = [await sides[0].page.evaluate(STAGES_ORIGINAL), await sides[1].page.evaluate(STAGES_OURS)]
@@ -290,8 +306,9 @@ async function main() {
         if (!sameStages) console.warn(`  ! canvases shared differently: ${JSON.stringify(stages)}`)
         const both = async (fn: (s: Side) => Promise<unknown>) => Promise.all(sides.map(fn))
         const previous = new Map<string, PNG>()
-        const look = async (id: string, moment: string) => {
-          const [a, b] = (await both((s) => s.page.evaluate(`${READ}(${JSON.stringify(s.select(id))})`))) as Shot[]
+        const look = async (art: ArtSection, moment: string) => {
+          const id = art.id
+          const [a, b] = (await both((s) => s.page.evaluate(`${READ}(${JSON.stringify(s.box(art))})`))) as Shot[]
           const r = compare(a, b)
           const change = r.comparable ? moved(previous.get(id), r.pa) : undefined
           if (r.comparable) previous.set(id, r.pa)
@@ -300,7 +317,7 @@ async function main() {
             width,
             scale,
             section: id,
-            kind: sections.find((s) => s.id === id)!.kind,
+            kind: art.kind,
             moment,
             frame: [a?.frame, b?.frame],
             node: [a?.node, b?.node],
@@ -322,18 +339,19 @@ async function main() {
         }
         // The first frame: every section draws once when its art starts.
         await both((s) => s.page.clock.runFor(16))
-        for (const s of sections) await look(s.id, 'first')
+        for (const s of sections) await look(s, 'first')
         // Then each section on screen, at each moment after it starts playing.
         let at = 40000
-        // Scrolls a section into view, and waits until the page knows it's on screen (paused art draws once then, on the
-        // next frame), and has checked its size: observers made after the art's hear after the art's do. (The page's
-        // own timers are stopped with its clock: the wait's limit is ours.)
-        const onScreen = (side: Side, id: string) =>
+        // Scrolls a section (its top) or a block (its middle) into view, and waits until the page knows it's on screen
+        // (paused art draws once then, on the next frame), and has checked its size: observers made after the art's
+        // hear after the art's do. (The page's own timers are stopped with its clock: the wait's limit is ours.)
+        const onScreen = (side: Side, art: ArtSection) =>
           Promise.race([
             side.page.evaluate(`new Promise((resolve) => {
-              const node = document.querySelector(${JSON.stringify(side.select(id))} + ' .section-background-canvas')
+              const node = document.querySelector(${JSON.stringify(side.box(art))})
               // At once: the original scrolls smoothly (its CSS), which would take its art on screen frames later than ours.
-              node.closest('section').scrollIntoView({ block: 'start', behavior: 'instant' })
+              if (${!!art.block}) node.scrollIntoView({ block: 'center', behavior: 'instant' })
+              else node.closest('section').scrollIntoView({ block: 'start', behavior: 'instant' })
               const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); ro.observe(node) } })
               const ro = new ResizeObserver(() => { ro.disconnect(); resolve(true) })
               io.observe(node)
@@ -360,12 +378,12 @@ async function main() {
           // The clock jumps first: a jump's own frame can be a millisecond apart on the two pages (each counts from its
           // own start), the frames after it fall on the same 16 ms steps. A paused section draws once, on the first.
           await both((side) => side.page.clock.pauseAt(T0 + at))
-          await both((side) => onScreen(side, s.id))
+          await both((side) => onScreen(side, s))
           await both((side) => side.page.waitForTimeout(100))
           for (const m of MOMENTS) {
             if (m) await both((side) => side.page.clock.pauseAt(T0 + at + m))
             await both((side) => side.page.clock.runFor(32))
-            await look(s.id, `${m}ms`)
+            await look(s, `${m}ms`)
           }
           at += 30000 + Math.max(...MOMENTS)
           // With --scrolls, the page is scrolled to each place in turn, and the frames after each scroll compared. The
@@ -376,7 +394,7 @@ async function main() {
             for (const m of SCROLL_MOMENTS) {
               if (m) await both((side) => side.page.clock.pauseAt(T0 + at + m))
               await both((side) => side.page.clock.runFor(32))
-              await look(s.id, `y${y}+${m}ms`)
+              await look(s, `y${y}+${m}ms`)
             }
             at += 5000 + Math.max(...SCROLL_MOMENTS)
           }
@@ -385,12 +403,12 @@ async function main() {
             for (const w of [Number(args['resize-to']), width]) {
               await both((side) => side.page.clock.pauseAt(T0 + at))
               await both((side) => side.page.setViewportSize({ width: w, height: HEIGHTS[width] ?? 900 }))
-              await both((side) => onScreen(side, s.id))
+              await both((side) => onScreen(side, s))
               await both((side) => side.page.waitForTimeout(500))
               for (const m of [0, 1000]) {
                 if (m) await both((side) => side.page.clock.pauseAt(T0 + at + m))
                 await both((side) => side.page.clock.runFor(32))
-                await look(s.id, `at${w}+${m}`)
+                await look(s, `at${w}+${m}`)
               }
               at += 10000
             }

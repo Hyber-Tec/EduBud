@@ -1,13 +1,18 @@
 import type { ImageBlock as Data } from '~/content/types'
+import { useBlockEffect } from '../art/blockEffect'
 import { phoneChange } from '../phoneLayout'
 import { focal, Img } from '../Picture'
 import { ZoomPicture } from '../ZoomPicture'
 
 export function ImageBlock({ block }: { block: Data }) {
+  const effect = useBlockEffect(block.effect)
+  // A picture with an effect loads at once and at the window's width, as the original's does: the browser picks the
+  // same file, which the effect draws.
   const img = (
     <Img
       picture={block.picture}
       className="image-media"
+      eager={!!block.effect}
       style={{ objectPosition: focal(block.picture) ?? 'var(--image-component-focal-point)' }}
     />
   )
@@ -23,6 +28,8 @@ export function ImageBlock({ block }: { block: Data }) {
         ) : (
           img
         )}
+        {/* An effect on the picture (film grain) draws over it, under its overlay, as on the original. */}
+        {block.effect && <div ref={effect} className="image-effect" />}
         <div className="image-overlay" />
         {/* A picture of text opens full size on phones (content/phone.json). */}
         {phoneChange(block.id)?.zoom && <ZoomPicture picture={block.picture} />}

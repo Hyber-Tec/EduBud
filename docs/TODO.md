@@ -9,7 +9,8 @@ down to **Done**. Checked on 2026-11-19.
   account holder ([`INSTAGRAM.md`](INSTAGRAM.md), "Connect EduBud's account"). Until then it shows the original's
   posts.
 
-Round 3 (the moving backgrounds, a search page, the Instagram feed updating itself) is being built.
+- [ ] **Look at round 3** on https://edubud-hybertec.web.app: every moving background as the original's, the map,
+  search, your two bugs fixed. The review page's link is in pull request #18. Say what still feels different.
 
 ## Done
 
