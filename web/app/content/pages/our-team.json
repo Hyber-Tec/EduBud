@@ -667,7 +667,8 @@
        0.08800550034377153
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "a17afffd6efa58553c89",
@@ -800,7 +801,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "51c8f2eabfa58a3b6b4a",
@@ -2086,7 +2088,8 @@
        0.7920495030939434
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "b3abeb8b4b85434bc4ae",
@@ -2150,7 +2153,8 @@
       ]
      },
      "stretched": false,
-     "maskSvg": "<svg data-image-mask-id=\"b3abeb8b4b85434bc4ae-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"b3abeb8b4b85434bc4ae-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
+     "maskSvg": "<svg data-image-mask-id=\"b3abeb8b4b85434bc4ae-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"b3abeb8b4b85434bc4ae-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>",
+     "position": "left"
     },
     {
      "id": "ea395eb7ee9841f185c6",
@@ -2214,7 +2218,8 @@
       ]
      },
      "stretched": true,
-     "maskSvg": "<svg data-image-mask-id=\"ea395eb7ee9841f185c6-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ea395eb7ee9841f185c6-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.622,0.852 C0.686,1.049,0.314,1.049,0.378,0.852 C0.119,1,-0.05,0.883,0.151,0.613 C-0.041,0.667,-0.041,0.333,0.151,0.387 C-0.05,0.117,0.119,-0.049,0.392,0.148 C0.314,-0.049,0.686,-0.049,0.622,0.148 C0.895,-0.049,1,0.117,0.863,0.387 C1.035,0.333,1.05,0.647,0.863,0.613 C1,0.883,0.895,1,0.622,0.852\" /> </clippath> </defs> </svg>"
+     "maskSvg": "<svg data-image-mask-id=\"ea395eb7ee9841f185c6-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ea395eb7ee9841f185c6-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.622,0.852 C0.686,1.049,0.314,1.049,0.378,0.852 C0.119,1,-0.05,0.883,0.151,0.613 C-0.041,0.667,-0.041,0.333,0.151,0.387 C-0.05,0.117,0.119,-0.049,0.392,0.148 C0.314,-0.049,0.686,-0.049,0.622,0.148 C0.895,-0.049,1,0.117,0.863,0.387 C1.035,0.333,1.05,0.647,0.863,0.613 C1,0.883,0.895,1,0.622,0.852\" /> </clippath> </defs> </svg>",
+     "position": "left"
     },
     {
      "id": "66e8ce8a9cd3d8faf71d",

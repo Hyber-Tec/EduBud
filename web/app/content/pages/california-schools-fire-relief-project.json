@@ -153,7 +153,8 @@
        1
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "c61d2d18936e2064bb95",
@@ -339,7 +340,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "acb91cbb51f74efc28ae",
@@ -402,7 +404,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     },
     {
      "id": "282987d8888cad494cdd",
@@ -465,7 +468,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "position": "left"
     }
    ]
   }

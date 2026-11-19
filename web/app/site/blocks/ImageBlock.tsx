@@ -10,7 +10,7 @@ export function ImageBlock({ block }: { block: Data }) {
     />
   )
   return (
-    <div className={`block image-block${block.stretched ? ' image-block--stretched' : ''}`}>
+    <div className={`block image-block${block.stretched ? ' image-block--stretched' : ''}${block.position ? ` image-block--${block.position}` : ''}`}>
       {/* A masked picture (a circle, a flower…) fills a square frame, whatever the photo's own shape, as on the
           original: its shape is drawn in a square. */}
       <div className={`image-frame${block.maskSvg ? ' image-frame--masked' : ''}`}>

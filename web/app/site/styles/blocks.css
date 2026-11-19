@@ -37,6 +37,14 @@
   height: auto;
   aspect-ratio: var(--image-component-native-aspect-ratio, 1);
 }
+/* A picture narrower than its block sits where its "image position" says: the middle, or the left or right edge (the
+   block is a column, so across is `align-items`). */
+.image-block.image-block--left {
+  align-items: flex-start;
+}
+.image-block.image-block--right {
+  align-items: flex-end;
+}
 /* A masked picture's frame is square (the original's masks are drawn in a square); the photo covers it. */
 .image-frame--masked {
   --image-component-native-aspect-ratio: 1;

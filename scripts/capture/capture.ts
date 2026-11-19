@@ -388,6 +388,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         link: link(sqs.querySelector('a[href]')),
         stretched: root?.getAttribute('data-is-image-stretched') === 'true',
         maskSvg: [...sqs.querySelectorAll('svg[data-image-mask-id]')].map((m) => m.outerHTML.replace(/\s+/g, ' ')).join('') || undefined,
+        ...imagePosition(root?.getAttribute('class') ?? ''),
       }
     }
 
@@ -813,4 +814,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === import.meta.filename) {
     console.error(e)
     process.exit(1)
   })
+}
+
+/** Where a picture narrower than its block sits in it ("image position"): the original's default is the middle. */
+function imagePosition(cls: string): { position?: 'left' | 'right' } {
+  const position = cls.match(/image-position-(left|right)\b/)?.[1] as 'left' | 'right' | undefined
+  return position ? { position } : {}
 }

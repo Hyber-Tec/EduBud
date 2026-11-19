@@ -126,6 +126,8 @@ export interface ImageBlock extends BlockBase {
   stretched: boolean
   /** An SVG mask shape over the picture, if the original uses one. */
   maskSvg?: string
+  /** Where the picture sits when it's narrower than its block (its "image position"); the middle when not set. */
+  position?: 'left' | 'right'
 }
 
 export interface ShapeBlock extends BlockBase {
