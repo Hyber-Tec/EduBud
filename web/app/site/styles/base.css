@@ -64,8 +64,10 @@ svg {
   display: block;
   max-width: 100%;
 }
+/* Links aren't underlined, as on the original, except in text (below). */
 a {
   color: inherit;
+  text-decoration: none;
 }
 button {
   font: inherit;
@@ -213,6 +215,17 @@ button {
 .rte a {
   color: var(--link);
 }
+/* Links in text blocks and list descriptions: the original's 1px underline, 0.2em below the text, in the link's color.
+   A colored stretch inside a link draws its own underline in its own color (white text, white line). */
+.text-block a,
+.list-item-description a {
+  text-decoration: underline solid currentColor 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+[class^='rte-text-color--'] {
+  text-decoration: inherit;
+}
 .rte h1 a,
 .rte h2 a,
 .rte h3 a,
@@ -291,7 +304,9 @@ button {
   text-decoration-thickness: var(--hl-thickness, 0.1em);
   text-underline-offset: 0.2em;
 }
-.rte-highlight a {
+/* Links inside highlighted text aren't underlined (the highlight is their line), as on the original. */
+.rte-highlight a,
+.rte-text-highlight a {
   text-decoration: none;
 }
 
