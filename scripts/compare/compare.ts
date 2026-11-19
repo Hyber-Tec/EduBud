@@ -48,8 +48,10 @@ export const ALL_PAGES = [
 export const ALL_WIDTHS = [1920, 1440, 1024, 768, 390]
 const HEIGHTS: Record<number, number> = { 1920: 1080, 1440: 900, 1024: 1366, 768: 1024, 390: 844 }
 
+// Not strict: other compare scripts import this file (for serve()), and their own options aren't listed here.
 const { values: args } = parseArgs({
   allowPositionals: true,
+  strict: false,
   options: {
     pages: { type: 'string' },
     widths: { type: 'string' },
@@ -58,7 +60,7 @@ const { values: args } = parseArgs({
     port: { type: 'string', default: '5179' },
     fresh: { type: 'boolean' },
   },
-})
+}) as { values: { pages?: string; widths?: string; ours?: string; name?: string; port: string; fresh?: boolean } }
 
 const MIME: Record<string, string> = {
   '.html': 'text/html; charset=utf-8',

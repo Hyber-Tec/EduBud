@@ -581,10 +581,13 @@ export function parseSection(sec: Element, doc: Document): Section {
     }
   }
   if (mode === 'generative' || sec.querySelector('.background-fx-canvas')) {
-    // Animated art drawn in the page: art.ts takes its pictures (content/art.json); until then, the theme's color.
-    const kind = styles.generative?.type ?? context.backgroundMediaEffect?.type ?? 'art'
+    // Animated art drawn in the page: a generative background, which our site/art/ draws from its settings, or an
+    // effect on the background picture (a picture section can keep an old `generative` it doesn't use, so its kind is
+    // the effect's). art.ts takes pictures of both (content/art.json), shown until the art is drawn.
+    const generative = mode === 'generative' ? styles.generative : undefined
+    const kind = generative?.type ?? context.backgroundMediaEffect?.type ?? 'art'
     const shot = artIndex[id]
-    if (kind !== 'none') background.art = { kind, images: shot?.images ?? [] }
+    if (kind !== 'none') background.art = { kind, images: shot?.images ?? [], ...(generative ? { settings: generative } : {}) }
   }
   if (typeof styles.imageOverlayOpacity === 'number' && (background.image || background.video)) {
     background.overlayOpacity = styles.imageOverlayOpacity

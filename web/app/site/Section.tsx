@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
+import { ArtBackground, PauseButtons, useArt, type ArtControl } from './art/ArtBackground'
 import { Block } from './Block'
 import { poseProps, useMotion } from './motion'
 import { phoneChange, phoneLayout } from './phoneLayout'
@@ -67,23 +68,14 @@ function FeBlock({ block: b, phone }: { block: BlockData; phone: Area }) {
   )
 }
 
-function Background({ section }: { section: SectionData }) {
+function Background({ section, art }: { section: SectionData; art: ArtControl }) {
   const bg = section.background
   if (!bg) return null
   return (
     <div className="section-background">
       {bg.image && <Img picture={bg.image} className="section-background-media" style={{ objectPosition: focal(bg.image) }} alt="" />}
       {bg.video && <BackgroundVideo src={bg.video.src} filter={bg.video.filter} />}
-      {bg.art && bg.art.images.length > 0 && (
-        <picture>
-          {bg.art.images
-            .filter((i) => i.upTo)
-            .map((i) => (
-              <source key={i.src} media={`(max-width: ${i.upTo}px)`} srcSet={i.src} />
-            ))}
-          <img className="section-background-media" src={bg.art.images[bg.art.images.length - 1].src} alt="" loading="lazy" decoding="async" />
-        </picture>
-      )}
+      {bg.art && <ArtBackground art={bg.art} control={art} />}
       {/* A picture gets its overlay; a video doesn't (the original keeps the setting but draws no overlay on it). */}
       {bg.overlayOpacity !== undefined && !bg.video && <div className="section-background-overlay" style={{ opacity: bg.overlayOpacity }} />}
     </div>
@@ -124,22 +116,6 @@ function BackgroundVideo({ src, filter }: { src: string; filter?: string }) {
   )
 }
 
-/**
- * The round button the original puts on an animated-art background (not on videos), which pauses the animation. Our
- * art is a still picture of it, so the button only switches between its pause and play icons.
- */
-function PauseButton() {
-  const [paused, setPaused] = useState(false)
-  return (
-    <button
-      type="button"
-      className={`background-pause-button${paused ? ' background-pause-button--paused' : ''}`}
-      aria-label={paused ? 'Play Background' : 'Pause Background'}
-      onClick={() => setPaused(!paused)}
-    />
-  )
-}
-
 /** How deep the bottom divider of the section before this one is (its --divider-height), if it has one. */
 export function dividerAbove(sections: SectionData[], index: number): string | undefined {
   const prev = sections[index - 1]
@@ -150,6 +126,7 @@ export function Section({ section, index, below }: { section: SectionData; index
   const css = sectionCss(section)
   const g = section.grid
   const phone = phoneLayout(section)
+  const art = useArt(section.background?.art)
   const gridStyle: Vars = {
     '--rows-m': phone.rows,
     '--row-min-m': g.mobile.rowMin,
@@ -167,10 +144,9 @@ export function Section({ section, index, below }: { section: SectionData; index
     >
       {css && <style>{css}</style>}
       <div className="section-border">
-        <Background section={section} />
+        <Background section={section} art={art} />
       </div>
       <div className="content-wrapper">
-        {(section.background?.art?.images.length ?? 0) > 0 && <PauseButton />}
         <div className="content">
           {section.kind === 'gallery' && <GallerySection section={section} />}
           {section.kind === 'list' && <ListSection section={section} />}
@@ -182,6 +158,7 @@ export function Section({ section, index, below }: { section: SectionData; index
           </div>
           )}
         </div>
+        {section.background?.art?.settings && <PauseButtons control={art} />}
       </div>
     </section>
   )
