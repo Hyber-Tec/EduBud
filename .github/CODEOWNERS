@@ -1,0 +1,22 @@
+# The shared files: what every part of the project or every developer depends on. A pull request that changes one is
+# the code owner's to review when he asks; Claude Code merges its own once CI is green (CLAUDE.md, "Merging").
+# See CLAUDE.md, "Git and commits".
+
+# The project's rules, the brief and the owner's decisions
+/CLAUDE.md                  @goochoi913
+/EDUBUD_PROJECT_BRIEF.md    @goochoi913
+/docs/DECISIONS.md          @goochoi913
+
+# Firebase settings (and, when they exist, the security rules and indexes)
+/firebase.json              @goochoi913
+/.firebaserc                @goochoi913
+
+# Dependencies, in every folder that declares them
+package.json                @goochoi913
+package-lock.json           @goochoi913
+
+# CI and deploys, the repository guard, the deploy runbook
+/.github/                   @goochoi913
+/scripts/check-repo.sh      @goochoi913
+/scripts/ci-changes.sh      @goochoi913
+/docs/DEPLOY.md             @goochoi913
