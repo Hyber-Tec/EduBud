@@ -127,9 +127,10 @@ async function settle(page: Page, url: string) {
     await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
     for (const v of document.querySelectorAll('video')) { v.pause(); v.currentTime = 0 }
     const style = document.createElement('style')
-    // content-visibility: the original skips drawing some parts (its form fields) while they're off screen, which a
-    // full-page screenshot would leave out.
-    style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important;content-visibility:visible!important}'
+    style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important}'
+    // The original skips drawing some parts while they're off screen (content-visibility: auto, its form fields), which
+    // a full-page screenshot would leave out: draw them. (Only those: parts it hides on purpose stay hidden.)
+    for (const el of document.querySelectorAll('*')) if (getComputedStyle(el).contentVisibility === 'auto') el.style.contentVisibility = 'visible'
     document.head.appendChild(style)
   })()`)
   await page.waitForTimeout(1200)
