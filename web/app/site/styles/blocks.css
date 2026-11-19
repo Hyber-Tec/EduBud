@@ -193,9 +193,12 @@
 .accordion-title {
   margin: 0;
 }
-/* The title's lines are the font's own height ("normal"), as on the original: DM Sans rounds to whole pixels. */
+/* The title's lines are the font's own height ("normal"), as on the original: DM Sans rounds to whole pixels. It
+   takes its heading's capitalization and spacing (browsers reset them on buttons). */
 .accordion-title button {
   line-height: normal;
+  text-transform: inherit;
+  letter-spacing: inherit;
   display: flex;
   width: 100%;
   align-items: center;

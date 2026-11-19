@@ -1,6 +1,7 @@
-import { useState, type CSSProperties } from 'react'
+import { useRef, useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
 import { Block } from './Block'
+import { poseProps, useMotion } from './motion'
 import { focal, Img } from './Picture'
 import { GallerySection } from './sections/GallerySection'
 import { ListSection } from './sections/ListSection'
@@ -37,8 +38,25 @@ function sectionCss(section: SectionData): string {
     const m = Object.entries(b.varsMobile ?? {})
     if (m.length) out.push(`@media (max-width: 767px) { [data-block="${b.id}"] { ${m.map(([k, v]) => `${k}: ${v};`).join(' ')} } }`)
     if (b.css) out.push(b.css)
+    // A block that appears waits in its starting pose (site/motion.ts moves it to its place).
+    if (b.motion?.appear) {
+      const pose = Object.entries(poseProps('appear', b.motion.appear.pose))
+      out.push(`@media (prefers-reduced-motion: no-preference) { [data-block="${b.id}"] { ${pose.map(([k, v]) => `${k}: ${v};`).join(' ')} } }`)
+    }
   }
   return out.join('\n')
+}
+
+/** A block in its place on the grid, with its animations if it has any. */
+function FeBlock({ block: b }: { block: BlockData }) {
+  const ref = useRef<HTMLDivElement>(null)
+  useMotion(ref, b.motion)
+  const classes = ['fe-block', `fe-block--${b.type}`, b.background && 'fe-block--bg', b.motion && 'fe-block--motion', b.motion?.appear && 'fe-block--appear']
+  return (
+    <div ref={ref} className={classes.filter(Boolean).join(' ')} data-block={b.id} style={blockStyle(b)}>
+      <Block block={b} />
+    </div>
+  )
 }
 
 function Background({ section }: { section: SectionData }) {
@@ -126,9 +144,7 @@ export function Section({ section, index, below }: { section: SectionData; index
           {!section.kind && (
           <div className="fe-grid" style={gridStyle}>
             {section.blocks.map((b) => (
-              <div key={b.id} className={`fe-block fe-block--${b.type}${b.background ? ' fe-block--bg' : ''}`} data-block={b.id} style={blockStyle(b)}>
-                <Block block={b} />
-              </div>
+              <FeBlock key={b.id} block={b} />
             ))}
           </div>
           )}

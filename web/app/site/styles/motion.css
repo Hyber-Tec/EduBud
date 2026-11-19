@@ -1,0 +1,61 @@
+/*
+ * Block animations (site/motion.ts plays them). A block that has any moves by three layers at once: hover (--mh-*),
+ * press (--mp-*) and appear (--ma-*), each an offset (x, y), a turn (r), a stretch (sx, sy) and a slant (kx, ky).
+ * They're registered so the browser can animate them, and added to the block's own transform the way the original
+ * adds them: offsets together, then turns, stretches and slants.
+ */
+@property --mh-x { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --mh-y { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --mh-r { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --mh-sx { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --mh-sy { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --mh-kx { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --mh-ky { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+@property --mp-x { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --mp-y { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --mp-r { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --mp-sx { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --mp-sy { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --mp-kx { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --mp-ky { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+@property --ma-x { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --ma-y { syntax: '<length-percentage>'; inherits: false; initial-value: 0px; }
+@property --ma-r { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --ma-sx { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --ma-sy { syntax: '<number>'; inherits: false; initial-value: 1; }
+@property --ma-kx { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --ma-ky { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+.fe-block.fe-block--motion {
+  transform:
+    translateX(calc(var(--translate-x, 0px) + var(--mh-x) + var(--mp-x) + var(--ma-x)))
+    translateY(calc(var(--translate-y, 0px) + var(--mh-y) + var(--mp-y) + var(--ma-y)))
+    rotate(calc(var(--rotation, 0deg) + var(--mh-r) + var(--mp-r) + var(--ma-r)))
+    scale(
+      calc(var(--scale-x, 100%) * var(--mh-sx) * var(--mp-sx) * var(--ma-sx)),
+      calc(var(--scale-y, 100%) * var(--mh-sy) * var(--mp-sy) * var(--ma-sy))
+    )
+    skewX(calc(var(--skew-x, 0deg) + var(--mh-kx) + var(--mp-kx) + var(--ma-kx)))
+    skewY(calc(var(--skew-y, 0deg) + var(--mh-ky) + var(--mp-ky) + var(--ma-ky)));
+}
+
+/* A block that appears starts in its pose (set with the section's styles), unless the visitor wants less motion. If
+   our script hasn't taken over two seconds in, it's shown in its place anyway, as on the original. */
+@media (prefers-reduced-motion: no-preference) {
+  .fe-block--appear:not([data-motion]) {
+    animation: motion-appear-fallback 0s 2s forwards;
+  }
+}
+@keyframes motion-appear-fallback {
+  to {
+    --ma-x: 0px;
+    --ma-y: 0px;
+    --ma-r: 0deg;
+    --ma-sx: 1;
+    --ma-sy: 1;
+    --ma-kx: 0deg;
+    --ma-ky: 0deg;
+  }
+}

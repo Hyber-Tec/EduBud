@@ -13,6 +13,7 @@ import './site/styles/header.css'
 import './site/styles/shop.css'
 import './site/styles/widgets.css'
 import './site/styles/galleries.css'
+import './site/styles/motion.css'
 import NotFound from './routes/not-found'
 
 export const links: Route.LinksFunction = () => [
