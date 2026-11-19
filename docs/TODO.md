@@ -1,11 +1,14 @@
 # To-do
 
 The owner's list, short on purpose. When something is done, Claude Code ticks it, adds ✅ and the date, and moves it
-down to **Done**. Checked on 2026-11-18.
+down to **Done**. Checked on 2026-11-19.
 
 ## Now
 
-- [ ] **Compare the copy with edubud.org** when it's up (https://edubud-hybertec.web.app, and the side-by-side report)
+- [ ] **Compare the copy with edubud.org:** https://edubud-hybertec.web.app next to https://www.edubud.org, and the
+  side-by-side report (its link is in pull request #3). Say what still looks different.
+- [ ] **Answer Q6 and Q7** in [`QUESTIONS.md`](QUESTIONS.md): the animated backgrounds (still pictures for now), a
+  Google Maps key for the map, the Instagram feed, search; and the original's faults we didn't copy.
 
 ## Done
 

@@ -40,7 +40,8 @@ html {
 }
 body {
   margin: 0;
-  background: hsla(var(--white-hsl), 1);
+  /* The site's own background (its root theme's: the mint), which shows where no section covers the page. */
+  background: var(--bg);
   color: hsla(var(--black-hsl), 1);
   font-family: var(--body-font);
   font-weight: 300;
@@ -304,4 +305,27 @@ button {
   font-size: 1em !important;
   line-height: 1em !important;
   margin: 0 !important;
+}
+
+/* The "page not found" page: plain text under the header, 30px from the edges (as the original's), on the page's own
+   background; its links look like the text around them. */
+.system-page {
+  padding: var(--header-height) 30px 30px;
+}
+.system-page > p:first-child {
+  padding-top: 30px;
+}
+.system-page p,
+.system-page ul {
+  margin: 1em 0;
+}
+.system-page ul {
+  padding-left: 40px;
+}
+.system-page li > * {
+  margin: 0;
+}
+.system-page a {
+  color: inherit;
+  text-decoration: none;
 }

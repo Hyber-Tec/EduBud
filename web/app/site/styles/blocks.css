@@ -37,6 +37,10 @@
   height: auto;
   aspect-ratio: var(--image-component-native-aspect-ratio, 1);
 }
+/* A masked picture's frame is square (the original's masks are drawn in a square); the photo covers it. */
+.image-frame--masked {
+  --image-component-native-aspect-ratio: 1;
+}
 /* A color over the picture, as strong as its setting (some pictures are covered whole: the mint frames). */
 .image-overlay {
   position: absolute;
@@ -70,7 +74,25 @@
   --block-bg: var(--tweak-video-block-background-color, var(--video-bg));
 }
 .fe-block--form {
-  --block-bg: var(--form-block-background-color, var(--form-bg));
+  --block-bg: var(--tweak-form-block-background-color, var(--form-bg));
+}
+/* A form on a card (a form block with its own background): the card's padding, from its setting, and the theme's
+   colors for forms on a background (white fields on the mint card, for instance). */
+.fe-block--form.fe-block--bg > .form-block {
+  padding: var(--form-block-padding, 0);
+}
+.fe-block--form.fe-block--bg .form {
+  --form-title: var(--form-title-on-bg);
+  --form-desc: var(--form-desc-on-bg);
+  --form-caption: var(--form-caption-on-bg);
+  --form-input: var(--form-input-on-bg);
+  --form-fill: var(--form-fill-on-bg);
+  --form-border: var(--form-border-on-bg);
+  --form-accent: var(--form-accent-on-bg);
+  --form-accessory: var(--form-accessory-on-bg);
+  --form-option: var(--form-option-on-bg);
+  --btn1-bg: var(--form-btn-bg-on-bg);
+  --btn1-fg: var(--form-btn-fg-on-bg);
 }
 
 /* Shapes: one drawing for phones and one for wider screens, as their alignment can differ. */

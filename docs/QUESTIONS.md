@@ -23,6 +23,9 @@ answer.
 - **The Instagram feed** (Our Team) shows the posts Squarespace had copied when we read the site (20 posts). New posts
   won't appear until the copy reads them again. *Default: a snapshot, refreshed by hand* (`scripts/capture/widgets.ts`).
   Keeping it live needs EduBud's Instagram account connected to our app, later.
+- **Search:** the "page not found" page's second link ("try searching … clicking here") opens Squarespace's search
+  page on the original. The copy has no search yet, so it shows "page not found" again. *Default: left as is*; a
+  search page would be new work.
 
 ### Q7. Faults on the original we didn't copy, and small differences
 

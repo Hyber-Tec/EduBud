@@ -113,6 +113,8 @@ async function settle(page: Page, url: string) {
     await document.fonts?.ready
     // Load every picture now instead of when it scrolls into view: scrolling would change the original's header.
     for (const img of document.querySelectorAll('img[loading="lazy"]')) img.loading = 'eager'
+    // And decode them before painting: a full-page screenshot leaves out pictures decoded "async" below the window.
+    for (const img of document.images) img.decoding = 'sync'
     await Promise.all([...document.images].filter((i) => !i.complete).map((i) => new Promise((r) => { i.onload = i.onerror = r; setTimeout(r, 8000) })))
     // Decode them too: a picture far below the window is otherwise left blank in a full-page screenshot.
     await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
@@ -125,7 +127,9 @@ async function settle(page: Page, url: string) {
     await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
     for (const v of document.querySelectorAll('video')) { v.pause(); v.currentTime = 0 }
     const style = document.createElement('style')
-    style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important}'
+    // content-visibility: the original skips drawing some parts (its form fields) while they're off screen, which a
+    // full-page screenshot would leave out.
+    style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important;content-visibility:visible!important}'
     document.head.appendChild(style)
   })()`)
   await page.waitForTimeout(1200)
