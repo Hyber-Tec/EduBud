@@ -69,6 +69,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+/* Keyboard focus, as the original shows it on links and buttons: a 2px line in the section's navigation colour, 4px
+   outside. A click shows none (the browser tells keyboard focus apart). Form fields show focus their own way. */
+:focus-visible {
+  outline: 2px solid var(--nav);
+  outline-offset: 4px;
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline-color: transparent;
+}
 button {
   font: inherit;
   color: inherit;

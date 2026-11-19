@@ -96,9 +96,10 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.7);
 }
+/* Reached with the keyboard: a blue dashed line around it, as the original player's. */
 .vp-play:focus-visible {
-  outline: none;
-  border: 1px solid #fff;
+  outline: 2px dashed #00b2ff;
+  outline-offset: 2px;
 }
 .vp[data-hidden] .vp-play {
   visibility: hidden;
@@ -268,22 +269,12 @@
   stroke-width: 1.5px;
 }
 .vp-button:hover,
-.vp-button:focus-visible,
 .vp-button[aria-expanded='true'] {
   color: #fff;
 }
+/* Reached with the keyboard, the controls show nothing, as the original's (measured, tabbing through it). */
 .vp-button:focus-visible {
   outline: none;
-}
-.vp-button:focus-visible::before {
-  content: '';
-  position: absolute;
-  left: calc(50% - 15px);
-  top: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-  border: 1px solid #fff;
-  border-radius: 50%;
 }
 .vp-button--settings svg {
   transition: transform 0.3s ease;
@@ -348,8 +339,7 @@
   background: #fff;
 }
 .vp-range:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline: none;
 }
 .vp-range--volume {
   position: absolute;
@@ -535,10 +525,6 @@
 .vp-progress:active .vp-range--seek::-webkit-slider-thumb {
   margin-top: -4px;
 }
-.vp-range--seek:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-}
 .vp-buffer {
   position: absolute;
   left: 0;
@@ -663,10 +649,21 @@
   display: block;
   cursor: pointer;
 }
+/* A tile's picture fades in over a second once it has loaded (InstagramBlock's TileImage). Before it's asked for, it
+   has no file and takes no room. */
 .ig-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.ig-img:not([src]) {
+  display: none;
+}
+.ig-img[data-loaded],
+.ig-img--static {
+  opacity: 1;
 }
 /* A video post's play mark: a white triangle with a soft shadow, 31 px across; three quarters of that on screens of
    1.5x and more, where the original uses a sharper, smaller picture of it. */
@@ -722,11 +719,12 @@
   inset: 0;
   transition: opacity 0.3s ease-in-out;
 }
+/* Closing: the backdrop goes in 0.3 s (above); the post and the buttons fade more slowly (0.6 s), as the original's. */
 .ig-lightbox[data-phase='closing'] .ig-lb-slides,
 .ig-lightbox[data-phase='closing'] .ig-lb-control,
 .ig-lightbox[data-phase='closing'] .ig-lb-meta-trigger {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.6s ease;
 }
 .ig-lb-slide {
   position: absolute;
@@ -755,6 +753,7 @@
   max-width: none;
   border: 0;
 }
+/* The caption fades in as it appears (0.2 s), as the original's. */
 .ig-lb-meta {
   position: absolute;
   z-index: 1;
@@ -762,6 +761,12 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 0.2s ease-out;
+  animation: ig-lb-meta-in 0.2s ease-out;
+}
+@keyframes ig-lb-meta-in {
+  from {
+    opacity: 0;
+  }
 }
 /* On touch screens the caption waits for the dot, then runs across the bottom of the screen. */
 .ig-lb-meta[data-touch] {
@@ -903,8 +908,10 @@
   padding-right: 4px;
   cursor: pointer;
 }
+/* The radio itself lies over its pill (unseen), so pressing a pill gives it the focus at once, as on the original. */
 .donation-option input {
   position: absolute;
+  z-index: 1;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -928,21 +935,32 @@
   border: 1px solid var(--field-line);
   border-radius: inherit;
   pointer-events: none;
+  transition:
+    border-width 0.075s var(--ease),
+    border-color 0.2s var(--ease);
 }
-.donation-option label:hover .donation-pill,
-.donation-option input:focus-visible + .donation-pill {
-  background-color: var(--form-fill);
+/* Under the pointer (where there is one; a tap shows none): fuller, its ring thicker. With the focus (a click or a
+   tap gives it too): the ring dark and thick. */
+@media (hover: hover) {
+  .donation-option label:hover .donation-pill {
+    background-color: var(--form-fill);
+  }
+  .donation-option label:hover .donation-pill::before {
+    border-width: 2px;
+  }
 }
-.donation-option label:hover .donation-pill::before,
-.donation-option input:focus-visible + .donation-pill::before {
+.donation-option input:focus + .donation-pill::before {
   border-width: 2px;
+  border-color: var(--form-border);
 }
 .donation-option input:checked + .donation-pill {
   color: var(--form-fill);
   background-color: var(--form-option);
 }
-.donation-option label:hover input:checked + .donation-pill {
-  background-color: color-mix(in srgb, var(--form-option) 80%, transparent);
+@media (hover: hover) {
+  .donation-option label:hover input:checked + .donation-pill {
+    background-color: color-mix(in srgb, var(--form-option) 60%, transparent);
+  }
 }
 
 /* A field: the select for how often, and the custom amount. */
@@ -1009,7 +1027,7 @@
   border-color: var(--field-line);
   background-color: var(--form-fill);
 }
-.donation-select:focus-visible ~ .donation-fill,
+.donation-select:focus ~ .donation-fill,
 .donation-input:focus ~ .donation-fill {
   border-width: 1px;
   border-color: var(--form-border);
@@ -1105,22 +1123,39 @@
   inset: -2px;
   border: 1px solid var(--field-line);
   border-radius: 300px;
+  transition:
+    border-width 0.075s var(--ease),
+    border-color 0.2s var(--ease);
 }
-.donation-checkbox:checked::before {
+/* The tick wipes in from the left when checked, and out when unchecked, as the original's (the form's checkbox). */
+.donation-checkbox::before {
   content: '';
   display: block;
   width: 8.25px;
   height: 8.25px;
   background-color: var(--form-option);
   clip-path: polygon(13.29% 49.19%, 3.89% 59.8%, 40.98% 90%, 96.95% 21.23%, 86.94% 13.08%, 85.97% 12.29%, 38.95% 70.07%);
+  -webkit-mask: linear-gradient(90deg, transparent 0 50%, #fff 50%) 0 0 / 200% 100%;
+  mask: linear-gradient(90deg, transparent 0 50%, #fff 50%) 0 0 / 200% 100%;
+  transition:
+    mask-position 0.2s 0.1s var(--ease),
+    -webkit-mask-position 0.2s 0.1s var(--ease);
 }
-.donation-fee-option label:hover .donation-checkbox {
-  background-color: color-mix(in srgb, var(--form-fill) 60%, transparent);
+.donation-checkbox:checked::before {
+  -webkit-mask-position: -100% 0;
+  mask-position: -100% 0;
 }
-.donation-fee-option label:hover .donation-checkbox::after {
-  border-width: 2px;
+/* Under the pointer (where there is one; a tap shows none): lighter, the ring thicker. */
+@media (hover: hover) {
+  .donation-fee-option label:hover .donation-checkbox {
+    background-color: color-mix(in srgb, var(--form-fill) 60%, transparent);
+  }
+  .donation-fee-option label:hover .donation-checkbox::after {
+    border-width: 2px;
+  }
 }
-.donation-checkbox:focus-visible::after {
+/* With the focus (a click gives it too), the ring is dark and thick. */
+.donation-checkbox:focus::after {
   border-width: 2px;
   border-color: var(--form-border);
 }
@@ -1153,7 +1188,8 @@
   gap: 5px;
   margin: 0 0 20px;
   padding: 6px 10px;
-  border-radius: 300px;
+  /* As the original's (22px for 14px text): a pill on one line, a rounded box if it wraps. */
+  border-radius: calc(10px + 1.3em * 0.66);
   color: #fff;
   background-color: rgb(206, 44, 48);
   font-size: 14px;
@@ -1191,63 +1227,13 @@
   cursor: pointer;
   transition: opacity 0.1s linear;
 }
-.donation-button:hover,
-.donation-button[data-state='submitting'] {
-  opacity: 0.8;
-}
-.donation-button-state {
-  display: grid;
-  grid-template-areas: 'state';
-  align-items: center;
-  justify-items: center;
-}
-.donation-button-text,
-.donation-button-progress {
-  grid-area: state;
-  transition:
-    opacity 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-    visibility 0.2s cubic-bezier(0.61, 1, 0.88, 1);
-}
-.donation-button-progress {
-  position: relative;
-  width: 100%;
-  height: 2.03px;
-  overflow: hidden;
-  border-radius: 17px;
-  visibility: hidden;
-  opacity: 0;
-}
-.donation-button-progress::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: currentColor;
-  opacity: 0.5;
-}
-.donation-button-progress span {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 50%;
-  border-radius: 17px;
-  background: currentColor;
-  animation: donation-progress 0.75s linear infinite;
-}
-@keyframes donation-progress {
-  from {
-    transform: translate3d(-200%, 0, 0);
-  }
-  to {
-    transform: translate3d(100%, 0, 0);
+/* Dimmed under the pointer (where there is one). Sending, it shows its running line (SubmitButton, blocks.css). */
+@media (hover: hover) {
+  .donation-button:hover {
+    opacity: 0.8;
   }
 }
-.donation-button[data-state='submitting'] .donation-button-text {
-  visibility: hidden;
-  opacity: 0;
-}
-.donation-button[data-state='submitting'] .donation-button-progress {
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0.1s;
+/* Its keyboard outline hugs it, as the original's. */
+.donation-button:focus-visible {
+  outline-offset: 0;
 }

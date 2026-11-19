@@ -77,8 +77,11 @@
   cursor: pointer;
   transition: opacity 0.1s linear;
 }
-.shop-button:hover {
-  opacity: 0.8;
+/* Only where there is a pointer: on a touch screen a tap leaves it as it was, as the original's (a primary button). */
+@media (hover: hover) {
+  .shop-button:hover {
+    opacity: 0.8;
+  }
 }
 .shop-button-inner {
   display: flex;
@@ -372,6 +375,15 @@
   text-align: center;
   cursor: pointer;
   transition: opacity 0.3s ease-in;
+}
+/* Unseen until its picture has loaded, then it fades in (Gallery.tsx). Without scripts, it shows at once. */
+.shop-gallery-thumb:not(.is-loaded) {
+  opacity: 0;
+}
+@media (scripting: none) {
+  .shop-gallery-thumb:not(.is-loaded) {
+    opacity: 1;
+  }
 }
 .shop-gallery-thumb img {
   display: inline;
@@ -727,6 +739,10 @@
   opacity: 0.3;
   cursor: default;
 }
+/* Their keyboard outline sits closer than other buttons' (2px), as the original's. */
+.shop-qty-button:focus-visible {
+  outline-offset: 2px;
+}
 .shop-qty-icon {
   display: inline-flex;
   align-items: center;
@@ -756,10 +772,10 @@
   border-color: color-mix(in srgb, var(--form-border) 55%, transparent);
   background-color: var(--form-fill);
 }
+/* While typing, the border darkens; the fill stays as it is (fuller only under the pointer), as the original's. */
 .shop-qty:focus-within .shop-qty-border {
   border-width: 1px;
   border-color: var(--form-border);
-  background-color: var(--form-fill);
 }
 
 /* ---- The cart, empty ---- */
@@ -818,4 +834,8 @@
 }
 .shop-cart-button:hover {
   opacity: 0.8;
+}
+/* Its keyboard outline is black, as the original cart's own style has it. */
+.shop-cart-button:focus-visible {
+  outline-color: #000;
 }

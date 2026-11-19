@@ -211,8 +211,21 @@
   transition: opacity 0.1s linear;
   font-size: 1rem;
 }
-.button:hover {
+/* Dimmed under the pointer. As on the original, a primary button only where there is a pointer (on a touch screen a
+   tap leaves it as it was); a secondary one also stays dimmed after a tap. */
+@media (hover: hover) {
+  .button--primary:hover {
+    opacity: 0.8;
+  }
+}
+.button--secondary:hover {
   opacity: 0.8;
+}
+/* A button block that has its own animation (hover, press, appear) never dims: the animation is its answer, as on
+   the original. */
+.fe-block--motion > .button-block .button {
+  opacity: 1 !important;
+  transition: none !important;
 }
 .button--primary {
   background: var(--btn1-bg);
@@ -438,12 +451,19 @@
   position: relative;
 }
 .form-title {
-  display: flex;
-  align-items: baseline;
-  gap: 0 0.504em;
+  display: block;
   padding: 0 0 4px;
   font-size: 1rem;
   line-height: 1.3em;
+}
+.form-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0 0.504em;
+}
+/* An email field's labels show the hand, its title included (it has the sign-up checkbox), as on the original. */
+.form-field--email label {
+  cursor: pointer;
 }
 .form-name {
   display: flex;
@@ -530,9 +550,9 @@
   padding: 0 4px 0 0;
   cursor: pointer;
 }
-/* The checkbox, as the original draws it: a 15px circle filled like the fields, a ring (1px at 55%; 2px and full on
-   hover or once checked), and a tick that wipes in from the left. The tick (::before) is also what the label's text
-   lines up with, so it's there unchecked too, masked out. */
+/* The checkbox, as the original draws it: a 15px circle filled like the fields (fuller under the pointer and once
+   checked), a ring (1px at 55%), and a tick that wipes in from the left. The tick (::before) is also what the label's
+   text lines up with, so it's there unchecked too, masked out. */
 .form-checkbox input {
   -webkit-appearance: none;
   appearance: none;
@@ -588,13 +608,14 @@
     border-color 0.2s var(--field-ease);
 }
 .form-checkbox input:hover,
-.form-checkbox input:focus-visible,
 .form-checkbox input:checked {
   background-color: var(--field-fill);
 }
-.form-checkbox input:hover::after,
-.form-checkbox input:focus-visible::after,
-.form-checkbox input:checked::after {
+/* Under the pointer the ring thickens; with the focus (a click gives it too) it also darkens, as the original's. */
+.form-checkbox input:hover::after {
+  border-width: 2px;
+}
+.form-checkbox input:focus::after {
   border-width: 2px;
   border-color: var(--field-border);
 }
@@ -607,8 +628,182 @@
   line-height: 1.3em;
   padding: 1.5rem 2.2rem;
 }
+/* Its keyboard outline hugs it, as the original's. */
+.form-submit:focus-visible {
+  outline-offset: 0;
+}
+
+/* A form's errors (FormError.tsx), as the original's: white on a red pill, after a "!" sign. The whole form's error
+   sits above the fields; a field's, between its title and its box, as wide as its words (as wide as the box for a
+   name's two parts). They appear at once. */
+.form-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 10px;
+  margin: 0 0 4px;
+  padding: 6px 10px;
+  border-radius: calc(10px + 1.3em * 0.66);
+  color: #fff;
+  background-color: rgb(206, 44, 48);
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+/* The sign sits in the middle of the words' height (on two lines too, as the original's). */
+.form-error-icon {
+  flex: none;
+  align-self: center;
+}
+.form-title .form-error {
+  width: fit-content;
+}
+.form-banner {
+  padding: 0 0 4px;
+}
+
+/* Once sent, the thank-you takes the form's place: the form keeps its room but hides at once, and the thank-you rises
+   in a quarter of a second later, as the original's does. */
+.form-wrapper {
+  display: grid;
+  grid-template-areas: 'form';
+}
+.form-wrapper > * {
+  grid-area: form;
+  min-width: 0;
+}
+.form--sent {
+  visibility: hidden;
+}
 .form-sent {
+  margin-top: 20px;
   color: var(--form-title, var(--p2));
+  font-size: 1rem;
+  line-height: 1.3em;
+  outline: none;
+  opacity: 0;
+  transform: translate3d(0, 0.5rem, 0);
+  animation: form-sent-in 0.25s 0.25s cubic-bezier(0.61, 1, 0.88, 1) forwards;
+}
+.form-sent p {
+  margin: 1rem 0;
+}
+@keyframes form-sent-in {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* A submit button's states (SubmitButton.tsx), as the original's "bar" style: the label, a line running across while
+   it sends, a tick once sent. They share one place; the one that shows fades in a tenth of a second after the other
+   fades out. Refused, the button shakes. */
+.submit-state {
+  display: grid;
+  grid-template-areas: 'state';
+  align-items: center;
+  justify-items: center;
+}
+.submit-state > * {
+  grid-area: state;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  animation-play-state: paused;
+  transition:
+    opacity 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+    visibility 0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+.submit-button:is([data-state='none'], [data-state='error']) .submit-state-label,
+.submit-button[data-state='submitting'] .submit-state-bar,
+.submit-button[data-state='submitted'] .submit-state-tick {
+  opacity: 1;
+  visibility: visible;
+  animation-play-state: running;
+  transition-delay: 0.1s;
+}
+.submit-state-bar {
+  width: 100%;
+}
+/* The line and the tick only move while they show. */
+.submit-state-bar > span,
+.submit-state-tick > span {
+  animation-play-state: inherit;
+}
+.submit-state-bar > span {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: max(2px, 0.12em);
+  border-radius: 1em;
+}
+.submit-state-bar > span::before,
+.submit-state-bar > span::after {
+  content: '';
+  position: absolute;
+  border-radius: inherit;
+  background: currentColor;
+}
+.submit-state-bar > span::before {
+  inset: 0;
+  opacity: 0.5;
+}
+.submit-state-bar > span::after {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  animation: submit-bar 0.75s linear infinite;
+  animation-play-state: inherit;
+}
+@keyframes submit-bar {
+  from {
+    transform: translate3d(-200%, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+/* The tick: a check mark's shape, filled from the left. */
+.submit-state-tick > span {
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolyline points='10.3,41.6 42.6,73.3 89.7,26.7' fill='none' stroke='%23000' stroke-width='8'/%3E%3C/svg%3E") 0 0 / 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolyline points='10.3,41.6 42.6,73.3 89.7,26.7' fill='none' stroke='%23000' stroke-width='8'/%3E%3C/svg%3E") 0 0 / 100% no-repeat;
+}
+.submit-state-tick > span::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: currentColor;
+  transform: translate3d(-100%, 0, 0);
+  animation: submit-tick 0.25s 0.15s cubic-bezier(0.61, 1, 0.88, 1) forwards;
+  animation-play-state: inherit;
+}
+@keyframes submit-tick {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.submit-button[data-state='error'] {
+  animation: submit-shake 0.4s cubic-bezier(0.37, 0, 0.63, 1) forwards;
+}
+@keyframes submit-shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.666%,
+  50%,
+  83.333% {
+    transform: translate3d(0.333rem, 0, 0);
+  }
+  33.333%,
+  66.666% {
+    transform: translate3d(-0.333rem, 0, 0);
+  }
 }
 @media (max-width: 767px) and (orientation: portrait) {
   .form {

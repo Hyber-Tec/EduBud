@@ -244,7 +244,8 @@
   background-position: 0 100%;
 }
 
-/* "Skip to Content": a button off the page until the keyboard reaches it, then at the header's top left. */
+/* "Skip to Content": a button off the page until the keyboard reaches it, then at the header's top left, its label
+   underlined (as the original's). */
 .header-skip-link {
   position: absolute;
   z-index: 2;
@@ -253,7 +254,7 @@
   font-size: min(calc((0.9 - 1) * 1.2vw + 1rem), max(calc((0.9 - 1) * 0.012 * var(--site-max-width) + 1rem), calc(0.9 * 1rem)));
   letter-spacing: -0.03em;
   line-height: normal;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .header-skip-link:focus {
   left: 1.3em;

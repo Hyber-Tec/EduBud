@@ -6,6 +6,27 @@ import { coverFactor, fileFor, num, ratio } from './pictures'
 /** The thumbnails' width: always 50px, so each one's file is known in advance (for screens of 1× and 2× density). */
 const THUMB = 50
 
+/** A thumbnail: unseen until its picture has loaded, then faded in (shop.css), as the original's. */
+function Thumb({ picture: p, need, label, onClick }: { picture: Picture; need: number; label: string; onClick: () => void }) {
+  const [loaded, setLoaded] = useState(false)
+  const img = useRef<HTMLImageElement>(null)
+  useEffect(() => {
+    if (img.current?.complete && img.current.naturalWidth) setLoaded(true)
+  }, [])
+  return (
+    <button type="button" className={`shop-gallery-thumb${loaded ? ' is-loaded' : ''}`} aria-label={label} onClick={onClick}>
+      <img
+        ref={img}
+        src={fileFor(p, need)}
+        srcSet={`${fileFor(p, need)} 1x, ${fileFor(p, 2 * need)} 2x`}
+        alt={p.alt}
+        style={{ objectPosition: focal(p) }}
+        onLoad={() => setLoaded(true)}
+      />
+    </button>
+  )
+}
+
 interface Props {
   pictures: Picture[]
   /** The gallery's shape (`3 / 4`) and its width beside the product's text (`50%`), the original's settings. */
@@ -50,23 +71,18 @@ export function Gallery({ pictures, aspect, width }: Props) {
     <div className="shop-gallery" aria-label="Gallery">
       <div className="shop-gallery-scroll">
         <div className="shop-gallery-thumbs" role="group" aria-label="Gallery thumbnails">
-          {pictures.map((p, i) => {
-            const need = THUMB * coverFactor(p, box)
-            return (
-              <button
-                key={p.base}
-                type="button"
-                className="shop-gallery-thumb"
-                aria-label={`Image ${i + 1} of ${count}`}
-                onClick={() => {
-                  setDirection(i >= index ? 'next' : 'prev')
-                  setIndex(i)
-                }}
-              >
-                <img src={fileFor(p, need)} srcSet={`${fileFor(p, need)} 1x, ${fileFor(p, 2 * need)} 2x`} alt={p.alt} style={{ objectPosition: focal(p) }} />
-              </button>
-            )
-          })}
+          {pictures.map((p, i) => (
+            <Thumb
+              key={p.base}
+              picture={p}
+              need={THUMB * coverFactor(p, box)}
+              label={`Image ${i + 1} of ${count}`}
+              onClick={() => {
+                setDirection(i >= index ? 'next' : 'prev')
+                setIndex(i)
+              }}
+            />
+          ))}
         </div>
       </div>
       <div

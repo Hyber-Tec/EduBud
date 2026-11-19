@@ -2,7 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type CSSProp
 import { createPortal } from 'react-dom'
 import type { InstagramBlock as Data, Picture } from '~/content/types'
 import widgets from '~/content/widgets.json'
-import { focal, Img, pictureSrc } from '../Picture'
+import { focal, pictureSrc, srcSet } from '../Picture'
 
 /** A post of the feed, as scripts/capture/widgets.ts saved it: its picture, its caption, and for a video, Instagram's player. */
 interface Post {
@@ -52,7 +52,7 @@ export function InstagramBlock({ block }: { block: Data }) {
                 onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), openAt(i))}
               >
                 <span className="visually-hidden">View fullsize</span>
-                <Img picture={p.picture} className="ig-img" alt="" style={{ objectPosition: focal(p.picture) }} />
+                <TileImage picture={p.picture} alt="" />
                 <span className="ig-play" aria-hidden="true">
                   <svg viewBox="0 0 48 48">
                     <path d="M8.5 10.6c0-.5.5-.8 1-.6l29.6 14.9c.5.3.5.9 0 1.2L9.5 41c-.5.2-1-.1-1-.6z" />
@@ -73,7 +73,7 @@ export function InstagramBlock({ block }: { block: Data }) {
                 }}
               >
                 <span className="visually-hidden">View fullsize</span>
-                <Img picture={p.picture} className="ig-img" alt={p.picture.alt} style={{ objectPosition: focal(p.picture) }} />
+                <TileImage picture={p.picture} alt={p.picture.alt} />
               </a>
             </div>
           ),
@@ -81,6 +81,62 @@ export function InstagramBlock({ block }: { block: Data }) {
       </div>
       {open !== null && <Lightbox posts={posts} start={open} onClose={() => setOpen(null)} />}
     </div>
+  )
+}
+
+/** How far below the window a tile's picture starts to load, as the original's gallery measures it. */
+const LOAD_AHEAD_PX = 200
+
+/**
+ * A tile's picture, loaded as the original's gallery loads it: only once it comes within 200px of the window, then
+ * faded in over a second once it has arrived (widgets.css). So scrolling down, the tiles appear one row after another.
+ * Without scripts, the picture in <noscript> shows instead.
+ */
+function TileImage({ picture, alt }: { picture: Picture; alt: string }) {
+  const ref = useRef<HTMLImageElement>(null)
+  const [near, setNear] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    // Watched: the tile (the picture takes no room until it has a file).
+    const tile = ref.current?.parentElement
+    if (!tile) return
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((e) => e.isIntersecting)) return
+        setNear(true)
+        io.disconnect()
+      },
+      { rootMargin: `0px 0px ${LOAD_AHEAD_PX}px 0px` },
+    )
+    io.observe(tile)
+    return () => io.disconnect()
+  }, [])
+  // A picture already in the browser's cache may have loaded before React listened.
+  useEffect(() => {
+    if (near && ref.current?.complete && ref.current.naturalWidth) setLoaded(true)
+  }, [near])
+  const style = { objectPosition: focal(picture) }
+  return (
+    <>
+      <img
+        ref={ref}
+        className="ig-img"
+        data-loaded={loaded || undefined}
+        src={near ? pictureSrc(picture) : undefined}
+        srcSet={near ? srcSet(picture) : undefined}
+        sizes={near ? 'auto, 100vw' : undefined}
+        loading="lazy"
+        decoding="async"
+        alt={alt}
+        width={picture.width || undefined}
+        height={picture.height || undefined}
+        style={style}
+        onLoad={() => setLoaded(true)}
+      />
+      <noscript>
+        <img className="ig-img ig-img--static" src={pictureSrc(picture)} alt={alt} style={style} />
+      </noscript>
+    </>
   )
 }
 
@@ -99,8 +155,12 @@ function fit(frameW: number, frameH: number, w: number, h: number): Fit {
   return { left: (frameW - width) / 2, top: (frameH - height) / 2, width, height }
 }
 
-/** The lightbox's fades, as the original's: the dark backdrop in 0.3 s, a change of post in 0.65 s. */
-const OPEN_MS = 300
+/**
+ * The lightbox's fades, as the original's: the dark backdrop in 0.3 s (in and out), a change of post in 0.65 s; on
+ * closing, the post and the buttons fade out over 0.6 s, so they linger a moment over the page once the backdrop has
+ * gone (widgets.css).
+ */
+const CLOSE_MS = 600
 const ARROW_IDLE_MS = 500
 
 /**
@@ -121,7 +181,7 @@ function Lightbox({ posts, start, onClose }: { posts: Post[]; start: number; onC
 
   const close = useCallback(() => {
     setPhase('closing')
-    window.setTimeout(onClose, OPEN_MS)
+    window.setTimeout(onClose, CLOSE_MS)
   }, [onClose])
   const step = useCallback((by: number) => setIndex((i) => (i + by + posts.length) % posts.length), [posts.length])
 

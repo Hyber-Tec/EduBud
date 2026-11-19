@@ -1,6 +1,7 @@
-import { useId, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import type { DonationBlock as Data } from '~/content/types'
 import widgets from '~/content/widgets.json'
+import { SubmitButton, type SubmitState } from './SubmitButton'
 
 /** The donation form's settings, as scripts/capture/widgets.ts read them from the original's block. */
 interface DonationWidget {
@@ -49,9 +50,10 @@ export function DonationBlock({ block }: { block: Data }) {
   const [custom, setCustom] = useState('')
   const [frequency, setFrequency] = useState(w?.fund.defaultFrequency ?? 'ONE_TIME')
   const [coverFee, setCoverFee] = useState(w?.fund.coverTheFee?.checked ?? false)
-  const [state, setState] = useState<'idle' | 'submitting'>('idle')
+  const [state, setState] = useState<SubmitState>('none')
   const [error, setError] = useState(false)
   const timer = useRef<number | undefined>(undefined)
+  useEffect(() => () => window.clearTimeout(timer.current), [])
   if (!w) return <div className="block donation-block" />
 
   const s = w.strings
@@ -65,9 +67,10 @@ export function DonationBlock({ block }: { block: Data }) {
     setState('submitting')
     window.clearTimeout(timer.current)
     timer.current = window.setTimeout(() => {
-      setState('idle')
-      // The original's server refuses an empty amount; any other donation would leave for Squarespace's checkout.
+      // The original's server refuses an empty amount (its error, and the button shakes); any other donation would
+      // leave for Squarespace's checkout, which ours doesn't have, so the button simply comes back.
       setError(amount <= 0)
+      setState(amount <= 0 ? 'error' : 'none')
     }, SUBMIT_MS)
   }
 
@@ -153,15 +156,7 @@ export function DonationBlock({ block }: { block: Data }) {
           <span className="donation-total-amount donation-total-sum">{money.format((amount + fee) / 100)}</span>
         </div>
         <div className={`donation-button-wrap donation-button-wrap--${w.buttonAlignment}`}>
-          <button type="submit" className="donation-button" data-state={state} aria-live={state === 'submitting' ? 'polite' : undefined}>
-            <span className="visually-hidden">{state === 'submitting' ? s.submissionLabel : w.buttonText}</span>
-            <span className="donation-button-state" aria-hidden="true">
-              <span className="donation-button-text">{w.buttonText}</span>
-              <span className="donation-button-progress">
-                <span />
-              </span>
-            </span>
-          </button>
+          <SubmitButton label={w.buttonText} busyLabel={s.submissionLabel} state={state} className="donation-button" />
         </div>
       </form>
     </div>

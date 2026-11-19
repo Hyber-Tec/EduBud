@@ -1,4 +1,4 @@
-import { useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
 import { Block } from './Block'
 import { poseProps, useMotion } from './motion'
@@ -65,18 +65,7 @@ function Background({ section }: { section: SectionData }) {
   return (
     <div className="section-background">
       {bg.image && <Img picture={bg.image} className="section-background-media" style={{ objectPosition: focal(bg.image) }} alt="" />}
-      {bg.video && (
-        <video
-          className="section-background-media"
-          src={bg.video.src}
-          poster={bg.video.poster ? `${bg.video.poster.base}/1500.${bg.video.poster.ext}` : undefined}
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{ filter: bg.video.filter }}
-        />
-      )}
+      {bg.video && <BackgroundVideo src={bg.video.src} filter={bg.video.filter} />}
       {bg.art && bg.art.images.length > 0 && (
         <picture>
           {bg.art.images
@@ -87,7 +76,42 @@ function Background({ section }: { section: SectionData }) {
           <img className="section-background-media" src={bg.art.images[bg.art.images.length - 1].src} alt="" loading="lazy" decoding="async" />
         </picture>
       )}
-      {bg.overlayOpacity !== undefined && <div className="section-background-overlay" style={{ opacity: bg.overlayOpacity }} />}
+      {/* A picture gets its overlay; a video doesn't (the original keeps the setting but draws no overlay on it). */}
+      {bg.overlayOpacity !== undefined && !bg.video && <div className="section-background-overlay" style={{ opacity: bg.overlayOpacity }} />}
+    </div>
+  )
+}
+
+/**
+ * A section's background video, as the original's appears: the section's own colour, then (once the page's code runs)
+ * a black screen with a spinner while the video loads, both as faint as the video (its filter), then the video. No
+ * picture is shown before it: the original shows none.
+ */
+function BackgroundVideo({ src, filter }: { src: string; filter?: string }) {
+  const video = useRef<HTMLVideoElement>(null)
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    const v = video.current
+    if (!v) return
+    // Already playing (from the browser's cache): no loading screen.
+    if (!v.paused && v.readyState > 2) return
+    setLoading(true)
+    const done = () => setLoading(false)
+    v.addEventListener('playing', done)
+    return () => v.removeEventListener('playing', done)
+  }, [])
+  return (
+    <div className="section-background-media section-background-video" style={{ filter }}>
+      <video ref={video} className="section-background-media" src={src} autoPlay muted loop playsInline />
+      {loading && (
+        <div className="video-loading" aria-hidden="true">
+          <div className="video-loading-indicator">
+            <svg className="video-loading-spinner" viewBox="25 25 50 50">
+              <circle cx="50" cy="50" r="20" />
+            </svg>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
