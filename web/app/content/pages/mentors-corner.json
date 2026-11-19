@@ -373,6 +373,12 @@
      "css": "[data-block=\"577f80a80686be44a9b5\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -606,6 +612,12 @@
      "css": "[data-block=\"yui_3_17_2_1_1788550813968_17816\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -776,6 +788,12 @@
      "css": "[data-block=\"74bfae0977607b753761\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -913,6 +931,12 @@
      "css": "[data-block=\"79c67725e35c32011392\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -987,6 +1011,12 @@
      "css": "[data-block=\"67eb8f59960fe7d16381\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -1028,6 +1058,12 @@
      "css": "[data-block=\"a1385bfaea5416756bf7\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true

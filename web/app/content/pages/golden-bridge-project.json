@@ -297,6 +297,12 @@
      "css": "[data-block=\"yui_3_17_2_1_1791683894803_92553\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      90,
+      90,
+      90,
+      90
+     ],
      "svg": "<path />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -611,6 +617,12 @@
      "css": "[data-block=\"f0e4e737d27b0e5420d0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      20,
+      20,
+      20,
+      20
+     ],
      "svg": "<path />",
      "viewBox": "0 0 100 100",
      "stretched": true
@@ -730,7 +742,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"yui_3_17_2_1_1790129589742_15422\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"yui_3_17_2_1_1790129589742_15422\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"yui_3_17_2_1_1790129589742_15422\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -819,7 +831,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"bd57f5a540329c2a04ad\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"bd57f5a540329c2a04ad\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"bd57f5a540329c2a04ad\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -908,7 +920,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"e6759cd48a0a4fa8161c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"e6759cd48a0a4fa8161c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"e6759cd48a0a4fa8161c\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -997,7 +1009,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"648a203ea7f0a1dada1a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"648a203ea7f0a1dada1a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"648a203ea7f0a1dada1a\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -1086,7 +1098,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"675400d8eabe3b641cbb\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"675400d8eabe3b641cbb\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"675400d8eabe3b641cbb\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -1175,7 +1187,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(48.52, 100%, 54.9%, 1)"
      },
-     "css": "[data-block=\"df764a60a504792d6a32\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"df764a60a504792d6a32\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"df764a60a504792d6a32\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "circle",
      "svg": "<circle cx=\"50\" cy=\"50\" r=\"49.5\" />",
@@ -1381,6 +1393,12 @@
      "css": "[data-block=\"yui_3_17_2_1_1791683894803_84187\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      20,
+      20,
+      20,
+      20
+     ],
      "svg": "<path />",
      "viewBox": "0 0 100 100",
      "stretched": true

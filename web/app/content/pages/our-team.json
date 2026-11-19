@@ -399,7 +399,7 @@
      "varsMobile": {
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
-     "css": "[data-block=\"yui_3_17_2_1_1790190058840_9521\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "css": "[data-block=\"yui_3_17_2_1_1790190058840_9521\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }\n[data-block=\"yui_3_17_2_1_1790190058840_9521\"] { filter: blur(15px); }",
      "type": "shape",
      "name": "horizontal-right-leaning-oval",
      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",

@@ -328,6 +328,27 @@ function blockMotion(feBlock: Element, id: string): Motion | undefined {
   return Object.keys(motion).length ? motion : undefined
 }
 
+/**
+ * A block's blur (a shape's setting on the original: data-blur, with data-mobile-blur / data-desktop-blur where the
+ * widths differ), as a rule for its stylesheet: "element" blurs the whole block.
+ */
+function blockBlur(feBlock: Element, id: string): string {
+  const read = (attr: string): number | null | undefined => {
+    const raw = feBlock.querySelector(`[${attr}]`)?.getAttribute(attr)
+    if (!raw) return undefined
+    const blur = JSON.parse(raw) as { enabled?: boolean; filterType?: string; blurRadius?: { value: number; unit: string } }
+    if (!blur.enabled) return null
+    if (blur.filterType !== 'element') console.warn(`  ! block ${id}: a ${blur.filterType} blur we don't draw`)
+    return blur.filterType === 'element' ? (blur.blurRadius?.value ?? 0) : null
+  }
+  const all = read('data-blur')
+  const mobile = read('data-mobile-blur') ?? all
+  const desktop = read('data-desktop-blur') ?? all
+  const rule = (px: number) => `[data-block="${id}"] { filter: blur(${px}px); }`
+  if (mobile === desktop) return mobile ? rule(mobile) : ''
+  return [mobile ? `@media (max-width: 767px) { ${rule(mobile)} }` : '', desktop ? `@media (min-width: 768px) { ${rule(desktop)} }` : ''].filter(Boolean).join('\n')
+}
+
 function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desktop: Area }>): Block | null {
   const id = [...feBlock.classList].find((c) => c.startsWith('fe-block-'))?.slice('fe-block-'.length)
   const sqs = feBlock.querySelector('.sqs-block')
@@ -338,7 +359,8 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
   const area = areas[id] ?? { mobile: { ...EMPTY_AREA }, desktop: { ...EMPTY_AREA } }
   const background = sqs.classList.contains('sqs-background-enabled') || undefined
   const motion = blockMotion(feBlock, id)
-  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined, ...(background ? { background } : {}), ...(motion ? { motion } : {}) }
+  const css = [ownCss, blockBlur(feBlock, id)].filter(Boolean).join('\n')
+  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: css || undefined, ...(background ? { background } : {}), ...(motion ? { motion } : {}) }
 
   switch (kind) {
     case 'html': {
@@ -383,10 +405,15 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
               stretched: phoneContainer.hasAttribute('data-stretched-to-fill'),
             }
           : undefined
+      const name = container?.getAttribute('data-shape-name') ?? ''
+      const corner = (side: string) => Number(container?.getAttribute(`data-border-${side}-radius`) ?? 0)
+      const corners: [number, number, number, number] | undefined =
+        name === 'rectangle' ? [corner('top-left'), corner('top-right'), corner('bottom-right'), corner('bottom-left')] : undefined
       return {
         ...base,
         type: 'shape',
-        name: container?.getAttribute('data-shape-name') ?? '',
+        name,
+        ...(corners ? { corners } : {}),
         svg: svg?.innerHTML.trim() ?? '',
         viewBox: svg?.getAttribute('viewBox') ?? '0 0 100 100',
         stretched: container?.hasAttribute('data-stretched-to-fill') ?? false,

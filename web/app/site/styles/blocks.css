@@ -57,6 +57,20 @@
   overflow: hidden;
 }
 
+/* A block's outline (its stroke setting): the width and style come with the block, the color from its type's setting. */
+.fe-block--text > .block {
+  border-color: var(--tweak-text-block-stroke-color, currentColor);
+}
+.fe-block--marquee > .block {
+  border-color: var(--tweak-marquee-block-stroke-color, currentColor);
+}
+.fe-block--accordion > .block {
+  border-color: var(--tweak-accordion-block-stroke-color, currentColor);
+}
+.fe-block--form > .block {
+  border-color: var(--tweak-form-block-stroke-color, currentColor);
+}
+
 /* A block with its own background (cards): its settings' color, else its section theme's. */
 .fe-block--bg > .block {
   background-color: var(--block-bg);
@@ -113,6 +127,10 @@
     display: block !important;
   }
 }
+/* A rectangle is a box with its rounded corners, in the shape's color. */
+.shape-block .shape--rect {
+  background-color: var(--shape-block-background-color, var(--shape-bg));
+}
 /* Shapes fill their block's area without making it taller (only text grows the grid's rows). */
 .shape-block .shape {
   position: absolute;
@@ -152,6 +170,8 @@
 .button-block--stretched .button {
   display: flex;
   width: 100%;
+  /* Never narrower than its longest word and its padding: on narrow tablets the original's grows past its block. */
+  min-width: min-content;
   height: 100%;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -193,12 +213,7 @@
   color: var(--btn3-fg);
   padding: 1.5rem 2.2rem;
 }
-.button--small {
-  font-size: 0.8rem;
-}
-.button--large {
-  font-size: 1.2rem;
-}
+/* The size setting doesn't change the text on this site's buttons: "large" ones are 1rem too, as measured. */
 
 /* Accordions */
 .accordion {
@@ -335,15 +350,17 @@
   }
 }
 
-/* Lines */
+/* Lines: a 1px rule with 8px above and below, as the original's, so a line block is at least 17px tall (taller than
+   its grid row on narrow tablets, which grows the row). */
 .line-block {
   justify-content: center;
 }
 .line-block hr {
   width: 100%;
-  margin: 0;
+  height: 1px;
+  margin: 8px 0;
   border: 0;
-  border-top: 1px solid var(--line);
+  background-color: var(--tweak-line-block-line-color, var(--line));
 }
 
 /* Forms, measured on the original: pill fields filled with the theme's form color, labels with "(required)" faded. */

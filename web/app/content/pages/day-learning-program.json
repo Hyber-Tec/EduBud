@@ -1293,6 +1293,12 @@
      },
      "type": "shape",
      "name": "rectangle",
+     "corners": [
+      0,
+      0,
+      0,
+      0
+     ],
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
      "viewBox": "0 0 100 100",
      "stretched": true

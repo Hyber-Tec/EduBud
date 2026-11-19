@@ -98,6 +98,7 @@ button {
 .accordion h4,
 .rte p,
 .rte li,
+.rte code,
 .rte-large,
 .rte-small,
 .marquee-item {
@@ -115,6 +116,7 @@ button {
 .accordion h4,
   .rte p,
   .rte li,
+  .rte code,
   .rte-large,
   .rte-small,
   .marquee-item {
@@ -267,12 +269,25 @@ button {
   background-size: 100% 55%;
   background-position: 0 85%;
 }
+/* A word circled by hand: the original draws this loop in the browser, in a box 0.07em wider than the word on each
+   side and as tall as its line, the stroke 0.1em. Ours is the same loop (the original's path, measured at 1440px) as a
+   mask in the highlight's color, its box placed the same way with room for the stroke and the loop's overshoot. */
 .rte-highlight--circle {
+  position: relative;
   background: none;
-  border: var(--hl-thickness, 0.1em) solid var(--hl-color-used);
-  border-radius: 50%;
-  padding: 0.1em 0.3em;
-  margin: 0 -0.3em;
+}
+.rte-highlight--circle::after {
+  --w: calc(100% + 0.141em);
+  content: '';
+  position: absolute;
+  left: calc(-0.0668em - var(--w) * 12 / 284);
+  top: calc(-100% * 6 / 83);
+  width: calc(var(--w) * 312 / 284);
+  height: calc(100% * 102 / 83);
+  background-color: var(--hl-color-used);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -6 312 102' preserveAspectRatio='none'%3E%3Cpath d='M96.4,83.35 C158.416,87.442 294,82.42 294,43.36 C294,10.345 204.624,0 140.784,0 S-6.96,10.345 -6.96,42.244 S63.264,91.627 214.96,87.442' fill='none' stroke='%23000' stroke-width='6.8' stroke-linecap='square' stroke-linejoin='bevel'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -6 312 102' preserveAspectRatio='none'%3E%3Cpath d='M96.4,83.35 C158.416,87.442 294,82.42 294,43.36 C294,10.345 204.624,0 140.784,0 S-6.96,10.345 -6.96,42.244 S63.264,91.627 214.96,87.442' fill='none' stroke='%23000' stroke-width='6.8' stroke-linecap='square' stroke-linejoin='bevel'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  pointer-events: none;
 }
 .rte-highlight--underlineCurve,
 .rte-highlight--scribble {
@@ -328,4 +343,20 @@ button {
 .system-page a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Preformatted text wraps, and the code in it is set in the body font at the small size (as the original's). */
+.rte pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+.rte code {
+  --v: var(--small-text-size-value);
+  font-family: var(--body-font);
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+  white-space: pre-wrap;
 }

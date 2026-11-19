@@ -138,6 +138,11 @@ export interface ShapeBlock extends BlockBase {
   stretched: boolean
   /** The shape phones show, when the original gives them another one. */
   phone?: { name: string; svg: string; viewBox: string; stretched: boolean }
+  /**
+   * A rectangle's rounded corners (px: top left, top right, bottom right, bottom left). The original works out a
+   * rectangle's path in the browser for the block's size; ours is a box with these corners.
+   */
+  corners?: [number, number, number, number]
   /** Text inside the shape, as rich-text HTML, and its link. */
   html?: string
   link?: Link

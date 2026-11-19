@@ -128,9 +128,13 @@ async function settle(page: Page, url: string) {
     for (const v of document.querySelectorAll('video')) { v.pause(); v.currentTime = 0 }
     const style = document.createElement('style')
     style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important}'
-    // The original skips drawing some parts while they're off screen (content-visibility: auto, its form fields), which
-    // a full-page screenshot would leave out: draw them. (Only those: parts it hides on purpose stay hidden.)
-    for (const el of document.querySelectorAll('*')) if (getComputedStyle(el).contentVisibility === 'auto') el.style.contentVisibility = 'visible'
+    // The original skips drawing some parts while they're far off screen (content-visibility: auto, its form fields),
+    // which a full-page screenshot would leave out: draw those, and only those that are being skipped right now.
+    for (const el of document.querySelectorAll('*')) {
+      if (el.closest('header') || getComputedStyle(el).contentVisibility !== 'auto') continue
+      const inside = el.firstElementChild
+      if (inside && !inside.checkVisibility({ contentVisibilityAuto: true })) el.style.contentVisibility = 'visible'
+    }
     document.head.appendChild(style)
   })()`)
   await page.waitForTimeout(1200)

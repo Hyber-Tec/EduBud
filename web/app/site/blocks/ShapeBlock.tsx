@@ -12,7 +12,9 @@ function fit(stretched: boolean, area: Area): string {
 /** A filled shape (the green flowers and ovals), drawn as the original draws it: phones may get another shape. */
 export function ShapeBlock({ block }: { block: Data }) {
   const phone = block.phone ?? block
-  const shapes = (
+  const shapes = block.corners ? (
+    <div className="shape shape--rect" style={{ borderRadius: block.corners.map((r) => `${r}px`).join(' ') }} aria-hidden="true" />
+  ) : (
     <>
       <svg className="shape shape--mobile" viewBox={phone.viewBox} preserveAspectRatio={fit(phone.stretched, block.mobile)} aria-hidden="true" dangerouslySetInnerHTML={{ __html: phone.svg }} />
       <svg className="shape shape--desktop" viewBox={block.viewBox} preserveAspectRatio={fit(block.stretched, block.desktop)} aria-hidden="true" dangerouslySetInnerHTML={{ __html: block.svg }} />
