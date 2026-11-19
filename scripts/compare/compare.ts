@@ -41,6 +41,8 @@ export const ALL_PAGES = [
   '/products-store/p/edubud-community-center-hoodie',
   '/products-store/p/the-echo-vase-llhgn',
   '/cart',
+  '/search',
+  '/search?q=volunteer',
   '/this-page-does-not-exist',
 ]
 export const ALL_WIDTHS = [1920, 1440, 1024, 768, 390]
@@ -144,8 +146,13 @@ async function settle(page: Page, url: string) {
  * keeps Squarespace from slowing us down. `--fresh` takes them again. */
 const ORIGINAL_CACHE = path.join(import.meta.dirname, 'out', '_original')
 
+/** A page's name in the files: `home`, `our-team`, `products-store__p__…`, `search_q_volunteer`. */
+function fileName(pagePath: string): string {
+  return pagePath === '/' ? 'home' : pagePath.slice(1).replace(/\//g, '__').replace(/[?&=]/g, '_')
+}
+
 async function originalShot(browser: Browser, pagePath: string, width: number): Promise<{ png: PNG; text: string[]; links: string[] }> {
-  const slug = `${pagePath === '/' ? 'home' : pagePath.slice(1).replace(/\//g, '__')}.${width}`
+  const slug = `${fileName(pagePath)}.${width}`
   const png = path.join(ORIGINAL_CACHE, `${slug}.png`)
   const meta = path.join(ORIGINAL_CACHE, `${slug}.json`)
   if (!args.fresh && existsSync(png) && existsSync(meta)) {
@@ -162,6 +169,8 @@ async function originalShot(browser: Browser, pagePath: string, width: number): 
 export async function shot(browser: Browser, url: string, width: number, mask: string[]): Promise<{ png: PNG; text: string[]; links: string[] }> {
   const ctx = await browser.newContext({ viewport: { width, height: HEIGHTS[width] ?? 900 }, deviceScaleFactor: 1, isMobile: width < 768, hasTouch: width < 768 })
   const page = await ctx.newPage()
+  // Only GET requests leave: nothing is ever sent to the live site (a form, its analytics).
+  await page.route('**/*', (route) => (route.request().method() === 'GET' ? route.continue() : route.abort()))
   await settle(page, url)
   const buf = await page.screenshot({ fullPage: true, mask: mask.map((m) => page.locator(m)), maskColor: '#7f7f7f' })
   const { text, links } = (await page.evaluate(`(() => {
@@ -194,7 +203,7 @@ async function main() {
   const report: Record<string, unknown>[] = []
   for (const p of pages) {
     for (const w of widths) {
-      const slug = `${p === '/' ? 'home' : p.slice(1).replace(/\//g, '__')}.${w}`
+      const slug = `${fileName(p)}.${w}`
       const [a, b] = await Promise.all([originalShot(browser, p, w), shot(browser, ours + p, w, MASK_OURS)])
       const W = Math.max(a.png.width, b.png.width)
       const H = Math.max(a.png.height, b.png.height)
@@ -231,7 +240,7 @@ async function main() {
 function reportHtml(rows: Record<string, unknown>[]): string {
   const cells = rows
     .map((r) => {
-      const slug = `${r.page === '/' ? 'home' : String(r.page).slice(1).replace(/\//g, '__')}.${r.width}`
+      const slug = `${fileName(String(r.page))}.${r.width}`
       return `<section><h2>${r.page} at ${r.width}px: ${r.diffPercent}% of pixels differ</h2>
 <div class="row"><figure><img src="${slug}.original.png" loading="lazy"><figcaption>edubud.org</figcaption></figure><figure><img src="${slug}.ours.png" loading="lazy"><figcaption>Our copy</figcaption></figure><figure><img src="${slug}.diff.png" loading="lazy"><figcaption>Differences</figcaption></figure></div>
 <pre>${escapeHtml(JSON.stringify({ heights: r.heights, missingText: r.missingText, extraText: r.extraText, missingLinks: r.missingLinks }, null, 1))}</pre></section>`

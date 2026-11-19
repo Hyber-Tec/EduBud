@@ -15,6 +15,7 @@ import '~/site/styles/shop.css'
 import '~/site/styles/widgets.css'
 import '~/site/styles/galleries.css'
 import '~/site/styles/motion.css'
+import '~/site/styles/search.css'
 // Phones' own rules (below 768px) come last, so they win over the rules above.
 import '~/site/styles/phone.css'
 import NotFound from './not-found'

@@ -69,7 +69,10 @@ After comparing the copy with edubud.org side by side:
   Arc's key: keys stay per project). Done: the map is Google's map code with the original's options (`docs/DEPLOY.md`,
   "Google Maps key").
 - **The Instagram feed (Q6):** it should update itself. EduBud's account owner connects it once.
-- **Search (Q6):** our call: a search page like the original's, so the "page not found" page's link works.
+- **Search (Q6):** our call: a search page like the original's, so the "page not found" page's link works. Done:
+  `/search`, with the original's look and timing on computers and tablets and our phone rules on phones. It searches
+  the content pages, the shop and its products, from an index made when the site is built (no server); its results
+  can differ from the original's in order and excerpts, and it also finds the words in Resources' slideshow.
 - **The original's faults (Q7):** not copied. We copy how the original looks and behaves, and improve where it
   misbehaves; EduBud may ask for changes later.
 - **The header (Q8):** stays as it is, drop-downs with their lines and photos, and "Log In".

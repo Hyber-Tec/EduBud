@@ -27,10 +27,13 @@
 import { writeFile } from 'node:fs/promises'
 import { parseArgs } from 'node:util'
 import { chromium, type Browser } from 'playwright-core'
-import { PAGES, SHOP_PATHS } from '../../web/app/content/paths'
+import { PAGES, SEARCH_PATH, SHOP_PATHS } from '../../web/app/content/paths'
 
-/** Every page: the content pages, the shop's, and an address that doesn't exist (the "page not found" page). */
-const ALL_PAGES = [...Object.keys(PAGES), ...SHOP_PATHS, '/this-page-does-not-exist']
+/**
+ * Every page: the content pages, the shop's, the search page (empty, and with results), and an address that doesn't
+ * exist (the "page not found" page).
+ */
+const ALL_PAGES = [...Object.keys(PAGES), ...SHOP_PATHS, SEARCH_PATH, `${SEARCH_PATH}?q=volunteer`, '/this-page-does-not-exist']
 
 const { values: args } = parseArgs({
   options: {
