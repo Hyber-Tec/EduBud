@@ -80,6 +80,10 @@ export function Header() {
       className={`site-header${hidden && !menuOpen ? ' site-header--hidden' : ''}${shrink ? ' shrink' : ''}${menuOpen ? ' site-header--menu-open' : ''}`}
       data-theme=""
     >
+      {/* For keyboards: the first thing Tab reaches, shown only then (as on the original). */}
+      <a href="#page" className="button button--primary header-skip-link">
+        Skip to Content
+      </a>
       <div className="header-inner">
         <a className="header-logo" href={site.header.logoHref || '/'}>
           <img src={pictureSrc(logo, 1500)} srcSet={srcSet(logo)} sizes="100px" alt={logo.alt} />
@@ -89,14 +93,17 @@ export function Header() {
             {nav.map((item) =>
               item.items?.length ? (
                 <li key={item.title} className={`header-nav-item header-nav-item--folder${item.items.some((sub) => here(sub.href)) ? ' header-nav-item--active' : ''}`}>
-                  <a className="header-nav-folder-title" href={folderHref(item.title)}>
-                    {item.title}
-                  </a>
-                  <div className="header-nav-folder">
+                  {/* A folder's title opens its list (on hover, or from the keyboard); it isn't a link, as on the original. */}
+                  <button type="button" className="header-nav-folder-title" aria-controls={`folder${folderHref(item.title).replace('/', '-')}`}>
+                    <span className="header-nav-folder-title-text">{item.title}</span>
+                  </button>
+                  <div className="header-nav-folder" id={`folder${folderHref(item.title).replace('/', '-')}`}>
                     <ul>
                       {item.items.map((sub) => (
-                        <li key={sub.href} className="header-nav-folder-item">
-                          <a href={sub.href}>{sub.title}</a>
+                        <li key={sub.href} className={`header-nav-folder-item${here(sub.href) ? ' header-nav-folder-item--active' : ''}`}>
+                          <a href={sub.href}>
+                            <span className="header-nav-folder-item-content">{sub.title}</span>
+                          </a>
                         </li>
                       ))}
                     </ul>
@@ -135,19 +142,19 @@ export function Header() {
                 {item.items?.length ? (
                   <a
                     href={folderHref(item.title)}
-                    className="header-menu-link header-menu-link--folder"
+                    className={`header-menu-link header-menu-link--folder${item.items.some((sub) => here(sub.href)) ? ' header-menu-link--active' : ''}`}
                     onClick={(e) => {
                       e.preventDefault()
                       setFolder(item.title)
                     }}
                   >
                     <span className="visually-hidden">Folder: </span>
-                    {item.title}
+                    <span className="header-menu-link-text">{item.title}</span>
                     <Chevron direction="right" />
                   </a>
                 ) : (
-                  <a href={item.href} className="header-menu-link">
-                    {item.title}
+                  <a href={item.href} className={`header-menu-link${here(item.href) ? ' header-menu-link--active' : ''}`}>
+                    <span className="header-menu-link-text">{item.title}</span>
                   </a>
                 )}
               </li>

@@ -116,6 +116,13 @@ async function settle(page: Page, url: string) {
     await Promise.all([...document.images].filter((i) => !i.complete).map((i) => new Promise((r) => { i.onload = i.onerror = r; setTimeout(r, 8000) })))
     // Decode them too: a picture far below the window is otherwise left blank in a full-page screenshot.
     await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
+    // Scroll through the page, slowly, as a visitor would, so what shows as it scrolls into view (galleries, blocks
+    // that animate in) has shown; then back to the top, where both headers return to their full size (0.3 s).
+    const wait = (ms) => new Promise((r) => setTimeout(r, ms))
+    for (let y = 0; y < document.documentElement.scrollHeight; y += Math.round(innerHeight * 0.7)) { window.scrollTo(0, y); await wait(160) }
+    window.scrollTo(0, document.documentElement.scrollHeight); await wait(800)
+    window.scrollTo(0, 0); await wait(1200)
+    await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
     for (const v of document.querySelectorAll('video')) { v.pause(); v.currentTime = 0 }
     const style = document.createElement('style')
     style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important}'
