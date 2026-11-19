@@ -1980,6 +1980,7 @@
       "last": true
      },
      "icon": "plus",
+     "titleTag": "p",
      "titleClass": "rte-large",
      "descriptionClass": "rte-large",
      "titleAlign": "left",

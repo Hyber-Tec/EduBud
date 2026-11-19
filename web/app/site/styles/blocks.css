@@ -123,8 +123,17 @@
 .button-block--right {
   align-items: flex-end;
 }
+/* A stretched button fills its block, its text centered, with no padding above or below (as measured). */
+.button-block--stretched {
+  justify-content: stretch;
+}
 .button-block--stretched .button {
+  display: flex;
   width: 100%;
+  height: 100%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: normal;
 }
 .button {
   display: inline-flex;
@@ -422,4 +431,9 @@
   .form {
     --form-small: calc((0.9 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
   }
+}
+
+/* Accordion titles keep no margin of their own, whatever their tag. */
+.accordion .accordion-title {
+  margin: 0;
 }

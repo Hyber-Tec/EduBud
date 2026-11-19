@@ -367,6 +367,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
           last: ul?.getAttribute('data-is-last-divider-visible') === 'true',
         },
         icon: sqs.querySelector('.accordion-icon-container .plus') ? 'plus' : 'arrow',
+        titleTag: (first?.tagName.toLowerCase() as 'p') ?? 'p',
         titleClass: textClass(first),
         descriptionClass: textClass(desc),
         titleAlign: ul?.getAttribute('data-accordion-title-alignment') ?? 'left',

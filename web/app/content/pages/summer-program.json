@@ -618,6 +618,7 @@
       "last": true
      },
      "icon": "arrow",
+     "titleTag": "p",
      "titleClass": "rte-large",
      "descriptionClass": "rte-large",
      "titleAlign": "left",
@@ -898,6 +899,7 @@
       "last": true
      },
      "icon": "plus",
+     "titleTag": "h4",
      "titleClass": "",
      "descriptionClass": "",
      "titleAlign": "left",
@@ -971,6 +973,7 @@
       "last": true
      },
      "icon": "plus",
+     "titleTag": "h4",
      "titleClass": "",
      "descriptionClass": "",
      "titleAlign": "left",

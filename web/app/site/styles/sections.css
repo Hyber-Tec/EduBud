@@ -4,6 +4,8 @@
  */
 .page-section {
   position: relative;
+  /* Its blocks' layers stay inside it, under the header and its menu. */
+  isolation: isolate;
   display: flex;
   align-items: center;
   box-sizing: border-box;

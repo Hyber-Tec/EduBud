@@ -12,6 +12,15 @@ interface NavItem {
 const nav = site.header.nav as NavItem[]
 const logo = site.header.logo as unknown as Picture
 
+/** The phone menu's thin arrowhead (the original's "open arrow head", 0.5px). */
+function Chevron({ direction }: { direction: 'left' | 'right' }) {
+  return (
+    <svg className={`chevron chevron--${direction}`} viewBox="0 0 24 24" aria-hidden="true">
+      <path d={direction === 'right' ? 'M9 4l7 8-7 8' : 'M15 4l-7 8 7 8'} fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="square" vectorEffect="non-scaling-stroke" />
+    </svg>
+  )
+}
+
 /** A folder's own address (`/learning-center`), which sends visitors to its first page. */
 const folderHref = (title: string) => '/' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
 
@@ -81,13 +90,14 @@ export function Header() {
             setFolder(null)
           }}
         >
-          <span className="burger-line burger-line--top" />
-          <span className="burger-line burger-line--middle" />
-          <span className="burger-line burger-line--bottom" />
+          <span className="burger-box">
+            <span className="burger-line burger-line--top" />
+            <span className="burger-line burger-line--bottom" />
+          </span>
         </button>
       </div>
 
-      <div className="header-menu" aria-hidden={!menuOpen}>
+      <div className="header-menu" data-theme={(site.header.settings as { menuOverlayTheme?: string } | null)?.menuOverlayTheme ?? 'dark'} aria-hidden={!menuOpen}>
         <div className={`header-menu-nav${folder ? ' header-menu-nav--folder-open' : ''}`}>
           <ul className="header-menu-list header-menu-list--root">
             {nav.map((item) => (
@@ -103,7 +113,7 @@ export function Header() {
                   >
                     <span className="visually-hidden">Folder: </span>
                     {item.title}
-                    <span className="chevron chevron--right" aria-hidden="true" />
+                    <Chevron direction="right" />
                   </a>
                 ) : (
                   <a href={item.href} className="header-menu-link">
@@ -126,7 +136,7 @@ export function Header() {
                       setFolder(null)
                     }}
                   >
-                    <span className="chevron chevron--left" aria-hidden="true" />
+                    <Chevron direction="left" />
                     Back
                   </a>
                 </li>

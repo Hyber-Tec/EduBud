@@ -6,6 +6,7 @@ export function AccordionBlock({ block }: { block: Data }) {
   const toggle = (i: number) =>
     setOpen((cur) => (cur.includes(i) ? cur.filter((x) => x !== i) : block.allowMultiple ? [...cur, i] : [i]))
   const d = block.dividers
+  const Title = block.titleTag ?? 'p'
   return (
     <div className="block accordion-block">
       <ul className={`accordion accordion--icon-${block.iconPlacement}`} data-title-align={block.titleAlign} data-description-align={block.descriptionAlign}>
@@ -14,7 +15,7 @@ export function AccordionBlock({ block }: { block: Data }) {
           return (
             <li key={i} className="accordion-item" data-open={isOpen || undefined}>
               {d.enabled && d.first && i === 0 && <div className="accordion-divider accordion-divider--top" />}
-              <p className={`accordion-title ${block.titleClass}`}>
+              <Title className={`accordion-title ${block.titleClass}`}>
                 <button type="button" aria-expanded={isOpen} onClick={() => toggle(i)}>
                   <span className="accordion-title-text">{item.title}</span>
                   <span className={`accordion-icon accordion-icon--${block.icon}`} aria-hidden="true">
@@ -28,7 +29,7 @@ export function AccordionBlock({ block }: { block: Data }) {
                     )}
                   </span>
                 </button>
-              </p>
+              </Title>
               <div className="accordion-dropdown" hidden={!isOpen}>
                 <div className={`accordion-description rte ${block.descriptionClass}`} dangerouslySetInnerHTML={{ __html: item.html }} />
               </div>

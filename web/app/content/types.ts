@@ -129,6 +129,8 @@ export interface AccordionBlock extends BlockBase {
   allowMultiple: boolean
   dividers: { enabled: boolean; first: boolean; last: boolean }
   icon: 'plus' | 'arrow'
+  /** The titles' element: a paragraph, or a heading (h1–h4) drawn in the heading's style. */
+  titleTag: 'p' | 'h1' | 'h2' | 'h3' | 'h4'
   titleClass: string
   descriptionClass: string
   titleAlign: string

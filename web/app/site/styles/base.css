@@ -81,9 +81,13 @@ button {
    its size comes from one rule (--fs), the window's width on computers and tablets, its height on phones held
    upright, as the original's. */
 .rte h1,
+.accordion h1,
 .rte h2,
+.accordion h2,
 .rte h3,
+.accordion h3,
 .rte h4,
+.accordion h4,
 .rte p,
 .rte li,
 .rte-large,
@@ -94,9 +98,13 @@ button {
 }
 @media (max-width: 767px) and (orientation: portrait) {
   .rte h1,
+.accordion h1,
   .rte h2,
+.accordion h2,
   .rte h3,
+.accordion h3,
   .rte h4,
+.accordion h4,
   .rte p,
   .rte li,
   .rte-large,
@@ -111,9 +119,13 @@ button {
   overflow-wrap: break-word;
 }
 .rte h1,
+.accordion h1,
 .rte h2,
+.accordion h2,
 .rte h3,
+.accordion h3,
 .rte h4,
+.accordion h4,
 .marquee h1,
 .marquee h2,
 .marquee h3,
@@ -126,26 +138,34 @@ button {
   margin: 2rem 0;
   white-space: pre-wrap;
 }
-.rte h1 {
+.rte h1,
+.accordion h1 {
   --v: var(--heading-1-size-value);
   color: var(--h1);
 }
-.rte h2 {
+.rte h2,
+.accordion h2 {
   --v: var(--heading-2-size-value);
   color: var(--h2);
 }
-.rte h3 {
+.rte h3,
+.accordion h3 {
   --v: var(--heading-3-size-value);
   color: var(--h3);
 }
-.rte h4 {
+.rte h4,
+.accordion h4 {
   --v: var(--heading-4-size-value);
   color: var(--h4);
 }
 .rte h1,
+.accordion h1,
 .rte h2,
+.accordion h2,
 .rte h3,
-.rte h4 {
+.accordion h3,
+.rte h4,
+.accordion h4 {
   line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
 }
 .marquee-item {
@@ -198,8 +218,12 @@ button {
 }
 .rte ul,
 .rte ol {
-  padding-left: 2em;
+  padding-left: 40px;
   margin: 1rem 0;
+}
+/* Inside a list, its items' paragraphs and headings keep half a line apart (measured: 0.5em). */
+.rte li > * {
+  margin: 0.5em 0;
 }
 .rte strong {
   font-weight: 700;

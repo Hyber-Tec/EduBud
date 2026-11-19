@@ -2089,6 +2089,7 @@
       "last": true
      },
      "icon": "plus",
+     "titleTag": "h4",
      "titleClass": "",
      "descriptionClass": "",
      "titleAlign": "left",
@@ -2166,6 +2167,7 @@
       "last": true
      },
      "icon": "plus",
+     "titleTag": "h4",
      "titleClass": "",
      "descriptionClass": "",
      "titleAlign": "left",
