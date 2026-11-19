@@ -1,0 +1,46 @@
+# dependencies and builds
+node_modules/
+dist/
+.firebase/
+*.tsbuildinfo
+
+# logs
+*.log
+
+# local env and secrets
+.env*.local
+*.local
+service-account*.json
+
+# Client material from EduBud (volunteers' names, points and hours, form answers, the kickoff's and meetings' notes): never
+# committed. It stays in this folder on the owner's machine, or in the private notes (docs/internal/EduBud/); see
+# CLAUDE.md, "Local files".
+/EduBud_Kickoff*.md
+/EduBud_Meeting*.md
+/saveweb2zip*/
+# The private notes: a copy of the private repository Hyber-Tec/Eclipse, HyberTec's notes for the owner's clients
+# (people's names, contacts, money, meeting notes). This repository is public; see CLAUDE.md, "Local files".
+/docs/internal/
+# anything else EduBud sends that lands at the top level
+/*.pdf
+/*.xls
+/*.xlsx
+/*.csv
+/*.jpg
+/*.jpeg
+/*.heic
+/*.png
+/*.zip
+/*.html
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.claude/*.local.json
+# each developer's own instructions for Claude Code: accounts, local paths (see CLAUDE.md)
+CLAUDE.local.md
+
+# Claude Code worktrees (parallel sessions), never committed.
+.claude/worktrees/
