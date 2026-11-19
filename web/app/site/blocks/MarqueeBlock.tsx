@@ -1,99 +1,157 @@
-import { useEffect, useId, useRef, useState } from 'react'
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react'
 import type { MarqueeBlock as Data } from '~/content/types'
 
-/** Pixels a second the line moves at speed setting 1. */
-const PX_PER_SECOND = 60
-
 /**
- * A line of text scrolling sideways without end, as the original's: straight, or riding a wave (its text on an SVG
- * path that curves up and down by the wave's intensity, every 400 px).
+ * A line of text scrolling sideways without end, drawn as the original draws it: its items (each followed by the
+ * block's item spacing) written along an SVG path, straight or waving, that starts one wavelength left of the block.
+ * The items are first laid out once, hidden, to measure them; their text style is the block's setting (a heading's
+ * font or a paragraph's), and the line fades at its ends when the block asks for it.
  */
 export function MarqueeBlock({ block }: { block: Data }) {
-  const text = block.items.join('')
-  const inner = block.waveIntensity > 0 ? <WaveMarquee block={block} text={text} /> : <StraightMarquee block={block} text={text} />
+  const inner = <Marquee block={block} />
   return <div className="block marquee-block">{block.link ? <a href={block.link.href}>{inner}</a> : inner}</div>
 }
 
-function StraightMarquee({ block, text }: { block: Data; text: string }) {
-  const run = Array.from({ length: 12 }, (_, i) => (
-    <p key={i} className="marquee-item">
-      {text}
-    </p>
-  ))
-  return (
-    <div className={`marquee marquee--${block.direction}`} style={{ ['--marquee-speed' as string]: block.speed }}>
-      <div className="marquee-track" aria-hidden="true">
-        {run}
-      </div>
-      <div className="marquee-track" aria-hidden="true">
-        {run}
-      </div>
-      <span className="visually-hidden">{text}</span>
-    </div>
-  )
+/** The original's proportions: the baseline at 0.662 of the text's height, the line drawn 0.1 of it lower, and the
+ * wave's curves pulled a third of a wavelength. */
+const BASELINE = 0.662
+const DROP = 0.1
+const CURVE = 0.333
+
+interface Layout {
+  /** The block's width, the text's height (one line), and the length of one wave (crest to trough). */
+  region: number
+  height: number
+  wave: number
+  /** Each item's width and the spacing after it, and one repeat of all of them (the measured group). */
+  items: { width: number; spacing: number }[]
+  group: number
+  /** How many repeats it takes to fill the path. */
+  repeats: number
 }
 
-/** The wave: crests and troughs every 400 px, `intensity` apart, from 400 px left of the block to past its right. */
-function wavePath(width: number, top: number, intensity: number): string {
-  const parts = [`M-400,${top} L-400,${top}`]
-  for (let x = 0, down = true; x <= width + 800; x += 400, down = !down) {
-    const y = down ? top + intensity : top
-    parts.push(`S${x - 266.8},${y} ${x},${y}`)
+/** A wave's length for the frequency setting: 250px at 0, 1000px from 10 up. */
+const waveLength = (frequency: number) => {
+  const t = Math.min(Math.max(0.1 * frequency, 0), 1)
+  return 250 * (1 - t) + 1000 * t
+}
+
+/** The path: from one wavelength left of the block to one past its right, every other point `intensity` lower. */
+function wavePath(region: number, height: number, wave: number, intensity: number): string {
+  const start = -wave
+  const baseline = height * BASELINE
+  const points = Math.ceil((region + 2 * wave) / wave) + 1
+  let d = `M${start},${baseline} `
+  for (let n = 0; n < points; n++) {
+    const x = start + n * wave
+    const y = baseline + (n % 2 === 0 ? 0 : intensity)
+    d += n === 0 ? ` L${x},${y}` : ` S${x - wave * CURVE},${y} ${x},${y}`
   }
-  return parts.join(' ')
+  return d
 }
 
-function WaveMarquee({ block, text }: { block: Data; text: string }) {
-  const id = useId().replace(/:/g, '')
-  const box = useRef<HTMLDivElement>(null)
+function Marquee({ block }: { block: Data }) {
+  const id = `marquee-${useId().replace(/:/g, '')}`
+  const root = useRef<HTMLDivElement>(null)
+  const measure = useRef<HTMLDivElement>(null)
+  const path = useRef<SVGPathElement>(null)
   const textPath = useRef<SVGTextPathElement>(null)
-  const [size, setSize] = useState({ width: 1380, fontSize: 68.84 })
+  const [layout, setLayout] = useState<Layout | null>(null)
 
-  useEffect(() => {
-    const el = box.current
-    if (!el) return
-    const measure = () => setSize({ width: el.clientWidth, fontSize: parseFloat(getComputedStyle(el).fontSize) || 68.84 })
-    measure()
-    const ro = new ResizeObserver(measure)
-    ro.observe(el)
-    return () => ro.disconnect()
-  }, [])
-
-  useEffect(() => {
-    const tp = textPath.current
-    if (!tp) return
-    const period = tp.getComputedTextLength() / 20 || 1
-    const sign = block.direction === 'right' ? 1 : -1
-    let offset = -period
-    let last = performance.now()
-    let frame = 0
-    const step = (now: number) => {
-      offset += (sign * PX_PER_SECOND * block.speed * (now - last)) / 1000
-      last = now
-      if (offset > 0) offset -= period
-      if (offset < -period) offset += period
-      tp.setAttribute('startOffset', String(offset - 400))
-      frame = requestAnimationFrame(step)
+  // Measure the items (again when the fonts arrive or the block changes size).
+  useLayoutEffect(() => {
+    const el = root.current
+    const box = measure.current
+    if (!el || !box) return
+    const read = () => {
+      const nodes = [...box.children] as HTMLElement[]
+      const items = nodes.map((n) => ({ width: n.clientWidth, spacing: parseFloat(getComputedStyle(n).marginRight) || 0 }))
+      const region = Math.max(el.clientWidth, 50)
+      const group = Math.max(box.clientWidth, 50)
+      const wave = waveLength(block.waveFrequency)
+      // The path is a little longer than the block when it waves; enough repeats to cover it and one more.
+      const length = (region + 2 * wave) * (block.waveIntensity > 0 ? 1.5 : 1)
+      setLayout({ region, height: nodes[0]?.clientHeight ?? 0, wave, items, group, repeats: Math.ceil(length / group) + 1 })
     }
-    frame = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(frame)
-  }, [block.direction, block.speed, size])
+    read()
+    document.fonts?.ready.then(read)
+    const resized = new ResizeObserver(read)
+    resized.observe(el)
+    resized.observe(box)
+    return () => resized.disconnect()
+  }, [block.waveFrequency, block.waveIntensity])
 
-  const lineHeight = size.fontSize * 1.4
-  const top = lineHeight / 2 + size.fontSize * 0.2236
+  // Move it as the original does: by its speed setting in pixels on every frame the screen draws (so twice as fast on
+  // a 120 Hz screen as on a 60 Hz one, like the original), only while it's on screen, and not at all for visitors who
+  // ask for less motion. Left takes the text left, right takes it right.
+  const group = layout?.group ?? 0
+  useEffect(() => {
+    const el = root.current
+    const tp = textPath.current
+    if (!el || !tp || !group || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const step = (block.direction === 'right' ? 1 : -1) * block.speed
+    let progress = 0
+    let frame = 0
+    const tick = () => {
+      progress -= step
+      tp.setAttribute('startOffset', String(-((((group + progress) % group) + group) % group)))
+      frame = requestAnimationFrame(tick)
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      cancelAnimationFrame(frame)
+      frame = entry?.isIntersecting ? requestAnimationFrame(tick) : 0
+    })
+    observer.observe(el)
+    return () => {
+      observer.disconnect()
+      cancelAnimationFrame(frame)
+    }
+  }, [group, block.direction, block.speed])
+
+  // Each item's place along the path, one repeat after another.
+  const placed: { text: string; x: number }[] = []
+  if (layout) {
+    let x = 0
+    for (let r = 0; r < layout.repeats; r++)
+      layout.items.forEach((item, i) => {
+        placed.push({ text: block.items[i] ?? '', x })
+        x += item.width + item.spacing
+      })
+  }
+  const style = block.textStyle.startsWith('paragraph') ? 'paragraph' : 'heading'
   return (
-    <div ref={box} className="marquee-wave marquee-item" style={{ height: `calc(1.4em + ${block.waveIntensity}px)` }}>
-      <svg className="marquee-wave-svg" width="100%" height="100%" aria-hidden="true">
-        <g transform={`translate(0, ${(size.fontSize * 0.0697).toFixed(2)})`}>
-          <path id={`wave-${id}`} d={wavePath(size.width, top, block.waveIntensity)} fill="none" />
-        </g>
-        <text>
-          <textPath ref={textPath} href={`#wave-${id}`} startOffset="-400">
-            {Array.from({ length: 20 }, () => text).join('')}
-          </textPath>
-        </text>
-      </svg>
-      <span className="visually-hidden">{text}</span>
+    <div className={`marquee marquee--${style} marquee-text`} ref={root}>
+      <div className="marquee-measure" ref={measure} aria-hidden="true">
+        {block.items.map((text, i) => (
+          <span key={i} className="marquee-item">
+            {text}
+          </span>
+        ))}
+      </div>
+      <div className="marquee-display">
+        <svg
+          className="marquee-svg"
+          fill="currentColor"
+          aria-hidden="true"
+          style={layout ? { height: `${layout.height + block.waveIntensity}px`, transform: `translateY(${layout.height * DROP}px)` } : undefined}
+        >
+          {layout && (
+            <>
+              <path ref={path} id={id} d={wavePath(layout.region, layout.height, layout.wave, block.waveIntensity)} fill="none" />
+              <text>
+                <textPath ref={textPath} href={`#${id}`} startOffset="0">
+                  {placed.map((p, i) => (
+                    <tspan key={i} x={p.x}>
+                      {p.text}
+                    </tspan>
+                  ))}
+                </textPath>
+              </text>
+            </>
+          )}
+        </svg>
+      </div>
+      <span className="visually-hidden">{block.items.join(' ')}</span>
     </div>
   )
 }

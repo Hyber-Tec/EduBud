@@ -101,7 +101,7 @@ button {
 .rte code,
 .rte-large,
 .rte-small,
-.marquee-item {
+.marquee-text {
   --fs: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
   font-size: var(--fs);
 }
@@ -119,7 +119,7 @@ button {
   .rte code,
   .rte-large,
   .rte-small,
-  .marquee-item {
+  .marquee-text {
     --fs: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
   }
 }
@@ -135,11 +135,7 @@ button {
 .rte h3,
 .accordion h3,
 .rte h4,
-.accordion h4,
-.marquee h1,
-.marquee h2,
-.marquee h3,
-.marquee h4 {
+.accordion h4 {
   font-family: var(--heading-font);
   font-weight: 700;
   font-style: normal;
@@ -177,9 +173,6 @@ button {
 .rte h4,
 .accordion h4 {
   line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
-}
-.marquee-item {
-  line-height: 1.4em !important;
 }
 .rte p,
 .rte li {
