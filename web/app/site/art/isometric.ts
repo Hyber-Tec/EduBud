@@ -209,18 +209,26 @@ export const create: CreateArt = (_canvas, settings, view) => {
     uProjection: projection,
   }
 
+  // VIEW units across the drawing's longer side, in the drawing's shape. The original sets it only when the window
+  // changes size, from the drawing's size as it was just before, so its boxes stay stretched to the old shape until
+  // the next change (up to 4× wide from a phone's width to a computer's). That's a fault, not copied (DECISIONS.md §5):
+  // ours follows the drawing's size whenever it has changed, at the next frame.
+  let fitted = [0, 0]
+  const fit = () => {
+    const w = view.drawWidth
+    const h = view.drawHeight
+    if (w === fitted[0] && h === fitted[1]) return
+    fitted = [w, h]
+    const [width, height] = w > h ? [VIEW, VIEW * (h / w)] : [VIEW * (w / h), VIEW]
+    ortho(projection, -0.5 * width, 0.5 * width, -0.5 * height, 0.5 * height, 0, 200)
+  }
+
   return {
     clearColor: shade,
     moves: !!s.speed,
-    resize() {
-      // VIEW units across the drawing's longer side, in the drawing's shape as it was last drawn: after the window
-      // changes size, the original keeps the old shape (its boxes stretched) until the next change.
-      const w = view.drawWidth
-      const h = view.drawHeight
-      const [width, height] = w > h ? [VIEW, VIEW * (h / w)] : [VIEW * (w / h), VIEW]
-      ortho(projection, -0.5 * width, 0.5 * width, -0.5 * height, 0.5 * height, 0, 200)
-    },
+    resize: fit,
     render() {
+      fit()
       uniforms.uTime += STEP * s.speed
       draw(gl, shared.program.value, shared.shape.value, uniforms)
     },
