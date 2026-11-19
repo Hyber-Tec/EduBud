@@ -1,6 +1,11 @@
-/* Videos, maps, the Instagram feed and the donation form. */
+/*
+ * The widgets: videos, the map, the Instagram feed and the donation form. Our own rules, with the values measured on
+ * the original (edubud.org) at 1920, 1440, 1024, 768 and 390 px wide.
+ */
 
-/* Videos */
+/* ---------- Videos ---------- */
+
+/* YouTube: YouTube's own player, filling the block at the video's shape. */
 .video-frame {
   position: relative;
   width: 100%;
@@ -8,66 +13,1241 @@
   overflow: hidden;
   background: var(--video-bg, transparent);
 }
-.video-frame iframe,
-.video-frame .video-poster {
+.video-frame iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
-.video-poster img {
+
+/*
+ * Videos Squarespace hosted: our player, drawn like the original's. Its sizes follow its own width: small below
+ * 480 px (a 44 px play button), medium from 480 (80 px, and the speed menu), large from 768 (120 px).
+ */
+.vp {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  container-type: inline-size;
+  font-family: Clarkson, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.vp[data-fullscreen] {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto !important;
+  background: #000;
+}
+.vp-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* The first frame, shown until the video first plays. */
+.vp-poster {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: 50% 50% / contain no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.vp:not([data-started]) .vp-poster {
+  opacity: 1;
+}
+
+/* The round play (pause, while playing) button in the middle. */
+.vp-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: block;
+  padding: 7px;
+  border: 0;
+  border-radius: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.vp-play svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+.vp-play:hover,
+.vp-play:focus-visible {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+.vp-play:focus-visible {
+  outline: none;
+  border: 1px solid #fff;
+}
+.vp[data-hidden] .vp-play {
+  visibility: hidden;
+  opacity: 0;
+}
+@container (min-width: 480px) {
+  .vp-play {
+    padding: 15px;
+  }
+  .vp-play svg {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+  }
+}
+@container (min-width: 768px) {
+  .vp-play svg {
+    width: 72px;
+    height: 72px;
+    margin: 9px;
+  }
+}
+
+/* The circles that show a skip back or forward (the arrow keys). */
+.vp-indicators {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  pointer-events: none;
+}
+.vp-indicator {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  padding: 7px;
+  border-radius: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.vp-indicator--backward {
+  margin-right: 33%;
+}
+.vp-indicator[data-show] {
+  opacity: 1;
+}
+.vp-indicator svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+@container (min-width: 480px) {
+  .vp-indicator {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+  }
+  .vp-indicator svg {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+  }
+}
+@container (min-width: 768px) {
+  .vp-indicator {
+    width: 120px;
+    height: 120px;
+  }
+  .vp-indicator svg {
+    width: 72px;
+    height: 72px;
+    margin: 9px;
+  }
+}
+
+/*
+ * The controls: the time and buttons, then the progress bar, over a dark gradient along the bottom. Their box reaches
+ * the bar's height above the player (so the gradient is a third of both); while the video plays they slide down by that
+ * height and fade, and come back when the pointer moves.
+ */
+.vp-controls {
+  --vp-bar: 44px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: calc(-1 * var(--vp-bar));
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-end;
+  padding: 0 10px 3.5px;
+  color: #fff;
+  pointer-events: none;
+  transition:
+    opacity 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+}
+.vp-controls::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 33%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+.vp-controls > * {
+  pointer-events: auto;
+}
+.vp[data-hidden] .vp-controls {
+  opacity: 0;
+  transform: translateY(var(--vp-bar));
+}
+.vp[data-hidden] .vp-controls > * {
+  pointer-events: none;
+}
+@container (min-width: 480px) {
+  .vp-controls {
+    --vp-bar: 58px;
+    padding: 0 20px 16.5px;
+  }
+}
+.vp-time {
+  padding: 0 5px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+.vp-time--duration {
+  margin-right: auto;
+}
+.vp-time--duration::before {
+  content: '\2044';
+  margin-right: 5px;
+}
+.vp-button {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  color: #e7e7e7;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.vp-button svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5px;
+}
+.vp-button:hover,
+.vp-button:focus-visible,
+.vp-button[aria-expanded='true'] {
+  color: #fff;
+}
+.vp-button:focus-visible {
+  outline: none;
+}
+.vp-button:focus-visible::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.vp-button--settings svg {
+  transition: transform 0.3s ease;
+}
+.vp-button--settings[aria-expanded='true'] svg {
+  transform: rotate(90deg);
+}
+
+/* Volume: the button mutes; hovering it shows an upright slider above it (not on touch screens). */
+.vp-volume {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.vp-volume .vp-button {
+  margin-left: 0;
+}
+.vp-range {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+.vp-range::-webkit-slider-runnable-track {
+  height: 3px;
+  border: 0;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: linear-gradient(to right, currentColor var(--value, 0%), transparent var(--value, 0%));
+}
+.vp-range::-moz-range-track {
+  height: 3px;
+  border: 0;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.vp-range::-moz-range-progress {
+  height: 3px;
+  background-color: #fff;
+}
+.vp-range::-webkit-slider-thumb {
+  width: 13px;
+  height: 13px;
+  margin-top: -5px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: none;
+  appearance: none;
+}
+.vp-range::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+}
+.vp-range:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.vp-range--volume {
+  position: absolute;
+  top: calc(-50% - 12px);
+  left: 50%;
+  z-index: 2;
+  width: 85.71px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: rgba(38, 38, 38, 0.9);
+  transform-origin: center left;
+  transform: rotate(-90deg) translateX(-5px);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    all 100ms ease-in-out 0.1s,
+    outline-offset 1ms 0.1s;
+}
+.vp:not([data-touch]) .vp-volume:hover .vp-range--volume,
+.vp:not([data-touch]) .vp-range--volume:focus-visible {
+  width: 90px;
+  transform: rotate(-90deg) translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+/* The hover area reaches up over the slider, so it stays while the pointer moves onto it. */
+.vp:not([data-touch]) .vp-volume:hover::before {
+  content: '';
+  position: absolute;
+  top: -107px;
+  left: -10px;
+  right: -10px;
+  bottom: calc(100% - 2px);
+}
+.vp[data-touch] .vp-range--volume {
+  display: none;
+}
+
+/* Speed: a menu above the settings button (medium and large players). */
+.vp-menu-wrap {
+  display: none;
+  margin-left: 20px;
+}
+.vp-menu-wrap .vp-button {
+  margin-left: 0;
+}
+@container (min-width: 480px) {
+  .vp-menu-wrap {
+    display: flex;
+  }
+}
+.vp-menu {
+  position: absolute;
+  right: 20px;
+  bottom: calc(16.5px + 17px + 24px + 12px);
+  z-index: 3;
+  min-width: 164px;
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
+  padding: 8px 0;
+  border-radius: 8px;
+  background-color: rgba(38, 38, 38, 0.9);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  white-space: nowrap;
+  animation: vp-menu-in 0.1s ease-in-out;
+}
+@keyframes vp-menu-in {
+  from {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+}
+.vp-menu-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 5px 28px 5px 13px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.vp-menu-item:hover {
+  background: rgba(79, 79, 79, 0.9);
+}
+.vp-menu-item:focus-visible {
+  outline: none;
+  border-color: #fff;
+}
+.vp-menu-value {
+  margin-left: auto;
+  padding-left: 40px;
+  font-weight: 400;
+}
+/* The little arrows and the tick are drawn with borders. */
+.vp-menu-item--forward::after,
+.vp-menu-item--back::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+.vp-menu-item--forward::after {
+  right: 15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.vp-menu-item--back {
+  min-width: 160px;
+  margin-bottom: 0;
+  padding-left: 26px;
+  padding-right: 13px;
+}
+.vp-menu-item--back::after {
+  left: 14px;
+  transform: translateY(-50%) rotate(135deg);
+}
+.vp-menu-item--radio {
+  padding-left: 26px;
+  font-weight: 400;
+}
+.vp-menu-item--radio[aria-checked='true']::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 4px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-60%) rotate(45deg);
+}
+
+/* The progress bar: the part played in white; thicker under the pointer, with the time there in a bubble. */
+.vp-progress {
+  position: relative;
+  flex: 0 0 100%;
+  order: 1;
+  height: 14px;
+  margin-top: 3px;
+}
+.vp-range--seek {
+  position: relative;
+  z-index: 2;
+  height: 14px;
+}
+.vp-range--seek::-webkit-slider-thumb {
+  visibility: hidden;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+}
+.vp-range--seek::-moz-range-thumb {
+  visibility: hidden;
+  width: 14px;
+  height: 14px;
+}
+.vp-range--seek:active::-webkit-slider-thumb {
+  visibility: visible;
+}
+.vp-range--seek:active::-moz-range-thumb {
+  visibility: visible;
+}
+.vp-progress:hover .vp-range--seek::-webkit-slider-runnable-track,
+.vp-progress:active .vp-range--seek::-webkit-slider-runnable-track {
+  height: 5px;
+}
+.vp-progress:hover .vp-range--seek::-moz-range-track,
+.vp-progress:hover .vp-range--seek::-moz-range-progress {
+  height: 5px;
+}
+.vp-progress:hover .vp-range--seek::-webkit-slider-thumb,
+.vp-progress:active .vp-range--seek::-webkit-slider-thumb {
+  margin-top: -4px;
+}
+.vp-range--seek:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.vp-buffer {
+  position: absolute;
+  left: 0;
+  top: 5.5px;
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.35);
+  background: transparent;
+  appearance: none;
+}
+.vp-buffer::-webkit-progress-bar {
+  background: transparent;
+}
+.vp-buffer::-webkit-progress-value {
+  background: currentColor;
+  transition: width 0.2s ease;
+}
+.vp-buffer::-moz-progress-bar {
+  background: currentColor;
+}
+.vp-progress:hover .vp-buffer {
+  height: 5px;
+  transform: translateY(-1px);
+}
+.vp-tooltip {
+  position: absolute;
+  bottom: 100%;
+  z-index: 2;
+  margin-bottom: 12px;
+  padding: 3px 6px;
+  border-radius: 18px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
+}
+.vp-tooltip[data-show] {
+  opacity: 1;
+}
+
+/* ---------- The map ---------- */
+
+.map-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Google's colour for a map still loading, as on the original. */
+  background-color: rgb(229, 227, 223);
+}
+.map-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/*
+ * The block grows in from nothing when it first scrolls half into view, on a spring (damping 0.9, measured on the
+ * original: ~0.88 of its size after 0.25 s, a hair over by 0.6 s). Before the page's code runs it waits, and shows
+ * itself after 2 s if the code never comes, as the original's does.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .map-block[data-appear='pending'],
+  .map-block[data-appear='waiting'] {
+    opacity: var(--appear-opacity, 1);
+    transform: scale(var(--appear-scale, 0));
+  }
+  .map-block[data-appear='pending'] {
+    animation: map-appear-fallback 0s 2s forwards;
+  }
+  .map-block[data-appear='shown'] {
+    transform: none;
+    transition:
+      transform 0.9s
+        linear(0, 0.0603 3.3%, 0.1915 6.7%, 0.3438 10%, 0.4901 13.3%, 0.6177 16.7%, 0.7221 20%, 0.8039 23.3%, 0.8656 26.7%, 0.9107 30%, 0.9426 33.3%, 0.9647 36.7%, 0.9794 40%, 0.9889 43.3%, 0.9949 46.7%, 0.9983 50%, 1.0002 53.3%, 1.0012 56.7%, 1.0015 60%, 1.0015 63.3%, 1.0013 66.7%, 1.0011 70%, 1.0009 73.3%, 1.0007 76.7%, 1.0005 80%, 1.0004 83.3%, 1.0002 86.7%, 1.0002 90%, 1.0001 93.3%, 1.0001 96.7%, 1),
+      opacity 0.7s ease;
+    transition-delay: var(--appear-delay, 0s);
+  }
+}
+@keyframes map-appear-fallback {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- The Instagram feed ---------- */
+
+/* Squarespace's gallery grid: 4 a row from 641 px wide, 2 below; tiles 3:4, the post cropped to fill. */
+.instagram-block {
+  display: block;
+}
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ig-gap, 0);
+}
+@media (min-width: 641px) {
+  .ig-grid {
+    grid-template-columns: repeat(var(--ig-cols, 4), minmax(0, 1fr));
+  }
+}
+.ig-slide {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--ig-ratio, 1 / 1);
+}
+.ig-opener {
+  position: absolute;
+  inset: 0;
+  display: block;
+  cursor: pointer;
+}
+.ig-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.video-play {
+/* A video post's play mark: a white triangle with a soft shadow, 31 px across; three quarters of that on screens of
+   1.5x and more, where the original uses a sharper, smaller picture of it. */
+.ig-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  pointer-events: none;
+}
+.ig-play svg {
+  width: 48px;
+  height: 48px;
+  fill: #fff;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.32));
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 1.5dppx) {
+  .ig-play svg {
+    transform: scale(0.75);
+  }
+}
+
+/* The lightbox: the original's dark one. */
+.ig-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  overflow: hidden;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  user-select: text;
+  -webkit-tap-highlight-color: transparent;
+}
+.ig-lb-overlay {
   position: absolute;
   inset: 0;
-  margin: auto;
-  width: 68px;
-  height: 48px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.75);
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-.video-play::after {
+.ig-lightbox[data-phase='open'] .ig-lb-overlay {
+  opacity: 0.95;
+}
+.ig-lb-slides {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ig-lightbox[data-phase='closing'] .ig-lb-slides,
+.ig-lightbox[data-phase='closing'] .ig-lb-control,
+.ig-lightbox[data-phase='closing'] .ig-lb-meta-trigger {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ig-lb-slide {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.65s cubic-bezier(0.25, 1, 0.5, 1),
+    visibility 0s 0.65s;
+}
+.ig-lb-slide[data-active] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.ig-lb-frame {
+  position: absolute;
+  left: var(--lb-left);
+  top: var(--lb-top);
+  width: var(--lb-w);
+  height: var(--lb-h);
+}
+.ig-lb-media {
+  position: absolute;
+  display: block;
+  max-width: none;
+  border: 0;
+}
+.ig-lb-meta {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.2s ease-out;
+}
+/* On touch screens the caption waits for the dot, then runs across the bottom of the screen. */
+.ig-lb-meta[data-touch] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ig-lb-control {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  color: #ccc;
+  background: none;
+  cursor: pointer;
+  outline-color: currentColor;
+}
+.ig-lb-control svg {
+  flex: none;
+  max-width: none;
+  fill: none;
+  stroke: currentColor;
+}
+.ig-lb-close {
+  top: 2%;
+  right: 2%;
+  padding: 2px;
+}
+.ig-lb-close svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.6px;
+}
+.ig-lb-arrow {
+  top: 50%;
+  margin-top: -22px;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.ig-lb-arrow svg {
+  width: 44px;
+  height: 44px;
+  stroke-width: 1.25px;
+}
+.ig-lb-prev {
+  left: 2%;
+}
+.ig-lb-next {
+  right: 2%;
+}
+.ig-lb-arrow[data-show],
+.ig-lb-arrow:focus-visible {
+  opacity: 1;
+}
+.ig-lb-meta-trigger {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  padding: 2vw;
+  border: 0;
+  color: #ccc;
+  background: none;
+  font: 26px / 0.5 sans-serif;
+  text-align: right;
+  cursor: pointer;
+}
+
+/* ---------- The donation form ---------- */
+
+/*
+ * The original's donation form, in the section's form colours: pills for the amounts (the chosen one dark), a rounded
+ * select for how often, a round tick for covering the fee, the totals, and the primary button. Its small text follows
+ * the site's small-text size (base.css's formula); the rest is 1rem.
+ */
+.donation-form {
+  --small: min(calc((var(--small-text-size-value) - 1) * 1.2vw + 1rem), max(calc((var(--small-text-size-value) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--small-text-size-value) * 1rem)));
+  --field-fill: color-mix(in srgb, var(--form-fill) 80%, transparent);
+  --field-line: color-mix(in srgb, var(--form-border) 55%, transparent);
+  --ease: cubic-bezier(0.33, 1, 0.68, 1);
+  color: var(--form-input);
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .donation-form {
+    --small: calc((var(--small-text-size-value) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+.donation-form fieldset {
+  min-width: 0;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+}
+.donation-legend {
+  display: block;
+  float: none;
+  width: auto;
+  height: 0;
+  padding: 0 0 4px;
+  box-sizing: content-box;
+}
+.donation-form input[type='radio'],
+.donation-form input[type='checkbox'] {
+  margin: 0;
+}
+
+/* The amounts. */
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.donation-option {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: var(--small);
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+.donation-option label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 4px;
+  cursor: pointer;
+}
+.donation-option input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.donation-pill {
+  position: relative;
+  display: block;
+  padding: 1px 10px;
+  border: 1px solid transparent;
+  border-radius: 300px;
+  color: var(--form-option);
+  background-color: var(--field-fill);
+  transition: background-color 0.15s var(--ease);
+}
+.donation-pill::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border: 1px solid var(--field-line);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.donation-option label:hover .donation-pill,
+.donation-option input:focus-visible + .donation-pill {
+  background-color: var(--form-fill);
+}
+.donation-option label:hover .donation-pill::before,
+.donation-option input:focus-visible + .donation-pill::before {
+  border-width: 2px;
+}
+.donation-option input:checked + .donation-pill {
+  color: var(--form-fill);
+  background-color: var(--form-option);
+}
+.donation-option label:hover input:checked + .donation-pill {
+  background-color: color-mix(in srgb, var(--form-option) 80%, transparent);
+}
+
+/* A field: the select for how often, and the custom amount. */
+.donation-field {
+  position: relative;
+  margin: 0 0 20px;
+}
+.donation-field--frequency {
+  display: flex;
+  align-items: center;
+}
+.donation-select,
+.donation-input {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 42px 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 300px;
+  color: var(--form-input);
+  background: transparent;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  outline: none;
+  appearance: none;
+}
+.donation-select {
+  cursor: pointer;
+}
+.donation-input {
+  padding: 10px 20px 10px 39.3px;
+  cursor: text;
+}
+.donation-input::placeholder {
+  color: rgb(207, 207, 207);
+  opacity: 1;
+}
+/* The field's fill and its line, behind the transparent control: fuller on hover, a solid line when focused. */
+.donation-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(1rem * 1.3 + 22px);
+  border: 0 solid transparent;
+  border-radius: 300px;
+  background-color: var(--field-fill);
+  pointer-events: none;
+  transition:
+    border-width 0.075s var(--ease),
+    border-color 0.2s var(--ease),
+    background-color 0.15s var(--ease);
+}
+.donation-field--frequency .donation-fill {
+  top: 0;
+  height: auto;
+}
+.donation-field:hover .donation-fill {
+  border-width: 1px;
+  border-color: var(--field-line);
+  background-color: var(--form-fill);
+}
+.donation-select:focus-visible ~ .donation-fill,
+.donation-input:focus ~ .donation-fill {
+  border-width: 1px;
+  border-color: var(--form-border);
+  background-color: var(--form-fill);
+}
+.donation-chevron {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -6px;
+  color: var(--form-input);
+  pointer-events: none;
+}
+.donation-field-title {
+  display: block;
+  padding-bottom: 4px;
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+  cursor: default;
+}
+.donation-field-title-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.504em;
+}
+.donation-required {
+  font-size: var(--small);
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  white-space: pre-wrap;
+  opacity: 0.7;
+}
+.donation-prefix {
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: calc(1rem * 1.3 + 22px);
+  padding: 0 10px 0 20px;
+  color: rgb(109, 109, 109);
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* Covering the fee: a round tick box. */
+.donation-fee {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: flex-start;
+}
+.donation-fee .donation-legend {
+  grid-column: 1 / span 2;
+}
+.donation-fee-option {
+  grid-column: 1 / span 2;
+  margin: 4px 0;
+  font-size: var(--small);
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+.donation-fee-option label {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 11px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+.donation-checkbox {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border: 2px solid transparent;
+  border-radius: 300px;
+  background-color: var(--form-fill);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.15s var(--ease);
+  appearance: none;
+}
+.donation-checkbox::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid var(--field-line);
+  border-radius: 300px;
+}
+.donation-checkbox:checked::before {
+  content: '';
+  display: block;
+  width: 8.25px;
+  height: 8.25px;
+  background-color: var(--form-option);
+  clip-path: polygon(13.29% 49.19%, 3.89% 59.8%, 40.98% 90%, 96.95% 21.23%, 86.94% 13.08%, 85.97% 12.29%, 38.95% 70.07%);
+}
+.donation-fee-option label:hover .donation-checkbox {
+  background-color: color-mix(in srgb, var(--form-fill) 60%, transparent);
+}
+.donation-fee-option label:hover .donation-checkbox::after {
+  border-width: 2px;
+}
+.donation-checkbox:focus-visible::after {
+  border-width: 2px;
+  border-color: var(--form-border);
+}
+
+/* The totals: what covering the fee adds, and the total for the chosen frequency (bold). */
+.donation-total {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 0 20px;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  cursor: default;
+}
+.donation-total-amount {
+  text-align: right;
+  white-space: nowrap;
+}
+.donation-total-sum {
+  font-weight: 700;
+}
+
+/* The error the original shows when its server refuses the donation: a red pill above the fields. */
+.donation-error {
+  padding-bottom: 4px;
+}
+.donation-error-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 0 0 20px;
+  padding: 6px 10px;
+  border-radius: 300px;
+  color: #fff;
+  background-color: rgb(206, 44, 48);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.donation-error-icon {
+  flex: none;
+  margin: calc((14px * 1.3 - 15px) / 2) 0;
+}
+
+/* Donate: the primary button; while "submitting", a thin line runs across where its word was. */
+.donation-button-wrap--left {
+  text-align: left;
+}
+.donation-button-wrap--center {
+  text-align: center;
+}
+.donation-button-wrap--right {
+  text-align: right;
+}
+.donation-button {
+  display: inline-block;
+  padding: 1.5rem 2.2rem;
+  border: 0;
+  border-radius: 300px;
+  color: var(--btn1-fg);
+  background: var(--btn1-bg);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+.donation-button:hover,
+.donation-button[data-state='submitting'] {
+  opacity: 0.8;
+}
+.donation-button-state {
+  display: grid;
+  grid-template-areas: 'state';
+  align-items: center;
+  justify-items: center;
+}
+.donation-button-text,
+.donation-button-progress {
+  grid-area: state;
+  transition:
+    opacity 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+    visibility 0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+.donation-button-progress {
+  position: relative;
+  width: 100%;
+  height: 2.03px;
+  overflow: hidden;
+  border-radius: 17px;
+  visibility: hidden;
+  opacity: 0;
+}
+.donation-button-progress::before {
   content: '';
   position: absolute;
   inset: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border-left: 18px solid #fff;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  transform: translateX(3px);
+  background: currentColor;
+  opacity: 0.5;
 }
-.video-frame--native {
-  height: 100%;
-  padding: 0;
+.donation-button-progress span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  border-radius: 17px;
+  background: currentColor;
+  animation: donation-progress 0.75s linear infinite;
 }
-.video-frame--native video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@keyframes donation-progress {
+  from {
+    transform: translate3d(-200%, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
 }
-
-/* Maps */
-.map-block iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  border: 0;
+.donation-button[data-state='submitting'] .donation-button-text {
+  visibility: hidden;
+  opacity: 0;
 }
-
-/* Instagram */
-.instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 10px;
-}
-.instagram-grid img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+.donation-button[data-state='submitting'] .donation-button-progress {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.1s;
 }
