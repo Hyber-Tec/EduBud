@@ -1,0 +1,111 @@
+{
+ "path": "/products-store/p/edubud-community-center-hoodie",
+ "meta": {
+  "title": "EduBud Community Center Hoodie — EduBud International",
+  "description": "  Stay connected to the EduBud community with our Community Center hoodie—a cozy reminder that    everyone has a place to connect, grow, and belong.    Designed to celebrate inclusion, friendship, and togetherness, it’s a comfortable way to carry the EduBud mission wherever you go.  "
+ },
+ "theme": "light",
+ "breadcrumb": [
+  {
+   "title": "Shop",
+   "href": "/products-store"
+  },
+  {
+   "title": "EduBud Community Center Hoodie",
+   "href": "/products-store/p/edubud-community-center-hoodie"
+  }
+ ],
+ "title": "EduBud Community Center Hoodie",
+ "price": "$50.00",
+ "description": "<p style=\"white-space:pre-wrap;\"><span>Stay connected to the EduBud community with our Community Center hoodie—a cozy reminder that </span><strong><span>everyone has a place to connect, grow, and belong.</span></strong><span> Designed to celebrate inclusion, friendship, and togetherness, it’s a comfortable way to carry the EduBud mission wherever you go.</span></p>",
+ "pictures": [
+  {
+   "base": "/media/4dce7c6e02d2",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2470,
+   "height": 1848,
+   "alt": "Screenshot 2026-09-02 at 2.18.07 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/2b88cc050d01",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2794,
+   "height": 1978,
+   "alt": "Screenshot 2026-09-02 at 2.04.06 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/4c0fd17d826c",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 3010,
+   "height": 1966,
+   "alt": "Screenshot 2026-09-02 at 2.03.00 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/24b49545d3f6",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2942,
+   "height": 1912,
+   "alt": "Screenshot 2026-09-02 at 2.05.14 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "button": "Add To Cart",
+ "vars": {
+  "--product-gallery-arrow-size": "3vw",
+  "--product-gallery-aspect-ratio": "3 / 4",
+  "--product-gallery-width": "50%",
+  "--product-content-horizontal-spacing": "3vw",
+  "--product-content-form-width": "100%"
+ }
+}

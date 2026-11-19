@@ -1,0 +1,515 @@
+/*
+ * Gallery and list sections (site/sections/): the original's sizes, colors and timings, measured on edubud.org.
+ * Like the original's, these sections have no padding or minimum height of their own: their content sets their height.
+ */
+.page-section.gallery-section,
+.page-section.list-section {
+  min-height: 0;
+  --section-pad: 0px;
+}
+
+/* ---------- Galleries ---------- */
+
+.gallery {
+  position: relative;
+}
+.gallery[data-width='full'] {
+  padding: var(--site-gutter);
+}
+.gallery[data-width='inset'] {
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  padding: var(--site-gutter);
+}
+@media (max-width: 767px) {
+  .gallery[data-width='full'],
+  .gallery[data-width='inset'] {
+    padding: var(--mobile-gutter);
+  }
+  .gallery--reel[data-width='full'],
+  .gallery--reel[data-width='inset'] {
+    padding: 0;
+  }
+}
+.gallery figure {
+  margin: 0;
+}
+.gallery img {
+  max-width: none;
+}
+
+/* Pictures appear as they scroll into view (useReveal sets data-show): at once, or scaling up (over 0.8 s, eased as
+   the original's are: `ease`, whatever its stylesheet's keyframes suggest). */
+.gallery-item:not([data-show]) .gallery-item-frame {
+  opacity: 0;
+}
+.gallery[data-animation='scale-up'] .gallery-item[data-show] .gallery-item-frame {
+  animation: gallery-scale-up 800ms ease both;
+}
+@keyframes gallery-scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Grid: equal cells, the column count at the original's breakpoints (GalleryGrid sets the counts). */
+.gallery--grid .gallery-grid-list {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: var(--gap);
+}
+.gallery--grid[data-width='full-bleed'] .gallery-grid-list {
+  padding: 0 var(--gap);
+}
+@media (max-width: 992px) {
+  .gallery--grid .gallery-grid-list {
+    grid-template-columns: repeat(var(--cols-lg), 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .gallery--grid .gallery-grid-list {
+    grid-template-columns: repeat(var(--cols-md), 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .gallery--grid .gallery-grid-list {
+    grid-template-columns: repeat(var(--cols-sm), 1fr);
+  }
+}
+.gallery--grid .gallery-item-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: var(--cell);
+}
+.gallery--grid .gallery-item img {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Strips and masonry: placed by GalleryRows once the width is known; hidden until then. */
+.gallery-rows-list {
+  position: relative;
+  width: 100%;
+}
+.gallery-rows-list:not([data-ready]) .gallery-item {
+  display: none;
+}
+.gallery-rows-list .gallery-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gallery-rows-list .gallery-item-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery--strips .gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* A masonry picture keeps its proportions; one a pixel or two wider than its column is cropped by it. */
+.gallery--masonry .gallery-item img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Reel: placed frame by frame by GalleryReel; pictures fade in as they come into view. */
+.gallery-reel {
+  display: block;
+  box-sizing: border-box;
+  min-height: 10vh;
+  user-select: none;
+}
+.gallery-reel-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.gallery-reel-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+.gallery-reel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+.gallery-reel-item-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.gallery-reel-item-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+}
+.gallery-reel-item-src[data-visible] {
+  display: block;
+}
+.gallery-reel-item-src[data-visible='true'] {
+  animation: gallery-fade-in 600ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes gallery-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.gallery-reel-item img {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-reel-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.gallery-reel-control {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.gallery-reel[data-controls='overflow-side'] .gallery-reel-control:first-child {
+  margin-left: 15px;
+}
+.gallery-reel[data-controls='overflow-side'] .gallery-reel-control:last-child {
+  margin-right: 15px;
+}
+/* The arrows: black on a small white square, a little see-through until pointed at. */
+.gallery-reel-button {
+  position: relative;
+  padding: 8px;
+  color: #000;
+  pointer-events: all;
+  opacity: 0.75;
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-reel-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  border-radius: 0.15em;
+}
+.gallery-reel-button:focus-visible {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .gallery-reel-button:hover {
+    opacity: 1;
+  }
+}
+.gallery-reel-button svg {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+.gallery-reel-button path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4px;
+}
+
+/* ---------- List: the banner slideshow ---------- */
+
+.list-slideshow {
+  min-height: 100px;
+}
+.list-slideshow-wrapper {
+  position: relative;
+}
+.list-slideshow-gutter {
+  position: relative;
+  overflow: hidden;
+}
+.list-slideshow[data-multiple] .list-slideshow-gutter {
+  cursor: grab;
+}
+.list-slideshow-gutter:focus {
+  outline: none;
+}
+.list-slideshow-gutter:focus-visible::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--list-arrow-bg);
+  pointer-events: none;
+}
+.list-slideshow[data-layout-width='full'] .list-slideshow-gutter,
+.list-slideshow[data-layout-width='inset'] .list-slideshow-gutter,
+.list-slideshow[data-layout-width='full'] .list-arrows-outer,
+.list-slideshow[data-layout-width='inset'] .list-arrows-outer {
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
+}
+.list-slideshow-holder {
+  margin: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+.list-slideshow[data-layout-width='inset'] .list-slideshow-holder,
+.list-slideshow[data-layout-width='inset'] .list-arrows-wrapper {
+  max-width: var(--site-max-width);
+}
+.list-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.list-slides[data-ready] {
+  opacity: 1;
+}
+/* All slides share one cell (the tallest sets the height); the script moves them sideways. */
+.list-slide {
+  position: relative;
+  grid-area: 1 / 1 / -1 / -1;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-9999px);
+  pointer-events: none;
+  user-select: none;
+}
+.list-slide a,
+.list-slide button {
+  pointer-events: auto;
+}
+.list-slideshow[data-card-vertical='top'] .list-slide {
+  align-items: flex-start;
+}
+.list-slideshow[data-card-vertical='bottom'] .list-slide {
+  align-items: flex-end;
+}
+.list-slideshow[data-card-horizontal='left'] .list-slide {
+  justify-content: flex-start;
+}
+.list-slideshow[data-card-horizontal='right'] .list-slide {
+  justify-content: flex-end;
+}
+.list-slide-content {
+  position: relative;
+}
+.list-item-title {
+  --v: var(--list-title-size);
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: var(--list-title);
+  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+  line-height: calc(1.2em * (1 + (1 - var(--list-title-level)) / 25));
+}
+.list-item-description {
+  --v: var(--list-body-size);
+  margin: 0;
+  letter-spacing: normal;
+  color: var(--list-description);
+  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+}
+.list-item-description p {
+  margin: 1rem 0;
+  line-height: 1.3em;
+}
+.list-item-description a {
+  color: var(--list-description);
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .list-item-title,
+  .list-item-description {
+    font-size: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+.list-slideshow-status {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* The arrows: round buttons at the bottom on computers and tablets, two smaller ones centred on phones. */
+.list-arrows-outer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.list-arrows-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+.list-slideshow[data-navigation-alignment='left'] .list-arrows-wrapper {
+  justify-content: flex-start;
+}
+.list-slideshow[data-navigation-alignment='center'] .list-arrows-wrapper {
+  justify-content: center;
+}
+.list-arrows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.list-arrow,
+.list-mobile-arrow {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  appearance: none;
+}
+.list-arrow {
+  width: 60px;
+  height: 60px;
+  transition: opacity 0.3s;
+}
+.list-arrow:focus,
+.list-mobile-arrow:focus {
+  outline: none;
+}
+.list-arrow:focus-visible::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border: 2px solid var(--list-arrow);
+  border-radius: 50%;
+}
+.list-arrow-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: var(--list-arrow-bg);
+  transition: opacity 0.3s;
+}
+.list-arrow-icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 36px;
+  height: 36px;
+}
+.list-arrow-icon path {
+  fill: none;
+  stroke: var(--list-arrow);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.list-mobile-arrows {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+.list-mobile-arrow {
+  width: 48px;
+  height: 48px;
+}
+.list-mobile-arrow--left {
+  margin-right: 10px;
+}
+.list-mobile-arrow-bg {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--list-arrow-bg);
+  transition: opacity 0.3s;
+}
+.list-mobile-arrow-icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+.list-mobile-arrow-icon path {
+  stroke: var(--list-arrow);
+}
+@media (max-width: 575px) {
+  .list-arrows-outer {
+    display: none;
+  }
+  .list-mobile-arrows {
+    display: flex;
+  }
+  .list-slide-content {
+    margin: 88px 0;
+  }
+}

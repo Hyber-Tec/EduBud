@@ -1,0 +1,209 @@
+/*
+ * Sections and their grid: each section lays its blocks on 8 columns on phones and 24 from 768 px, with rows that
+ * grow with the page's width, by the original's own numbers (Section.tsx passes them as variables).
+ */
+.page-section {
+  position: relative;
+  /* Its blocks' layers stay inside it, under the header and its menu. */
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--p2);
+  background: var(--bg);
+}
+.page-section.first-section {
+  padding-top: var(--header-height);
+}
+.section-height--small {
+  min-height: 33vh;
+}
+.section-height--medium {
+  min-height: 66vh;
+}
+.section-height--large {
+  min-height: 100vh;
+}
+/* A custom height N: N% of the window's height at least, and N × 0.1vmax of padding (as measured). */
+.page-section.section-height--custom {
+  min-height: var(--section-custom-height, 0);
+  --section-pad: var(--section-custom-pad, 0px);
+}
+.vertical-alignment--top {
+  align-items: flex-start;
+}
+.vertical-alignment--bottom {
+  align-items: flex-end;
+}
+.page-section {
+  --section-pad: 6.6vmax;
+}
+.section-height--small {
+  --section-pad: 3.3vmax;
+}
+.section-height--large {
+  --section-pad: 10vmax;
+}
+.content-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--section-pad) 0;
+}
+
+/* A section whose bottom edge isn't straight (the original's section dividers, --divider-height deep): its
+   background is masked by a rectangle and, along the bottom, the divider's shape; its content keeps clear of it.
+   "rounded" curves down to the middle; "slanted-flip-y" cuts a slant from the bottom right up to the left (the
+   original computes these paths in the browser; these are the paths it draws). */
+.has-section-divider {
+  --divider-shape: linear-gradient(#000 0 0);
+}
+.divider--rounded {
+  --divider-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E");
+}
+.divider--slanted-flip-y {
+  --divider-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L1,0 L1,1 Z'/%3E%3C/svg%3E");
+}
+/* As on the original, the section with the divider is drawn over the next one and paints its color on its masked
+   layer (not on itself), and the next section's background reaches up under the cut, as deep as the divider. */
+.page-section.has-section-divider {
+  z-index: 1;
+  background: none;
+}
+.page-section.has-section-divider > .section-border {
+  background: var(--bg);
+}
+.page-section.below-divider {
+  background: none;
+}
+.page-section.below-divider > .section-border {
+  top: calc(-1 * var(--divider-above, 0px));
+  background: var(--bg);
+}
+.has-section-divider > .section-border {
+  -webkit-mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
+    var(--divider-shape) bottom / 100% var(--divider-height, 0px) no-repeat;
+  mask:
+    linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
+    var(--divider-shape) bottom / 100% var(--divider-height, 0px) no-repeat;
+}
+/* The divider's depth is room at the bottom of the section, below its content. */
+.page-section.has-section-divider {
+  padding-bottom: var(--divider-height, 0px);
+}
+.content {
+  width: 100%;
+}
+.section-border {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.section-background {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  overflow: hidden;
+}
+.section-background-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+.section-background-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+}
+.background-width--inset {
+  padding: var(--site-gutter);
+}
+
+/* The grid. */
+.fe-grid {
+  --grid-gutter: calc(var(--mobile-gutter) - var(--col-gap));
+  --cell-max-width: calc((var(--site-max-width) - (var(--col-gap) * 7)) / 8);
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(var(--rows-m), minmax(var(--row-min-m), auto));
+  grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+  row-gap: var(--gap);
+  column-gap: var(--col-gap);
+  overflow-x: clip;
+}
+@media (min-width: 768px) {
+  .fe-grid {
+    --grid-gutter: calc(var(--site-gutter) - var(--col-gap));
+    --cell-max-width: calc((var(--site-max-width) - (var(--col-gap) * 23)) / 24);
+    --inset-padding: 0vw;
+    --container-width: min(var(--site-max-width), calc(100vw - var(--site-gutter) * 2 - var(--inset-padding)));
+    grid-template-rows: repeat(var(--rows-d), minmax(calc(var(--container-width) * var(--row-scale)), auto));
+    grid-template-columns: minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+  }
+  .background-width--inset .fe-grid {
+    --inset-padding: calc(var(--site-gutter) * 2);
+  }
+}
+.fe-block {
+  position: relative;
+  grid-area: var(--area-m);
+  z-index: var(--z-m);
+  opacity: var(--opacity, 1);
+  transform: var(--block-transform, none);
+}
+.fe-block > .block {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: var(--justify-m, flex-start);
+}
+@media (min-width: 768px) {
+  .fe-block {
+    grid-area: var(--area-d);
+    z-index: var(--z-d);
+  }
+  .fe-block > .block {
+    justify-content: var(--justify-d, flex-start);
+  }
+}
+
+/* The moving background's pause button: a 32px half-black circle, 14px from the corner of the section's content
+   (above its divider, if it has one); two white bars (a double border), or a triangle once paused. */
+.background-pause-button {
+  position: absolute;
+  right: 14px;
+  bottom: calc(14px + var(--divider-height, 0px));
+  z-index: 999;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.background-pause-button::after {
+  content: ' ';
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  width: 10px;
+  height: 12px;
+  box-sizing: border-box;
+  border-left: 10px double #fff;
+}
+.background-pause-button--paused::after {
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}

@@ -1,0 +1,1806 @@
+{
+ "path": "/support-us",
+ "meta": {
+  "title": "Day Program | Empower Growth—Join Today — EduBud International",
+  "description": "Join EduBud's Day Program to support learning, social skills, and independence for adults with disabilities in an inclusive, engaging environment. Enhance growth and community connection.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6ab9874978a58f2e44e03332",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6ab9874978a58f2e44e03332\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 17,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 15,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "3b7d9a1becd8daabe08d",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 14,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"3b7d9a1becd8daabe08d\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Support Us</h1>"
+    },
+    {
+     "id": "e7c0c62c9ca7d3509f36",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 1,
+      "rowEnd": 15,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 14,
+      "rowEnd": 15,
+      "colEnd": 27,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1920/1280",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"e7c0c62c9ca7d3509f36\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-bottom-left-radius: 40px; }\n[data-block=\"e7c0c62c9ca7d3509f36\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/dbfd070a801b",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1920,
+      "height": 1280,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "75b6d3b6b1a9a54fee83",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 1,
+      "rowEnd": 16,
+      "colEnd": 5,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 4,
+      "rowEnd": 15,
+      "colEnd": 6,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "css": "[data-block=\"75b6d3b6b1a9a54fee83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "58e69831184774708117",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 7,
+      "rowEnd": 7,
+      "colEnd": 9,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 13,
+      "rowEnd": 13,
+      "colEnd": 15,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
+     },
+     "varsMobile": {
+      "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
+     },
+     "css": "[data-block=\"58e69831184774708117\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "e19706a3c35d0eb21e30",
+     "mobile": {
+      "rowStart": 16,
+      "colStart": 2,
+      "rowEnd": 17,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 13,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"e19706a3c35d0eb21e30\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>There are many ways to help create more opportunities for our community.</strong></p><p style=\"white-space:pre-wrap;\">Whether you give your time, resources, expertise, or financial support, your involvement helps EduBud continue creating educational and community experiences for learners of all ages and backgrounds.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6ab9874978a58f2e44e03336",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6ab9874978a58f2e44e03336\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 2,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "27cba3fb7434076b2f6b",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 2,
+      "colEnd": 11,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 3,
+      "colEnd": 27,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "3.5",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-background-color": "hsla(var(--white-hsl), 1)",
+      "--tweak-marquee-block-padding": "3% 0% 3% 0%",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"27cba3fb7434076b2f6b\"] > .block { padding: var(--tweak-marquee-block-padding); }\n[data-block=\"27cba3fb7434076b2f6b\"] { mix-blend-mode: var(--tweak-marquee-block-blend); border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] > .block { border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "background": true,
+     "type": "marquee",
+     "items": [
+      "Make An Impact",
+      "✳︎"
+     ],
+     "textStyle": "heading-1",
+     "speed": 0.5,
+     "direction": "left",
+     "waveIntensity": 0,
+     "waveFrequency": 4,
+     "container": {
+      "backgroundEnabled": true,
+      "backgroundColor": {
+       "type": "SITE_PALETTE_COLOR",
+       "sitePaletteColor": {
+        "colorName": "white",
+        "alphaModifier": 1
+       }
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       },
+       "dashLength": {
+        "unit": "px",
+        "value": 5
+       },
+       "gapLength": {
+        "unit": "px",
+        "value": 15
+       },
+       "linecap": "square"
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      },
+      "stretchedToFill": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "6ab98de36b6e0560fb2ef3bd",
+   "theme": "bright",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 24,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 9,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "3b8e2f6e28f05a8b6d1d",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 2,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 2,
+      "colEnd": 26,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "line"
+    },
+    {
+     "id": "fa2aef7f7b9f28373f7a",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 3,
+      "colEnd": 8,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"fa2aef7f7b9f28373f7a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\">Our Positive Impact</h4>"
+    },
+    {
+     "id": "210c1fd61933c93e9e9e",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 6,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 7,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4284/5712",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"210c1fd61933c93e9e9e\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"210c1fd61933c93e9e9e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/5abb57bc94c7",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4284,
+      "height": 5712,
+      "alt": "A busy outdoor night market with tents and stalls, many people walking and shopping, with a large city skyline and a sign reading \"The International Night Market Atlanta\" in the background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "15637396c103f413569f",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 6,
+      "rowEnd": 10,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 7,
+      "rowEnd": 10,
+      "colEnd": 12,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "3024/4032",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"15637396c103f413569f\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"15637396c103f413569f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/e91067b61f8e",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 3024,
+      "height": 4032,
+      "alt": "A group of young women participating in an outdoor event on a sunny day, with tall trees and a blue sky in the background. Some women have their hands on their heads, and they are dressed in casual athletic wear.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "e4166f0bcdade5c40a5a",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 17,
+      "rowEnd": 8,
+      "colEnd": 21,
+      "z": 8,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-background-color": "hsla(var(--darkAccent-hsl), 1)",
+      "--tweak-text-block-padding": "15% 15% 15% 15%",
+      "--tweak-text-block-radius": "20px 20px 20px 20px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"e4166f0bcdade5c40a5a\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"e4166f0bcdade5c40a5a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e4166f0bcdade5c40a5a\"] > .block { border-radius: var(--tweak-text-block-radius); }",
+     "background": true,
+     "type": "text",
+     "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--white\">50K+</span></h4></span></div><div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><p style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">People Reached</span></p></span></div>"
+    },
+    {
+     "id": "ce142ef6d8d644c7fe83",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 6,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 12,
+      "rowEnd": 10,
+      "colEnd": 17,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4032/3024",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"ce142ef6d8d644c7fe83\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"ce142ef6d8d644c7fe83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/0b6c97b401f3",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4032,
+      "height": 3024,
+      "alt": "Crowd of people attending an outdoor community event around white tents and booths, with a large inflatable slide in the background and a city hall building visible against a clear blue sky.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "7b04ad499a3be8c18e89",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 6,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 21,
+      "rowEnd": 10,
+      "colEnd": 26,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4032/3024",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"7b04ad499a3be8c18e89\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"7b04ad499a3be8c18e89\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/a5a7da3b6dcb",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4032,
+      "height": 3024,
+      "alt": "Three young individuals celebrating a birthday or special occasion in a party room, wearing paper hats and colorful shirts with painted rainbow designs, smiling and taking a group selfie.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6ab9874978a58f2e44e03342",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 45,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 26,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "3e9df49982b9b8829d2e",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 26,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"3e9df49982b9b8829d2e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; white-space: pre-wrap\">Sponsorship Opportunities</h2><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\">Partner with EduBud to support meaningful programs, expand educational opportunities, and help us create lasting impact in our community.</p><p class=\"rte-large\" style=\"text-align: center; white-space: pre-wrap\"><strong>Choose a level of support that works for your organization and helps us expand opportunities for the people we serve.</strong></p>"
+    },
+    {
+     "id": "17e430599811fee11532",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 21,
+      "colEnd": 16,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1536/1024",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"17e430599811fee11532\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"17e430599811fee11532\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/d2bd1dbad1b0",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1536,
+      "height": 1024,
+      "alt": "Table of sponsorship opportunities for Edubud Community Center 2026-2027, listing categories, sponsorship levels, recognition, social media, events, materials, and partnership benefits.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false
+    },
+    {
+     "id": "b22ec32474054d22a620",
+     "mobile": {
+      "rowStart": 19,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 17,
+      "rowEnd": 14,
+      "colEnd": 24,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"b22ec32474054d22a620\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h3 style=\"text-align: center; white-space: pre-wrap\"><strong>Custom Partnerships</strong></h3><p style=\"text-align: center; white-space: pre-wrap\"><strong>Have another idea? We would love to hear it.</strong></p><p style=\"text-align: center; white-space: pre-wrap\">Every organization has different resources and strengths. We are happy to work with sponsors to create a partnership that aligns with their goals while supporting EduBud’s mission.</p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790543724655_11878",
+     "mobile": {
+      "rowStart": 25,
+      "colStart": 2,
+      "rowEnd": 27,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 17,
+      "colStart": 17,
+      "rowEnd": 19,
+      "colEnd": 24,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790543724655_11878\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "button",
+     "label": "Sponsor EduBud",
+     "link": {
+      "href": "https://forms.gle/26XuDG48599hZ9AP8",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    },
+    {
+     "id": "5bc3c0df28b57ea1f62e",
+     "mobile": {
+      "rowStart": 29,
+      "colStart": 2,
+      "rowEnd": 31,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 22,
+      "colStart": 3,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"5bc3c0df28b57ea1f62e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h3 style=\"text-align: center; white-space: pre-wrap\"><strong>Thank you to our sponsors:</strong></h3>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790718594083_7901",
+     "mobile": {
+      "rowStart": 31,
+      "colStart": 2,
+      "rowEnd": 37,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 24,
+      "colStart": 4,
+      "rowEnd": 27,
+      "colEnd": 8,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1254/1254",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790718594083_7901\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"yui_3_17_2_1_1790718594083_7901\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/a4a0c8d29b16",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1254,
+      "height": 1254,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "link": {
+      "href": "https://bonjil.com/?srsltid=AU7gw4XlTC22upEuD6458OJ7DkpeC2U7VvAzF96TSpXJiDpYvt7hLXXz",
+      "newWindow": true
+     },
+     "stretched": false
+    },
+    {
+     "id": "bcab8eb72d3f92e21cad",
+     "mobile": {
+      "rowStart": 37,
+      "colStart": 2,
+      "rowEnd": 41,
+      "colEnd": 6,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 24,
+      "colStart": 13,
+      "rowEnd": 27,
+      "colEnd": 16,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "512/373",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"bcab8eb72d3f92e21cad\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"bcab8eb72d3f92e21cad\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/5297efae3b0f",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 512,
+      "height": 373,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "link": {
+      "href": "http://www.edugrowacademy.com/",
+      "newWindow": true
+     },
+     "stretched": false
+    },
+    {
+     "id": "1dc32b91ba4508cf6a40",
+     "mobile": {
+      "rowStart": 37,
+      "colStart": 6,
+      "rowEnd": 41,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 24,
+      "colStart": 8,
+      "rowEnd": 27,
+      "colEnd": 12,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1774/887",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"1dc32b91ba4508cf6a40\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"1dc32b91ba4508cf6a40\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/46a32beab7d8",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1774,
+      "height": 887,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "link": {
+      "href": "https://skyarcacademy.com/",
+      "newWindow": true
+     },
+     "stretched": false
+    },
+    {
+     "id": "003842cd7dec20918ca3",
+     "mobile": {
+      "rowStart": 41,
+      "colStart": 6,
+      "rowEnd": 45,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 24,
+      "colStart": 21,
+      "rowEnd": 27,
+      "colEnd": 24,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1254/1254",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"003842cd7dec20918ca3\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"003842cd7dec20918ca3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/38000430ef76",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1254,
+      "height": 1254,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "link": {
+      "href": "https://www.instagram.com/tidyduo_atl/",
+      "newWindow": true
+     },
+     "stretched": false
+    },
+    {
+     "id": "8d0ef849385578a5c710",
+     "mobile": {
+      "rowStart": 41,
+      "colStart": 2,
+      "rowEnd": 45,
+      "colEnd": 6,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 24,
+      "colStart": 17,
+      "rowEnd": 27,
+      "colEnd": 20,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1536/1024",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"8d0ef849385578a5c710\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"8d0ef849385578a5c710\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/2034fa20cd27",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1536,
+      "height": 1024,
+      "alt": "",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "link": {
+      "href": "https://thenanoom.com/",
+      "newWindow": true
+     },
+     "stretched": false
+    }
+   ]
+  },
+  {
+   "id": "6ab9874978a58f2e44e03346",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 9,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 7,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "af84372c329c35848c4d",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 2,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 2,
+      "colEnd": 26,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "line"
+    },
+    {
+     "id": "d20b10095df9f0959e62",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 11,
+      "rowEnd": 6,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"d20b10095df9f0959e62\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Volunteer, shadow, or intern with the EduBud Community Center and be part of something meaningful! We offer flexible opportunities—whether you join us for a single community center event or a regular commitment—to match your schedule and skills. Our mission is to bring people with and without disabilities together, building authentic connections that enrich everyone. If this vision resonates with you, we’d love to welcome you to our community.</p><gen-text></gen-text>"
+    },
+    {
+     "id": "460bd57ef1776782d7a9",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 6,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 3,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"460bd57ef1776782d7a9\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Volunteer. Shadow. Intern.</h2>"
+    },
+    {
+     "id": "c466678449445a10612e",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 11,
+      "rowEnd": 8,
+      "colEnd": 17,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"c466678449445a10612e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "button",
+     "label": "Apply",
+     "link": {
+      "href": "https://forms.gle/6v1ggZvz6jPwUjC58",
+      "newWindow": true
+     },
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6ab9f7b48afefc1624c0dde8",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 30,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 13,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "7b43a76904cdd554b7ff",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 3,
+      "rowEnd": 13,
+      "colEnd": 11,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "donation",
+     "config": {
+      "html": "<div class=\"sqs-block-content\"><div class=\"sqs-donation-block-container sqs-block-alignment-wrapper\">\n        <div class=\"sqs-block-form donation-form\">\n          <style>\n            #block-7b43a76904cdd554b7ff .donation-form {\n            }\n          </style>\n          <div class=\"form-wrapper sqs-site-style-form\">\n            <div class=\"form-inner-wrapper\">\n              <form class=\"react-form-contents\" autocomplete=\"on\" style=\"--donationAmountAlignment: left; --donationAmountTextAlignment: left;\">\n                  <div class=\"field-list\">\n                      <fieldset class=\"form-item field radio\">\n  <div class=\"option\">\n    <label>\n      <input name=\"suggested-donation-amount-radio-group-7b43a76904cdd554b7ff\" type=\"radio\" value=\"1000\" checked>\n      <span class=\"radio-label\">\n        $10.00\n      </span>\n      <span class=\"radio-mark\"></span>\n      <span class=\"radio-outline\"></span>\n    </label>\n  </div>\n  <div class=\"option\">\n    <label>\n      <input name=\"suggested-donation-amount-radio-group-7b43a76904cdd554b7ff\" type=\"radio\" value=\"2000\">\n      <span class=\"radio-label\">\n        $20.00\n      </span>\n      <span class=\"radio-mark\"></span>\n      <span class=\"radio-outline\"></span>\n    </label>\n  </div>\n  <div class=\"option\">\n    <label>\n      <input name=\"suggested-donation-amount-radio-group-7b43a76904cdd554b7ff\" type=\"radio\" value=\"3000\">\n      <span class=\"radio-label\">\n        $30.00\n      </span>\n      <span class=\"radio-mark\"></span>\n      <span class=\"radio-outline\"></span>\n    </label>\n  </div>\n  <div class=\"option\">\n    <label>\n      <input name=\"suggested-donation-amount-radio-group-7b43a76904cdd554b7ff\" type=\"radio\" value=\"4000\">\n      <span class=\"radio-label\">\n        $40.00\n      </span>\n      <span class=\"radio-mark\"></span>\n      <span class=\"radio-outline\"></span>\n    </label>\n  </div>\n                        <div class=\"option\">\n  <label>\n    <input class=\"custom-donation-amount-option\" name=\"suggested-donation-amount-radio-group-7b43a76904cdd554b7ff\" type=\"radio\" value=\"Custom Amount\">\n    <span class=\"radio-label\">Custom Amount</span>\n    <span class=\"radio-mark\"></span>\n    <span class=\"radio-outline\"></span>\n  </label>\n</div>\n                      </fieldset>\n                      <div class=\"sqs-donation-block-custom-amount-container\">\n<div class=\"form-item field currency hidden\">\n  <label for=\"custom-donation-amount-input-7b43a76904cdd554b7ff\" class=\"title\">\n    <div class=\"title-container\">\n      <div class=\"label-container\">\n        <span>Please enter an amount</span>\n      </div>\n    </div>\n  </label>\n  <input type=\"text\" autocomplete=\"false\" spellcheck=\"false\" placeholder=\"Custom Amount\" aria-required=\"true\" aria-label=\"Custom Amount\" class=\"custom-donation-amount-input\">\n  <span class=\"form-input-effects\" aria-hidden=\"true\">\n    <span class=\"form-input-effects-border\"></span>\n  </span>\n  <span class=\"form-input-prefix\">$</span>\n</div>\n                      </div>\n                      <div class=\"sqs-donation-block-dropdown-container\">\n                        <fieldset class=\"form-item field select\">\n  <div class=\"dropdownWrapper\">\n    <select aria-label=\"Donation Frequency\" class=\"dropdownSelect sqs-donation-block-recurring-dropdown\">\n      <option value=\"ONE_TIME\">One-Time Donation</option>\n        <option value=\"WEEKLY\">\n            Weekly Donation\n        </option>\n        <option value=\"MONTHLY\" selected>\n            Monthly Donation\n        </option>\n        <option value=\"QUARTERLY\">\n            Quarterly Donation\n        </option>\n        <option value=\"ANNUALLY\">\n            Annual Donation\n        </option>\n    </select>\n    <span class=\"form-input-effects\" aria-hidden=\"true\">\n  <span class=\"form-input-effects-border\"></span>\n  <span class=\"form-input-effects-highlight form-field-highlight-single-trace\"></span>\n</span>\n<div class=\"accessoryIcon\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"12\">\n    <path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M0.439453 1.49825L1.56057 0.501709L9.00001 8.87108L16.4395 0.501709L17.5606 1.49825L9.00001 11.1289L0.439453 1.49825Z\" />\n  </svg>\n</div>\n  </div>\n</fieldset>\n                      </div>\n                      <div class=\"sqs-cover-the-fees\">\n                        <fieldset class=\"form-item field cover-the-fees\">\n  <div class=\"option\">\n    <label class=\"sqs-checkbox-label\">\n      <input class=\"sqs-cover-the-fees-checkbox\" name=\"cover-the-fees-7b43a76904cdd554b7ff\" type=\"checkbox\" checked>\n      <span class=\"sqs-cover-the-fees-description\">Support us by covering the fees we have to pay</span>\n     </label>\n  </div>\n</fieldset>\n                      </div>\n                      <div class=\"sqs-donation-block-total-amount field\">\n                        <div class=\"sqs-donation-block-total-amount__grid\">\n                          <span class=\"sqs-donation-block-total-amount__cover-the-fees-lineitem-label\">3% Cover the Fee</span>\n                          <span class=\"sqs-donation-block-total-amount__cover-the-fees-lineitem-amount\"></span>\n                          <span class=\"sqs-donation-block-total-amount__total-label\"></span>\n                          <span class=\"sqs-donation-block-total-amount__total-amount\"></span>\n                        </div>\n                      </div>\n                  </div>\n                <p class=\"form-field-error hidden\">\n  <svg class=\"icon\" width=\"15\" height=\"15\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"presentation\">\n    <path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M7 1.55556C3.99312 1.55556 1.55556 3.99312 1.55556 7C1.55556 10.0069 3.99312 12.4444 7 12.4444C10.0069 12.4444 12.4444 10.0069 12.4444 7C12.4444 3.99312 10.0069 1.55556 7 1.55556ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z\" fill=\"white\" />\n    <path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M6.22222 8.55556V3.11111H7.77778V8.55556H6.22222Z\" fill=\"white\" />\n    <path d=\"M6.22222 9.33333H7.77778V10.8889H6.22222V9.33333Z\" fill=\"white\" />\n  </svg>\n  <span></span>\n</p>\n                <div class=\"form-button-wrapper form-button-wrapper--align-left\">\n  <button class=\"button sqs-system-button sqs-editable-button form-submit-button none sqs-button-element--primary\" type=\"submit\">\n    <span class=\"form-submit-button-label\">\n      Donate\n    </span>\n    <span class=\"form-submit-button-state\" aria-label=\"Donate\">\n      <span aria-hidden=\"true\">Donate</span>\n      <span aria-hidden=\"true\">\n        <span></span>\n      </span>\n      <span aria-hidden=\"true\">\n        <span></span>\n      </span>\n    </span>\n  </button>\n</div>\n                  <div class=\"sqs-donation-block-disclaimer-container\">\n                  </div>\n              </form>\n            </div>\n          </div>\n        </div>\n</div>\n</div>"
+     }
+    },
+    {
+     "id": "542a0f33ff8fff8e81a7",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 6,
+      "colEnd": 11,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"542a0f33ff8fff8e81a7\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Make a Donation</h2>"
+    },
+    {
+     "id": "8f84880917a43cd0ba25",
+     "mobile": {
+      "rowStart": 19,
+      "colStart": 2,
+      "rowEnd": 30,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 13,
+      "rowEnd": 14,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "27.62237762237762% 97.60610038127383%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1920/1280",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"8f84880917a43cd0ba25\"] .image-frame { overflow: hidden; clip-path: url(#8f84880917a43cd0ba25-system_desktop); -webkit-clip-path: url(#8f84880917a43cd0ba25-system_desktop); }\n[data-block=\"8f84880917a43cd0ba25\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/b29466be01c7",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1920,
+      "height": 1280,
+      "alt": "Group of children and teenagers dressed in costumes, taking a group photo at a celebration with gift bags on the table in front.",
+      "focal": [
+       0.2762237762237762,
+       0.9760610038127383
+      ]
+     },
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"8f84880917a43cd0ba25-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"8f84880917a43cd0ba25-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
+    },
+    {
+     "id": "33b9a7b80fb2eebef877",
+     "mobile": {
+      "rowStart": 15,
+      "colStart": 4,
+      "rowEnd": 23,
+      "colEnd": 11,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 20,
+      "rowEnd": 9,
+      "colEnd": 25,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4896/3672",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"33b9a7b80fb2eebef877\"] .image-frame { overflow: hidden; clip-path: url(#33b9a7b80fb2eebef877-system_desktop); -webkit-clip-path: url(#33b9a7b80fb2eebef877-system_desktop); }\n[data-block=\"33b9a7b80fb2eebef877\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/80c9990a8cca",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4896,
+      "height": 3672,
+      "alt": "A group of young people smiling and taking a selfie outdoors under a canopy, with trees in the background, during what appears to be a community or environmental event.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"33b9a7b80fb2eebef877-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"33b9a7b80fb2eebef877-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
+    }
+   ]
+  }
+ ]
+}

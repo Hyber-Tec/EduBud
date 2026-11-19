@@ -1,0 +1,362 @@
+/*
+ * The page's base: sizes, fonts and the text styles every block uses. The values are the original's settings
+ * (scripts/capture writes them to themes.css); the formulas reproduce how its text grows with the window.
+ */
+:root {
+  --site-gutter: 30px;
+  --mobile-gutter: 6vw;
+  --site-max-width: 3000px;
+  /* The fixed header's height, which the first section clears: the logo and the header's padding (1.1vw on
+     computers, 6vw below 800px, where the menu turns into its button); the logo is 48px tall below 768px. */
+  --header-height: calc(90px + 2.2vw);
+  --heading-font: 'Bricolage Grotesque', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+  /* A size setting (1 = 1rem) becomes: (v − 1) × 1.2vw + 1rem, capped as the original caps it. */
+  --text-unit: 1.2vw;
+}
+@media (max-width: 799px) {
+  :root {
+    --header-height: calc(90px + 12vw);
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --header-height: calc(48px + 12vw);
+  }
+}
+
+html {
+  font-size: 17px;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  /* The site's own background (its root theme's: the mint), which shows where no section covers the page. */
+  background: var(--bg);
+  color: hsla(var(--black-hsl), 1);
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+  line-height: 1.3em;
+}
+html.menu-open,
+html.menu-open body {
+  overflow: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
+button {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Rich text, inside text blocks, accordions, shapes and forms. Each element says which size setting it uses (--v);
+   its size comes from one rule (--fs), the window's width on computers and tablets, its height on phones held
+   upright, as the original's. */
+.rte h1,
+.accordion h1,
+.rte h2,
+.accordion h2,
+.rte h3,
+.accordion h3,
+.rte h4,
+.accordion h4,
+.rte p,
+.rte li,
+.rte code,
+.rte-large,
+.rte-small,
+.marquee-item {
+  --fs: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+  font-size: var(--fs);
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .rte h1,
+.accordion h1,
+  .rte h2,
+.accordion h2,
+  .rte h3,
+.accordion h3,
+  .rte h4,
+.accordion h4,
+  .rte p,
+  .rte li,
+  .rte code,
+  .rte-large,
+  .rte-small,
+  .marquee-item {
+    --fs: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+/* A word too wide for its block breaks rather than spilling out, as on the original. */
+.rte,
+.rte * {
+  overflow-wrap: break-word;
+}
+.rte h1,
+.accordion h1,
+.rte h2,
+.accordion h2,
+.rte h3,
+.accordion h3,
+.rte h4,
+.accordion h4,
+.marquee h1,
+.marquee h2,
+.marquee h3,
+.marquee h4 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  white-space: pre-wrap;
+}
+.rte h1,
+.accordion h1 {
+  --v: var(--heading-1-size-value);
+  color: var(--h1);
+}
+.rte h2,
+.accordion h2 {
+  --v: var(--heading-2-size-value);
+  color: var(--h2);
+}
+.rte h3,
+.accordion h3 {
+  --v: var(--heading-3-size-value);
+  color: var(--h3);
+}
+.rte h4,
+.accordion h4 {
+  --v: var(--heading-4-size-value);
+  color: var(--h4);
+}
+.rte h1,
+.accordion h1,
+.rte h2,
+.accordion h2,
+.rte h3,
+.accordion h3,
+.rte h4,
+.accordion h4 {
+  line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
+}
+.marquee-item {
+  line-height: 1.4em !important;
+}
+.rte p,
+.rte li {
+  --v: var(--normal-text-size-value);
+  line-height: 1.3em;
+  color: var(--p2);
+  white-space: pre-wrap;
+}
+.rte p {
+  margin: 1rem 0;
+}
+.rte-large,
+.rte .rte-large,
+.rte p.rte-large,
+.rte-large p {
+  --v: var(--large-text-size-value);
+  line-height: 1.3em;
+  color: var(--p1);
+}
+.rte-small,
+.rte .rte-small,
+.rte p.rte-small,
+.rte-small p {
+  --v: var(--small-text-size-value);
+  line-height: 1.3em;
+  color: var(--p3);
+}
+.rte > :first-child,
+.rte > :first-child > :first-child,
+.rte .rte-scaled-text-container:first-child > .rte-scaled-text > :first-child {
+  margin-top: 0;
+}
+.rte > :last-child,
+.rte > :last-child > :last-child,
+.rte .rte-scaled-text-container:last-child > .rte-scaled-text > :last-child {
+  margin-bottom: 0;
+}
+.rte a {
+  color: var(--link);
+}
+.rte h1 a,
+.rte h2 a,
+.rte h3 a,
+.rte h4 a {
+  color: var(--heading-link);
+}
+.rte ul,
+.rte ol {
+  padding-left: 40px;
+  margin: 1rem 0;
+}
+/* Inside a list, its items' paragraphs and headings keep half a line apart (measured: 0.5em). */
+.rte li > * {
+  margin: 0.5em 0;
+}
+.rte strong {
+  font-weight: 700;
+}
+
+/* The theme's other colors, for text the original colored by name. */
+.rte-text-color--accent {
+  color: hsla(var(--accent-hsl), 1);
+}
+.rte-text-color--lightAccent {
+  color: hsla(var(--lightAccent-hsl), 1);
+}
+.rte-text-color--darkAccent {
+  color: hsla(var(--darkAccent-hsl), 1);
+}
+.rte-text-color--white {
+  color: hsla(var(--white-hsl), 1);
+}
+.rte-text-color--black {
+  color: hsla(var(--black-hsl), 1);
+}
+/* Highlights drawn behind text (blocks' "text attributes"): an underline at 90% of each line, or a marker band. */
+.rte-highlight {
+  --hl-color-used: var(--hl-color, currentColor);
+  background-image: linear-gradient(var(--hl-color-used), var(--hl-color-used));
+  background-repeat: no-repeat;
+  background-size: 100% var(--hl-thickness, 0.1em);
+  background-position: 0 calc(90% + 0.4 * var(--hl-thickness, 0.1em));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.rte-highlight--marker {
+  background-size: 100% 55%;
+  background-position: 0 85%;
+}
+/* A word circled by hand: the original draws this loop in the browser, in a box 0.07em wider than the word on each
+   side and as tall as its line, the stroke 0.1em. Ours is the same loop (the original's path, measured at 1440px) as a
+   mask in the highlight's color, its box placed the same way with room for the stroke and the loop's overshoot. */
+.rte-highlight--circle {
+  position: relative;
+  background: none;
+}
+.rte-highlight--circle::after {
+  --w: calc(100% + 0.141em);
+  content: '';
+  position: absolute;
+  left: calc(-0.0668em - var(--w) * 12 / 284);
+  top: calc(-100% * 6 / 83);
+  width: calc(var(--w) * 312 / 284);
+  height: calc(100% * 102 / 83);
+  background-color: var(--hl-color-used);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -6 312 102' preserveAspectRatio='none'%3E%3Cpath d='M96.4,83.35 C158.416,87.442 294,82.42 294,43.36 C294,10.345 204.624,0 140.784,0 S-6.96,10.345 -6.96,42.244 S63.264,91.627 214.96,87.442' fill='none' stroke='%23000' stroke-width='6.8' stroke-linecap='square' stroke-linejoin='bevel'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-12 -6 312 102' preserveAspectRatio='none'%3E%3Cpath d='M96.4,83.35 C158.416,87.442 294,82.42 294,43.36 C294,10.345 204.624,0 140.784,0 S-6.96,10.345 -6.96,42.244 S63.264,91.627 214.96,87.442' fill='none' stroke='%23000' stroke-width='6.8' stroke-linecap='square' stroke-linejoin='bevel'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.rte-highlight--underlineCurve,
+.rte-highlight--scribble {
+  background: none;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--hl-color-used);
+  text-decoration-thickness: var(--hl-thickness, 0.1em);
+  text-underline-offset: 0.2em;
+}
+.rte-highlight a {
+  text-decoration: none;
+}
+
+/* Text scaled to fill its block (fitText sets each line's size). */
+.rte-scaled-text-container {
+  display: block;
+}
+.rte-scaled-text-container {
+  line-height: 0;
+}
+.rte-scaled-text {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  visibility: hidden;
+}
+.rte-scaled-text > * {
+  white-space: nowrap !important;
+  font-size: 1em !important;
+  line-height: 1em !important;
+  margin: 0 !important;
+}
+
+/* The "page not found" page: plain text under the header, 30px from the edges (as the original's), on the page's own
+   background; its links look like the text around them. */
+.system-page {
+  padding: var(--header-height) 30px 30px;
+}
+.system-page > p:first-child {
+  padding-top: 30px;
+}
+.system-page p,
+.system-page ul {
+  margin: 1em 0;
+}
+.system-page ul {
+  padding-left: 40px;
+}
+.system-page li > * {
+  margin: 0;
+}
+.system-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Preformatted text wraps, and the code in it is set in the body font at the small size (as the original's). */
+.rte pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+.rte code {
+  --v: var(--small-text-size-value);
+  font-family: var(--body-font);
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+  white-space: pre-wrap;
+}

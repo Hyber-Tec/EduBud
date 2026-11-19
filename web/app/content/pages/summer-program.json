@@ -1,0 +1,1261 @@
+{
+ "path": "/summer-program",
+ "meta": {
+  "title": "Summer Program | Join the Summer Fun Today — EduBud International",
+  "description": "Explore our engaging summer program focused on community, learning, and friendship. Join us for a fun-filled, supportive summer experience for all participants.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a849920e87c6b6301040531",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6a849920e87c6b6301040531\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 22,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 22,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "7dc519102428d18657f1",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 14,
+      "colEnd": 11,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 14,
+      "rowEnd": 23,
+      "colEnd": 27,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "4284/5712",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"7dc519102428d18657f1\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"7dc519102428d18657f1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/41868636faa1",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 4284,
+      "height": 5712,
+      "alt": "A group of people gathered around a table outdoors, enjoying a meal with various dishes, including chopped onions, diced cucumbers, and a large pot of rice salad. They are smiling, some making peace signs, and are wearing casual clothes and gloves. The background shows a wooden fence and trees.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "71ebff1c22fb080557b2",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 1,
+      "rowEnd": 5,
+      "colEnd": 5,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 14,
+      "colStart": 9,
+      "rowEnd": 17,
+      "colEnd": 13,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"71ebff1c22fb080557b2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "yui_3_17_2_1_1787103139021_3920",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 12,
+      "rowEnd": 13,
+      "colEnd": 16,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none",
+      "--m-offset-x": "0px",
+      "--m-offset-y": "0px",
+      "--m-offset-z": "0px",
+      "--m-scale-x": "1",
+      "--m-scale-y": "1",
+      "--m-scale-z": "1",
+      "--m-rotation-x": "0deg",
+      "--m-rotation-y": "0deg",
+      "--m-rotation-z": "0deg",
+      "--m-skew-x": "0deg",
+      "--m-skew-y": "0deg",
+      "--m-skew-z": "0deg",
+      "--m-opacity": "1"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1787103139021_3920\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
+     "type": "shape",
+     "name": "four-petal-flower",
+     "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+     "viewBox": "0 0 100 100",
+     "stretched": false
+    },
+    {
+     "id": "5cc938cd33153111f8de",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 5,
+      "rowEnd": 15,
+      "colEnd": 7,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 13,
+      "rowEnd": 9,
+      "colEnd": 15,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"5cc938cd33153111f8de\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"text-align: center; white-space: pre-wrap\"><strong><em>Only Good Things Grow Here!</em></strong></p>"
+    },
+    {
+     "id": "4164774006b6134b0d10",
+     "mobile": {
+      "rowStart": 15,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 7,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 12,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"4164774006b6134b0d10\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Camp Bud &amp; Bloom</h1>"
+    },
+    {
+     "id": "1e5794648b212d182898",
+     "mobile": {
+      "rowStart": 19,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 2,
+      "rowEnd": 16,
+      "colEnd": 12,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"1e5794648b212d182898\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Our EduBud <em>Bud &amp; Bloom</em> Summer Camp offers EduBud students a fun, engaging summer filled with learning, creativity, friendship, and meaningful community experiences.</p>"
+    }
+   ]
+  },
+  {
+   "id": "6a849920e87c6b6301040535",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "divider": {
+    "clipPath": "<clippath id=\"section-divider-6a849920e87c6b6301040535\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
+   },
+   "vars": {
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 3,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 3,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "8804755d7df042b8f20f",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 4,
+      "colEnd": 11,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 1,
+      "rowEnd": 4,
+      "colEnd": 27,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--marquee-font-size-value": "3.5",
+      "--marquee-item-spacing": "0.5em",
+      "--marquee-fade-mask": "none",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-marquee-block-padding": "initial",
+      "--tweak-marquee-block-radius": "0px 0px 0px 0px",
+      "--tweak-marquee-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"8804755d7df042b8f20f\"] { mix-blend-mode: var(--tweak-marquee-block-blend); border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"8804755d7df042b8f20f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "marquee",
+     "items": [
+      "BUD & BLOOM SUMMER CAMP",
+      "✳︎"
+     ],
+     "textStyle": "heading-1",
+     "speed": 0.5,
+     "direction": "left",
+     "waveIntensity": 0,
+     "waveFrequency": 4,
+     "container": {
+      "backgroundEnabled": false,
+      "backgroundColor": {
+       "type": "THEME_COLOR"
+      },
+      "stroke": {
+       "style": "none",
+       "color": {
+        "type": "THEME_COLOR"
+       },
+       "thickness": {
+        "value": 6,
+        "unit": "px"
+       },
+       "dashLength": {
+        "unit": "px",
+        "value": 5
+       },
+       "gapLength": {
+        "unit": "px",
+        "value": 15
+       },
+       "linecap": "square"
+      },
+      "padding": {
+       "top": {
+        "value": 3,
+        "unit": "%"
+       },
+       "bottom": {
+        "value": 3,
+        "unit": "%"
+       },
+       "left": {
+        "value": 0,
+        "unit": "%"
+       },
+       "right": {
+        "value": 0,
+        "unit": "%"
+       }
+      },
+      "blendMode": "normal",
+      "blur": {
+       "enabled": false,
+       "filterType": "backdrop",
+       "blurRadius": {
+        "value": 15,
+        "unit": "px"
+       }
+      },
+      "borderRadii": {
+       "topLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "topRight": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomLeft": {
+        "value": 0,
+        "unit": "px"
+       },
+       "bottomRight": {
+        "value": 0,
+        "unit": "px"
+       }
+      },
+      "stretchedToFill": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "6aa21c2d392047402d941954",
+   "theme": "black",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "video": {
+     "src": "/media/e379d599ca4d/video.mp4",
+     "poster": {
+      "base": "/media/f9dfe1cba54c",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2560,
+      "height": 1792,
+      "alt": ""
+     },
+     "width": 1764,
+     "height": 1080,
+     "filter": "opacity(0.42)",
+     "speed": 1
+    },
+    "overlayOpacity": 0.2
+   },
+   "grid": {
+    "mobile": {
+     "rows": 14,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 10,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "bf3ad5f95a144aeafa2b",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 11,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 4,
+      "rowEnd": 11,
+      "colEnd": 15,
+      "z": 0,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"bf3ad5f95a144aeafa2b\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">A summer filled with friendship, creativity, discovery, and new possibilities.</h2>"
+    },
+    {
+     "id": "22435bf4463ba52fbf31",
+     "mobile": {
+      "rowStart": 10,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 16,
+      "rowEnd": 11,
+      "colEnd": 21,
+      "z": 1,
+      "justify": "flex-end",
+      "align": "flex-end"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "15px",
+      "--accordion-item-padding-bottom": "15px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "1px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "100%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "0.2",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-padding": "initial",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"22435bf4463ba52fbf31\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
+     "type": "accordion",
+     "items": [
+      {
+       "title": "Explore",
+       "html": "<p style=\"white-space:pre-wrap;\">Discover new interests through creative activities, games, hands-on learning, and opportunities to try something new.</p>"
+      },
+      {
+       "title": "Connect",
+       "html": "<p style=\"white-space:pre-wrap;\">Build friendships and connect with local communities through visits and activities with libraries, fire departments, community spaces, and other community places and organizations.</p>"
+      },
+      {
+       "title": "Bloom",
+       "html": "<p style=\"white-space:pre-wrap;\">Build confidence, independence, communication, and everyday skills while celebrating each student’s strengths and individuality.</p>"
+      }
+     ],
+     "firstOpen": false,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "arrow",
+     "titleTag": "p",
+     "titleClass": "rte-large",
+     "descriptionClass": "rte-large",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "descriptionPlacement": "left",
+     "iconPlacement": "right"
+    }
+   ]
+  },
+  {
+   "id": "6a8509a11c20ca02cc337d61",
+   "theme": "dark",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 32,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 18,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "525a9fbd68244ab93065",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 28,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 19,
+      "colEnd": 11,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"525a9fbd68244ab93065\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Camp Schedule</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\">Each day of our summer camp combines structured activities with opportunities to learn, create, and explore the community.</p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Program Hours: 10:00 AM - 2:30 PM  (Monday, Tuesday, Wednesday, Thursday)</strong></p><p style=\"white-space:pre-wrap;\"><br></p><h4 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Terrific Thursdays</h4><p class=\"rte-large\" style=\"white-space:pre-wrap;\">During our Summer Program, <strong>Terrific Thursdays</strong> are designed to give participants something special to look forward to, with activities that encourage friendship, socialization, independence, and FUN! Participants may enjoy community outings, themed activities, games, special events, recreational experiences, group projects, and opportunities to explore new places with their EduBud friends. Activities may vary each week depending on weather, scheduling, transportation, participant needs, and availability. Terrific Thursdays are all about getting out, trying new things, building confidence, and making amazing summer memories together!</p>"
+    },
+    {
+     "id": "bca3575abe0ba69c016c",
+     "mobile": {
+      "rowStart": 22,
+      "colStart": 2,
+      "rowEnd": 32,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 12,
+      "rowEnd": 19,
+      "colEnd": 26,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "contain",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "7359/6456",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"bca3575abe0ba69c016c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; }\n[data-block=\"bca3575abe0ba69c016c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/2f71e4c63e52",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 7359,
+      "height": 6456,
+      "alt": "Weekly summer camp schedule titled 'EDU BUD BUD & BLOOM SUMMER CAMP' with days of the week from Monday to Friday, and time slots detailing activities including meetings, sports, skills, meals, and breaks, arranged in a grid against a mint green background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": false
+    }
+   ]
+  },
+  {
+   "id": "6a850e6abab541593f7b10b3",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "gradient",
+     "images": [
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/390.jpg",
+       "width": 780,
+       "height": 2182,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/1024.jpg",
+       "width": 1536,
+       "height": 1034,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a850e6abab541593f7b10b3/1920.jpg",
+       "width": 1920,
+       "height": 956
+      }
+     ]
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 22,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 14,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "9ff47e1d201170e0685a",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 6,
+      "rowEnd": 4,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"9ff47e1d201170e0685a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Frequently Asked Questions</h2>"
+    },
+    {
+     "id": "4bd107c0ba263b8a44aa",
+     "mobile": {
+      "rowStart": 5,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 4,
+      "rowEnd": 12,
+      "colEnd": 13,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "30px",
+      "--accordion-item-padding-bottom": "30px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "1px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "70%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "1",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-padding": "initial",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"4bd107c0ba263b8a44aa\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
+     "type": "accordion",
+     "items": [
+      {
+       "title": "Is EduBud the Right Fit?",
+       "html": "<p style=\"white-space:pre-wrap;\">Because EduBud is a community-based educational and social program, rather than a medical or intensive behavioral treatment facility, participants must be able to safely participate within our available level of staffing and support.</p>"
+      },
+      {
+       "title": "What is the process for enrollment?",
+       "html": "<p style=\"white-space:pre-wrap;\">To share information about the participant's Communication needs, Level of independence, Behavioral and emotional support needs, Medical or safety considerations, Elopement/wandering concerns, Aggression or self-injurious behaviors, if applicable, Toileting and personal-care needs, Sensory needs and triggers, Strategies that help with regulation, Allergies, medications, and emergency information. Providing complete and accurate information helps our team determine how we can best support each participant and keep everyone safe.</p>"
+      },
+      {
+       "title": "What are some program expectations?",
+       "html": "<p style=\"white-space:pre-wrap;\">Respecting peers, instructors, volunteers, and personal space, Following basic safety directions, Participating in activities at their individual ability level, Communicating needs appropriately, with support when needed, Taking turns and participating in group activities, Using appropriate strategies or requesting breaks when overwhelmed. We understand that every participant communicates, learns, and regulates differently. Needing accommodations, breaks, visual supports, repeated directions, or additional processing time is completely okay.</p>"
+      }
+     ],
+     "firstOpen": false,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "plus",
+     "titleTag": "h4",
+     "titleClass": "",
+     "descriptionClass": "",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "descriptionPlacement": "left",
+     "iconPlacement": "right"
+    },
+    {
+     "id": "417d7d39d9e6446b0f76",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 15,
+      "rowEnd": 14,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--accordion-item-padding-top": "30px",
+      "--accordion-item-padding-bottom": "30px",
+      "--accordion-item-padding-left": "0px",
+      "--accordion-item-padding-right": "0px",
+      "--accordion-icon-size": "14px",
+      "--accordion-icon-thickness": "1px",
+      "--accordion-description-padding-top": "0px",
+      "--accordion-description-padding-bottom": "30px",
+      "--accordion-description-padding-left": "0px",
+      "--accordion-description-padding-right": "0px",
+      "--accordion-description-width": "70%",
+      "--accordion-divider-thickness": "1px",
+      "--accordion-divider-opacity": "1",
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-accordion-block-background-color": "hsla(0, 0%, 100%, 0.2)",
+      "--tweak-accordion-block-padding": "initial",
+      "--tweak-accordion-block-radius": "0px 0px 0px 0px",
+      "--tweak-accordion-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"417d7d39d9e6446b0f76\"] { mix-blend-mode: var(--tweak-accordion-block-blend\n); border-radius: var(--tweak-accordion-block-radius); }",
+     "type": "accordion",
+     "items": [
+      {
+       "title": "How important is attendance & communication?",
+       "html": "<p style=\"white-space:pre-wrap;\">Consistent attendance helps participants become familiar with their routine, instructors, and peers. Families should notify EduBud as early as possible regarding absences, late arrivals, early pickups, transportation changes, or other schedule changes. Please keep emergency contacts and important participant information up to date.</p>"
+      },
+      {
+       "title": "What does it take to qualify for Edubud?",
+       "html": "<p style=\"white-space:pre-wrap;\">A diagnosis alone does not determine whether someone is a good fit for EduBud. We look at the whole person, their strengths, interests, communication style, independence, support needs, and ability to safely participate in our community.&#160; Our goal is to create an environment where participants can belong, learn, grow, and be themselves.</p>"
+      },
+      {
+       "title": "What are other programs offered outside of the community center?",
+       "html": "<p style=\"white-space:pre-wrap;\">Edubud offers Buddy Program Projects that connect our participants with well-trained Buddy Partners who are highly skilled and prepared to work with individuals in the special needs community. Buddies provide encouragement, companionship, and support during activities, community outings, and other special social experiences. Volunteers may also participate in special events, community service projects, and other meaningful opportunities that promote friendship, independence, and inclusion. If you are interested, more information is available on our “golden bridge” tab.</p>"
+      }
+     ],
+     "firstOpen": false,
+     "allowMultiple": false,
+     "dividers": {
+      "enabled": true,
+      "first": true,
+      "last": true
+     },
+     "icon": "plus",
+     "titleTag": "h4",
+     "titleClass": "",
+     "descriptionClass": "",
+     "titleAlign": "left",
+     "descriptionAlign": "left",
+     "descriptionPlacement": "left",
+     "iconPlacement": "right"
+    }
+   ]
+  },
+  {
+   "id": "6a849920e87c6b6301040541",
+   "theme": "white-bold",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 22,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 12,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "6d025aa3c681f977cea5",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 3,
+      "rowEnd": 4,
+      "colEnd": 13,
+      "z": 0,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"6d025aa3c681f977cea5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\">Get In Touch</h2>"
+    },
+    {
+     "id": "ce66860252d20b6e738a",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 4,
+      "colStart": 3,
+      "rowEnd": 7,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"ce66860252d20b6e738a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">If you're interested in working with us, complete the form with a few details about your project. We'll review your message and get back to you within 48 hours.</p>"
+    },
+    {
+     "id": "6343cc73ab16b3f01da2",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 23,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 13,
+      "rowEnd": 13,
+      "colEnd": 25,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--form-block-padding": "initial",
+      "--form-block-border-radius": "0px 0px 0px 0px",
+      "--form-block-blend-mode": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"6343cc73ab16b3f01da2\"] { mix-blend-mode: var(--form-block-blend-mode\n    ); border-radius: var(--form-block-border-radius); }\n[data-block=\"6343cc73ab16b3f01da2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "form",
+     "config": {
+      "useFormsJs": true,
+      "formId": "6a849920e87c6b630104052b",
+      "formName": "New Form 2 2 3",
+      "formFields": [
+       {
+        "type": "name",
+        "id": "name-yui_3_17_2_1_1553888888520_3744",
+        "locked": false,
+        "title": "Name",
+        "description": "",
+        "required": true,
+        "name": true,
+        "customConstraints": {
+         "requireFirstName": {
+          "enabled": true
+         },
+         "requireLastName": {
+          "enabled": true
+         },
+         "showFirstName": {
+          "enabled": true
+         },
+         "showLastName": {
+          "enabled": true
+         }
+        }
+       },
+       {
+        "type": "email",
+        "id": "email-yui_3_17_2_1_1553888888520_3745",
+        "locked": false,
+        "title": "Email",
+        "description": "",
+        "placeholder": "",
+        "required": true,
+        "email": true
+       },
+       {
+        "required": true,
+        "locked": false,
+        "description": "",
+        "id": "phone-1177ca6d-9b5b-478c-9a64-3ea832435b41",
+        "phone": true,
+        "type": "phone",
+        "showCountryCode": false,
+        "title": "Phone"
+       },
+       {
+        "required": true,
+        "locked": false,
+        "description": "",
+        "id": "textarea-2cd9a728-8b01-4a0c-aafa-cd10e18de202",
+        "textarea": true,
+        "type": "textarea",
+        "placeholder": "Have a question? Leave us a message and we’ll be in touch.",
+        "title": "Leave Us A Note!"
+       }
+      ],
+      "formSubmitButtonText": "Submit",
+      "formSubmissionMessage": {
+       "html": "Thank you!"
+      },
+      "successRedirect": null,
+      "disclaimerMessage": null,
+      "captchaEnabled": true,
+      "captchaTheme": 1,
+      "captchaAlignment": 1,
+      "isSmsConsentEnabled": true,
+      "businessName": null,
+      "privacyPolicyUrl": null,
+      "termsAndConditionsUrl": null,
+      "hasActiveSmsSubscription": null,
+      "sendingProfileFullySetUp": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "6aa232ed8d256f6e84b81513",
+   "kind": "gallery",
+   "theme": "",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 1,
+     "rowMin": "24px",
+     "gap": 0,
+     "colGap": 0
+    },
+    "desktop": {
+     "rows": 1,
+     "scale": 0.0215,
+     "gap": 0,
+     "colGap": 0
+    }
+   },
+   "blocks": []
+  }
+ ]
+}

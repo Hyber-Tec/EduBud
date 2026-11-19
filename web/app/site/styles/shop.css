@@ -1,0 +1,821 @@
+/*
+ * The shop (web/app/site/shop/): the store's product grid, the product pages and the cart, drawn as the original draws
+ * them. Settings that vary (columns, spacing, the gallery's shape) come from the capture as variables on each part;
+ * the other values are the original's own, measured in a browser at 1920, 1440, 1024, 768 and 390 px.
+ */
+
+/*
+ * Text. The original's root size is 17px, and 16px below 992px wide. Shop text is sized from it (--rem), so it matches
+ * even where the page's own root size differs. A size setting v (1 = the base size) becomes (v − 1) × 1.2vw + 1rem,
+ * capped as the original caps it; on phones held upright, (v − 1) × 1.2% of the screen's height (at most 900px) + 1rem.
+ */
+.shop {
+  --rem: 17px;
+  /* The original's "meta" text (prices, the quantity): 0.9 of the base size. */
+  --meta-size: var(--normal-meta-size-value, 0.9);
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+  font-size: var(--rem);
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 991px) {
+  .shop {
+    --rem: 16px;
+  }
+}
+.shop .shop-size {
+  font-size: min(
+    calc((var(--v) - 1) * 1.2vw + var(--rem)),
+    max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + var(--rem)), calc(var(--v) * var(--rem)))
+  );
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .shop .shop-size {
+    font-size: calc((var(--v) - 1) * 0.012 * min(100vh, 900px) + var(--rem));
+  }
+}
+/* Headings' type: names, prices on product pages, the "Shop" title. */
+.shop-list-title,
+.shop-card-title,
+.shop-product-title,
+.shop-product-price {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  line-height: 1.2em;
+  text-transform: capitalize;
+}
+/* The "meta" type: prices in the grid, the quantity. */
+.shop-card-price,
+.shop-card-status,
+.shop-qty-input {
+  font-family: var(--body-font);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.3em;
+}
+
+/* Buttons: "Add To Cart" (primary), dimmed under the pointer. */
+.shop-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  border-radius: 300px;
+  background: var(--btn1-bg);
+  color: var(--btn1-fg);
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-style: normal;
+  font-size: var(--rem);
+  letter-spacing: -0.04em;
+  line-height: normal;
+  text-transform: none;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+.shop-button:hover {
+  opacity: 0.8;
+}
+.shop-button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.shop-button-text {
+  font-size: min(1em, 22px);
+  line-height: 1.2;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 767px) {
+  .shop-button-text {
+    font-size: min(1em, 19px);
+  }
+}
+
+/* ---- The store's product grid ---- */
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--product-list-section-vertical-padding-top, 2vh) var(--site-gutter) var(--product-list-section-vertical-padding-bottom, 2vh);
+}
+@media (max-width: 767px) {
+  .shop-list {
+    padding-left: var(--mobile-gutter);
+    padding-right: var(--mobile-gutter);
+  }
+}
+.shop-list-header {
+  margin-bottom: 10px;
+}
+/* The collection's title, on phones only. */
+.shop-list-title {
+  --v: var(--heading-2-size-value);
+  margin: 0;
+  line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
+  color: var(--h2);
+}
+@media (min-width: 768px) {
+  .shop-list-title {
+    display: none;
+  }
+}
+.shop-list-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--product-list-num-columns-desktop, 2), minmax(0, 1fr));
+  row-gap: var(--product-list-row-spacing);
+  column-gap: var(--product-list-column-spacing);
+  /* The original's filter bar follows the grid, empty, with this margin. */
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .shop-list-grid {
+    grid-template-columns: repeat(var(--product-list-num-columns-mobile, 2), minmax(0, 1fr));
+    gap: 30px;
+  }
+}
+
+/* A product: it fades in and drops into place once its picture has loaded. */
+.shop-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+.shop-card.is-loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (min-width: 768px) {
+  .shop-card {
+    min-width: 100px;
+  }
+}
+.shop-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  color: inherit;
+  text-decoration: none;
+}
+.shop-card-image {
+  position: relative;
+}
+.shop-card-frame {
+  position: relative;
+  aspect-ratio: var(--product-list-image-aspect-ratio);
+}
+@media (max-width: 767px) {
+  .shop-card-frame {
+    aspect-ratio: var(--product-list-image-aspect-ratio-mobile, var(--product-list-image-aspect-ratio));
+  }
+}
+.shop-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+/* The second picture fades in under the pointer, over the first. */
+.shop-card-hover {
+  opacity: 0;
+}
+@media (hover: hover) {
+  .shop-card-image:hover .has-hover .shop-card-cover {
+    opacity: 0;
+  }
+  .shop-card-image:hover .shop-card-hover {
+    opacity: 1;
+  }
+}
+.shop-card-meta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-top: var(--product-list-image-text-spacing);
+  text-align: left;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.shop-card-title {
+  --v: var(--heading-4-size-value);
+  color: var(--product-title);
+}
+.shop-card-price {
+  --v: var(--meta-size);
+  margin-top: calc(0.5 * var(--rem));
+  color: var(--product-price);
+}
+.shop-card-status {
+  --v: var(--meta-size);
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.shop-card-add {
+  margin-top: 8px;
+}
+.shop-card-add .shop-button {
+  height: 55px;
+  padding: 0 calc(1.2 * var(--rem));
+}
+
+/* ---- A product page ---- */
+
+.shop-product {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  padding: 3vw var(--site-gutter);
+}
+@media (max-width: 767px) {
+  .shop-product {
+    padding: 24px var(--mobile-gutter) 3vw;
+  }
+}
+/* "Shop › Product", on computers only. */
+.shop-product-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+  color: var(--product-item-nav);
+}
+.shop-product-nav a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .shop-product-nav {
+    display: none;
+  }
+}
+.shop-product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+@media (min-width: 768px) {
+  .shop-product-content {
+    flex-direction: row;
+    align-items: start;
+    gap: var(--product-content-horizontal-spacing);
+  }
+  .shop-product-meta {
+    flex: 1;
+  }
+}
+
+/* The gallery. Its width follows the original's own breakpoints, which start at 769px: at exactly 768px the original
+   leaves it without a width, so the picture shrinks to nothing and only the thumbnails show. Kept as it is. */
+.shop-gallery {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  overflow: hidden;
+  user-select: none;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .shop-gallery {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .shop-gallery {
+    width: min(var(--product-gallery-width), 50%);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .shop-gallery {
+    width: min(var(--product-gallery-width), 60%);
+  }
+}
+@media (min-width: 1281px) {
+  .shop-gallery {
+    width: var(--product-gallery-width);
+  }
+}
+/* The thumbnails' column (computers only), fading into the page at its foot. */
+.shop-gallery-scroll {
+  display: none;
+  position: relative;
+  width: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.shop-gallery-scroll::after {
+  display: block;
+  content: '';
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--bg) 100%);
+}
+@media (min-width: 768px) {
+  .shop-gallery-scroll {
+    display: block;
+  }
+}
+.shop-gallery-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 0;
+  margin-bottom: 10vh;
+}
+/* A thumbnail sits on a line of text, as the original's: the line's descent adds 5px below the picture. */
+.shop-gallery-thumb {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #000;
+  font-family: var(--body-font);
+  font-size: var(--rem);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+}
+.shop-gallery-thumb img {
+  display: inline;
+  width: 100%;
+  aspect-ratio: var(--product-gallery-aspect-ratio);
+  object-fit: cover;
+}
+/* At least 1px tall: at exactly 768px, where the gallery has no width of its own, that's what sizes the picture's box
+   (0.75 × 1px), and so where the product's text starts, as on the original. */
+.shop-gallery-slides {
+  position: relative;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 1px;
+  aspect-ratio: var(--product-gallery-aspect-ratio);
+}
+@media (min-width: 768px) {
+  .shop-gallery-slides {
+    overflow: hidden;
+  }
+}
+.shop-gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+.shop-gallery-slide.is-selected,
+.shop-gallery-slide.is-prev,
+.shop-gallery-slide.is-next {
+  display: block;
+}
+.shop-gallery-slide.is-selected {
+  z-index: 2;
+}
+.shop-gallery-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+/* Computers: the chosen picture shows, the others are hidden; the change is immediate. */
+@media (min-width: 768px) {
+  .shop-gallery-slide:not(.is-selected) {
+    opacity: 0;
+  }
+}
+/* Phones: the chosen picture slides in as the last one slides out, the way the change went. */
+@media (max-width: 767px) {
+  .shop-gallery-slide {
+    visibility: hidden;
+  }
+  .going-next .shop-gallery-slide.is-prev,
+  .going-next .shop-gallery-slide.is-selected,
+  .going-prev .shop-gallery-slide.is-next,
+  .going-prev .shop-gallery-slide.is-selected {
+    visibility: visible;
+  }
+  .going-next .shop-gallery-slide.is-prev {
+    animation: shop-slide-out-left 0.5s ease-in-out both;
+    z-index: 1;
+  }
+  .going-next .shop-gallery-slide.is-selected {
+    animation: shop-slide-in-right 0.5s ease-in-out both;
+  }
+  .going-prev .shop-gallery-slide.is-next {
+    animation: shop-slide-out-right 0.5s ease-in-out both;
+    z-index: 1;
+  }
+  .going-prev .shop-gallery-slide.is-selected {
+    animation: shop-slide-in-left 0.5s ease-in-out both;
+  }
+}
+@keyframes shop-slide-in-right {
+  from {
+    transform: translateX(101%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shop-slide-out-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-101%);
+  }
+}
+@keyframes shop-slide-in-left {
+  from {
+    transform: translateX(-101%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shop-slide-out-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(101%);
+  }
+}
+/* The arrows: thin chevrons, each a square's two sides turned, centered on the picture's height. They fade in once
+   the first picture has loaded. */
+.shop-gallery-controls {
+  --click-area: calc(var(--product-gallery-arrow-size) + 20px);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.shop-gallery-controls.is-ready {
+  opacity: 1;
+}
+.shop-gallery-arrow {
+  display: flex;
+  align-items: center;
+  width: var(--click-area);
+  height: var(--click-area);
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 1.5vw;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.shop-gallery-arrow::after {
+  display: block;
+  content: '';
+  box-sizing: content-box;
+  width: var(--product-gallery-arrow-size);
+  height: var(--product-gallery-arrow-size);
+  margin: calc((var(--click-area) - var(--product-gallery-arrow-size)) / 2);
+  border-style: solid;
+  border-color: var(--product-item-gallery);
+  border-width: 1px 1px 0 0;
+}
+.shop-gallery-arrow:focus {
+  outline-color: var(--product-item-gallery);
+}
+.shop-gallery-prev {
+  justify-content: flex-start;
+}
+.shop-gallery-prev::after {
+  transform: rotate(225deg);
+}
+.shop-gallery-next {
+  justify-content: flex-end;
+}
+.shop-gallery-next::after {
+  transform: rotate(45deg);
+}
+/* "1 / 3", in the picture's corner on phones. */
+.shop-gallery-indicator {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 3;
+  display: inline-block;
+  font-size: 12px;
+  color: var(--product-item-gallery);
+}
+@media (min-width: 768px) {
+  .shop-gallery-indicator {
+    display: none;
+  }
+}
+
+/* The product's text and buttons. */
+.shop-product-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  text-align: left;
+}
+.shop-product-title {
+  --v: var(--heading-2-size-value);
+  margin: 0;
+  color: var(--product-item-title);
+}
+.shop-product-price {
+  --v: var(--heading-4-size-value);
+  margin-bottom: 5px;
+  color: var(--product-item-price);
+}
+.shop-product-description {
+  --v: var(--normal-text-size-value);
+  margin-bottom: 5px;
+  color: var(--product-item-desc);
+}
+.shop-product-description p {
+  margin: var(--rem) 0;
+}
+.shop-product-description > :first-child {
+  margin-top: 0;
+}
+.shop-product-description > :last-child {
+  margin-bottom: 0;
+}
+.shop-product-description strong {
+  font-weight: 700;
+}
+.shop-product-description--below {
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  .shop-product-description--side {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .shop-product-description--below {
+    display: none;
+  }
+}
+.shop-product-add {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: var(--product-content-form-width, 100%);
+  min-width: 225px;
+}
+.shop-product-controls {
+  display: flex;
+  align-items: start;
+  gap: 11px;
+  width: 100%;
+}
+.shop-product-quantity {
+  flex: 3 1 0;
+  min-width: 0;
+}
+.shop-product-button {
+  min-width: 0;
+}
+.shop-product-button .shop-button {
+  display: inline-block;
+  max-width: 100%;
+  height: 55px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .shop-product-quantity {
+    min-width: 80px;
+  }
+  .shop-product-button {
+    flex: 10 1 0;
+  }
+}
+@media (max-width: 767px) {
+  .shop-product-add {
+    width: 100%;
+  }
+  .shop-product-controls {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .shop-product-quantity {
+    flex: 1 0 90px;
+  }
+  .shop-product-button {
+    flex: 2 1 auto;
+  }
+  .shop-product-button .shop-button {
+    height: 48px;
+  }
+}
+
+/* The quantity field: a pill, white at 80% that turns solid and gains a border under the pointer, a darker one while
+   typing. The number and the buttons sit above it. */
+.shop-qty {
+  position: relative;
+}
+.shop-qty-input {
+  --v: var(--meta-size);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  height: 55px;
+  padding: 0 min(8%, 15px);
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: calc(10px + 1.3em * 0.66);
+  color: var(--form-input);
+}
+@media (max-width: 767px) {
+  .shop-qty-input {
+    height: 48px;
+  }
+}
+.shop-qty-input input {
+  z-index: 1;
+  display: block;
+  flex-shrink: 1;
+  width: auto;
+  max-width: 5ch;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: calc(10px + 1.3em * 0.66);
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: var(--body-font);
+  font-size: var(--rem);
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-align: center;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.shop-qty-input input::-webkit-inner-spin-button,
+.shop-qty-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.shop-qty-button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-shrink: 0;
+  min-width: 17px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.shop-qty-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.shop-qty-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 17px;
+}
+.shop-qty-effects {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+.shop-qty-border {
+  position: absolute;
+  inset: 0;
+  border: 0 solid transparent;
+  border-radius: calc(10px + 1.3em * 0.66);
+  background-color: color-mix(in srgb, var(--form-fill) 80%, transparent);
+  transition:
+    border-width 0.075s var(--ease-out),
+    border-color 0.2s var(--ease-out),
+    background-color 0.15s var(--ease-out);
+}
+.shop-qty:hover .shop-qty-border {
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--form-border) 55%, transparent);
+  background-color: var(--form-fill);
+}
+.shop-qty:focus-within .shop-qty-border {
+  border-width: 1px;
+  border-color: var(--form-border);
+  background-color: var(--form-fill);
+}
+
+/* ---- The cart, empty ---- */
+
+.shop-cart {
+  width: 100%;
+  padding: 0 var(--site-gutter) 30px;
+}
+/* No space below where the original shows its phone header: under 800px, and on touch screens up to 1024px. */
+@media only screen and (pointer: coarse) and (max-width: 1024px), screen and (max-width: 799px) {
+  .shop-cart {
+    padding-bottom: 0;
+  }
+}
+.shop-cart-body {
+  padding-top: 30px;
+  line-height: 1.5em;
+}
+.shop-cart-header {
+  margin: 0 0 10px;
+}
+.shop-cart-title {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: var(--h2);
+}
+.shop-cart-empty {
+  margin: 27px 0 22px;
+}
+.shop-cart-message {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* "Continue Shopping": a secondary button. */
+.shop-cart-button {
+  display: inline-block;
+  padding: 1.3em 2.2em;
+  border-radius: 300px;
+  background: var(--btn2-bg);
+  color: var(--btn2-fg);
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-size: var(--rem);
+  letter-spacing: -0.04em;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+}
+.shop-cart-button:hover {
+  opacity: 0.8;
+}

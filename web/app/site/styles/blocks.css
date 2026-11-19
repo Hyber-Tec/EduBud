@@ -1,0 +1,599 @@
+/* The blocks: text, pictures, shapes, buttons, accordions, scrolling text, videos, lines, forms, maps. */
+
+/* Text */
+.text-block .rte {
+  position: relative;
+  padding: var(--tweak-text-block-padding, 0);
+}
+
+/* Pictures fill their block, cropped around their focal point. */
+.image-block .image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-block .image-frame > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.image-block .image-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: var(--image-component-object-fit, cover);
+}
+/* A picture that keeps its own shape sits inside its block, as large as the block allows, centered. */
+.image-block:not(.image-block--stretched) {
+  container-type: size;
+  align-items: center;
+  justify-content: center;
+}
+.image-block:not(.image-block--stretched) .image-frame {
+  width: min(100cqw, calc(100cqh * (var(--image-component-native-aspect-ratio, 1))));
+  height: auto;
+  aspect-ratio: var(--image-component-native-aspect-ratio, 1);
+}
+/* A masked picture's frame is square (the original's masks are drawn in a square); the photo covers it. */
+.image-frame--masked {
+  --image-component-native-aspect-ratio: 1;
+}
+/* A color over the picture, as strong as its setting (some pictures are covered whole: the mint frames). */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-color: var(--image-block-overlay-color, var(--image-overlay));
+  opacity: var(--image-component-overlay-opacity, 0);
+  mix-blend-mode: var(--image-component-overlay-blend-mode, normal);
+}
+.image-mask-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* A block's outline (its stroke setting): the width and style come with the block, the color from its type's setting. */
+.fe-block--text > .block {
+  border-color: var(--tweak-text-block-stroke-color, currentColor);
+}
+.fe-block--marquee > .block {
+  border-color: var(--tweak-marquee-block-stroke-color, currentColor);
+}
+.fe-block--accordion > .block {
+  border-color: var(--tweak-accordion-block-stroke-color, currentColor);
+}
+.fe-block--form > .block {
+  border-color: var(--tweak-form-block-stroke-color, currentColor);
+}
+
+/* A block with its own background (cards): its settings' color, else its section theme's. */
+.fe-block--bg > .block {
+  background-color: var(--block-bg);
+}
+.fe-block--text {
+  --block-bg: var(--tweak-text-block-background-color, var(--text-block-bg));
+}
+.fe-block--accordion {
+  --block-bg: var(--tweak-accordion-block-background-color, var(--acc-bg));
+}
+.fe-block--marquee {
+  --block-bg: var(--tweak-marquee-block-background-color, var(--marquee-bg));
+}
+.fe-block--video {
+  --block-bg: var(--tweak-video-block-background-color, var(--video-bg));
+}
+.fe-block--form {
+  --block-bg: var(--tweak-form-block-background-color, var(--form-bg));
+}
+/* A form on a card (a form block with its own background): the card's padding, from its setting, and the theme's
+   colors for forms on a background (white fields on the mint card, for instance). */
+.fe-block--form.fe-block--bg > .form-block {
+  padding: var(--form-block-padding, 0);
+}
+.fe-block--form.fe-block--bg .form {
+  --form-title: var(--form-title-on-bg);
+  --form-desc: var(--form-desc-on-bg);
+  --form-caption: var(--form-caption-on-bg);
+  --form-input: var(--form-input-on-bg);
+  --form-fill: var(--form-fill-on-bg);
+  --form-border: var(--form-border-on-bg);
+  --form-accent: var(--form-accent-on-bg);
+  --form-accessory: var(--form-accessory-on-bg);
+  --form-option: var(--form-option-on-bg);
+  --btn1-bg: var(--form-btn-bg-on-bg);
+  --btn1-fg: var(--form-btn-fg-on-bg);
+}
+
+/* Shapes: one drawing for phones and one for wider screens, as their alignment can differ. */
+.shape-block {
+  justify-content: center;
+}
+.shape-block > a {
+  display: contents;
+}
+.shape--desktop {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .shape--mobile {
+    display: none !important;
+  }
+  .shape--desktop {
+    display: block !important;
+  }
+}
+/* A rectangle is a box with its rounded corners, in the shape's color. */
+.shape-block .shape--rect {
+  background-color: var(--shape-block-background-color, var(--shape-bg));
+}
+/* Shapes fill their block's area without making it taller (only text grows the grid's rows). */
+.shape-block .shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--shape-block-background-color, var(--shape-bg));
+  stroke: var(--shape-block-stroke-color, none);
+  overflow: visible;
+}
+.shape-block .shape-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Buttons: pills, the original's sizes. */
+.button-block {
+  justify-content: center;
+}
+.button-block--left {
+  align-items: flex-start;
+}
+.button-block--center {
+  align-items: center;
+}
+.button-block--right {
+  align-items: flex-end;
+}
+/* A stretched button fills its block, its text centered, with no padding above or below (as measured). */
+.button-block--stretched {
+  justify-content: stretch;
+}
+.button-block--stretched .button {
+  display: flex;
+  width: 100%;
+  /* Never narrower than its longest word and its padding: on narrow tablets the original's grows past its block. */
+  min-width: min-content;
+  height: 100%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: normal;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  line-height: 1.2em;
+  text-transform: none;
+  border-radius: 300px;
+  border: 0;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+  font-size: 1rem;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button--primary {
+  background: var(--btn1-bg);
+  color: var(--btn1-fg);
+  padding: 1.5rem 2.2rem;
+}
+.button--secondary {
+  background: var(--btn2-bg);
+  color: var(--btn2-fg);
+  padding: 1.3rem 2.2rem;
+}
+.button--tertiary {
+  background: var(--btn3-bg);
+  color: var(--btn3-fg);
+  padding: 1.5rem 2.2rem;
+}
+/* The size setting doesn't change the text on this site's buttons: "large" ones are 1rem too, as measured. */
+
+/* Accordions */
+.accordion {
+  list-style: none;
+  margin: 0;
+  padding: var(--tweak-accordion-block-padding, 0);
+  color: var(--p2);
+}
+.accordion-divider {
+  height: var(--accordion-divider-thickness, 1px);
+  background: var(--acc-divider, currentColor);
+  opacity: var(--accordion-divider-opacity, 1);
+}
+.accordion-title {
+  margin: 0;
+}
+/* The title's lines are the font's own height ("normal"), as on the original: DM Sans rounds to whole pixels. It
+   takes its heading's capitalization and spacing (browsers reset them on buttons). */
+.accordion-title button {
+  line-height: normal;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: left;
+  padding: var(--accordion-item-padding-top, 30px) var(--accordion-item-padding-right, 0) var(--accordion-item-padding-bottom, 30px) var(--accordion-item-padding-left, 0);
+}
+.accordion--icon-left .accordion-title button {
+  flex-direction: row-reverse;
+}
+.accordion-title-text {
+  flex: 1;
+}
+.accordion-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: var(--accordion-icon-size, 14px);
+  height: var(--accordion-icon-size, 14px);
+  color: var(--acc-icon, currentColor);
+}
+.plus,
+.plus-h,
+.plus-v {
+  position: absolute;
+  inset: 0;
+}
+.plus-h,
+.plus-v {
+  background: currentColor;
+  margin: auto;
+  transition: transform 0.2s ease;
+}
+.plus-h {
+  height: var(--accordion-icon-thickness, 1px);
+}
+.plus-v {
+  width: var(--accordion-icon-thickness, 1px);
+}
+.accordion-item[data-open] .plus-v {
+  transform: rotate(90deg);
+}
+.arrow {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  border-right: var(--accordion-icon-thickness, 1px) solid currentColor;
+  border-bottom: var(--accordion-icon-thickness, 1px) solid currentColor;
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.accordion-item[data-open] .arrow {
+  transform: translateY(25%) rotate(-135deg);
+}
+/* The open item's drop-down keeps its description's margins inside it (it hides what overflows, as the original's). */
+.accordion-dropdown {
+  overflow: hidden;
+}
+/* The description: at most 300px wide, but never narrower than its width setting (the setting wins on wider blocks),
+   placed left, center or right. A large or small one has 1rem above and below, as a paragraph of that size has. */
+.accordion-description {
+  margin: 0;
+  text-align: var(--description-text-align, left);
+  padding: var(--accordion-description-padding-top, 0) var(--accordion-description-padding-right, 0) var(--accordion-description-padding-bottom, 30px)
+    var(--accordion-description-padding-left, 0);
+  box-sizing: border-box;
+  max-width: 300px;
+  min-width: var(--accordion-description-width, 100%);
+}
+.accordion-description.rte-large,
+.accordion-description.rte-small {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Scrolling text */
+.marquee-block {
+  justify-content: center;
+  overflow: hidden;
+}
+/* The scrolling line: as tall as its text's line (a waving one adds its wave's depth). */
+.marquee {
+  position: relative;
+  display: flex;
+  width: max-content;
+  animation: marquee calc(60s / var(--marquee-speed, 1)) linear infinite;
+}
+.marquee--right {
+  animation-direction: reverse;
+}
+.marquee-track {
+  display: flex;
+  flex: 0 0 auto;
+}
+.marquee-item {
+  --v: var(--marquee-font-size-value, var(--heading-1-size-value));
+  padding-right: var(--marquee-item-spacing, 0.5em) !important;
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  white-space: pre;
+  color: var(--marquee-h, var(--h1));
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Lines: a 1px rule with 8px above and below, as the original's, so a line block is at least 17px tall (taller than
+   its grid row on narrow tablets, which grows the row). */
+.line-block {
+  justify-content: center;
+}
+.line-block hr {
+  width: 100%;
+  height: 1px;
+  margin: 8px 0;
+  border: 0;
+  background-color: var(--tweak-line-block-line-color, var(--line));
+}
+
+/* Forms, measured on the original: pill fields filled with the theme's form color, labels with "(required)" faded. */
+.form {
+  --form-small: min(calc((0.9 - 1) * 1.2vw + 1rem), max(calc((0.9 - 1) * 0.012 * var(--site-max-width) + 1rem), calc(0.9 * 1rem)));
+  /* The theme's field colors, and the original's easing for its fields' hover and focus. */
+  --field-fill: var(--form-fill, hsla(var(--white-hsl), 1));
+  --field-border: var(--form-border, hsla(var(--black-hsl), 1));
+  --field-ease: cubic-bezier(0.33, 1, 0.68, 1);
+  font-size: 1rem;
+  line-height: 1.3em;
+  color: var(--form-title, var(--p2));
+}
+.form-fields {
+  display: block;
+}
+.form-item {
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.form-field {
+  display: grid;
+  align-items: flex-start;
+  position: relative;
+}
+.form-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0 0.504em;
+  padding: 0 0 4px;
+  font-size: 1rem;
+  line-height: 1.3em;
+}
+.form-name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+.form-name > legend {
+  float: left;
+  width: 100%;
+}
+.form-name-part {
+  flex: 1 1 0;
+  margin: 0 0 20px;
+}
+.form-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  letter-spacing: -0.03em;
+  gap: 0 0.504em;
+  margin: 4px 0 0;
+  padding: 0 0 2px;
+  font-size: var(--form-small);
+  line-height: 1.3em;
+}
+.form-required {
+  font-size: var(--form-small);
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+  opacity: 0.7;
+}
+/* A phone number's title is a fieldset's legend on the original, where "(required)" sits on a 1em line. */
+.form-field--phone .form-required {
+  line-height: 1;
+}
+.form-caption .form-required {
+  line-height: 1;
+}
+.form-input {
+  display: block;
+  width: 100%;
+  height: calc(1.3em + 22px);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3em;
+  letter-spacing: inherit;
+  color: var(--form-input, var(--p2));
+  /* The field's fill at 80%, full on hover and focus; its border shows on hover (55%) and focus (100%). */
+  background: color-mix(in srgb, var(--field-fill) 80%, transparent);
+  border: 1px solid transparent;
+  border-radius: calc(10px + 1.3em * 0.66);
+  padding: 10px 20px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  transition:
+    border-color 0.2s var(--field-ease),
+    background-color 0.15s var(--field-ease);
+}
+.form-input:hover {
+  background-color: var(--field-fill);
+  border-color: color-mix(in srgb, var(--field-border) 55%, transparent);
+}
+.form-input:focus {
+  background-color: var(--field-fill);
+  border-color: var(--field-border);
+}
+.form-textarea {
+  height: 100px;
+  resize: vertical;
+}
+.form-option {
+  margin: 6px 0 4px;
+  font-size: var(--form-small);
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+}
+.form-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 4px 0 0;
+  cursor: pointer;
+}
+/* The checkbox, as the original draws it: a 15px circle filled like the fields, a ring (1px at 55%; 2px and full on
+   hover or once checked), and a tick that wipes in from the left. The tick (::before) is also what the label's text
+   lines up with, so it's there unchecked too, masked out. */
+.form-checkbox input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 300px;
+  background-color: color-mix(in srgb, var(--field-fill) 80%, transparent);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3em;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s var(--field-ease);
+}
+.form-checkbox input::before {
+  content: '';
+  display: block;
+  width: 75%;
+  height: 75%;
+  background-color: var(--form-accessory, hsla(var(--black-hsl), 1));
+  clip-path: polygon(13.29% 49.19%, 3.89% 59.8%, 40.98% 90%, 96.95% 21.23%, 86.94% 13.08%, 85.97% 12.29%, 38.95% 70.07%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0 50%, #fff 50%);
+  mask-image: linear-gradient(90deg, transparent 0 50%, #fff 50%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+  transition:
+    mask-position 0.2s 0.1s var(--field-ease),
+    -webkit-mask-position 0.2s 0.1s var(--field-ease);
+}
+.form-checkbox input:checked::before {
+  -webkit-mask-position: -100% 0;
+  mask-position: -100% 0;
+}
+.form-checkbox input::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid color-mix(in srgb, var(--field-border) 55%, transparent);
+  border-radius: inherit;
+  transition:
+    border-width 0.075s var(--field-ease),
+    border-color 0.2s var(--field-ease);
+}
+.form-checkbox input:hover,
+.form-checkbox input:focus-visible,
+.form-checkbox input:checked {
+  background-color: var(--field-fill);
+}
+.form-checkbox input:hover::after,
+.form-checkbox input:focus-visible::after,
+.form-checkbox input:checked::after {
+  border-width: 2px;
+  border-color: var(--field-border);
+}
+.form-button-wrapper {
+  display: block;
+}
+.form-submit {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.3em;
+  padding: 1.5rem 2.2rem;
+}
+.form-sent {
+  color: var(--form-title, var(--p2));
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .form {
+    --form-small: calc((0.9 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+
+/* Accordion titles keep no margin of their own, whatever their tag. */
+.accordion .accordion-title {
+  margin: 0;
+}
+
+.accordion[data-description-placement='center'] .accordion-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion[data-description-placement='right'] .accordion-description {
+  margin-left: auto;
+}
+.accordion[data-description-align='center'] {
+  --description-text-align: center;
+}
+.accordion[data-description-align='right'] {
+  --description-text-align: right;
+}
+.accordion[data-title-align='center'] .accordion-title-text {
+  text-align: center;
+}
+.accordion[data-title-align='right'] .accordion-title-text {
+  text-align: right;
+}
+.accordion-title-text {
+  padding-right: var(--accordion-icon-size, 14px);
+}
+.accordion-title button {
+  gap: 0;
+}

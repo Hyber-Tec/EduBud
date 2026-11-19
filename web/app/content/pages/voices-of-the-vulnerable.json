@@ -1,0 +1,947 @@
+{
+ "path": "/voices-of-the-vulnerable",
+ "meta": {
+  "title": "Voices of the Vulnerable Project | Join the Cause — Make a Difference — EduBud International",
+  "description": "Join the Voices of the Vulnerable Project to engage in impactful community service, develop leadership skills, and make a difference in underserved populations worldwide.",
+  "image": "http://static1.squarespace.com/static/6a8365da6575752e1a10fdad/t/6ab979f1251ca64a2c6c006f/1790540273577/EduBud+transparent.png?format=1500w"
+ },
+ "sections": [
+  {
+   "id": "6a9b12e54f27a842cd378e8e",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--custom",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "conic",
+     "images": [
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/390.jpg",
+       "width": 780,
+       "height": 6052,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/1024.jpg",
+       "width": 1536,
+       "height": 2895,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a9b12e54f27a842cd378e8e/1920.jpg",
+       "width": 1920,
+       "height": 2140
+      }
+     ]
+    }
+   },
+   "vars": {
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
+   },
+   "grid": {
+    "mobile": {
+     "rows": 80,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 38,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "1200b47b5574cdf12f43",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 22,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"1200b47b5574cdf12f43\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h1 style=\"white-space:pre-wrap;\">Voices of the Vulnerable</h1>"
+    },
+    {
+     "id": "13a38b65ed2de8df086b",
+     "mobile": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 10,
+      "z": 0,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2744/1972",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"13a38b65ed2de8df086b\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"13a38b65ed2de8df086b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/995c8990f3c6",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2744,
+      "height": 1972,
+      "alt": "Group of people pointing towards a person wearing a black hoodie with the words 'Education', 'community center' and other text and symbols printed on the back, outside in a park or wooded area with trees in the background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "d13c69003692319b4986",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 6,
+      "colStart": 11,
+      "rowEnd": 8,
+      "colEnd": 19,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"d13c69003692319b4986\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h3 style=\"white-space:pre-wrap;\">2025 VV Project</h3>"
+    },
+    {
+     "id": "3651f743ba6218ab6587",
+     "mobile": {
+      "rowStart": 24,
+      "colStart": 2,
+      "rowEnd": 25,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 11,
+      "rowEnd": 9,
+      "colEnd": 23,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {},
+     "varsMobile": {},
+     "type": "line"
+    },
+    {
+     "id": "906506b927443c850954",
+     "mobile": {
+      "rowStart": 25,
+      "colStart": 2,
+      "rowEnd": 33,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 11,
+      "rowEnd": 13,
+      "colEnd": 24,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"906506b927443c850954\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"text-align: start; ; white-space:pre-wrap;\">The <strong>Voices of the Vulnerable (VV) Service Project</strong> is taking place in Spain in June 2024 in collaboration with the NGO, <em>Soñar Despierto.</em> This unique initiative offers students a chance to immerse themselves in impactful, hands-on service, engaging with local communities and making a genuine difference. Through the VV Project, we aim to redefine what it means to serve by guiding students to leverage their unique skills to uplift vulnerable populations.</p>"
+    },
+    {
+     "id": "c1748a13e6fff3ae759e",
+     "mobile": {
+      "rowStart": 34,
+      "colStart": 2,
+      "rowEnd": 56,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 11,
+      "rowEnd": 23,
+      "colEnd": 24,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"c1748a13e6fff3ae759e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"></span>Through this immersive experience, you’ll:</h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#1   Learn to Understand and Address Real Community Needs</strong><br>Engage deeply with local communities, learning firsthand about their challenges and discovering effective ways to help.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#2  Apply Your Personal Talents to Drive Change</strong><br>Use your unique strengths—whether academic, athletic, artistic, or leadership-based—to make a lasting impact.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#3  Develop Empathy and Social Responsibility</strong><br>Build a meaningful connection with underserved communities, fostering a greater sense of empathy and social awareness.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#4  Gain Practical Leadership Experience</strong><br>Take on leadership roles and gain skills that will prepare you for future projects and initiatives.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#5  Enhance Your College Application with Quality Service</strong><br>Stand out by demonstrating your commitment to meaningful, authentic service.</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>#6  Connect with Like-Minded Peers</strong><br>Form bonds with other passionate students who share your drive to create positive change</p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1788547953470_45453",
+     "mobile": {
+      "rowStart": 56,
+      "colStart": 2,
+      "rowEnd": 58,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 23,
+      "colStart": 11,
+      "rowEnd": 25,
+      "colEnd": 17,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1788547953470_45453\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "button",
+     "label": "CLICK HERE FOR THE VV PROJECT OVERVIEW",
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    },
+    {
+     "id": "ef6db13d943e0289b72f",
+     "mobile": {
+      "rowStart": 58,
+      "colStart": 2,
+      "rowEnd": 64,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 29,
+      "colStart": 11,
+      "rowEnd": 33,
+      "colEnd": 24,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"ef6db13d943e0289b72f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Apply Now for Your Chance to Join:</strong></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>Early Admission:</strong> October 2024</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><strong>Regular Admission:</strong> January 2024</p><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><em>*Apply today for a chance to join the 2025 Voices of the Vulnerable Service Project!</em>*</p>"
+    },
+    {
+     "id": "3b78755e7e5d8552fafc",
+     "mobile": {
+      "rowStart": 64,
+      "colStart": 2,
+      "rowEnd": 66,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 34,
+      "colStart": 11,
+      "rowEnd": 36,
+      "colEnd": 17,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"3b78755e7e5d8552fafc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "button",
+     "label": "APPLY NOW",
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    },
+    {
+     "id": "7467df90afadd7351dab",
+     "mobile": {
+      "rowStart": 66,
+      "colStart": 2,
+      "rowEnd": 80,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 27,
+      "colStart": 2,
+      "rowEnd": 38,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "80.2788844621514% 60.00375023438964%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "2970/1974",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"7467df90afadd7351dab\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }\n[data-block=\"7467df90afadd7351dab\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/670f3d1679eb",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 2970,
+      "height": 1974,
+      "alt": "A group of people sitting outdoors in autumn, wearing matching black hoodies with text and graphics, with trees and fallen leaves in the background.",
+      "focal": [
+       0.8027888446215139,
+       0.6000375023438964
+      ]
+     },
+     "stretched": true
+    }
+   ]
+  },
+  {
+   "id": "6a9b180a1f0d777cbe3a182a",
+   "theme": "light",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--medium",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "grid": {
+    "mobile": {
+     "rows": 77,
+     "rowMin": "24px",
+     "gap": 11,
+     "colGap": 11
+    },
+    "desktop": {
+     "rows": 21,
+     "scale": 0.0215,
+     "gap": 11,
+     "colGap": 11
+    }
+   },
+   "blocks": [
+    {
+     "id": "bf9b8cb29827b437b175",
+     "mobile": {
+      "rowStart": 2,
+      "colStart": 2,
+      "rowEnd": 12,
+      "colEnd": 10,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 8,
+      "colEnd": 7,
+      "z": 1,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/745",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"bf9b8cb29827b437b175\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"bf9b8cb29827b437b175\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/9069b192c964",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 745,
+      "alt": "A large group of children and teenagers sitting on the ground inside a semi-covered outdoor sports court, listening to a speaker or instructor at the front. Some are wearing orange shirts, and the court is surrounded by tall buildings.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "fb67b9b5c6dd99a2d0fd",
+     "mobile": {
+      "rowStart": 12,
+      "colStart": 2,
+      "rowEnd": 26,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 3,
+      "colStart": 14,
+      "rowEnd": 17,
+      "colEnd": 25,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"fb67b9b5c6dd99a2d0fd\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<h2 style=\"white-space:pre-wrap;\"><strong>2025 </strong><span style=\"--hl-thickness: 0.1em\" class=\"rte-highlight rte-highlight--underline\"><strong>Grantees:</strong></span></h2><ol><li><h4 style=\"white-space:pre-wrap;\">Lila Chen </h4></li><li><h4 style=\"white-space:pre-wrap;\">Mateo Alvarez </h4></li><li><h4 style=\"white-space:pre-wrap;\">Sofia Rossi </h4></li><li><h4 style=\"white-space:pre-wrap;\">Allison Kang</h4></li><li><h4 style=\"white-space:pre-wrap;\">Isabella Garcias</h4></li><li><h4 style=\"white-space:pre-wrap;\">Rachel Lee </h4></li><li><h4 style=\"white-space:pre-wrap;\">Hana Kim</h4></li><li><h4 style=\"white-space:pre-wrap;\">Emily Thompson </h4></li><li><h4 style=\"white-space:pre-wrap;\">Lucas Oliveira </h4></li><li><h4 style=\"white-space:pre-wrap;\">Kai Wang </h4></li></ol>"
+    },
+    {
+     "id": "ecb67247f9d3557573b2",
+     "mobile": {
+      "rowStart": 26,
+      "colStart": 2,
+      "rowEnd": 28,
+      "colEnd": 10,
+      "z": 7,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 18,
+      "colStart": 14,
+      "rowEnd": 20,
+      "colEnd": 20,
+      "z": 8,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--sqs-block-content-flex": "1",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"ecb67247f9d3557573b2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "button",
+     "label": "CLICK HERE FOR THE VV PROJECT GALLERY",
+     "kind": "primary",
+     "size": "medium",
+     "alignment": "center",
+     "stretched": true
+    },
+    {
+     "id": "8471ecc80ec8ad1c8435",
+     "mobile": {
+      "rowStart": 28,
+      "colStart": 2,
+      "rowEnd": 38,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 7,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "0% 100%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/750",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"8471ecc80ec8ad1c8435\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"8471ecc80ec8ad1c8435\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/3ddb4e6c3ad2",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 750,
+      "alt": "A group of young children, smiling and posing for a photo in a lush, green forest.",
+      "focal": [
+       0,
+       1
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "a306d6e073637ef829c4",
+     "mobile": {
+      "rowStart": 38,
+      "colStart": 2,
+      "rowEnd": 48,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 7,
+      "rowEnd": 15,
+      "colEnd": 12,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/1333",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"a306d6e073637ef829c4\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"a306d6e073637ef829c4\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/d71e35b932e1",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 1333,
+      "alt": "Outdoor street bookstore with tables of books in front of a bookstore named Libreria San Gines, with a building and window with security bars in the background.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "a864f9a34ffd0b40fc0c",
+     "mobile": {
+      "rowStart": 48,
+      "colStart": 2,
+      "rowEnd": 58,
+      "colEnd": 10,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 15,
+      "colStart": 2,
+      "rowEnd": 22,
+      "colEnd": 7,
+      "z": 3,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/750",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"a864f9a34ffd0b40fc0c\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"a864f9a34ffd0b40fc0c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/e98dbe04f3b3",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 750,
+      "alt": "An outdoor stage with a yellow banner marked 'Hispanidad,' set up for a live music performance with musicians, equipment, and large screen, on a city street with white buildings and a blue sky.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "6941fd73f4e8ee75ca06",
+     "mobile": {
+      "rowStart": 58,
+      "colStart": 2,
+      "rowEnd": 68,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 7,
+      "rowEnd": 8,
+      "colEnd": 12,
+      "z": 2,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "50% 50%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/750",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"6941fd73f4e8ee75ca06\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"6941fd73f4e8ee75ca06\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/543635360ec3",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 750,
+      "alt": "A cityscape of historic buildings on a hill with a river in the foreground, under a cloudy sky.",
+      "focal": [
+       0.5,
+       0.5
+      ]
+     },
+     "stretched": true
+    },
+    {
+     "id": "f5209feacc67806aee62",
+     "mobile": {
+      "rowStart": 68,
+      "colStart": 2,
+      "rowEnd": 78,
+      "colEnd": 10,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "desktop": {
+      "rowStart": 15,
+      "colStart": 7,
+      "rowEnd": 22,
+      "colEnd": 12,
+      "z": 4,
+      "justify": "center",
+      "align": "center"
+     },
+     "vars": {
+      "--image-component-focal-point": "43.5967983991996% 100%",
+      "--image-component-object-fit": "cover",
+      "--image-component-overlay-opacity": "0",
+      "--image-component-overlay-blend-mode": "normal",
+      "--image-component-native-aspect-ratio": "1000/1333",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"f5209feacc67806aee62\"] .image-frame { overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); clip-path: none; -webkit-clip-path: none; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; }\n[data-block=\"f5209feacc67806aee62\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "image",
+     "picture": {
+      "base": "/media/cf34c278396f",
+      "ext": "webp",
+      "widths": [
+       100,
+       300,
+       500,
+       750,
+       1000,
+       1500,
+       2500
+      ],
+      "width": 1000,
+      "height": 1333,
+      "alt": "Classroom decorated with Halloween decorations, including white cobwebs and black bats hanging from the ceiling. Students are seated at desks, some working and some standing, in a room with green walls and large windows.",
+      "focal": [
+       0.435967983991996,
+       1
+      ]
+     },
+     "stretched": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "path": "/products-store/p/edubud-community-center-cap",
+ "meta": {
+  "title": "EduBud Community Center Cap — EduBud International",
+  "description": "  Carry the EduBud spirit wherever you go with our Community Center cap—a simple symbol of    connection, inclusion, and belonging.    Designed for everyday wear, it’s a meaningful way to represent a community where everyone has a place to connect, grow, and shine.  "
+ },
+ "theme": "light",
+ "breadcrumb": [
+  {
+   "title": "Shop",
+   "href": "/products-store"
+  },
+  {
+   "title": "EduBud Community Center Cap",
+   "href": "/products-store/p/edubud-community-center-cap"
+  }
+ ],
+ "title": "EduBud Community Center Cap",
+ "price": "$25.00",
+ "description": "<p style=\"white-space:pre-wrap;\"><span>Carry the EduBud spirit wherever you go with our Community Center cap—a simple symbol of </span><strong><span>connection, inclusion, and belonging.</span></strong><span> Designed for everyday wear, it’s a meaningful way to represent a community where everyone has a place to connect, grow, and shine.</span></p>",
+ "pictures": [
+  {
+   "base": "/media/236e51a6c9f4",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 1146,
+   "height": 1206,
+   "alt": "Screenshot 2026-09-02 at 2.27.39 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/74a289309474",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2710,
+   "height": 1980,
+   "alt": "Screenshot 2026-09-02 at 2.22.38 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "button": "Add To Cart",
+ "vars": {
+  "--product-gallery-arrow-size": "3vw",
+  "--product-gallery-aspect-ratio": "3 / 4",
+  "--product-gallery-width": "50%",
+  "--product-content-horizontal-spacing": "3vw",
+  "--product-content-form-width": "100%"
+ }
+}

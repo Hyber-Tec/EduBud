@@ -1,0 +1,529 @@
+{
+ "path": "/products-store",
+ "meta": {
+  "title": "Store 2 \u2014 EduBud International",
+  "description": ""
+ },
+ "sections": [
+  {
+   "kind": "section",
+   "section": {
+    "id": "6a849bea49afbf52deaa8143",
+    "theme": "light",
+    "classes": [
+     "background-width--full-bleed",
+     "section-height--small",
+     "content-width--wide",
+     "horizontal-alignment--center",
+     "vertical-alignment--middle"
+    ],
+    "grid": {
+     "mobile": {
+      "rows": 7,
+      "rowMin": "24px",
+      "gap": 11
+     },
+     "desktop": {
+      "rows": 8,
+      "scale": 0.0215,
+      "gap": 11
+     }
+    },
+    "blocks": [
+     {
+      "id": "668f6989b541b38ad93d",
+      "mobile": {
+       "rowStart": 2,
+       "colStart": 2,
+       "rowEnd": 4,
+       "colEnd": 10,
+       "z": 2,
+       "justify": "center",
+       "align": "center"
+      },
+      "desktop": {
+       "rowStart": 2,
+       "colStart": 2,
+       "rowEnd": 5,
+       "colEnd": 18,
+       "z": 2,
+       "justify": "flex-end",
+       "align": "flex-end"
+      },
+      "vars": {
+       "--stroke-style": "none",
+       "--stroke-thickness": "6px",
+       "--tweak-text-block-radius": "0px 0px 0px 0px",
+       "--tweak-text-block-blend": "normal",
+       "--blur-value": "blur(15px)"
+      },
+      "varsMobile": {},
+      "type": "text",
+      "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h1 style=\"white-space:pre-wrap;\">Shop the Collection</h1></span></div>"
+     },
+     {
+      "id": "7f1f067426d33f888cb3",
+      "mobile": {
+       "rowStart": 4,
+       "colStart": 2,
+       "rowEnd": 7,
+       "colEnd": 10,
+       "z": 3,
+       "justify": "flex-start",
+       "align": "flex-start"
+      },
+      "desktop": {
+       "rowStart": 6,
+       "colStart": 2,
+       "rowEnd": 9,
+       "colEnd": 15,
+       "z": 3,
+       "justify": "flex-start",
+       "align": "flex-start"
+      },
+      "vars": {
+       "--stroke-style": "none",
+       "--stroke-thickness": "6px",
+       "--tweak-text-block-radius": "0px 0px 0px 0px",
+       "--tweak-text-block-blend": "normal",
+       "--blur-value": "blur(15px)"
+      },
+      "varsMobile": {},
+      "type": "text",
+      "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\">Show your EduBud spirit with merchandise designed to celebrate <strong>inclusion, connection, and community</strong>. Every piece represents our shared commitment to creating opportunities where individuals of all abilities can learn, grow, and belong.</p><p style=\"white-space:pre-wrap;\"><strong>Wear it. Share it. Be the bridge.</strong></p>"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "products",
+   "list": {
+    "id": "6a849bea49afbf52deaa8144",
+    "theme": "light",
+    "title": "Shop",
+    "vars": {
+     "--product-list-column-spacing": "2vw",
+     "--product-list-row-spacing": "2vw",
+     "--product-list-num-columns-desktop": "2",
+     "--product-list-num-columns-mobile": "2",
+     "--product-list-image-text-spacing": "0.5vw",
+     "--product-list-image-aspect-ratio-mobile": "1 / 1",
+     "--product-list-image-aspect-ratio": "1 / 1",
+     "--product-list-item-border-radius-top-left": "0px",
+     "--product-list-item-border-radius-top-right": "0px",
+     "--product-list-item-border-radius-bottom-right": "0px",
+     "--product-list-item-border-radius-bottom-left": "0px",
+     "--product-list-item-stroke-type": "none",
+     "--product-list-item-stroke-thickness": "1px",
+     "--product-list-item-image-border-radius-top-left": "0px",
+     "--product-list-item-image-border-radius-top-right": "0px",
+     "--product-list-item-image-border-radius-bottom-right": "0px",
+     "--product-list-item-image-border-radius-bottom-left": "0px",
+     "--product-list-section-vertical-padding-top": "2vh",
+     "--product-list-section-vertical-padding-bottom": "2vh"
+    },
+    "items": [
+     {
+      "title": "EduBud Community Center Tee",
+      "href": "/products-store/p/the-echo-vase-llhgn",
+      "price": "$35.00",
+      "picture": {
+       "base": "/media/0af1b929e5dd",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 2962,
+       "height": 1974,
+       "alt": "EduBud Community Center Tee",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "hoverPicture": {
+       "base": "/media/db82ea9096a6",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 2966,
+       "height": 1974,
+       "alt": "Screenshot 2026-08-19 at 11.34.22\u202fAM.png",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "button": "Add To Cart"
+     },
+     {
+      "title": "EduBud Community Center Hoodie",
+      "href": "/products-store/p/edubud-community-center-hoodie",
+      "price": "$50.00",
+      "picture": {
+       "base": "/media/4dce7c6e02d2",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 2470,
+       "height": 1848,
+       "alt": "EduBud Community Center Hoodie",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "hoverPicture": {
+       "base": "/media/2b88cc050d01",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 2794,
+       "height": 1978,
+       "alt": "Screenshot 2026-09-02 at 2.04.06\u202fPM.png",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "button": "Add To Cart"
+     },
+     {
+      "title": "EduBud Community Center Tote",
+      "href": "/products-store/p/edubud-community-center-tote",
+      "price": "$20.00",
+      "picture": {
+       "base": "/media/a2b2f0be4e80",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 1950,
+       "height": 1970,
+       "alt": "EduBud Community Center Tote",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "hoverPicture": {
+       "base": "/media/a2b2f0be4e80",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 1950,
+       "height": 1970,
+       "alt": "Screenshot 2026-09-02 at 2.29.52\u202fPM.png",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "button": "Add To Cart"
+     },
+     {
+      "title": "EduBud Community Center Cap",
+      "href": "/products-store/p/edubud-community-center-cap",
+      "price": "$25.00",
+      "picture": {
+       "base": "/media/236e51a6c9f4",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 1146,
+       "height": 1206,
+       "alt": "EduBud Community Center Cap",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "hoverPicture": {
+       "base": "/media/74a289309474",
+       "ext": "webp",
+       "widths": [
+        100,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2500
+       ],
+       "width": 2710,
+       "height": 1980,
+       "alt": "Screenshot 2026-09-02 at 2.22.38\u202fPM.png",
+       "focal": [
+        0.5,
+        0.5
+       ]
+      },
+      "button": "Add To Cart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "section",
+   "section": {
+    "id": "6a849bea49afbf52deaa8147",
+    "theme": "white",
+    "classes": [
+     "background-width--full-bleed",
+     "section-height--small",
+     "content-width--wide",
+     "horizontal-alignment--center",
+     "vertical-alignment--middle"
+    ],
+    "background": {
+     "art": {
+      "kind": "conic",
+      "images": [
+       {
+        "src": "/media/art-6a849bea49afbf52deaa8147-mobile/390.jpg",
+        "width": 390,
+        "height": 819,
+        "upTo": 767
+       },
+       {
+        "src": "/media/art-6a849bea49afbf52deaa8147-desktop/1920.jpg",
+        "width": 1920,
+        "height": 1188
+       }
+      ]
+     }
+    },
+    "grid": {
+     "mobile": {
+      "rows": 22,
+      "rowMin": "24px",
+      "gap": 11
+     },
+     "desktop": {
+      "rows": 21,
+      "scale": 0.0215,
+      "gap": 11
+     }
+    },
+    "blocks": [
+     {
+      "id": "8d16b5b373e4041262af",
+      "mobile": {
+       "rowStart": 1,
+       "colStart": 2,
+       "rowEnd": 5,
+       "colEnd": 10,
+       "z": 1,
+       "justify": "flex-start",
+       "align": "flex-start"
+      },
+      "desktop": {
+       "rowStart": 3,
+       "colStart": 8,
+       "rowEnd": 6,
+       "colEnd": 20,
+       "z": 2,
+       "justify": "flex-end",
+       "align": "flex-end"
+      },
+      "vars": {
+       "--stroke-style": "none",
+       "--stroke-thickness": "6px",
+       "--tweak-text-block-radius": "0px 0px 0px 0px",
+       "--tweak-text-block-blend": "normal",
+       "--blur-value": "blur(15px)"
+      },
+      "varsMobile": {},
+      "type": "text",
+      "html": "<h2 style=\"text-align:center;white-space:pre-wrap;\">Have Questions?</h2>"
+     },
+     {
+      "id": "5353a19ea6347aeee27f",
+      "mobile": {
+       "rowStart": 5,
+       "colStart": 2,
+       "rowEnd": 23,
+       "colEnd": 10,
+       "z": 3,
+       "justify": "center",
+       "align": "center"
+      },
+      "desktop": {
+       "rowStart": 1,
+       "colStart": 5,
+       "rowEnd": 21,
+       "colEnd": 23,
+       "z": 1,
+       "justify": "center",
+       "align": "center"
+      },
+      "vars": {
+       "--shape-block-background-color": "hsla(158.18, 100%, 95.69%, 1)",
+       "--opacity": "100%",
+       "--translate-x": "0px",
+       "--translate-y": "0px",
+       "--rotation": "0deg",
+       "--scale-x": "100%",
+       "--scale-y": "100%",
+       "--skew-x": "0deg",
+       "--skew-y": "0deg",
+       "--origin-x": "50%",
+       "--origin-y": "50%",
+       "--block-transform": "none"
+      },
+      "varsMobile": {
+       "--shape-block-background-color": "hsla(158.18, 100%, 95.69%, 1)"
+      },
+      "type": "shape",
+      "name": "rectangle",
+      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
+      "viewBox": "0 0 100 100",
+      "stretched": true
+     },
+     {
+      "id": "a619aa0b6cc54ae25113",
+      "mobile": {
+       "rowStart": 6,
+       "colStart": 3,
+       "rowEnd": 21,
+       "colEnd": 9,
+       "z": 4,
+       "justify": "flex-start",
+       "align": "flex-start"
+      },
+      "desktop": {
+       "rowStart": 7,
+       "colStart": 8,
+       "rowEnd": 20,
+       "colEnd": 20,
+       "z": 3,
+       "justify": "flex-start",
+       "align": "flex-start"
+      },
+      "vars": {
+       "--stroke-style": "none",
+       "--stroke-thickness": "6px",
+       "--form-block-border-radius": "0px 0px 0px 0px",
+       "--form-block-blend-mode": "normal",
+       "--blur-value": "blur(15px)"
+      },
+      "varsMobile": {},
+      "type": "form",
+      "config": {
+       "useFormsJs": true,
+       "formId": "6a849bea49afbf52deaa813f",
+       "formName": "Contact(WIP) Form 3 3 3",
+       "formFields": [
+        {
+         "type": "name",
+         "id": "name-yui_3_17_2_1_1752776219777_1542",
+         "locked": false,
+         "title": "Name",
+         "description": "",
+         "required": true,
+         "name": true
+        },
+        {
+         "type": "email",
+         "id": "email-yui_3_17_2_1_1752776219777_1543",
+         "locked": false,
+         "title": "Email",
+         "description": "",
+         "placeholder": "",
+         "required": true,
+         "email": true,
+         "mailingList": false
+        },
+        {
+         "required": false,
+         "locked": false,
+         "description": "",
+         "id": "phone-eae5831f-b98b-4e04-af57-ea37cfde3f64",
+         "phone": true,
+         "type": "phone",
+         "showCountryCode": false,
+         "title": "Phone"
+        },
+        {
+         "type": "textarea",
+         "id": "textarea-yui_3_17_2_1_1752776219777_1545",
+         "locked": false,
+         "title": "Message",
+         "description": "",
+         "placeholder": "",
+         "required": true,
+         "textarea": true,
+         "maxLength": ""
+        }
+       ],
+       "formSubmitButtonText": "Submit",
+       "formSubmissionMessage": {
+        "html": "<p>Thank you!</p>"
+       },
+       "successRedirect": "",
+       "disclaimerMessage": {
+        "html": ""
+       },
+       "captchaEnabled": true,
+       "captchaTheme": 1,
+       "captchaAlignment": 1,
+       "isSmsConsentEnabled": true,
+       "businessName": null,
+       "privacyPolicyUrl": null,
+       "termsAndConditionsUrl": null,
+       "hasActiveSmsSubscription": null,
+       "sendingProfileFullySetUp": null
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

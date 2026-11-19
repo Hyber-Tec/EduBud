@@ -1,0 +1,974 @@
+{
+ "header": {
+  "theme": "",
+  "logo": {
+   "base": "/media/f55ade8db887",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 0,
+   "height": 0,
+   "alt": "EduBud International"
+  },
+  "logoHref": "/",
+  "nav": [
+   {
+    "title": "Learning Center",
+    "href": "",
+    "items": [
+     {
+      "title": "Day Learning Program",
+      "href": "/day-learning-program"
+     },
+     {
+      "title": "Summer Program",
+      "href": "/summer-program"
+     }
+    ]
+   },
+   {
+    "title": "Initiatives",
+    "href": "",
+    "items": [
+     {
+      "title": "Community Chapters",
+      "href": "/community-chapters"
+     }
+    ]
+   },
+   {
+    "title": "Current Projects",
+    "href": "",
+    "items": [
+     {
+      "title": "Golden Bridge Project",
+      "href": "/golden-bridge-project"
+     }
+    ]
+   },
+   {
+    "title": "Past Projects",
+    "href": "",
+    "items": [
+     {
+      "title": "Blue Bridge Project",
+      "href": "/blue-bridge-project"
+     },
+     {
+      "title": "California Schools Fire Relief Project",
+      "href": "/california-schools-fire-relief-project"
+     },
+     {
+      "title": "Voices of the Vulnerable Project",
+      "href": "/voices-of-the-vulnerable"
+     },
+     {
+      "title": "Mentor’s Corner",
+      "href": "/mentors-corner"
+     }
+    ]
+   },
+   {
+    "title": "Shop",
+    "href": "/products-store"
+   },
+   {
+    "title": "About Us",
+    "href": "",
+    "items": [
+     {
+      "title": "Our Team",
+      "href": "/our-team"
+     },
+     {
+      "title": "Resources",
+      "href": "/resources"
+     },
+     {
+      "title": "Support Us",
+      "href": "/support-us"
+     }
+    ]
+   }
+  ],
+  "cartHref": "/cart",
+  "styleVars": {
+   "--headerDropShadowColor": "hsla(var(--black-hsl), 1)",
+   "--headerBorderColor": "hsla(var(--black-hsl), 1)",
+   "--solidHeaderBackgroundColor": "hsla(var(--white-hsl), 1)",
+   "--solidHeaderNavigationColor": "hsla(var(--black-hsl), 1)",
+   "--gradientHeaderBackgroundColor": "hsla(var(--white-hsl), 1)",
+   "--gradientHeaderNavigationColor": "hsla(var(--black-hsl), 1)"
+  },
+  "settings": {
+   "layout": "navRight",
+   "action": {
+    "href": "/#packages",
+    "buttonText": "LOG IN",
+    "newWindow": false
+   },
+   "showSocial": false,
+   "socialOptions": {
+    "socialBorderShape": "none",
+    "socialBorderStyle": "outline",
+    "socialBorderThickness": {
+     "unit": "px",
+     "value": 1
+    }
+   },
+   "menuOverlayTheme": "dark",
+   "menuOverlayAnimation": "fade",
+   "cartStyle": "cart",
+   "cartText": "Cart",
+   "showEmptyCartState": true,
+   "cartOptions": {
+    "iconType": "solid-7",
+    "cartBorderShape": "none",
+    "cartBorderStyle": "outline",
+    "cartBorderThickness": {
+     "unit": "px",
+     "value": 1
+    }
+   },
+   "showButton": false,
+   "showCart": false,
+   "showAccountLogin": false,
+   "headerStyle": "solid",
+   "languagePicker": {
+    "enabled": true,
+    "iconEnabled": true,
+    "iconType": "globe",
+    "flagShape": "shiny",
+    "languageFlags": [
+     {
+      "languageCode": "en",
+      "countryCode": "gb"
+     },
+     {
+      "languageCode": "ko",
+      "countryCode": "kr"
+     }
+    ]
+   },
+   "iconOptions": {
+    "desktopDropdownIconOptions": {
+     "size": {
+      "unit": "em",
+      "value": 1
+     },
+     "iconSpacing": {
+      "unit": "em",
+      "value": 0.35
+     },
+     "strokeWidth": {
+      "unit": "px",
+      "value": 1
+     },
+     "endcapType": "square",
+     "folderDropdownIcon": "none",
+     "languagePickerIcon": "openArrowHead"
+    },
+    "mobileDropdownIconOptions": {
+     "size": {
+      "unit": "em",
+      "value": 1
+     },
+     "iconSpacing": {
+      "unit": "em",
+      "value": 0.15
+     },
+     "strokeWidth": {
+      "unit": "px",
+      "value": 0.5
+     },
+     "endcapType": "square",
+     "folderDropdownIcon": "openArrowHead",
+     "languagePickerIcon": "openArrowHead"
+    }
+   },
+   "mobileOptions": {
+    "layout": "logoLeftNavRight",
+    "menuIconOptions": {
+     "style": "doubleLineHamburger",
+     "thickness": {
+      "unit": "px",
+      "value": 1
+     }
+    }
+   },
+   "solidOptions": {
+    "headerOpacity": {
+     "unit": "%",
+     "value": 100
+    },
+    "blurBackground": {
+     "enabled": false,
+     "blurRadius": {
+      "unit": "px",
+      "value": 12
+     }
+    },
+    "backgroundColor": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "white",
+      "alphaModifier": 1
+     }
+    },
+    "navigationColor": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "black",
+      "alphaModifier": 1
+     }
+    }
+   },
+   "gradientOptions": {
+    "gradientType": "faded",
+    "headerOpacity": {
+     "unit": "%",
+     "value": 90
+    },
+    "blurBackground": {
+     "enabled": false,
+     "blurRadius": {
+      "unit": "px",
+      "value": 12
+     }
+    },
+    "backgroundColor": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "white",
+      "alphaModifier": 1
+     }
+    },
+    "navigationColor": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "black",
+      "alphaModifier": 1
+     }
+    }
+   },
+   "dropShadowOptions": {
+    "enabled": true,
+    "blur": {
+     "unit": "px",
+     "value": 12
+    },
+    "spread": {
+     "unit": "px",
+     "value": 0
+    },
+    "distance": {
+     "unit": "px",
+     "value": 12
+    },
+    "color": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "black",
+      "alphaModifier": 0
+     }
+    }
+   },
+   "borderOptions": {
+    "enabled": false,
+    "position": "bottom",
+    "thickness": {
+     "unit": "px",
+     "value": 1
+    },
+    "color": {
+     "type": "SITE_PALETTE_COLOR",
+     "sitePaletteColor": {
+      "colorName": "black",
+      "alphaModifier": 1
+     }
+    }
+   },
+   "showPromotedElement": false,
+   "buttonVariant": "secondary",
+   "blurBackground": {
+    "enabled": false,
+    "blurRadius": {
+     "unit": "px",
+     "value": 12
+    }
+   },
+   "headerOpacity": {
+    "unit": "%",
+    "value": 100
+   }
+  }
+ },
+ "footer": [
+  {
+   "id": "6a8365db6575752e1a10fdd9",
+   "theme": "white",
+   "classes": [
+    "background-width--full-bleed",
+    "section-height--small",
+    "content-width--wide",
+    "horizontal-alignment--center",
+    "vertical-alignment--middle"
+   ],
+   "background": {
+    "art": {
+     "kind": "isometric",
+     "images": [
+      {
+       "src": "/media/art/6a8365db6575752e1a10fdd9/390.jpg",
+       "width": 780,
+       "height": 2103,
+       "upTo": 767
+      },
+      {
+       "src": "/media/art/6a8365db6575752e1a10fdd9/1024.jpg",
+       "width": 1536,
+       "height": 1208,
+       "upTo": 1279
+      },
+      {
+       "src": "/media/art/6a8365db6575752e1a10fdd9/1920.jpg",
+       "width": 1920,
+       "height": 1126
+      }
+     ]
+    }
+   },
+   "grid": {
+    "mobile": {
+     "rows": 23,
+     "rowMin": "24px",
+     "gap": 20,
+     "colGap": 0
+    },
+    "desktop": {
+     "rows": 17,
+     "scale": 0.0215,
+     "gap": 20,
+     "colGap": 0
+    }
+   },
+   "blocks": [
+    {
+     "id": "0e1c7d9b48f7c5d81199",
+     "mobile": {
+      "rowStart": 1,
+      "colStart": 2,
+      "rowEnd": 4,
+      "colEnd": 10,
+      "z": 2,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 1,
+      "colStart": 5,
+      "rowEnd": 8,
+      "colEnd": 23,
+      "z": 3,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"0e1c7d9b48f7c5d81199\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h1 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">EDUBUD</span></h1></span></div>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790124742949_10968",
+     "mobile": {
+      "rowStart": 4,
+      "colStart": 2,
+      "rowEnd": 10,
+      "colEnd": 10,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 5,
+      "rowEnd": 15,
+      "colEnd": 13,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-form-block-background-color": "hsla(var(--lightAccent-hsl), 1)",
+      "--form-block-padding": "6% 6% 6% 6%",
+      "--form-block-border-radius": "20px 20px 20px 20px",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790124742949_10968\"] { mix-blend-mode: var(--form-block-blend-mode\n    ); border-radius: var(--form-block-border-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_10968\"] > .block { border-radius: var(--form-block-border-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_10968\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "background": true,
+     "type": "form",
+     "config": {
+      "useFormsJs": true,
+      "formId": "6ab322ff79c5bd60087c4a6e",
+      "formName": "Home Form 3",
+      "formFields": [
+       {
+        "description": "",
+        "email": true,
+        "id": "email-dba7d4bc-89fb-4489-8e72-8c243381585e",
+        "locked": false,
+        "placeholder": "",
+        "required": true,
+        "title": "Email",
+        "type": "email",
+        "name": "Email 1",
+        "mailingList": true
+       }
+      ],
+      "formSubmitButtonText": "Submit",
+      "formSubmissionMessage": {
+       "html": "<p>Thank you!</p>"
+      },
+      "successRedirect": "",
+      "disclaimerMessage": {
+       "html": ""
+      },
+      "captchaEnabled": true,
+      "captchaTheme": 1,
+      "captchaAlignment": 1,
+      "isSmsConsentEnabled": true,
+      "businessName": null,
+      "privacyPolicyUrl": null,
+      "termsAndConditionsUrl": null,
+      "hasActiveSmsSubscription": null,
+      "sendingProfileFullySetUp": null
+     }
+    },
+    {
+     "id": "yui_3_17_2_1_1790124742949_12138",
+     "mobile": {
+      "rowStart": 3,
+      "colStart": 2,
+      "rowEnd": 5,
+      "colEnd": 10,
+      "z": 10,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 8,
+      "colStart": 5,
+      "rowEnd": 10,
+      "colEnd": 13,
+      "z": 11,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790124742949_12138\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_12138\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<h4 style=\"text-align: center; white-space: pre-wrap\"><strong>Join Our Community. Make a change.</strong></h4>"
+    },
+    {
+     "id": "4739bb926bdd6121e016",
+     "mobile": {
+      "rowStart": 11,
+      "colStart": 2,
+      "rowEnd": 13,
+      "colEnd": 10,
+      "z": 11,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 19,
+      "rowEnd": 11,
+      "colEnd": 27,
+      "z": 12,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"4739bb926bdd6121e016\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"4739bb926bdd6121e016\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Socials:</strong></h4>"
+    },
+    {
+     "id": "00ca9fb629575f6e070e",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 2,
+      "rowEnd": 14,
+      "colEnd": 6,
+      "z": 4,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 19,
+      "rowEnd": 11,
+      "colEnd": 22,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"00ca9fb629575f6e070e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><a target=\"_blank\" href=\"https://www.instagram.com/edubud.international/\"><span class=\"rte-text-color--white\"><strong>Instagram</strong></span></a></p>"
+    },
+    {
+     "id": "58b665af51cf66219564",
+     "mobile": {
+      "rowStart": 13,
+      "colStart": 6,
+      "rowEnd": 14,
+      "colEnd": 10,
+      "z": 5,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 19,
+      "rowEnd": 12,
+      "colEnd": 22,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"58b665af51cf66219564\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><a target=\"_blank\" href=\"https://www.tiktok.com/@edubud.international\"><span class=\"rte-text-color--white\"><strong>TikTok</strong></span></a></p>"
+    },
+    {
+     "id": "8c5de82836d266848356",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 6,
+      "rowEnd": 15,
+      "colEnd": 10,
+      "z": 6,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 19,
+      "rowEnd": 14,
+      "colEnd": 22,
+      "z": 7,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"8c5de82836d266848356\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><a target=\"_blank\" href=\"https://www.facebook.com/people/EduBud-International/61589394663972/\"><span class=\"rte-text-color--white\"><strong>Facebook</strong></span></a></p>"
+    },
+    {
+     "id": "df81927cb6a06a523705",
+     "mobile": {
+      "rowStart": 14,
+      "colStart": 2,
+      "rowEnd": 15,
+      "colEnd": 4,
+      "z": 8,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 19,
+      "rowEnd": 13,
+      "colEnd": 22,
+      "z": 9,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "6px",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"df81927cb6a06a523705\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><a target=\"_blank\" href=\"https://www.linkedin.com/company/edubud-international-inc/home/\"><span class=\"rte-text-color--white\"><strong>LinkedIn</strong></span></a></p>"
+    },
+    {
+     "id": "b0977e2112615af262ec",
+     "mobile": {
+      "rowStart": 16,
+      "colStart": 2,
+      "rowEnd": 18,
+      "colEnd": 10,
+      "z": 12,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 9,
+      "colStart": 14,
+      "rowEnd": 11,
+      "colEnd": 18,
+      "z": 13,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"b0977e2112615af262ec\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"b0977e2112615af262ec\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<h4 style=\"white-space:pre-wrap;\"><strong>Navigate:</strong></h4>"
+    },
+    {
+     "id": "yui_3_17_2_1_1790124742949_14236",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 2,
+      "rowEnd": 19,
+      "colEnd": 10,
+      "z": 13,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 10,
+      "colStart": 14,
+      "rowEnd": 11,
+      "colEnd": 17,
+      "z": 14,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"yui_3_17_2_1_1790124742949_14236\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_14236\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\"><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--white-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><a href=\"/contact-us\"><span class=\"rte-text-color--white\"><strong>About Us</strong></span></a></span></p>"
+    },
+    {
+     "id": "b039748f9ed26edf4d84",
+     "mobile": {
+      "rowStart": 17,
+      "colStart": 6,
+      "rowEnd": 19,
+      "colEnd": 9,
+      "z": 14,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 11,
+      "colStart": 14,
+      "rowEnd": 12,
+      "colEnd": 17,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"b039748f9ed26edf4d84\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"b039748f9ed26edf4d84\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--white-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><a href=\"/day-program\"><span class=\"rte-text-color--white\"><strong>Day Program</strong></span></a></span></p>"
+    },
+    {
+     "id": "f8e799812298aaa26e53",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 2,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 15,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 12,
+      "colStart": 14,
+      "rowEnd": 13,
+      "colEnd": 17,
+      "z": 16,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"f8e799812298aaa26e53\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"f8e799812298aaa26e53\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--white-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><a href=\"/products-store\"><span class=\"rte-text-color--white\"><strong>Shop</strong></span></a></span></p>"
+    },
+    {
+     "id": "dc4b36e112dc0a1791a1",
+     "mobile": {
+      "rowStart": 18,
+      "colStart": 6,
+      "rowEnd": 20,
+      "colEnd": 10,
+      "z": 16,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 13,
+      "colStart": 14,
+      "rowEnd": 14,
+      "colEnd": 17,
+      "z": 17,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {},
+     "css": "[data-block=\"dc4b36e112dc0a1791a1\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"dc4b36e112dc0a1791a1\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<p class=\"rte-large\" style=\"white-space:pre-wrap;\"><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--white-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><span class=\"rte-text-color--white\"><strong>Where to Find Us</strong></span></span></p>"
+    },
+    {
+     "id": "yui_3_17_2_1_1791987238240_13342",
+     "mobile": {
+      "rowStart": 21,
+      "colStart": 2,
+      "rowEnd": 24,
+      "colEnd": 10,
+      "z": 17,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "desktop": {
+      "rowStart": 16,
+      "colStart": 3,
+      "rowEnd": 18,
+      "colEnd": 14,
+      "z": 18,
+      "justify": "flex-start",
+      "align": "flex-start"
+     },
+     "vars": {
+      "--stroke-style": "none",
+      "--stroke-thickness": "2px",
+      "--tweak-text-block-stroke-color": "hsla(var(--black-hsl), 1)",
+      "--tweak-text-block-padding": "initial",
+      "--tweak-text-block-radius": "0px 0px 0px 0px",
+      "--tweak-text-block-blend": "normal",
+      "--blur-value": "blur(15px)",
+      "--opacity": "100%",
+      "--translate-x": "0px",
+      "--translate-y": "0px",
+      "--rotation": "0deg",
+      "--scale-x": "100%",
+      "--scale-y": "100%",
+      "--skew-x": "0deg",
+      "--skew-y": "0deg",
+      "--origin-x": "50%",
+      "--origin-y": "50%",
+      "--block-transform": "none"
+     },
+     "varsMobile": {
+      "--origin-x": "50%",
+      "--origin-y": "100%",
+      "--block-transform": "none"
+     },
+     "css": "[data-block=\"yui_3_17_2_1_1791987238240_13342\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"yui_3_17_2_1_1791987238240_13342\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "type": "text",
+     "html": "<p style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>EIN: 99-4964348                                 </strong></span></p><p style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>© 2026 EduBud International Inc.: A 501(c)(3) Nonprofit Organization All rights reserved.</strong></span></p>"
+    }
+   ]
+  }
+ ]
+}

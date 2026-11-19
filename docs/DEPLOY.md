@@ -30,16 +30,18 @@ come out of the organization's shared monthly allowance, each job rounded up to 
 - **One job checks** ("Checks", the check the ruleset on `main` requires). It runs the repository guard
   (`scripts/check-repo.sh`: no people's data or secrets) for every change, then only what the change can break
   (`scripts/ci-changes.sh`), from its files: a pull request's against `main`, a merge's against the commit before it.
-- **The deploy runs apart**, with its own permissions, and only when what Hosting serves changed: `public/` (until
-  the website lands; then its folder), `firebase.json`, `.firebaserc`.
+- **The deploy runs apart**, with its own permissions, and only when what Hosting serves changed: `web/`,
+  `firebase.json`, `.firebaserc`. It builds the website again from the same commit (a few seconds) rather than taking
+  it from the check job as an artifact: its pictures make it a few hundred MB.
 - The docs (`docs/`, any `.md`), `.claude/`, `CODEOWNERS` and `.gitignore` run the repository guard alone. A workflow,
   `firebase.json`, `.firebaserc` and `scripts/ci-changes.sh` check and deploy everything, and so does a run started by
   hand. A file the script doesn't know counts as code.
 - Each run's summary says what it checked and why. What CI would do for your branch:
   `bash scripts/ci-changes.sh --base origin/main`.
-- **Estimate** (2026-11-18): a run is about 1 minute to check, and about 1 more when it deploys. A merged pull request
-  runs CI about 2.5 times (its pushes, then `main`), so 20 pull requests a month come to about 100 minutes. The
-  website's checks (typecheck, tests, build) will add a minute or two a run when it lands; that pull request re-estimates.
+- **Estimate** (2026-11-19, with the website): a run that touches the website is about 2 minutes to check (checkout
+  with the pictures, cached packages, typecheck, build) and 2 to 3 more to deploy (a first deploy uploads every
+  picture, about 300 MB, and takes longer; later ones upload only what changed). Docs alone: under a minute. A merged
+  pull request runs CI about 2.5 times, so 20 website pull requests a month come to about 200 to 250 minutes.
 
 ## How GitHub signs in to Google Cloud (no keys)
 
@@ -93,6 +95,13 @@ sign-in will.
 - **CI:** the repository's Actions secrets `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`,
   `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`,
   `VITE_FIREBASE_APP_ID` (set 2026-11-18). Change one with `gh secret set <NAME> --repo Hyber-Tec/EduBud`.
+
+## What Hosting serves
+
+`web/build/client`: each page prerendered to its own HTML file (`web/scripts/flatten.mjs` also writes `a/b/index.html`
+as `a/b.html`, which `cleanUrls` serves for `/a/b`), `404.html` for any unknown address, the pictures, videos and fonts.
+The menu's folders (`/learning-center`, `/initiatives`, `/current-projects`, `/past-projects`, `/about-us`) redirect
+to their first page with a 302, as on the original.
 
 ## Search engines
 

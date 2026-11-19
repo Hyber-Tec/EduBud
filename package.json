@@ -1,0 +1,21 @@
+{
+  "name": "edubud",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "typecheck": "npm --prefix web run typecheck",
+    "capture": "tsx scripts/capture/capture.ts",
+    "compare": "tsx scripts/compare/compare.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "linkedom": "^0.18.15",
+    "pixelmatch": "^7.1.0",
+    "playwright-core": "1.63.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.2"
+  }
+}
