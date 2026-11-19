@@ -47,7 +47,7 @@ const { values: args } = parseArgs({
   options: { only: { type: 'string' }, refresh: { type: 'boolean' }, 'no-media': { type: 'boolean' } },
 })
 
-async function fetchHtml(pagePath: string): Promise<string> {
+export async function fetchHtml(pagePath: string): Promise<string> {
   const file = path.join(CACHE, (pagePath === '/' ? 'home' : pagePath.slice(1).replace(/\//g, '__')) + '.html')
   if (!args.refresh && existsSync(file)) return readFile(file, 'utf8')
   const res = await fetch(ORIGIN + pagePath, { headers: { 'user-agent': UA } })
@@ -377,7 +377,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
   }
 }
 
-function parseSection(sec: Element, doc: Document): Section {
+export function parseSection(sec: Element, doc: Document): Section {
   const id = sec.getAttribute('data-section-id') ?? ''
   const styles = json(sec.getAttribute('data-current-styles')) ?? {}
   const context = json(sec.getAttribute('data-current-context')) ?? {}
@@ -537,7 +537,7 @@ function parseHeader(doc: Document) {
   }
 }
 
-async function capturePage(pagePath: string): Promise<{ page: Page; doc: Document }> {
+export async function capturePage(pagePath: string): Promise<{ page: Page; doc: Document }> {
   const html = await fetchHtml(pagePath)
   const { document: doc } = parseHTML(html)
   const sections = [...doc.querySelectorAll('main#page section.page-section, main section.page-section')].map((s) => parseSection(s, doc))
@@ -624,7 +624,10 @@ function formatOf(dir: string): string {
 }
 
 void createHash
-main().catch((e) => {
-  console.error(e)
-  process.exit(1)
-})
+// Run as a script (npm run capture), not when another capture script imports these functions.
+if (process.argv[1] && path.resolve(process.argv[1]) === import.meta.filename) {
+  main().catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })
+}
