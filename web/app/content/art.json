@@ -659,28 +659,6 @@
    }
   ]
  },
- "6a971b5c6c7a5f31e93dfa2a": {
-  "kind": "conic",
-  "images": [
-   {
-    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/390.jpg",
-    "width": 780,
-    "height": 3744,
-    "upTo": 767
-   },
-   {
-    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1024.jpg",
-    "width": 1536,
-    "height": 1559,
-    "upTo": 1279
-   },
-   {
-    "src": "/media/art/6a971b5c6c7a5f31e93dfa2a/1920.jpg",
-    "width": 1920,
-    "height": 1394
-   }
-  ]
- },
  "6a9b2778521028217d3284de": {
   "kind": "conic",
   "images": [

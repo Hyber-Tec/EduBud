@@ -45,7 +45,8 @@ async function sectionsWithArt(pagePath: string): Promise<{ id: string; kind: st
     const data = JSON.parse(await readFile(f, 'utf8'))
     for (const s of data.sections ?? data.footer ?? []) {
       const kind = s.background?.art?.kind
-      if (kind && kind !== 'none') out.push({ id: s.id, kind })
+      // (Not an effect on a section's picture: where it can't be drawn, the picture itself shows.)
+      if (kind && kind !== 'none' && !s.background.image) out.push({ id: s.id, kind })
     }
   }
   return out

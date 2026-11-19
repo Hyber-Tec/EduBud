@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
-import { ArtBackground, PauseButtons, useArt, type ArtControl } from './art/ArtBackground'
+import { ArtBackground, isPictureEffect, PauseButtons, useArt, type ArtControl } from './art/ArtBackground'
 import { Block } from './Block'
 import { poseProps, useMotion } from './motion'
 import { phoneChange, phoneLayout } from './phoneLayout'
@@ -71,11 +71,13 @@ function FeBlock({ block: b, phone }: { block: BlockData; phone: Area }) {
 function Background({ section, art }: { section: SectionData; art: ArtControl }) {
   const bg = section.background
   if (!bg) return null
+  // A picture with an effect (parallax) is drawn by the effect, which has the picture next to it (ArtBackground).
+  const effect = isPictureEffect(bg)
   return (
     <div className="section-background">
-      {bg.image && <Img picture={bg.image} className="section-background-media" style={{ objectPosition: focal(bg.image) }} alt="" />}
+      {bg.image && !effect && <Img picture={bg.image} className="section-background-media" style={{ objectPosition: focal(bg.image) }} alt="" />}
       {bg.video && <BackgroundVideo src={bg.video.src} filter={bg.video.filter} />}
-      {bg.art && <ArtBackground art={bg.art} control={art} />}
+      {bg.art && <ArtBackground art={bg.art} picture={effect ? bg.image : undefined} control={art} />}
       {/* A picture gets its overlay; a video doesn't (the original keeps the setting but draws no overlay on it). */}
       {bg.overlayOpacity !== undefined && !bg.video && <div className="section-background-overlay" style={{ opacity: bg.overlayOpacity }} />}
     </div>
@@ -158,7 +160,7 @@ export function Section({ section, index, below }: { section: SectionData; index
           </div>
           )}
         </div>
-        {section.background?.art?.settings && <PauseButtons control={art} />}
+        {section.background?.art?.settings && !isPictureEffect(section.background) && <PauseButtons control={art} />}
       </div>
     </section>
   )
