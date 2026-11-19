@@ -158,8 +158,8 @@ scripts/compare/      the side-by-side check and its report
 8. **Between the measured widths.** Squarespace scales some text with the window's width. We measure at five widths
    and test the ones between; a pixel or two may remain at odd widths, and the report will say where.
 9. **Later, when edubud.org moves** (not part of step 1): the same addresses, titles, descriptions, link previews and
-   icons, the folders' redirects and a sitemap, so search results carry over (Google Search Console is already
-   verified for the domain). Export the newsletter list, donors and products first. Squarespace's analytics stays
+   icons, the folders' redirects and a sitemap, so search results carry over (the domain already carries a Google
+   verification record, Workspace's or Search Console's). Export the newsletter list, donors and products first. Squarespace's analytics stays
    behind (a replacement is a later question). EduBud's Squarespace website plan can then end; the domain is billed
    apart and stays.
 
