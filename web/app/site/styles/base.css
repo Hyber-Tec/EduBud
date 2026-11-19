@@ -77,7 +77,39 @@ button {
   white-space: nowrap;
 }
 
-/* Rich text, inside text blocks, accordions, shapes and forms. */
+/* Rich text, inside text blocks, accordions, shapes and forms. Each element says which size setting it uses (--v);
+   its size comes from one rule (--fs), the window's width on computers and tablets, its height on phones held
+   upright, as the original's. */
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte p,
+.rte li,
+.rte-large,
+.rte-small,
+.marquee-item {
+  --fs: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+  font-size: var(--fs);
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .rte h1,
+  .rte h2,
+  .rte h3,
+  .rte h4,
+  .rte p,
+  .rte li,
+  .rte-large,
+  .rte-small,
+  .marquee-item {
+    --fs: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+  }
+}
+/* A word too wide for its block breaks rather than spilling out, as on the original. */
+.rte,
+.rte * {
+  overflow-wrap: break-word;
+}
 .rte h1,
 .rte h2,
 .rte h3,
@@ -110,21 +142,18 @@ button {
   --v: var(--heading-4-size-value);
   color: var(--h4);
 }
-.marquee-item {
-  line-height: 1.4em !important;
-}
 .rte h1,
 .rte h2,
 .rte h3,
-.rte h4,
-.marquee-item {
-  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
+.rte h4 {
   line-height: calc(1.2em * (1 + (1 - var(--v)) / 25));
+}
+.marquee-item {
+  line-height: 1.4em !important;
 }
 .rte p,
 .rte li {
   --v: var(--normal-text-size-value);
-  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
   line-height: 1.3em;
   color: var(--p2);
   white-space: pre-wrap;
@@ -136,18 +165,16 @@ button {
 .rte .rte-large,
 .rte p.rte-large,
 .rte-large p {
-  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
-  line-height: 1.3em;
   --v: var(--large-text-size-value);
+  line-height: 1.3em;
   color: var(--p1);
 }
 .rte-small,
 .rte .rte-small,
 .rte p.rte-small,
 .rte-small p {
-  font-size: min(calc((var(--v) - 1) * 1.2vw + 1rem), max(calc((var(--v) - 1) * 0.012 * var(--site-max-width) + 1rem), calc(var(--v) * 1rem)));
-  line-height: 1.3em;
   --v: var(--small-text-size-value);
+  line-height: 1.3em;
   color: var(--p3);
 }
 .rte > :first-child,
@@ -246,20 +273,4 @@ button {
   font-size: 1em !important;
   line-height: 1em !important;
   margin: 0 !important;
-}
-
-@media (max-width: 767px) and (orientation: portrait) {
-  .rte h1,
-  .rte h2,
-  .rte h3,
-  .rte h4,
-  .rte p,
-  .rte li,
-  .rte-large,
-  .rte-small,
-  .rte .rte-large,
-  .rte .rte-small,
-  .marquee-item {
-    font-size: calc((var(--v) - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
-  }
 }

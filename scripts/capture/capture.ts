@@ -300,8 +300,19 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
     }
 
     case 'shape': {
-      const svg = sqs.querySelector('svg.sqs-shape')
-      const container = sqs.querySelector('.sqs-shape-block-container')
+      const container = sqs.querySelector('.sqs-shape-block-container-system_desktop') ?? sqs.querySelector('.sqs-shape-block-container')
+      const svg = container?.querySelector('svg.sqs-shape') ?? sqs.querySelector('svg.sqs-shape')
+      const phoneContainer = sqs.querySelector('.sqs-shape-block-container-system_mobile')
+      const phoneSvg = phoneContainer?.querySelector('svg.sqs-shape')
+      const phone =
+        phoneContainer && phoneSvg
+          ? {
+              name: phoneContainer.getAttribute('data-shape-name') ?? '',
+              svg: phoneSvg.innerHTML.trim(),
+              viewBox: phoneSvg.getAttribute('viewBox') ?? '0 0 100 100',
+              stretched: phoneContainer.hasAttribute('data-stretched-to-fill'),
+            }
+          : undefined
       return {
         ...base,
         type: 'shape',
@@ -309,6 +320,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         svg: svg?.innerHTML.trim() ?? '',
         viewBox: svg?.getAttribute('viewBox') ?? '0 0 100 100',
         stretched: container?.hasAttribute('data-stretched-to-fill') ?? false,
+        ...(phone ? { phone } : {}),
         html: cleanHtml(sqs.querySelector('.sqs-html-content')) || undefined,
         link: link(sqs.querySelector('a[href]')),
       }

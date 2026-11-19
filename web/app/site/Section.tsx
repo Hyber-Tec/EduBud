@@ -9,10 +9,9 @@ type Vars = CSSProperties & Record<`--${string}`, string | number | undefined>
 
 const area = (a: Area) => `${a.rowStart} / ${a.colStart} / ${a.rowEnd} / ${a.colEnd}`
 
-/** A block's place on the grid at both widths, and its own settings, as CSS variables our stylesheet reads. */
+/** A block's place on the grid at both widths, as CSS variables our stylesheet reads. */
 function blockStyle(b: BlockData): Vars {
   return {
-    ...(b.vars as Vars),
     '--area-m': area(b.mobile),
     '--area-d': area(b.desktop),
     '--z-m': b.mobile.z,
@@ -24,9 +23,16 @@ function blockStyle(b: BlockData): Vars {
   }
 }
 
-/** Phone-only settings and a block's own rules, which inline styles can't express. */
+/**
+ * Each block's own settings (variables), then its phone-only ones, then its other rules. They're a stylesheet rather
+ * than inline styles so the phone values can win over the others, as on the original.
+ */
 function sectionCss(section: SectionData): string {
   const out: string[] = []
+  for (const b of section.blocks) {
+    const all = Object.entries(b.vars ?? {})
+    if (all.length) out.push(`[data-block="${b.id}"] { ${all.map(([k, v]) => `${k}: ${v};`).join(' ')} }`)
+  }
   for (const b of section.blocks) {
     const m = Object.entries(b.varsMobile ?? {})
     if (m.length) out.push(`@media (max-width: 767px) { [data-block="${b.id}"] { ${m.map(([k, v]) => `${k}: ${v};`).join(' ')} } }`)

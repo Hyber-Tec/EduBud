@@ -98,6 +98,8 @@ export interface ShapeBlock extends BlockBase {
   viewBox: string
   /** Fills its block whatever the shape's proportions; otherwise it keeps them, as large as the block allows. */
   stretched: boolean
+  /** The shape phones show, when the original gives them another one. */
+  phone?: { name: string; svg: string; viewBox: string; stretched: boolean }
   /** Text inside the shape, as rich-text HTML, and its link. */
   html?: string
   link?: Link

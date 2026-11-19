@@ -223,12 +223,10 @@
   justify-content: center;
   overflow: hidden;
 }
-/* The scrolling line sits across the middle of its block without making the block taller. */
+/* The scrolling line: as tall as its text's line and 15px above and below, as the original's. */
 .marquee {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  translate: 0 -50%;
+  position: relative;
+  padding: 15px 0;
   display: flex;
   width: max-content;
   animation: marquee calc(60s / var(--marquee-speed, 1)) linear infinite;

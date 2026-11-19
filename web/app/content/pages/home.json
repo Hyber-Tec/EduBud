@@ -437,7 +437,13 @@
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
      "viewBox": "0 0 100 100",
-     "stretched": false
+     "stretched": false,
+     "phone": {
+      "name": "horizontal-right-leaning-oval",
+      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
+      "viewBox": "0 0 150 100",
+      "stretched": false
+     }
     },
     {
      "id": "f3d9a9f2a3fe98e7ad55",
@@ -502,7 +508,13 @@
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
      "viewBox": "0 0 100 100",
-     "stretched": false
+     "stretched": false,
+     "phone": {
+      "name": "four-petal-flower",
+      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
+      "viewBox": "0 0 100 100",
+      "stretched": false
+     }
     },
     {
      "id": "c5039db374002f3669bb",
@@ -1723,7 +1735,13 @@
      "name": "horizontal-stacked-circles",
      "svg": "<path d=\"M100 .5a49.3 49.3 0 00-25 6.8 49.5 49.5 0 100 85.4A49.5 49.5 0 10100 .5z\" />",
      "viewBox": "0 0 150 100",
-     "stretched": false
+     "stretched": false,
+     "phone": {
+      "name": "horizontal-stacked-circles",
+      "svg": "<path d=\"M100 .5a49.3 49.3 0 00-25 6.8 49.5 49.5 0 100 85.4A49.5 49.5 0 10100 .5z\" />",
+      "viewBox": "0 0 150 100",
+      "stretched": false
+     }
     },
     {
      "id": "9205c1e00713741e334b",
@@ -1788,7 +1806,13 @@
      "name": "horizontal-right-leaning-oval",
      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
      "viewBox": "0 0 150 100",
-     "stretched": false
+     "stretched": false,
+     "phone": {
+      "name": "horizontal-right-leaning-oval",
+      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
+      "viewBox": "0 0 150 100",
+      "stretched": false
+     }
     }
    ]
   },

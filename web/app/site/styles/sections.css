@@ -23,7 +23,7 @@
   min-height: 100vh;
 }
 /* A custom height: the original's percentage of the window, and no padding of its own. */
-.section-height--custom {
+.page-section.section-height--custom {
   min-height: var(--section-custom-height, 0);
   --section-pad: 0px;
 }

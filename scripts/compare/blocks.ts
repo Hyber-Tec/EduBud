@@ -20,19 +20,21 @@ const { values: args } = parseArgs({
 type Box = { id: string; kind: string; x: number; y: number; w: number; h: number; extra?: string }
 
 const COLLECT = (side: 'original' | 'ours') => `(async () => {
-  for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 40)) }
-  window.scrollTo(0, 0)
-  await new Promise(r => setTimeout(r, 400))
+  // No scrolling: the original's header gets shorter once the page has scrolled, which would move everything.
+  await new Promise(r => setTimeout(r, 600))
   const out = []
   const rect = (el) => { const b = el.getBoundingClientRect(); return { x: Math.round(b.x), y: Math.round(b.y + window.scrollY), w: Math.round(b.width), h: Math.round(b.height) } }
   const sections = ${side === 'original' ? "[...document.querySelectorAll('section[data-section-id]')]" : "[...document.querySelectorAll('section[data-section]')]"}
   for (const s of sections) out.push({ id: ${side === 'original' ? "s.getAttribute('data-section-id')" : "s.getAttribute('data-section')"}, kind: 'section', ...rect(s) })
   const blocks = ${side === 'original' ? "[...document.querySelectorAll('.fe-block')]" : "[...document.querySelectorAll('.fe-block[data-block]')]"}
   for (const b of blocks) {
+    const sec = b.closest('section')
+    const secTop = sec ? Math.round(sec.getBoundingClientRect().y + window.scrollY) : 0
     const id = ${side === 'original' ? "[...b.classList].find(c => c.startsWith('fe-block-'))?.slice(9)" : "b.getAttribute('data-block')"}
     const t = b.querySelector('h1, h2, h3, h4, p')
     const cs = t ? getComputedStyle(t) : null
-    out.push({ id, kind: 'block', ...rect(b), extra: cs ? cs.fontSize + '/' + cs.lineHeight + ' ' + (t.textContent || '').trim().slice(0, 24) : '' })
+    const r = rect(b)
+    out.push({ id, kind: 'block', ...r, y: r.y - secTop, extra: cs ? cs.fontSize + '/' + cs.lineHeight + ' ' + (t.textContent || '').trim().slice(0, 24) : '' })
   }
   return out
 })()`
@@ -60,7 +62,8 @@ async function main() {
       console.log(`MISSING ${o.kind} ${o.id} ${o.extra ?? ''}`)
       continue
     }
-    const d = [c.x - o.x, c.y - o.y, c.w - o.w, c.h - o.h]
+    // Sections: their height (a taller section moves everything after it). Blocks: their place within their section.
+    const d = o.kind === 'section' ? [0, 0, c.w - o.w, c.h - o.h] : [c.x - o.x, c.y - o.y, c.w - o.w, c.h - o.h]
     if (d.some((v) => Math.abs(v) >= min)) {
       shown++
       console.log(
