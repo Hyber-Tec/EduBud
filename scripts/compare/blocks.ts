@@ -4,6 +4,11 @@
  * `npx serve -s web/build/client`), or point --ours at a copy.
  *
  *   npx tsx scripts/compare/blocks.ts --page / --width 1440 [--ours http://127.0.0.1:5179] [--min 2]
+ *
+ * With --against, it compares two copies instead (another build, served elsewhere, e.g. main's): the same blocks, in
+ * the same places, without loading edubud.org.
+ *
+ *   npx tsx scripts/compare/blocks.ts --page / --width 1440 --against http://127.0.0.1:5192 --min 1
  */
 import { parseArgs } from 'node:util'
 import { chromium } from 'playwright-core'
@@ -13,6 +18,7 @@ const { values: args } = parseArgs({
     page: { type: 'string', default: '/' },
     width: { type: 'string', default: '1440' },
     ours: { type: 'string', default: 'http://127.0.0.1:5179' },
+    against: { type: 'string' },
     min: { type: 'string', default: '2' },
   },
 })
@@ -57,7 +63,10 @@ async function collect(url: string, width: number, side: 'original' | 'ours'): P
 
 async function main() {
   const width = Number(args.width)
-  const [a, b] = await Promise.all([collect('https://www.edubud.org' + args.page, width, 'original'), collect(args.ours + args.page, width, 'ours')])
+  const [a, b] = await Promise.all([
+    args.against ? collect(args.against + args.page, width, 'ours') : collect('https://www.edubud.org' + args.page, width, 'original'),
+    collect(args.ours + args.page, width, 'ours'),
+  ])
   const ours = new Map(b.map((x) => [x.kind + x.id, x]))
   const min = Number(args.min)
   let shown = 0
