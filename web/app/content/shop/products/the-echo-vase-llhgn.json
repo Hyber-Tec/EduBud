@@ -1,0 +1,111 @@
+{
+ "path": "/products-store/p/the-echo-vase-llhgn",
+ "meta": {
+  "title": "EduBud Community Center Tee — EduBud International",
+  "description": "  Wear the heart of EduBud with our Community Center shirt—a simple reminder that    everyone has a place to connect, grow, and belong.    Designed to celebrate community, inclusion, and togetherness, it’s more than a shirt—it’s a symbol of a community built for everyone.  "
+ },
+ "theme": "light",
+ "breadcrumb": [
+  {
+   "title": "Shop",
+   "href": "/products-store"
+  },
+  {
+   "title": "EduBud Community Center Tee",
+   "href": "/products-store/p/the-echo-vase-llhgn"
+  }
+ ],
+ "title": "EduBud Community Center Tee",
+ "price": "$35.00",
+ "description": "<p style=\"white-space:pre-wrap;\"><span>Wear the heart of EduBud with our Community Center shirt—a simple reminder that </span><strong><span>everyone has a place to connect, grow, and belong.</span></strong><span> Designed to celebrate community, inclusion, and togetherness, it’s more than a shirt—it’s a symbol of a community built for everyone.</span></p>",
+ "pictures": [
+  {
+   "base": "/media/0af1b929e5dd",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2962,
+   "height": 1974,
+   "alt": "Screenshot 2026-08-19 at 11.34.48 AM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/db82ea9096a6",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 2966,
+   "height": 1974,
+   "alt": "Screenshot 2026-08-19 at 11.34.22 AM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/fdf40484b957",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 1504,
+   "height": 1624,
+   "alt": "Screenshot 2026-09-02 at 1.51.43 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "base": "/media/47e74262b236",
+   "ext": "webp",
+   "widths": [
+    100,
+    300,
+    500,
+    750,
+    1000,
+    1500,
+    2500
+   ],
+   "width": 1614,
+   "height": 1742,
+   "alt": "Screenshot 2026-09-02 at 1.48.11 PM.png",
+   "focal": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "button": "Add To Cart",
+ "vars": {
+  "--product-gallery-arrow-size": "3vw",
+  "--product-gallery-aspect-ratio": "3 / 4",
+  "--product-gallery-width": "50%",
+  "--product-content-horizontal-spacing": "3vw",
+  "--product-content-form-width": "100%"
+ }
+}
