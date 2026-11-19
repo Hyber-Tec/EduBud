@@ -7,4 +7,6 @@ import type { CreateArt } from './types'
 export const KINDS: Record<string, () => Promise<{ create: CreateArt }>> = {
   conic: () => import('./conic'),
   bokeh: () => import('./bokeh'),
+  gradient: () => import('./gradient'),
+  contours: () => import('./contours'),
 }
