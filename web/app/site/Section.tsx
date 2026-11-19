@@ -103,7 +103,7 @@ export function Section({ section, index }: { section: SectionData; index: numbe
           {!section.kind && (
           <div className="fe-grid" style={gridStyle}>
             {section.blocks.map((b) => (
-              <div key={b.id} className={`fe-block fe-block--${b.type}`} data-block={b.id} style={blockStyle(b)}>
+              <div key={b.id} className={`fe-block fe-block--${b.type}${b.background ? ' fe-block--bg' : ''}`} data-block={b.id} style={blockStyle(b)}>
                 <Block block={b} />
               </div>
             ))}

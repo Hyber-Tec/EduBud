@@ -21,6 +21,7 @@ export function ImageBlock({ block }: { block: Data }) {
         )}
         <div className="image-overlay" />
       </div>
+      {block.maskSvg && <div className="image-mask-defs" aria-hidden="true" dangerouslySetInnerHTML={{ __html: block.maskSvg }} />}
     </div>
   )
 }

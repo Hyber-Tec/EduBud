@@ -30,6 +30,7 @@ const THEME_VARS: Record<string, string> = {
   '--acc-icon': '--tweak-accordion-block-icon-color',
   '--acc-divider': '--tweak-accordion-block-divider-color',
   '--acc-bg': '--tweak-accordion-block-background-color',
+  '--text-block-bg': '--tweak-text-block-background-color',
   '--shape-bg': '--shape-block-background-color',
   '--shape-stroke': '--shape-block-stroke-color',
   '--line': '--tweak-line-block-line-color',

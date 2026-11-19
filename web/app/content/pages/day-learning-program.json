@@ -478,6 +478,8 @@
      "textStyle": "heading-1",
      "speed": 0.5,
      "direction": "left",
+     "waveIntensity": 0,
+     "waveFrequency": 4,
      "container": {
       "backgroundEnabled": false,
       "backgroundColor": {
@@ -1747,6 +1749,8 @@
      "textStyle": "paragraph-1",
      "speed": 1,
      "direction": "right",
+     "waveIntensity": 30,
+     "waveFrequency": 2,
      "container": {
       "backgroundEnabled": false,
       "backgroundColor": {

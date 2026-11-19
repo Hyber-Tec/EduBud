@@ -134,6 +134,7 @@ function applyTextAttributes(content: Element, scope: Element, blockId: string) 
   const raw = script?.textContent
   const attrs: Record<string, any> = {}
   for (const a of json(raw ?? null) ?? []) attrs[a.id] = a
+  // A highlight whose settings are missing isn't drawn (as on the original).
   content.querySelectorAll('[data-text-attribute-id]').forEach((span) => {
     const a = attrs[span.getAttribute('data-text-attribute-id') ?? '']
     if (!a) return
@@ -269,7 +270,8 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
   const kind = def.replace('website.components.', '') || (sqs.classList.contains('instagram-block') ? 'instagram' : 'unknown')
   const { vars, varsMobile, rules, css: ownCss } = blockVars(styleText(feBlock), id)
   const area = areas[id] ?? { mobile: { ...EMPTY_AREA }, desktop: { ...EMPTY_AREA } }
-  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined }
+  const background = sqs.classList.contains('sqs-background-enabled') || undefined
+  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined, ...(background ? { background } : {}) }
 
   switch (kind) {
     case 'html': {
@@ -296,6 +298,7 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         picture: pic,
         link: link(sqs.querySelector('a[href]')),
         stretched: root?.getAttribute('data-is-image-stretched') === 'true',
+        maskSvg: [...sqs.querySelectorAll('svg[data-image-mask-id]')].map((m) => m.outerHTML.replace(/\s+/g, ' ')).join('') || undefined,
       }
     }
 
@@ -383,6 +386,8 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
         textStyle: m?.getAttribute('data-text-style') ?? 'heading-1',
         speed: Number(m?.getAttribute('data-animation-speed') ?? 1),
         direction: (m?.getAttribute('data-animation-direction') as 'left') ?? 'left',
+        waveIntensity: Number(m?.getAttribute('data-wave-intensity') ?? 0),
+        waveFrequency: Number(m?.getAttribute('data-wave-frequency') ?? 0),
         link: href ? { href: localHref(href), newWindow: m?.getAttribute('data-new-window') === 'true' || undefined } : undefined,
         container: json(m?.getAttribute('data-container-styles') ?? null) ?? {},
       }
@@ -549,7 +554,8 @@ function filterCss(filter: number | undefined, strength: number | undefined): st
     case 5:
       return `saturate(${(1 + s * 3).toFixed(2)})`
     case 6:
-      return `sepia(${s.toFixed(2)})`
+      // Seen on the original: filter 6 is the video's opacity over the section's color.
+      return `opacity(${s.toFixed(2)})`
     case 7:
       return `grayscale(${s.toFixed(2)})`
     case 8:

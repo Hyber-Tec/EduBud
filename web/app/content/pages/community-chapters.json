@@ -279,7 +279,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"yui_3_17_2_1_1787153337924_17740-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"yui_3_17_2_1_1787153337924_17740-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "2fc8f87a90b69e4dc22a",
@@ -745,7 +746,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"ab893b04722f74484cbc-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ab893b04722f74484cbc-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "7e4080568b1f13f82f82",
@@ -887,7 +889,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"430e0ec080d63521fc83-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"430e0ec080d63521fc83-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "671f2d2159b318078ee8",
@@ -1029,7 +1032,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"2588f370a649780b2133-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"2588f370a649780b2133-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "6b7a80d88c5575ef4bb1",
@@ -1171,7 +1175,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"1cff90d85d0d1a033b7d-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"1cff90d85d0d1a033b7d-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "62a9b4d93a970ac8ea71",
@@ -1313,7 +1318,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"4a7bcd095a8495affc3e-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"4a7bcd095a8495affc3e-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "f2a32cf42583618ecc81",
@@ -1455,7 +1461,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"c2ff7e18ef679c01ad8e-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"c2ff7e18ef679c01ad8e-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "937f19fce21e7fba801b",
@@ -1597,7 +1604,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"0cb163d5f385d6e7007c-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"0cb163d5f385d6e7007c-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "4ed19119a4cf00cb2494",
@@ -2257,7 +2265,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"yui_3_17_2_1_1787158264733_31605-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"yui_3_17_2_1_1787158264733_31605-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "32cb58fa187930efd1f0",
@@ -2333,7 +2342,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"32cb58fa187930efd1f0-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"32cb58fa187930efd1f0-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "yui_3_17_2_1_1787158264733_33599",
@@ -2441,7 +2451,8 @@
        0.13600850053128322
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"36cdcc0d0a35b2db7c31-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"36cdcc0d0a35b2db7c31-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "b51c86234bf063fc1103",
@@ -2549,7 +2560,8 @@
        0.08001000125015623
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"a676dafd07f32927701a-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"a676dafd07f32927701a-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "d758703088c44878cd6e",
@@ -2876,7 +2888,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"ab70e86ba7a7fa76c197-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ab70e86ba7a7fa76c197-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "2f342381d22d61467423",
@@ -2952,7 +2965,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"2f342381d22d61467423-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"2f342381d22d61467423-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "bdd36b0143813ac043a6",
@@ -3060,7 +3074,8 @@
        0
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"bcabfaa0a56aa154598f-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"bcabfaa0a56aa154598f-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "aca0d60849ccd21152f2",
@@ -3168,7 +3183,8 @@
        0.05600350021876366
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"ae75f20ae64c7bdb1562-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ae75f20ae64c7bdb1562-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "d480fa42e90755947975",
@@ -3495,7 +3511,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"0b0e4440257f580633e9-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"0b0e4440257f580633e9-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "c68253b79cc419c35141",
@@ -3571,7 +3588,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"c68253b79cc419c35141-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"c68253b79cc419c35141-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "4366e6e7201e37f9a9e5",
@@ -3904,7 +3922,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"1a957f2f3c0376c49317-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"1a957f2f3c0376c49317-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "2fafa94931f937af455d",
@@ -3967,7 +3986,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"2fafa94931f937af455d-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"2fafa94931f937af455d-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     }
    ]
   },
@@ -4114,7 +4134,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"d2c57852ded57d04808a-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"d2c57852ded57d04808a-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "11280c5f95f515f393e0",
@@ -4190,7 +4211,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"11280c5f95f515f393e0-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"11280c5f95f515f393e0-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "01d9ab182be257b502db",
@@ -4343,7 +4365,8 @@
        1
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"36d7f49ac8f0a61d8de5-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"36d7f49ac8f0a61d8de5-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "13e2d5057b557e206a14",
@@ -4406,7 +4429,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"13e2d5057b557e206a14-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"13e2d5057b557e206a14-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "5b08062fc0fa4004e070",
@@ -4733,7 +4757,8 @@
        0.28800000000000003
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"a5c01acc3e27b6928859-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"a5c01acc3e27b6928859-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "76055851aafa90a70d00",
@@ -4809,7 +4834,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"76055851aafa90a70d00-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"76055851aafa90a70d00-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "3b906797418de22fd236",
@@ -4917,7 +4943,8 @@
        0.21601350084380277
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"d67eaef2b0dfb3cb1beb-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"d67eaef2b0dfb3cb1beb-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "bea8d5a0f2b73150d3e4",
@@ -5025,7 +5052,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"ed6da92b6e372968534a-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"ed6da92b6e372968534a-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "c6116ae9bd5f76ea6396",
@@ -5352,7 +5380,8 @@
        0.17600000000000005
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"4edb254d86dcbefb0955-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"4edb254d86dcbefb0955-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "a4a9dab7cbc55de23328",
@@ -5428,7 +5457,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"a4a9dab7cbc55de23328-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"a4a9dab7cbc55de23328-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "f7549bf1fffd4b76a4f4",
@@ -5536,7 +5566,8 @@
        0.23199999999999998
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"49beff8cd730f39924ce-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"49beff8cd730f39924ce-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "b871d76d8f11f950ee80",
@@ -5644,7 +5675,8 @@
        0.29600000000000004
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"a2312ae7c163cfcfaad3-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"a2312ae7c163cfcfaad3-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "857bcebf088662402a7f",
@@ -5971,7 +6003,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"f644547b67ef843c9a6a-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"f644547b67ef843c9a6a-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "2ca43063eea4c0fded3f",
@@ -6047,7 +6080,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"2ca43063eea4c0fded3f-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"2ca43063eea4c0fded3f-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "80442f25f01415708db3",
@@ -6155,7 +6189,8 @@
        0.352022001375086
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"821efb74d7cca2431ec6-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"821efb74d7cca2431ec6-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "26276cfa4d8843ec3e78",
@@ -6263,7 +6298,8 @@
        0.5
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"656c5aa4bd9318c6138b-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"656c5aa4bd9318c6138b-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.5,0 C0.768,0,0.894,0.056,0.919,0.081 C0.944,0.106,1,0.242,1,0.505 C1,0.768,0.947,0.891,0.919,0.919 C0.891,0.947,0.768,1,0.5,1 C0.202,1,0.11,0.948,0.081,0.919 C0.052,0.89,0,0.768,0,0.5 C0,0.232,0.053,0.109,0.081,0.081 C0.109,0.053,0.232,0,0.5,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "c90aeb2042ce457516cb",

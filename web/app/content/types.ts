@@ -72,6 +72,8 @@ interface BlockBase {
   varsMobile?: Vars
   /** The block's own rules that aren't variables (borders, clipping), already scoped to it. */
   css?: string
+  /** The block has its own background color (a card), from its settings or its section's theme. */
+  background?: boolean
 }
 
 export interface TextBlock extends BlockBase {
@@ -140,6 +142,9 @@ export interface MarqueeBlock extends BlockBase {
   textStyle: string
   speed: number
   direction: 'left' | 'right'
+  /** How far the line waves up and down (px; 0 = straight), and its waves' frequency setting. */
+  waveIntensity: number
+  waveFrequency: number
   link?: Link
   container: Record<string, unknown>
 }

@@ -37,7 +37,7 @@
      },
      "width": 1920,
      "height": 1080,
-     "filter": "sepia(0.29)",
+     "filter": "opacity(0.29)",
      "speed": 1
     },
     "overlayOpacity": 0.2
@@ -1338,6 +1338,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"4000f5a55fc7819aabfb\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"4000f5a55fc7819aabfb\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"4000f5a55fc7819aabfb\"] > .block { border-radius: var(--tweak-text-block-radius); }",
+     "background": true,
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--darkAccent\">✦</span></h2><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--black\"><strong>National Network</strong></span></span></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\">We’ve built a nationwide coalition of <strong>300+ </strong>students and mentors, forming <strong>100+ </strong>buddy matches across <strong>15+</strong> states and&#160;high school chapters<strong>&#160;</strong>— all untied with the mission of bridging educational gaps.</p>"
     },
@@ -1371,6 +1372,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"5456aa00e504e630e684\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"5456aa00e504e630e684\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"5456aa00e504e630e684\"] > .block { border-radius: var(--tweak-text-block-radius); }",
+     "background": true,
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--darkAccent\">✦</span></h2><h4 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--black\"><strong>Community Outreach</strong></span></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Our team has led <strong>500+</strong> outreach events at educational fairs, farmers' markets, religious centers, and community events, reaching over <strong>20,000</strong> people internationally.</p>"
     },
@@ -1415,6 +1417,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"c95e9032020bff7aa961\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"c95e9032020bff7aa961\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c95e9032020bff7aa961\"] > .block { border-radius: var(--tweak-text-block-radius); }\n[data-block=\"c95e9032020bff7aa961\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "background": true,
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--darkAccent\">✦</span></h2><h4 style=\"white-space:pre-wrap;\"><strong>Blue Bridge Project</strong></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\">Blue Bridge has helped bridge the gap between <strong>high school students </strong>and <strong>students with special needs</strong>, creating meaningful relationships through mentorship, inclusion, and service. The project has inspired greater awareness, student leadership, and continued community engagement— influencing the expansion into the broader <strong>2026 Golden Bridge Project</strong>.</p>"
     },
@@ -1448,6 +1451,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"a9c92bad5519c875151c\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"a9c92bad5519c875151c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"a9c92bad5519c875151c\"] > .block { border-radius: var(--tweak-text-block-radius); }",
+     "background": true,
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--darkAccent\">✦</span></h2><h4 style=\"white-space:pre-wrap;\"><strong>International</strong></h4><p style=\"white-space:pre-wrap;\" class=\"rte-large\"><em>EduBud International</em> led the Voices of the Vulnerable service trip to <strong>Madrid, Spain</strong>, partnering with <em>La Cruz Roja</em> and <em>Soñar Despierto</em>. Our team of 10 highschool National Members led the English department of a summer camp.</p>"
     }
@@ -2058,7 +2062,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"e493dd882a15db05f984-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"e493dd882a15db05f984-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
     },
     {
      "id": "adfada1a5ec0423425a5",
@@ -2121,7 +2126,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"adfada1a5ec0423425a5-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"adfada1a5ec0423425a5-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
     },
     {
      "id": "08716b6f91710e4f4553",
@@ -2276,6 +2282,8 @@
      "textStyle": "heading-1",
      "speed": 0.5,
      "direction": "right",
+     "waveIntensity": 30,
+     "waveFrequency": 2,
      "container": {
       "backgroundEnabled": false,
       "backgroundColor": {

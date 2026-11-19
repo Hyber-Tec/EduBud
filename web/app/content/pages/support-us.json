@@ -358,6 +358,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"27cba3fb7434076b2f6b\"] > .block { padding: var(--tweak-marquee-block-padding); }\n[data-block=\"27cba3fb7434076b2f6b\"] { mix-blend-mode: var(--tweak-marquee-block-blend); border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] > .block { border-radius: var(--tweak-marquee-block-radius); }\n[data-block=\"27cba3fb7434076b2f6b\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "background": true,
      "type": "marquee",
      "items": [
       "Make An Impact",
@@ -366,6 +367,8 @@
      "textStyle": "heading-1",
      "speed": 0.5,
      "direction": "left",
+     "waveIntensity": 0,
+     "waveFrequency": 4,
      "container": {
       "backgroundEnabled": true,
       "backgroundColor": {
@@ -683,6 +686,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"e4166f0bcdade5c40a5a\"] .rte { padding: var(--tweak-text-block-padding); }\n[data-block=\"e4166f0bcdade5c40a5a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e4166f0bcdade5c40a5a\"] > .block { border-radius: var(--tweak-text-block-radius); }",
+     "background": true,
      "type": "text",
      "html": "<div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><h4 style=\"text-align: center; white-space: pre-wrap\"><span class=\"rte-text-color--white\">50K+</span></h4></span></div><div class=\"rte-scaled-text-container\"><span class=\"rte-scaled-text\"><p style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\">People Reached</span></p></span></div>"
     },
@@ -1695,7 +1699,8 @@
        0.9760610038127383
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"8f84880917a43cd0ba25-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"8f84880917a43cd0ba25-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
     },
     {
      "id": "33b9a7b80fb2eebef877",
@@ -1758,7 +1763,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"33b9a7b80fb2eebef877-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"33b9a7b80fb2eebef877-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0,0.5 A0.5 0.5, 0 0 1, 1 0.5 M1,0.5 A0.5 0.5, 0 0 1, 0 0.5 Z\"> </path></clippath> </defs> </svg>"
     }
    ]
   }

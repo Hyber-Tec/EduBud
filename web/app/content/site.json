@@ -433,6 +433,7 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"yui_3_17_2_1_1790124742949_10968\"] { mix-blend-mode: var(--form-block-blend-mode\n    ); border-radius: var(--form-block-border-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_10968\"] > .block { border-radius: var(--form-block-border-radius); }\n[data-block=\"yui_3_17_2_1_1790124742949_10968\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "background": true,
      "type": "form",
      "config": {
       "useFormsJs": true,

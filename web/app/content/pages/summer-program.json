@@ -392,6 +392,8 @@
      "textStyle": "heading-1",
      "speed": 0.5,
      "direction": "left",
+     "waveIntensity": 0,
+     "waveFrequency": 4,
      "container": {
       "backgroundEnabled": false,
       "backgroundColor": {
@@ -497,7 +499,7 @@
      },
      "width": 1764,
      "height": 1080,
-     "filter": "sepia(0.42)",
+     "filter": "opacity(0.42)",
      "speed": 1
     },
     "overlayOpacity": 0.2

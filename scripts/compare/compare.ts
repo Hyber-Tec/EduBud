@@ -9,7 +9,7 @@
  *   npm run compare -- --ours https://edubud-hybertec.web.app   # against the deployed copy instead of the build
  */
 import { createReadStream, existsSync, statSync } from 'node:fs'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import http from 'node:http'
 import path from 'node:path'
 import { parseArgs } from 'node:util'
@@ -54,6 +54,7 @@ const { values: args } = parseArgs({
     ours: { type: 'string' },
     name: { type: 'string' },
     port: { type: 'string', default: '5179' },
+    fresh: { type: 'boolean' },
   },
 })
 
@@ -102,19 +103,19 @@ export function serve(port: number): Promise<http.Server> {
 }
 
 /** Things that move or differ by moment (videos, scrolling text, animated art) are stopped or masked on both sides. */
-const MASK_ORIGINAL = ['.sqs-block-marquee', '.grecaptcha-badge', '.background-fx-canvas']
-const MASK_OURS = ['.marquee-block', '.section-background picture']
+const MASK_ORIGINAL = ['.sqs-block-marquee', '.grecaptcha-badge']
+const MASK_OURS = ['.marquee-block']
 
 async function settle(page: Page, url: string) {
   await page.goto(url, { waitUntil: 'networkidle', timeout: 90_000 }).catch(() => page.waitForTimeout(3000))
   // Code run in the page is passed as text: tsx's helpers don't exist there.
   await page.evaluate(`(async () => {
     await document.fonts?.ready
-    for (let y = 0; y < document.documentElement.scrollHeight; y += 500) {
-      window.scrollTo(0, y)
-      await new Promise((r) => setTimeout(r, 80))
-    }
-    window.scrollTo(0, 0)
+    // Load every picture now instead of when it scrolls into view: scrolling would change the original's header.
+    for (const img of document.querySelectorAll('img[loading="lazy"]')) img.loading = 'eager'
+    await Promise.all([...document.images].filter((i) => !i.complete).map((i) => new Promise((r) => { i.onload = i.onerror = r; setTimeout(r, 8000) })))
+    // Decode them too: a picture far below the window is otherwise left blank in a full-page screenshot.
+    await Promise.all([...document.images].map((i) => i.decode().catch(() => undefined)))
     for (const v of document.querySelectorAll('video')) { v.pause(); v.currentTime = 0 }
     const style = document.createElement('style')
     style.textContent = '*,*::before,*::after{animation-play-state:paused!important;transition:none!important;caret-color:transparent!important}'
@@ -123,7 +124,26 @@ async function settle(page: Page, url: string) {
   await page.waitForTimeout(1200)
 }
 
-async function shot(browser: Browser, url: string, width: number, mask: string[]): Promise<{ png: PNG; text: string[]; links: string[] }> {
+/** The original's screenshots are kept (out/_original/) and reused: its pages don't change, and loading them less
+ * keeps Squarespace from slowing us down. `--fresh` takes them again. */
+const ORIGINAL_CACHE = path.join(import.meta.dirname, 'out', '_original')
+
+async function originalShot(browser: Browser, pagePath: string, width: number): Promise<{ png: PNG; text: string[]; links: string[] }> {
+  const slug = `${pagePath === '/' ? 'home' : pagePath.slice(1).replace(/\//g, '__')}.${width}`
+  const png = path.join(ORIGINAL_CACHE, `${slug}.png`)
+  const meta = path.join(ORIGINAL_CACHE, `${slug}.json`)
+  if (!args.fresh && existsSync(png) && existsSync(meta)) {
+    const { text, links } = JSON.parse(await readFile(meta, 'utf8'))
+    return { png: PNG.sync.read(await readFile(png)), text, links }
+  }
+  const s = await shot(browser, ORIGINAL + pagePath, width, MASK_ORIGINAL)
+  await mkdir(ORIGINAL_CACHE, { recursive: true })
+  await writeFile(png, PNG.sync.write(s.png))
+  await writeFile(meta, JSON.stringify({ text: s.text, links: s.links }))
+  return s
+}
+
+export async function shot(browser: Browser, url: string, width: number, mask: string[]): Promise<{ png: PNG; text: string[]; links: string[] }> {
   const ctx = await browser.newContext({ viewport: { width, height: HEIGHTS[width] ?? 900 }, deviceScaleFactor: 1, isMobile: width < 768, hasTouch: width < 768 })
   const page = await ctx.newPage()
   await settle(page, url)
@@ -159,7 +179,7 @@ async function main() {
   for (const p of pages) {
     for (const w of widths) {
       const slug = `${p === '/' ? 'home' : p.slice(1).replace(/\//g, '__')}.${w}`
-      const [a, b] = await Promise.all([shot(browser, ORIGINAL + p, w, MASK_ORIGINAL), shot(browser, ours + p, w, MASK_OURS)])
+      const [a, b] = await Promise.all([originalShot(browser, p, w), shot(browser, ours + p, w, MASK_OURS)])
       const W = Math.max(a.png.width, b.png.width)
       const H = Math.max(a.png.height, b.png.height)
       const pa = pad(a.png, W, H)

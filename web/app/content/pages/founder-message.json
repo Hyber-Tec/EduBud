@@ -92,7 +92,8 @@
        0.6720420026251641
       ]
      },
-     "stretched": true
+     "stretched": true,
+     "maskSvg": "<svg data-image-mask-id=\"8eba4bf5fa0c50ea056f-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"8eba4bf5fa0c50ea056f-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.799,0 A0.201,0.302,0,0,0,0.649,0.1 A0.201,0.303,0,0,0,0.351,0.1 A0.201,0.303,0,0,0,0,0.303 V0.697 A0.201,0.303,0,0,0,0.351,0.9 A0.201,0.303,0,0,0,0.649,0.9 A0.201,0.303,0,0,0,1,0.697 V0.303 A0.201,0.303,0,0,0,0.799,0\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "yui_3_17_2_1_1791679617058_1095",
@@ -155,7 +156,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"yui_3_17_2_1_1791679617058_1095-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"yui_3_17_2_1_1791679617058_1095-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     },
     {
      "id": "3239017fc02dd5765c72",
@@ -284,7 +286,8 @@
        0.5
       ]
      },
-     "stretched": false
+     "stretched": false,
+     "maskSvg": "<svg data-image-mask-id=\"a3ece2893e64b3534331-system_desktop\" width=\"0\" height=\"0\" style=\"position: absolute;\"> <defs> <clippath id=\"a3ece2893e64b3534331-system_desktop\" clipPathUnits=\"objectBoundingBox\"> <path d=\"M0.09 0.5 A0.1 0.103 -45 0 1 0.5 0.09 A0.103 0.1 -45 0 1 0.91 0.5 A0.1 0.103 -45 0 1 0.5 0.91 A0.103 0.1 -45 0 1 0.09 0.5\" /> </clippath> </defs> </svg>"
     }
    ]
   }
