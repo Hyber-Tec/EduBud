@@ -172,6 +172,12 @@
   inset: 0;
   background: var(--bg);
 }
+/* The box animated art is drawn in (site/art/), over the picture of it shown until then. */
+.section-background-content,
+.section-background-canvas {
+  position: absolute;
+  inset: 0;
+}
 .background-width--inset {
   padding: var(--site-gutter);
 }
@@ -225,11 +231,12 @@
   }
 }
 
-/* The moving background's pause button: a 32px half-black circle that blurs what's behind it, 14px from the corner of
-   the section's content (above its divider, if it has one); two white bars (a double border), or a triangle once
-   paused. Once pressed (or reached with the keyboard) it keeps the focus, as the original's does: darker, with a ring
-   around it, and no outline. */
+/* The moving background's pause button, and its play button (only one shows, once the art runs: site/art/): a 32px
+   half-black circle that blurs what's behind it, 14px from the corner of the section's content (above its divider, if
+   it has one); two white bars (a double border), or a triangle to play. Once pressed (or reached with the keyboard)
+   it keeps the focus, as the original's does: darker, with a ring around it, and no outline. */
 .background-pause-button {
+  display: none;
   position: absolute;
   right: 14px;
   bottom: calc(14px + var(--divider-height, 0px));
@@ -243,6 +250,9 @@
   backdrop-filter: blur(15px);
   outline: none;
   cursor: pointer;
+}
+.background-pause-button.visible {
+  display: block;
 }
 .background-pause-button::before {
   content: ' ';
@@ -271,7 +281,7 @@
   box-sizing: border-box;
   border-left: 10px double #fff;
 }
-/* Paused: a 12 by 16px triangle pointing right. */
+/* The play button: a 12 by 16px triangle pointing right. */
 .background-pause-button--paused::after {
   left: 12px;
   top: 8px;
