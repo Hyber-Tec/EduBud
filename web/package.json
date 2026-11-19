@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "react-router build",
+    "build": "react-router build && node scripts/flatten.mjs",
     "typecheck": "react-router typegen && tsc",
     "preview": "npx --yes serve@14 -s build/client -l 5175"
   },
