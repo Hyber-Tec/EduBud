@@ -1,7 +1,7 @@
 import { data } from 'react-router'
 import { loadPage } from '~/content/load'
 import { PAGES } from '~/content/paths'
-import { Section } from '~/site/Section'
+import { Section, dividerAbove } from '~/site/Section'
 import type { Route } from './+types/page'
 
 export async function loader({ params, request }: Route.LoaderArgs) {
@@ -27,8 +27,8 @@ export function meta({ loaderData }: Route.MetaArgs) {
 export default function ContentPage({ loaderData }: Route.ComponentProps) {
   return (
     <>
-      {loaderData.page.sections.map((s, i) => (
-        <Section key={s.id} section={s} index={i} />
+      {loaderData.page.sections.map((s, i, all) => (
+        <Section key={s.id} section={s} index={i} below={dividerAbove(all, i)} />
       ))}
     </>
   )

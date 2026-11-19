@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router'
 import site from '~/content/site.json'
 import type { Picture } from '~/content/types'
@@ -33,18 +33,41 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [folder, setFolder] = useState<string | null>(null)
   const [hidden, setHidden] = useState(false)
+  const [shrink, setShrink] = useState(false)
+  const header = useRef<HTMLElement>(null)
   const { pathname } = useLocation()
   const here = (href: string) => href !== '/' && (pathname === href || pathname.startsWith(href + '/'))
 
+  // The original's "scroll back" header: once the page has scrolled (more than 10px), scrolling down hides it, and
+  // scrolling up brings it back after 200px without a pause of more than half a second. At the top, or while
+  // something in it has the keyboard's focus, it shows. While scrolled it "shrinks" (shorter on phones).
   useEffect(() => {
     let last = window.scrollY
+    let distance = 0
+    let then = 0
+    let shrinkTimer = 0
     const onScroll = () => {
       const y = window.scrollY
-      setHidden(y > last && y > 120)
+      const scrolled = y > 10
+      if (!scrolled || header.current?.matches(':focus-within')) setHidden(false)
+      else if (y > last) setHidden(true)
+      else if (y < last) {
+        const now = Date.now()
+        distance += last - y
+        if (now - then > 500) distance = 0
+        if (distance > 200) setHidden(false)
+        then = now
+      }
+      window.clearTimeout(shrinkTimer)
+      if (scrolled) setShrink(true)
+      else shrinkTimer = window.setTimeout(() => setShrink(false), 300)
       last = y
     }
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.clearTimeout(shrinkTimer)
+    }
   }, [])
 
   useEffect(() => {
@@ -52,7 +75,11 @@ export function Header() {
   }, [menuOpen])
 
   return (
-    <header className={`site-header${hidden && !menuOpen ? ' site-header--hidden' : ''}${menuOpen ? ' site-header--menu-open' : ''}`} data-theme="">
+    <header
+      ref={header}
+      className={`site-header${hidden && !menuOpen ? ' site-header--hidden' : ''}${shrink ? ' shrink' : ''}${menuOpen ? ' site-header--menu-open' : ''}`}
+      data-theme=""
+    >
       <div className="header-inner">
         <a className="header-logo" href={site.header.logoHref || '/'}>
           <img src={pictureSrc(logo, 1500)} srcSet={srcSet(logo)} sizes="100px" alt={logo.alt} />

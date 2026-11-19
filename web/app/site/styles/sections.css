@@ -52,18 +52,46 @@
   padding: var(--section-pad) 0;
 }
 
-/* A section whose bottom edge curves (the original's "rounded" divider, 4vw deep): its background is masked by a
-   rectangle and, along the bottom, the curve; its content keeps clear of the curve. */
+/* A section whose bottom edge isn't straight (the original's section dividers, --divider-height deep): its
+   background is masked by a rectangle and, along the bottom, the divider's shape; its content keeps clear of it.
+   "rounded" curves down to the middle; "slanted-flip-y" cuts a slant from the bottom right up to the left (the
+   original computes these paths in the browser; these are the paths it draws). */
+.has-section-divider {
+  --divider-shape: linear-gradient(#000 0 0);
+}
+.divider--rounded {
+  --divider-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E");
+}
+.divider--slanted-flip-y {
+  --divider-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L1,0 L1,1 Z'/%3E%3C/svg%3E");
+}
+/* As on the original, the section with the divider is drawn over the next one and paints its color on its masked
+   layer (not on itself), and the next section's background reaches up under the cut, as deep as the divider. */
+.page-section.has-section-divider {
+  z-index: 1;
+  background: none;
+}
+.page-section.has-section-divider > .section-border {
+  background: var(--bg);
+}
+.page-section.below-divider {
+  background: none;
+}
+.page-section.below-divider > .section-border {
+  top: calc(-1 * var(--divider-above, 0px));
+  background: var(--bg);
+}
 .has-section-divider > .section-border {
   -webkit-mask:
     linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E") bottom / 100% var(--divider-height, 0px) no-repeat;
+    var(--divider-shape) bottom / 100% var(--divider-height, 0px) no-repeat;
   mask:
     linear-gradient(#000 0 0) top / 100% calc(100% - var(--divider-height, 0px) + 1px) no-repeat,
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C0,0 0.25,1 0.5,1 C0.75,1 1,0 1,0 Z'/%3E%3C/svg%3E") bottom / 100% var(--divider-height, 0px) no-repeat;
+    var(--divider-shape) bottom / 100% var(--divider-height, 0px) no-repeat;
 }
-.has-section-divider > .content-wrapper {
-  padding-bottom: calc(var(--section-pad) + var(--divider-height, 0px));
+/* The divider's depth is room at the bottom of the section, below its content. */
+.page-section.has-section-divider {
+  padding-bottom: var(--divider-height, 0px);
 }
 .content {
   width: 100%;
@@ -146,12 +174,12 @@
   }
 }
 
-/* The moving background's pause button: a 32px half-black circle, 14px from the section's corner; two white bars
-   (a double border), or a triangle once paused. */
+/* The moving background's pause button: a 32px half-black circle, 14px from the corner of the section's content
+   (above its divider, if it has one); two white bars (a double border), or a triangle once paused. */
 .background-pause-button {
   position: absolute;
   right: 14px;
-  bottom: 14px;
+  bottom: calc(14px + var(--divider-height, 0px));
   z-index: 999;
   width: 32px;
   height: 32px;

@@ -74,7 +74,10 @@ function Background({ section }: { section: SectionData }) {
   )
 }
 
-/** The round button the original puts on a moving background (video or art): it pauses and plays it. */
+/**
+ * The round button the original puts on an animated-art background (not on videos), which pauses the animation. Our
+ * art is a still picture of it, so the button only switches between its pause and play icons.
+ */
 function PauseButton() {
   const [paused, setPaused] = useState(false)
   return (
@@ -82,16 +85,18 @@ function PauseButton() {
       type="button"
       className={`background-pause-button${paused ? ' background-pause-button--paused' : ''}`}
       aria-label={paused ? 'Play Background' : 'Pause Background'}
-      onClick={(e) => {
-        const video = e.currentTarget.closest('section')?.querySelector<HTMLVideoElement>('.section-background video')
-        if (video) void (paused ? video.play() : video.pause())
-        setPaused(!paused)
-      }}
+      onClick={() => setPaused(!paused)}
     />
   )
 }
 
-export function Section({ section, index }: { section: SectionData; index: number }) {
+/** How deep the bottom divider of the section before this one is (its --divider-height), if it has one. */
+export function dividerAbove(sections: SectionData[], index: number): string | undefined {
+  const prev = sections[index - 1]
+  return prev?.classes.includes('has-section-divider') ? (prev.vars as Record<string, string> | undefined)?.['--divider-height'] : undefined
+}
+
+export function Section({ section, index, below }: { section: SectionData; index: number; below?: string }) {
   const css = sectionCss(section)
   const g = section.grid
   const gridStyle: Vars = {
@@ -104,17 +109,17 @@ export function Section({ section, index }: { section: SectionData; index: numbe
   }
   return (
     <section
-      className={['page-section', index === 0 ? 'first-section' : '', section.kind ? `${section.kind}-section` : '', ...section.classes].filter(Boolean).join(' ')}
+      className={['page-section', index === 0 ? 'first-section' : '', section.kind ? `${section.kind}-section` : '', below ? 'below-divider' : '', ...section.classes].filter(Boolean).join(' ')}
       data-theme={section.theme}
       data-section={section.id}
-      style={section.vars as Vars}
+      style={(below ? { ...section.vars, '--divider-above': below } : section.vars) as Vars}
     >
       {css && <style>{css}</style>}
       <div className="section-border">
         <Background section={section} />
       </div>
-      {(section.background?.video || (section.background?.art?.images.length ?? 0) > 0) && <PauseButton />}
       <div className="content-wrapper">
+        {(section.background?.art?.images.length ?? 0) > 0 && <PauseButton />}
         <div className="content">
           {section.kind === 'gallery' && <GallerySection section={section} />}
           {section.kind === 'list' && <ListSection section={section} />}
