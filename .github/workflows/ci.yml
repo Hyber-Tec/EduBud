@@ -114,7 +114,12 @@ jobs:
         if: steps.modules.outputs.cache-hit != 'true'
         run: npm ci --prefix web
 
+      # main's build gets EduBud's Google Maps key (a browser key that only works on EduBud's addresses, so the map is
+      # Google's map code as on the original); a pull request's preview isn't one of those addresses and keeps the
+      # keyless embed.
       - name: Build the website
+        env:
+          VITE_GOOGLE_MAPS_KEY: ${{ github.event_name != 'pull_request' && secrets.GOOGLE_MAPS_API_KEY || '' }}
         run: npm --prefix web run build
 
       - name: The Firebase CLI

@@ -585,7 +585,8 @@
   /* Google's colour for a map still loading, as on the original. */
   background-color: rgb(229, 227, 223);
 }
-.map-frame iframe {
+.map-frame iframe,
+.map-frame .page-map {
   position: absolute;
   inset: 0;
   width: 100%;

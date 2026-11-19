@@ -177,8 +177,8 @@ to put the new updates on the mobile phone. That's something that I'll tell you 
 - **Confirmations** use the app's own dialog, never the browser's `window.confirm`, and say what will happen.
 - **Rules:** every database collection gets explicit security rules; never a catch-all allow. Rules are tested in the
   emulator.
-- **Secrets:** the Firebase web settings live in a git-ignored `.env.local` and in GitHub Actions secrets for the
-  deploy (`docs/DEPLOY.md`).
+- **Secrets:** the Firebase web settings and the Google Maps key live in a git-ignored `.env.local` and in GitHub
+  Actions secrets for the deploy (`docs/DEPLOY.md`).
 
 ## Brand and logos
 
