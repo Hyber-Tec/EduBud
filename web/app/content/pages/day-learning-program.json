@@ -44,7 +44,8 @@
     "clipPath": "<clippath id=\"section-divider-6a84991363856502b0eb8244\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "0vh"
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
    },
    "grid": {
     "mobile": {
@@ -409,7 +410,8 @@
     "clipPath": "<clippath id=\"section-divider-6a84991363856502b0eb8248\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {
@@ -565,7 +567,8 @@
     "vertical-alignment--middle"
    ],
    "vars": {
-    "--section-custom-height": "0vh"
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
    },
    "grid": {
     "mobile": {
@@ -902,7 +905,7 @@
      "varsMobile": {},
      "css": "[data-block=\"356e62be0ae78b04f9b3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"356e62be0ae78b04f9b3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
-     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Developmental Disabilities</h4>"
+     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Developmental Disabilities</h4>"
     },
     {
      "id": "0d7f84f17b40156eb57e",
@@ -1073,7 +1076,7 @@
      "varsMobile": {},
      "css": "[data-block=\"79b3105928e44235453f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"79b3105928e44235453f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
-     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Intellectual Disabilities</h4>"
+     "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Intellectual Disabilities</h4>"
     },
     {
      "id": "75804d671b576129b7bd",
@@ -1187,7 +1190,7 @@
      "varsMobile": {},
      "css": "[data-block=\"e58dcbed213fe8ec48f2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e58dcbed213fe8ec48f2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
-     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"></p><h4 style=\"text-align: center; white-space: pre-wrap\">Autism Spectrum Disorders</h4>"
+     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"><br></p><h4 style=\"text-align: center; white-space: pre-wrap\">Autism Spectrum Disorders</h4>"
     },
     {
      "id": "21bad934a00c9f8a117e",
@@ -1244,7 +1247,7 @@
      "varsMobile": {},
      "css": "[data-block=\"21bad934a00c9f8a117e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"21bad934a00c9f8a117e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
      "type": "text",
-     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"></p><h4 style=\"text-align: center; white-space: pre-wrap\"> Down Syndrome</h4>"
+     "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"><br></p><h4 style=\"text-align: center; white-space: pre-wrap\"> Down Syndrome</h4>"
     },
     {
      "id": "yui_3_17_2_1_1788459039754_33138",

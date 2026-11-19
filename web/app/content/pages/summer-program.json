@@ -20,7 +20,8 @@
     "clipPath": "<clippath id=\"section-divider-6a849920e87c6b6301040531\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "0vh"
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
    },
    "grid": {
     "mobile": {
@@ -323,7 +324,8 @@
     "clipPath": "<clippath id=\"section-divider-6a849920e87c6b6301040535\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {
@@ -683,7 +685,7 @@
      "varsMobile": {},
      "css": "[data-block=\"525a9fbd68244ab93065\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\">Camp Schedule</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\">Each day of our summer camp combines structured activities with opportunities to learn, create, and explore the community.</p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Program Hours: 10:00 AM - 2:30 PM  (Monday, Tuesday, Wednesday, Thursday)</strong></p><p style=\"white-space:pre-wrap;\"></p><h4 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Terrific Thursdays</h4><p class=\"rte-large\" style=\"white-space:pre-wrap;\">During our Summer Program, <strong>Terrific Thursdays</strong> are designed to give participants something special to look forward to, with activities that encourage friendship, socialization, independence, and FUN! Participants may enjoy community outings, themed activities, games, special events, recreational experiences, group projects, and opportunities to explore new places with their EduBud friends. Activities may vary each week depending on weather, scheduling, transportation, participant needs, and availability. Terrific Thursdays are all about getting out, trying new things, building confidence, and making amazing summer memories together!</p>"
+     "html": "<h2 style=\"white-space:pre-wrap;\">Camp Schedule</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\">Each day of our summer camp combines structured activities with opportunities to learn, create, and explore the community.</p><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><strong>Program Hours: 10:00 AM - 2:30 PM  (Monday, Tuesday, Wednesday, Thursday)</strong></p><p style=\"white-space:pre-wrap;\"><br></p><h4 style=\"white-space:pre-wrap;\"><strong>✳︎ </strong>Terrific Thursdays</h4><p class=\"rte-large\" style=\"white-space:pre-wrap;\">During our Summer Program, <strong>Terrific Thursdays</strong> are designed to give participants something special to look forward to, with activities that encourage friendship, socialization, independence, and FUN! Participants may enjoy community outings, themed activities, games, special events, recreational experiences, group projects, and opportunities to explore new places with their EduBud friends. Activities may vary each week depending on weather, scheduling, transportation, participant needs, and availability. Terrific Thursdays are all about getting out, trying new things, building confidence, and making amazing summer memories together!</p>"
     },
     {
      "id": "bca3575abe0ba69c016c",

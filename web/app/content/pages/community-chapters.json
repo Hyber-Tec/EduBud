@@ -2825,7 +2825,7 @@
      "varsMobile": {},
      "css": "[data-block=\"24cc8f761ada82df5996\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\">Buford High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"></p>"
+     "html": "<h2 style=\"white-space:pre-wrap;\">Buford High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "ab70e86ba7a7fa76c197",
@@ -3448,7 +3448,7 @@
      "varsMobile": {},
      "css": "[data-block=\"56cec6f52acc2b9f90b5\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\">Chamblee High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"></p>"
+     "html": "<h2 style=\"white-space:pre-wrap;\">Chamblee High School</h2><p class=\"rte-large\" style=\"white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "0b0e4440257f580633e9",

@@ -41,7 +41,8 @@
     }
    },
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {
@@ -910,7 +911,7 @@
      "varsMobile": {},
      "css": "[data-block=\"6aa17569ac57765996f2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>2025 </strong></span><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--accent-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><span class=\"rte-text-color--white\"><strong>Finalists:</strong></span></span></h2><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Top Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Kevin Lee</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aidan Park</strong> (12th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Mason (Yeongwoo) Roh</strong> (12th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Bottom Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Julie (Jiwoo) Park</strong> (12th, North Gwinnett)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Elise Park</strong> (10th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Lilly (Hyerin) Roh</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Anna (Namkyung) Kim</strong> (12th, Alpharetta)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Rachel Kim</strong> (12th, North Gwinnett)</span></p>"
+     "html": "<h2 style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>2025 </strong></span><span style=\"--hl-thickness: 0.1em; --hl-color: hsla(var(--accent-hsl), 1)\" class=\"rte-highlight rte-highlight--underline\"><span class=\"rte-text-color--white\"><strong>Finalists:</strong></span></span></h2><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Top Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Kevin Lee</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Aidan Park</strong> (12th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Mason (Yeongwoo) Roh</strong> (12th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><br></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-highlight\"><span class=\"rte-text-color--white\">Bottom Row (L-R)</span></span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Julie (Jiwoo) Park</strong> (12th, North Gwinnett)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Elise Park</strong> (10th, Peachtree Ridge)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Lilly (Hyerin) Roh</strong> (10th, Lambert)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Anna (Namkyung) Kim</strong> (12th, Alpharetta)</span></p><p class=\"rte-large preFade fadeIn\" style=\"white-space:pre-wrap;\"><span class=\"rte-text-color--white\"><strong>Rachel Kim</strong> (12th, North Gwinnett)</span></p>"
     }
    ]
   },
@@ -1160,7 +1161,8 @@
     }
    },
    "vars": {
-    "--section-custom-height": "0vh"
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
    },
    "grid": {
     "mobile": {
@@ -1412,7 +1414,7 @@
      "varsMobile": {},
      "css": "[data-block=\"de6ea969dae34998e975\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">01<br>Build Meaningful Connections</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">01<br>Build Meaningful Connections</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "6acec0cfcbdd9398a65d",
@@ -1522,7 +1524,7 @@
      "varsMobile": {},
      "css": "[data-block=\"f528b7ede18c8175b24c\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">02<br>Celebrate Every Ability</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">02<br>Celebrate Every Ability</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "0ec1fb424231717d17bf",
@@ -1759,7 +1761,7 @@
      "varsMobile": {},
      "css": "[data-block=\"a8c652c8605c288fa5df\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">03<br>Grow Community Engagement</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"></p>"
+     "html": "<h4 style=\"text-align: center; ; white-space:pre-wrap;\">03<br>Grow Community Engagement</h4><p class=\"rte-large\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "1f61a3d4c1ba8d642d5e",

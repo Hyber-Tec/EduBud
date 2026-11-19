@@ -41,7 +41,8 @@
     }
    },
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {

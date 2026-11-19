@@ -20,7 +20,8 @@
     "clipPath": "<clippath id=\"section-divider-6ab9874978a58f2e44e03332\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "0vh"
+    "--section-custom-height": "0vh",
+    "--section-custom-pad": "0vmax"
    },
    "grid": {
     "mobile": {
@@ -296,7 +297,8 @@
     "clipPath": "<clippath id=\"section-divider-6ab9874978a58f2e44e03336\" clipPathUnits=\"objectBoundingBox\"> <path class=\"section-divider-clip\" d=\"M0,0\" /> </clippath>"
    },
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {

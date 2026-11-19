@@ -150,6 +150,10 @@ function applyTextAttributes(content: Element, scope: Element, blockId: string) 
 export function cleanHtml(el: Element | null | undefined): string {
   if (!el) return ''
   const clone = el.cloneNode(true) as Element
+  // An empty paragraph the original keeps ("preserve empty") is a blank line there: give it one here too.
+  clone.querySelectorAll('[data-rte-preserve-empty]').forEach((node) => {
+    if (!node.textContent?.trim() && !node.querySelector('br, img')) node.innerHTML = '<br>'
+  })
   clone.querySelectorAll('*').forEach((node) => {
     for (const attr of [...node.attributes]) {
       if (attr.name.startsWith('data-') || attr.name === 'id') node.removeAttribute(attr.name)
@@ -535,7 +539,11 @@ export function parseSection(sec: Element, doc: Document): Section {
 /** Section settings our CSS reads: a custom height and content width. */
 function sectionVars(styles: any): Vars | undefined {
   const v: Vars = {}
-  if (styles.sectionHeight === 'section-height--custom') v['--section-custom-height'] = `${styles.customSectionHeight ?? 0}vh`
+  if (styles.sectionHeight === 'section-height--custom') {
+    // A custom height N: at least N% of the window's height, and N × 0.1vmax of padding (as measured).
+    v['--section-custom-height'] = `${styles.customSectionHeight ?? 0}vh`
+    v['--section-custom-pad'] = `${(styles.customSectionHeight ?? 0) * 0.1}vmax`
+  }
   if (styles.contentWidth === 'content-width--custom' && styles.customContentWidth) v['--section-custom-width'] = `${styles.customContentWidth}%`
   return Object.keys(v).length ? v : undefined
 }

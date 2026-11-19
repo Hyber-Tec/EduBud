@@ -423,7 +423,7 @@
      "varsMobile": {},
      "css": "[data-block=\"90fc1edb6002848a0eb3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }",
      "type": "text",
-     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Every learner is different. We help families explore individualized learning goals and structured lesson plans tailored to a learner’s interests, abilities, communication preferences, and support needs.</p><p style=\"white-space:pre-wrap;\"></p>"
+     "html": "<p style=\"white-space:pre-wrap;\" class=\"rte-large\">Every learner is different. We help families explore individualized learning goals and structured lesson plans tailored to a learner’s interests, abilities, communication preferences, and support needs.</p><p style=\"white-space:pre-wrap;\"><br></p>"
     },
     {
      "id": "e38c0449ebc2560cc492",
@@ -564,7 +564,8 @@
     "vertical-alignment--middle"
    ],
    "vars": {
-    "--section-custom-height": "1vh"
+    "--section-custom-height": "1vh",
+    "--section-custom-pad": "0.1vmax"
    },
    "grid": {
     "mobile": {

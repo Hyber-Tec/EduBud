@@ -24,10 +24,10 @@
 .section-height--large {
   min-height: 100vh;
 }
-/* A custom height: the original's percentage of the window, and no padding of its own. */
+/* A custom height N: N% of the window's height at least, and N × 0.1vmax of padding (as measured). */
 .page-section.section-height--custom {
   min-height: var(--section-custom-height, 0);
-  --section-pad: 0px;
+  --section-pad: var(--section-custom-pad, 0px);
 }
 .vertical-alignment--top {
   align-items: flex-start;
