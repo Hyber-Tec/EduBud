@@ -190,8 +190,11 @@ async function browserPass(store: StorePage): Promise<CartText> {
           await page.close()
         }
         const { width, height } = await jpegSize(file)
-        const still: Picture = { base: `/media/art-${section.id}-${view.kind}`, ext: 'jpg', widths: [view.width], width, height, alt: '' }
-        section.background!.art = { ...section.background!.art!, [view.kind]: still }
+        // The pictures of the art, each shown up to its window width (the phone's up to 767px), as Section.tsx expects.
+        const image = { src: `/media/art-${section.id}-${view.kind}/${view.width}.jpg`, width, height, ...(view.kind === 'mobile' ? { upTo: 767 } : {}) }
+        const art = section.background!.art!
+        const images = [...(art.images ?? []).filter((i) => i.src !== image.src), image].sort((a, b) => (a.upTo ?? 1e9) - (b.upTo ?? 1e9))
+        section.background!.art = { kind: art.kind, images }
       }
     }
   } finally {

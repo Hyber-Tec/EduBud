@@ -6,22 +6,29 @@
   --site-gutter: 30px;
   --mobile-gutter: 6vw;
   --site-max-width: 3000px;
-  --header-height: 121.64px;
+  /* The fixed header's height, which the first section clears: the logo and the header's padding (1.1vw on
+     computers, 6vw below 800px, where the menu turns into its button); the logo is 48px tall below 768px. */
+  --header-height: calc(90px + 2.2vw);
   --heading-font: 'Bricolage Grotesque', sans-serif;
   --body-font: 'DM Sans', sans-serif;
   /* A size setting (1 = 1rem) becomes: (v − 1) × 1.2vw + 1rem, capped as the original caps it. */
   --text-unit: 1.2vw;
 }
+@media (max-width: 799px) {
+  :root {
+    --header-height: calc(90px + 12vw);
+  }
+}
 @media (max-width: 767px) {
   :root {
-    --header-height: 94.77px;
+    --header-height: calc(48px + 12vw);
   }
 }
 
 html {
   font-size: 17px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   html {
     font-size: 16px;
   }

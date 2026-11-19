@@ -1,7 +1,7 @@
 {
  "path": "/products-store",
  "meta": {
-  "title": "Store 2 — EduBud International",
+  "title": "Store 2 \u2014 EduBud International",
   "description": ""
  },
  "sections": [
@@ -161,7 +161,7 @@
        ],
        "width": 2966,
        "height": 1974,
-       "alt": "Screenshot 2026-08-19 at 11.34.22 AM.png",
+       "alt": "Screenshot 2026-08-19 at 11.34.22\u202fAM.png",
        "focal": [
         0.5,
         0.5
@@ -207,7 +207,7 @@
        ],
        "width": 2794,
        "height": 1978,
-       "alt": "Screenshot 2026-09-02 at 2.04.06 PM.png",
+       "alt": "Screenshot 2026-09-02 at 2.04.06\u202fPM.png",
        "focal": [
         0.5,
         0.5
@@ -253,7 +253,7 @@
        ],
        "width": 1950,
        "height": 1970,
-       "alt": "Screenshot 2026-09-02 at 2.29.52 PM.png",
+       "alt": "Screenshot 2026-09-02 at 2.29.52\u202fPM.png",
        "focal": [
         0.5,
         0.5
@@ -299,7 +299,7 @@
        ],
        "width": 2710,
        "height": 1980,
-       "alt": "Screenshot 2026-09-02 at 2.22.38 PM.png",
+       "alt": "Screenshot 2026-09-02 at 2.22.38\u202fPM.png",
        "focal": [
         0.5,
         0.5
@@ -325,26 +325,19 @@
     "background": {
      "art": {
       "kind": "conic",
-      "desktop": {
-       "base": "/media/art-6a849bea49afbf52deaa8147-desktop",
-       "ext": "jpg",
-       "widths": [
-        1920
-       ],
-       "width": 1920,
-       "height": 1188,
-       "alt": ""
-      },
-      "mobile": {
-       "base": "/media/art-6a849bea49afbf52deaa8147-mobile",
-       "ext": "jpg",
-       "widths": [
-        390
-       ],
-       "width": 390,
-       "height": 819,
-       "alt": ""
-      }
+      "images": [
+       {
+        "src": "/media/art-6a849bea49afbf52deaa8147-mobile/390.jpg",
+        "width": 390,
+        "height": 819,
+        "upTo": 767
+       },
+       {
+        "src": "/media/art-6a849bea49afbf52deaa8147-desktop/1920.jpg",
+        "width": 1920,
+        "height": 1188
+       }
+      ]
      }
     },
     "grid": {

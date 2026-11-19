@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react'
+import { useState, type CSSProperties } from 'react'
 import type { Area, Block as BlockData, Section as SectionData } from '~/content/types'
 import { Block } from './Block'
 import { focal, Img } from './Picture'
@@ -74,6 +74,23 @@ function Background({ section }: { section: SectionData }) {
   )
 }
 
+/** The round button the original puts on a moving background (video or art): it pauses and plays it. */
+function PauseButton() {
+  const [paused, setPaused] = useState(false)
+  return (
+    <button
+      type="button"
+      className={`background-pause-button${paused ? ' background-pause-button--paused' : ''}`}
+      aria-label={paused ? 'Play Background' : 'Pause Background'}
+      onClick={(e) => {
+        const video = e.currentTarget.closest('section')?.querySelector<HTMLVideoElement>('.section-background video')
+        if (video) void (paused ? video.play() : video.pause())
+        setPaused(!paused)
+      }}
+    />
+  )
+}
+
 export function Section({ section, index }: { section: SectionData; index: number }) {
   const css = sectionCss(section)
   const g = section.grid
@@ -96,6 +113,7 @@ export function Section({ section, index }: { section: SectionData; index: numbe
       <div className="section-border">
         <Background section={section} />
       </div>
+      {(section.background?.video || (section.background?.art?.images.length ?? 0) > 0) && <PauseButton />}
       <div className="content-wrapper">
         <div className="content">
           {section.kind === 'gallery' && <GallerySection section={section} />}

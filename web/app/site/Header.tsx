@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router'
 import site from '~/content/site.json'
 import type { Picture } from '~/content/types'
 import { pictureSrc, srcSet } from './Picture'
@@ -32,6 +33,8 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [folder, setFolder] = useState<string | null>(null)
   const [hidden, setHidden] = useState(false)
+  const { pathname } = useLocation()
+  const here = (href: string) => href !== '/' && (pathname === href || pathname.startsWith(href + '/'))
 
   useEffect(() => {
     let last = window.scrollY
@@ -58,7 +61,7 @@ export function Header() {
           <ul className="header-nav-list">
             {nav.map((item) =>
               item.items?.length ? (
-                <li key={item.title} className="header-nav-item header-nav-item--folder">
+                <li key={item.title} className={`header-nav-item header-nav-item--folder${item.items.some((sub) => here(sub.href)) ? ' header-nav-item--active' : ''}`}>
                   <a className="header-nav-folder-title" href={folderHref(item.title)}>
                     {item.title}
                   </a>
@@ -73,7 +76,7 @@ export function Header() {
                   </div>
                 </li>
               ) : (
-                <li key={item.title} className="header-nav-item">
+                <li key={item.title} className={`header-nav-item${here(item.href) ? ' header-nav-item--active' : ''}`}>
                   <a href={item.href}>{item.title}</a>
                 </li>
               ),

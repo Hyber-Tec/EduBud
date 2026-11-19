@@ -145,3 +145,37 @@
     justify-content: var(--justify-d, flex-start);
   }
 }
+
+/* The moving background's pause button: a 32px half-black circle, 14px from the section's corner; two white bars
+   (a double border), or a triangle once paused. */
+.background-pause-button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 999;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.background-pause-button::after {
+  content: ' ';
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  width: 10px;
+  height: 12px;
+  box-sizing: border-box;
+  border-left: 10px double #fff;
+}
+.background-pause-button--paused::after {
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}

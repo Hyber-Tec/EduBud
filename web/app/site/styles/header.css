@@ -94,16 +94,26 @@
   display: none;
 }
 
+/* The page the visitor is on (or its folder): underlined, 1px. */
+.header-nav-item--active > a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 100%;
+}
+
 @media (max-width: 767px) {
+  .header-logo img {
+    height: 48px;
+    max-height: 48px;
+  }
+}
+@media (max-width: 799px) {
   .header-inner {
     padding: 6vw;
   }
   .header-logo {
     flex: 1;
-  }
-  .header-logo img {
-    height: 48px;
-    max-height: 48px;
   }
   .header-nav {
     display: none;
