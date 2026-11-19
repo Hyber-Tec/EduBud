@@ -116,6 +116,57 @@
   max-width: none;
   object-fit: cover;
 }
+/* While a background video loads: a black screen with a white spinner in the middle, both as faint as the video
+   (its container's filter), as the original's player shows them. */
+.video-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-color: #000;
+}
+.video-loading-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  width: 120px;
+  height: 121px;
+  padding: 14px 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+}
+.video-loading-spinner {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 10.5px auto 0;
+  animation: video-loading-turn 2s linear infinite;
+}
+.video-loading-spinner circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  stroke-dasharray: 1px 200px;
+  stroke-dashoffset: 0;
+  animation: video-loading-dash 1.5s ease-in-out infinite;
+}
+@keyframes video-loading-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes video-loading-dash {
+  50% {
+    stroke-dasharray: 89px 200px;
+    stroke-dashoffset: -35px;
+  }
+  to {
+    stroke-dasharray: 89px 200px;
+    stroke-dashoffset: -124px;
+  }
+}
 .section-background-overlay {
   position: absolute;
   inset: 0;
@@ -174,8 +225,10 @@
   }
 }
 
-/* The moving background's pause button: a 32px half-black circle, 14px from the corner of the section's content
-   (above its divider, if it has one); two white bars (a double border), or a triangle once paused. */
+/* The moving background's pause button: a 32px half-black circle that blurs what's behind it, 14px from the corner of
+   the section's content (above its divider, if it has one); two white bars (a double border), or a triangle once
+   paused. Once pressed (or reached with the keyboard) it keeps the focus, as the original's does: darker, with a ring
+   around it, and no outline. */
 .background-pause-button {
   position: absolute;
   right: 14px;
@@ -187,7 +240,26 @@
   border: 0;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  outline: none;
   cursor: pointer;
+}
+.background-pause-button::before {
+  content: ' ';
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  box-sizing: content-box;
+  width: 42px;
+  height: 42px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+.background-pause-button:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.background-pause-button:focus::before {
+  border-color: rgba(0, 0, 0, 0.7);
 }
 .background-pause-button::after {
   content: ' ';
@@ -199,11 +271,13 @@
   box-sizing: border-box;
   border-left: 10px double #fff;
 }
+/* Paused: a 12 by 16px triangle pointing right. */
 .background-pause-button--paused::after {
   left: 12px;
+  top: 8px;
   width: 0;
   height: 0;
-  border-left: 10px solid #fff;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
+  border-left: 12px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
 }
