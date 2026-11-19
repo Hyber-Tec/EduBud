@@ -1,0 +1,74 @@
+# The Instagram feed on Our Team keeps up with EduBud's account by itself (docs/INSTAGRAM.md). Once a day this renews
+# Instagram's token (it lapses 60 days after its last renewal) and asks Instagram for the newest posts; when they differ
+# from the ones the website shows, it starts CI on main, whose deploy reads them and their pictures before building, so
+# the website is deployed one way only, in order.
+# Off until the owner connects EduBud's account and sets the repository variable INSTAGRAM_FEED to "on".
+# Hyber-Tec's rules for GitHub Actions: a schedule only because the owner asked for the feed to update itself
+# (2026-11-19, docs/DECISIONS.md §5); one short job, about 20 seconds (billed as a minute); a deploy only for new posts.
+name: Instagram
+
+on:
+  schedule:
+    # 23:17 UTC: 6:17 in the evening in New York (7:17 in summer), so a day's posts show the same evening.
+    - cron: '17 23 * * *'
+  # "Run workflow" on main: look now.
+  workflow_dispatch:
+
+# One at a time: two runs renewing the token together would each store one.
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  feed:
+    name: New posts?
+    if: vars.INSTAGRAM_FEED == 'on' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      # Google sign-in, as github-deploy@: it reads and stores the token in Secret Manager (docs/DEPLOY.md).
+      id-token: write
+      # Starts CI on main.
+      actions: write
+    steps:
+      # The script alone, not the pictures that make the repository a few hundred MB.
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: web/scripts
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Sign in to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/257015720209/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: github-deploy@edubud-hybertec.iam.gserviceaccount.com
+          token_format: access_token
+          create_credentials_file: false
+
+      - name: Renew Instagram's token
+        env:
+          GOOGLE_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: node web/scripts/instagram.mjs refresh
+
+      - name: New posts on Instagram?
+        id: check
+        env:
+          GOOGLE_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: node web/scripts/instagram.mjs check
+
+      # CI checks main and deploys it; its deploy reads the posts from Instagram (docs/DEPLOY.md).
+      - name: Deploy the website with them
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run ci.yml --ref main --repo "$GITHUB_REPOSITORY"
+          echo "Started CI on main, which deploys the website with the new posts." >> "$GITHUB_STEP_SUMMARY"

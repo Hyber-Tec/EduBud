@@ -12,6 +12,7 @@ each meeting's own notes are in the private notes, `internal/` (CLAUDE.md, "Loca
 | [`QUESTIONS.md`](QUESTIONS.md) | What's still open, with the defaults used meanwhile. |
 | [`TODO.md`](TODO.md) | The owner's to-do: a short checklist, what's done at the bottom with ✅ and the date. |
 | [`DEPLOY.md`](DEPLOY.md) | How `main` reaches Firebase, the preview links, the keyless sign-in, and moving edubud.org later. |
+| [`INSTAGRAM.md`](INSTAGRAM.md) | How the Instagram feed on Our Team keeps up with EduBud's account, connecting the account once, and what to do when it stops. |
 
 ## In folders
 

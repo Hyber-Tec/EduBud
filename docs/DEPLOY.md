@@ -13,7 +13,8 @@ EduBud's Squarespace site** ("Moving edubud.org", below).
    the last one): look at the change there before merging.
 2. CI runs again on `main`: the checks the merge touches, then, when the merge changed what Hosting serves, the
    **Deploy** job: `firebase deploy --only hosting`. A merge that changes nothing Hosting serves (the docs) deploys
-   nothing, and the job is skipped.
+   nothing, and the job is skipped. Before building, the Deploy job gets the Instagram feed's newest posts once
+   EduBud's account is connected ([`INSTAGRAM.md`](INSTAGRAM.md)); a preview copies the live website's.
 3. The new version is live. To roll back: Firebase console → Hosting → Release history → Roll back, then revert the
    change on `main`.
 
@@ -38,10 +39,15 @@ come out of the organization's shared monthly allowance, each job rounded up to 
   hand. A file the script doesn't know counts as code.
 - Each run's summary says what it checked and why. What CI would do for your branch:
   `bash scripts/ci-changes.sh --base origin/main`.
+- **The Instagram workflow** (`.github/workflows/instagram.yml`, the one schedule, which the owner asked for) looks for
+  new posts every evening, in one short job, and starts CI on `main` when there are some, as a run started by hand
+  ([`INSTAGRAM.md`](INSTAGRAM.md)). It runs only once EduBud's account is connected.
 - **Estimate** (2026-11-19, with the website): a run that touches the website is about 2 minutes to check (checkout
   with the pictures, cached packages, typecheck, build) and 2 to 3 more to deploy (a first deploy uploads every
   picture, about 300 MB, and takes longer; later ones upload only what changed). Docs alone: under a minute. A merged
-  pull request runs CI about 2.5 times, so 20 website pull requests a month come to about 200 to 250 minutes.
+  pull request runs CI about 2.5 times, so 20 website pull requests a month come to about 200 to 250 minutes. The
+  Instagram workflow, once connected: a minute an evening, and 2 more (CI's two jobs, under a minute each, as measured
+  on 2026-11-19) on a day with new posts: about 70 minutes a month, 90 at most.
 
 ## How GitHub signs in to Google Cloud (no keys)
 
@@ -55,7 +61,10 @@ service account. No service-account key exists. Never create one.
 - **Pull requests** (tokens whose `event_name` is `pull_request`) act as
   `github-preview@edubud-hybertec.iam.gserviceaccount.com`. A fork's pull request gets no token, so no preview.
 - Both have Firebase Hosting Admin, Service Usage Consumer and Firebase Viewer, and nothing else: when the database's
-  rules or Cloud Functions come, only `github-deploy@` gets the roles to deploy them. Hosting's roles can't tell a
+  rules or Cloud Functions come, only `github-deploy@` gets the roles to deploy them. Once EduBud's Instagram is
+  connected, `github-deploy@` may also read and replace one secret, `instagram-token` in Secret Manager (Instagram's
+  token: Secret Accessor and Secret Version Manager, granted on that secret alone; [`INSTAGRAM.md`](INSTAGRAM.md)). The
+  Instagram workflow signs in as it too: it runs on `main`. Hosting's roles can't tell a
   preview from the live site, so a branch of this repository could deploy the live site by changing the workflow; that
   is no more than write access already allows (merging to `main` needs no approval), so write access is the line.
   Give a newcomer (an intern) a fork, or the Triage role, until they should have it.

@@ -5,8 +5,11 @@ down to **Done**. Checked on 2026-11-19.
 
 ## Now
 
-Nothing right now: round 3 (the moving backgrounds, a search page, the Instagram feed updating itself) is being
-built.
+- [ ] **Connect EduBud's Instagram**, so the feed on Our Team updates itself: about 20 minutes with EduBud's Instagram
+  account holder ([`INSTAGRAM.md`](INSTAGRAM.md), "Connect EduBud's account"). Until then it shows the original's
+  posts.
+
+Round 3 (the moving backgrounds, a search page, the Instagram feed updating itself) is being built.
 
 ## Done
 
