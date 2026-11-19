@@ -41,8 +41,12 @@ doc, by folder: [`docs/README.md`](docs/README.md).
 - **The public website is EduBud's design, unchanged.** Until the owner says otherwise, every page matches
   edubud.org: layout, fonts, colors, spacing, images, text, links, menus, buttons, hover effects, animations, at
   desktop, tablet and phone sizes. A difference from the original is a bug, not a choice. Measure the original (its
-  computed styles, its pictures), don't eyeball it, and check every change with the side-by-side comparison
-  ([`docs/proposals/replica.md`](docs/proposals/replica.md)).
+  computed styles, its pictures, how things move over time), don't eyeball it, and check every change with the
+  side-by-side comparison ([`docs/proposals/replica.md`](docs/proposals/replica.md)).
+- **Where the owner chose ours** ([`docs/DECISIONS.md`](docs/DECISIONS.md) §4, 2026-11-19): the header's drop-downs,
+  its "Log In" button and the full-screen menu (below 960px); and the page layout on phones (below 768px), improved
+  for reading and tapping with the same content and look. Desktop and tablet layouts, and how things behave (hovers,
+  opening, scrolling text, slideshows), still match the original.
 - **What we add** (sign-in, the point tracker, the forms inbox, the calendar, the admin pages): **shadcn/ui**
   components and icons from **react-icons**, themed with EduBud's colors and fonts so they sit well next to the site.
 - **Logos:** only EduBud's own files, as "Brand and logos" below says. Never draw, recolor or retype the logo.
@@ -101,10 +105,12 @@ to put the new updates on the mobile phone. That's something that I'll tell you 
 
 - **One step at a time** (the owner, 2026-11-18): first the copy of the website, then, once the owner has compared it
   with edubud.org, the sign-in, the volunteer point tracker, one inbox for every interest form, the events calendar
-  and the admin pages, and a phone app last. Don't start a step before the owner says so.
+  and the admin pages, and a phone app last. Don't start a step before the owner says so. (The log-in page's look is
+  there since 2026-11-19; signing in is still step 2.)
 - **The copy, not a redesign.** What visitors see on edubud.org is the specification. Don't fix, tidy or improve the
   original's design, text or quirks on the website without the owner's OK; write them in `docs/QUESTIONS.md` instead.
-  The only visible differences are the ones the owner approves (the sign-in button, later).
+  The only visible differences are the ones the owner approves (`docs/DECISIONS.md` §4: the drop-downs, "Log In",
+  the phone layout).
 - **Samples teach, they never answer:** the point tracker's sheet and the forms show how EduBud works today. Never
   hard-code anything from them (names, chapters, point values, a rule that only makes them come out right): the rules
   go in settings EduBud can change, and tests use made-up volunteers.
@@ -143,7 +149,7 @@ to put the new updates on the mobile phone. That's something that I'll tell you 
 
 | Path | What |
 |---|---|
-| `web/` | The website (React 19, TypeScript, React Router 7 in framework mode with every page prerendered, Vite): the copy of edubud.org and, next to it, the app (what we add), kept apart. `app/root.tsx` is the document every page shares (its head, EduBud's fonts, the scripts, a last-resort error page). The copy and the app each have a layout route that imports its own CSS, and React Router links a layout's CSS only on the pages inside it, so neither one's styles reach the other's pages. `app/routes/` the pages: the copy's inside `site-layout.tsx` (the header, the footer, the copy's CSS, fitText), where `page.tsx` draws any content page, `store.tsx`, `product.tsx`, `cart.tsx` the shop, `not-found.tsx` the "page not found" page (`/404`, and any other address); the app's inside `app-layout.tsx`: `login.tsx`, `signup.tsx`. `app/site/` how the copy is drawn: `Section.tsx` (a section, its background and its grid), `Block.tsx` and `blocks/` (text, pictures, shapes, buttons, accordions, scrolling text, videos, forms, maps, the donation form, the Instagram feed), `sections/` (galleries, lists), `shop/`, `Header.tsx`, `Footer.tsx`, `styles/` (the copy's CSS; `themes.css` and `fonts.css` are written by the capture); `app/content/` the content, read from the original by `scripts/capture` (`pages/*.json`, `site.json` for the header and footer, `shop/`, `art.json`, and the types in `types.ts`), and `paths.ts`, every address that's prerendered; `public/media/` the original's pictures and videos, in every width it serves; `public/fonts/` its fonts (SIL Open Font License). |
+| `web/` | The website (React 19, TypeScript, React Router 7 in framework mode with every page prerendered, Vite): the copy of edubud.org and, next to it, the app (what we add), kept apart. `app/root.tsx` is the document every page shares (its head, EduBud's fonts, the scripts, a last-resort error page). The copy and the app each have a layout route that imports its own CSS, and React Router links a layout's CSS only on the pages inside it, so neither one's styles reach the other's pages. `app/routes/` the pages: the copy's inside `site-layout.tsx` (the header, the footer, the copy's CSS, fitText), where `page.tsx` draws any content page, `store.tsx`, `product.tsx`, `cart.tsx` the shop, `not-found.tsx` the "page not found" page (`/404`, and any other address); the app's inside `app-layout.tsx`: `login.tsx`, `signup.tsx`. `app/site/` how the copy is drawn: `Section.tsx` (a section, its background and its grid), `Block.tsx` and `blocks/` (text, pictures, shapes, buttons, accordions, scrolling text, videos, forms, maps, the donation form, the Instagram feed), `sections/` (galleries, lists), `shop/`, `Header.tsx` (with `menu.ts`: the drop-downs' lines and pictures, and where "Log In" goes), `Footer.tsx`, `styles/` (the copy's CSS; `themes.css` and `fonts.css` are written by the capture); `app/content/` the content, read from the original by `scripts/capture` (`pages/*.json`, `site.json` for the header and footer, `shop/`, `art.json`, and the types in `types.ts`), and `paths.ts`, every address that's prerendered; `public/media/` the original's pictures and videos, in every width it serves; `public/fonts/` its fonts (SIL Open Font License). |
 | `web/app/` (the app) | What we add, drawn with Tailwind CSS v4 and shadcn/ui: `app.css` the app's CSS and EduBud's theme (its fonts, which come in two weights: `font-light` and `font-bold`; its colours, and shadcn's names for them; Tailwind reads class names only from the folders its `@source` lines list); `components/ui/` shadcn/ui's components, made EduBud's (pills, 44px tall, near-black focus rings), with icons from react-icons; `auth/` the log-in and sign-up pages' parts (nothing signs in yet: every button shows a notice); `lib/utils.ts` shadcn's helper. `web/components.json` is shadcn's settings. |
 | `docs/` | The map of every doc is `README.md`. At the top, the living ones: `DECISIONS.md` (the owner's answers), `QUESTIONS.md` (open questions), `TODO.md` (the owner's to-do, a short checklist) and `DEPLOY.md` (how `main` reaches Firebase). In folders: `proposals/` (proposals, kept after they're decided) and `internal/` (the private notes, git-ignored here: "Local files"). |
 | `scripts/capture/` | Reads edubud.org into `web/app/content/` and `web/public/`: `capture.ts` (the pages, their sections, grids, blocks and settings; the header and footer; the fonts and theme colors; the pictures and videos), `art.ts` (pictures of the animated backgrounds), `shop.ts` (the shop), and the widgets' and galleries' own. The pages it fetched are cached in `.cache/` (git-ignored). |
