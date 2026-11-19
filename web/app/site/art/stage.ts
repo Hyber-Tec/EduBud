@@ -12,7 +12,7 @@
  * - When frames come too slowly (more than 60 ms on average), a stage draws smaller, in steps, and back up when they
  *   come quickly again (under 40 ms).
  * - A section starts paused for visitors who ask for less motion, or who paused the art before (remembered in this
- *   browser); pausing one pauses all.
+ *   browser); pausing one pauses all. An effect on a picture (parallax) is never paused.
  *
  * Each kind of art (conic.ts, bokeh.ts, …) draws one frame when asked (types.ts). The React side is ArtBackground.tsx.
  */
@@ -102,6 +102,7 @@ class Stage {
     if (this.width === 0 || this.height === 0) return
     for (const p of this.pieces) {
       if (!p.forceDraw && !p.active) continue
+      if (p.renderer?.update?.(time)) p.dirty = true
       if (p.moves) p.dirty = true
       this.draw(p, time)
     }
@@ -336,13 +337,16 @@ class Piece implements ArtView {
       this.canvas.remove()
       return false
     }
+    // An effect on a picture isn't paused with the generative art: it plays from the start, whatever the visitor chose.
+    const pausable = this.renderer.pausable !== false
+    if (!pausable) this.paused = false
     this.refresh()
     const io = new IntersectionObserver((entries) => entries.forEach((e) => this.setOnScreen(e.isIntersecting)), { rootMargin: '0px 0px 0px 0px' })
     io.observe(this.node)
     const ro = new ResizeObserver(() => this.refresh())
     ro.observe(this.node)
     this.observers = [io, ro]
-    pieces.add(this)
+    if (pausable) pieces.add(this)
     this.changed()
     return true
   }

@@ -290,7 +290,8 @@ export type Block =
  * A generative background's settings as the original stores them (its section's `data-current-styles` →
  * `generative`): the kind (`type`), its speeds, shapes and colors. Colors are the original's references to the site's
  * palette (`{ type: 'SITE_PALETTE_COLOR', sitePaletteColor: { id, alpha } }`) or custom colors; the page resolves them
- * against our theme's (site/art/colors.ts).
+ * against our theme's (site/art/colors.ts). An effect on a section's picture has its settings in the same shape (its
+ * `data-current-context` → `backgroundMediaEffect`, e.g. `{ type: 'parallax', rotation: 90, intensity: 30 }`).
  */
 export type GenerativeSettings = { type: string } & Record<string, unknown>
 
@@ -298,9 +299,10 @@ export interface SectionBackground {
   image?: Picture
   video?: VideoFile & { filter?: string; speed?: number }
   /**
-   * Animated art the original draws in the page: Squarespace's "generative" backgrounds (`settings`, drawn by
-   * site/art/), or an effect on the background picture. Also pictures of it taken at a few widths
-   * (scripts/capture/art.ts), each shown up to its `upTo` window width until the art is drawn, and wherever it can't be.
+   * Animated art the original draws in the page, from its `settings`, which site/art/ draws: Squarespace's
+   * "generative" backgrounds, or an effect on the section's picture (`image`). Generative art also has pictures of it
+   * taken at a few widths (scripts/capture/art.ts), each shown up to its `upTo` window width until the art is drawn,
+   * and wherever it can't be; an effect has none (the section's picture itself shows instead).
    */
   art?: { kind: string; images: { src: string; width: number; height: number; upTo?: number }[]; settings?: GenerativeSettings }
   overlayOpacity?: number

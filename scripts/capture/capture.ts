@@ -581,13 +581,18 @@ export function parseSection(sec: Element, doc: Document): Section {
     }
   }
   if (mode === 'generative' || sec.querySelector('.background-fx-canvas')) {
-    // Animated art drawn in the page: a generative background, which our site/art/ draws from its settings, or an
+    // Animated art drawn in the page, which our site/art/ draws from its settings: a generative background, or an
     // effect on the background picture (a picture section can keep an old `generative` it doesn't use, so its kind is
-    // the effect's). art.ts takes pictures of both (content/art.json), shown until the art is drawn.
+    // the effect's). art.ts takes pictures of generative art (content/art.json), shown until it's drawn; an effect
+    // shows the section's picture instead, as the original does.
     const generative = mode === 'generative' ? styles.generative : undefined
-    const kind = generative?.type ?? context.backgroundMediaEffect?.type ?? 'art'
+    const effect = generative ? undefined : context.backgroundMediaEffect
+    const kind = generative?.type ?? effect?.type ?? 'art'
     const shot = artIndex[id]
-    if (kind !== 'none') background.art = { kind, images: shot?.images ?? [], ...(generative ? { settings: generative } : {}) }
+    if (kind !== 'none') {
+      const settings = generative ?? (background.image ? effect : undefined)
+      background.art = { kind, images: generative ? (shot?.images ?? []) : [], ...(settings ? { settings } : {}) }
+    }
   }
   if (typeof styles.imageOverlayOpacity === 'number' && (background.image || background.video)) {
     background.overlayOpacity = styles.imageOverlayOpacity

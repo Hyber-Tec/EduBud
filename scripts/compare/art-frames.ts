@@ -7,7 +7,9 @@
  * on both sites, and counts the pixels that differ:
  *
  * - "first": the first frame, drawn for every section when its art starts, at 16 ms;
- * - then, for each section, scrolled into view: its frames at the given moments (ms) after it starts playing.
+ * - then, for each section, scrolled into view: its frames at the given moments (ms) after it starts playing;
+ * - with --scrolls, for art that follows the scroll (parallax): the page scrolled to each of those places in turn
+ *   (px from its top, at once), and the section's frames at the --scroll-moments (ms) after each scroll.
  *
  * The original starts each kind's sections as soon as that kind's code arrives, so which sections share a canvas
  * changes from one load to the next. Here it's made to start them in the order ours always takes (kinds in the order
@@ -23,9 +25,11 @@
  *   npx tsx scripts/compare/art-frames.ts --same-size              # our art in boxes the size of the original's
  *   npx tsx scripts/compare/art-frames.ts --reduced-motion         # for visitors who ask for less motion
  *   npx tsx scripts/compare/art-frames.ts --resize-to 1024         # also after the window is resized, and back
+ *   npx tsx scripts/compare/art-frames.ts --pages /our-team --kinds parallax --scrolls 200,600,1200,0,600,200
  *
  * Where our layout makes a section a different size, its art is drawn at that size and can't match; --same-size
- * draws it at the original's, to compare the drawing alone.
+ * draws it at the original's, to compare the drawing alone, and keeps the original's at the size it starts with (on
+ * phones, the original's first section gets shorter with its header once the page scrolls).
  *
  * Writes scripts/compare/out/art-frames/<name>/report.json, and the two drawings and a map of the differing pixels
  * (red) of each comparison that differs.
@@ -55,6 +59,8 @@ const { values: args } = parseArgs({
     'reduced-motion': { type: 'boolean' },
     'same-size': { type: 'boolean' },
     'resize-to': { type: 'string' },
+    scrolls: { type: 'string' },
+    'scroll-moments': { type: 'string', default: '0,100,250,1000' },
     keep: { type: 'boolean' },
     ours: { type: 'string' },
     port: { type: 'string', default: '5180' },
@@ -63,6 +69,13 @@ const { values: args } = parseArgs({
 })
 const KINDS = args.kinds!.split(',')
 const MOMENTS = args.moments!.split(',').map(Number)
+const SCROLLS = args.scrolls?.split(',').map(Number) ?? []
+const SCROLL_MOMENTS = args['scroll-moments']!.split(',').map(Number)
+/**
+ * The kinds that follow the scroll, which --scrolls is for. (Other art leaves the screen when scrolled away, keeping
+ * the frame of the clock's jump before the scroll: a millisecond apart on the two pages, see below.)
+ */
+const FOLLOW_SCROLL = ['parallax']
 const OUT = path.join(ROOT, 'scripts/compare/out/art-frames', args.name!)
 
 interface ArtSection {
@@ -121,8 +134,13 @@ const READ = `((sel) => {
   }
 })`
 
+/**
+ * The original's art drawn in section backgrounds (its runtime also draws the effects on some image blocks, on the
+ * same canvases, which we don't compare).
+ */
+const BACKGROUND_ART = `(window.__sqsWebGL?.controllers ?? []).map((c) => c.content.filter((x) => x.node?.classList.contains('background-fx-canvas')))`
 /** Which sections share each canvas, in order: the original's (its runtime's own list) or ours (data-stage). */
-const STAGES_ORIGINAL = `(() => (window.__sqsWebGL?.controllers ?? []).map((c) => c.content.map((x) => x.node.closest('section').dataset.sectionId)))()`
+const STAGES_ORIGINAL = `(() => ${BACKGROUND_ART}.filter((art) => art.length).map((art) => art.map((x) => x.node.closest('section').dataset.sectionId)))()`
 const STAGES_OURS = `(() => {
   const by = new Map()
   for (const n of document.querySelectorAll('[data-stage]')) {
@@ -155,9 +173,11 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
     if (req.method() !== 'GET') return route.abort()
     const file = new URL(req.url()).pathname.split('/').pop() ?? ''
     const kind =
-      name === 'original' ? /^background-([a-z]+)\.[0-9a-f]+\.js$/.exec(file)?.[1] : /^([a-z]+)-[\w-]+\.js$/.exec(file)?.[1]
+      name === 'original' ? /^background-(?:image-fx-)?([a-z]+)\.[0-9a-f]+\.js$/.exec(file)?.[1] : /^([a-z]+)-[\w-]+\.js$/.exec(file)?.[1]
     // Ours: only this page's kinds of art left out of --kinds (our files are named after their modules, a page's too).
     if (kind && !KINDS.includes(kind) && (name === 'original' || pageKinds.includes(kind))) return route.abort()
+    // The original's effects on image blocks (Our Team's film grain), which we don't draw, would take canvas places.
+    if (name === 'original' && /^image-effect-[a-z-]+\.js$/.test(file)) return route.abort()
     // The original's kinds wait their turn (see above).
     if (name === 'original' && kind && KINDS.includes(kind)) return new Promise<void>((resolve) => held.push({ kind, release: () => resolve(route.continue()) }))
     if (css && req.resourceType() === 'document' && req.url() === url) {
@@ -174,7 +194,7 @@ async function open(browser: Browser, name: Side['name'], url: string, width: nu
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90_000 })
 
   // Start the kinds in turn, and wait until all their sections have started.
-  const started = () => page.evaluate(name === 'original' ? '(window.__sqsWebGL?.contentCount ?? 0)' : `document.querySelectorAll('[data-stage]').length`) as Promise<number>
+  const started = () => page.evaluate(name === 'original' ? `${BACKGROUND_ART}.flat().length` : `document.querySelectorAll('[data-stage]').length`) as Promise<number>
   let expected = 0
   for (const kind of kinds) {
     expected += sections.filter((s) => s.kind === kind).length
@@ -251,14 +271,18 @@ async function main() {
         const label = `${pagePath} @${width}×${scale}`
         console.log(label, sections.map((s) => `${s.kind}:${s.id.slice(-4)}`).join(' '))
         const original = await open(browser, 'original', ORIGINAL + pagePath, width, scale, sections, pageKinds)
-        // With --same-size, our art is drawn in boxes the size of the original's (where our layout differs).
+        // With --same-size, our art is drawn in boxes the size of the original's (where our layout differs), and the
+        // original's boxes keep that size.
         let css = ''
         if (args['same-size'])
           for (const s of sections) {
-            const [w, h] = (await original.page.evaluate(
-              `(() => { const n = document.querySelector('${original.select(s.id)} .section-background-canvas'); return [n.offsetWidth, n.offsetHeight] })()`,
+            // (The original's keeps its size to the fraction of a pixel: any change would tell its art it was resized.)
+            const [w, h, exactW, exactH] = (await original.page.evaluate(
+              `(() => { const n = document.querySelector('${original.select(s.id)} .section-background-canvas'); const r = n.getBoundingClientRect(); return [n.offsetWidth, n.offsetHeight, r.width, r.height] })()`,
             )) as number[]
-            css += `section[data-section="${s.id}"] .section-background-canvas { right: auto !important; bottom: auto !important; width: ${w}px !important; height: ${h}px !important; }\n`
+            const size = (w: number, h: number) => `.section-background-canvas { right: auto !important; bottom: auto !important; width: ${w}px !important; height: ${h}px !important; }`
+            css += `section[data-section="${s.id}"] ${size(w, h)}\n`
+            await original.page.addStyleTag({ content: `section[data-section-id="${s.id}"] ${size(exactW, exactH)}` })
           }
         const sides = [original, await open(browser, 'ours', ours + pagePath, width, scale, sections, pageKinds, css)]
         const stages = [await sides[0].page.evaluate(STAGES_ORIGINAL), await sides[1].page.evaluate(STAGES_OURS)]
@@ -316,6 +340,21 @@ async function main() {
             })`),
             new Promise((resolve) => setTimeout(() => resolve(false), 5000)),
           ])
+        // Scrolls the page to `y` at once (the original scrolls smoothly when told to, which its clock doesn't time),
+        // and waits for the scroll's event; then a moment for the browser to tell the page what's on screen.
+        const scrollTo = async (side: Side, y: number) => {
+          await Promise.race([
+            side.page.evaluate(`new Promise((resolve) => {
+              if (scrollY === ${y}) return resolve(true)
+              addEventListener('scroll', () => resolve(true), { once: true })
+              scrollTo({ top: ${y}, behavior: 'instant' })
+            })`),
+            new Promise((resolve) => setTimeout(() => resolve(false), 5000)),
+          ])
+          await side.page.waitForTimeout(250)
+          const at = (await side.page.evaluate('scrollY')) as number
+          if (at !== y) console.warn(`  ! ${side.name}: scrolled to ${at}, not ${y}`)
+        }
         for (const s of sections) {
           if (args.sections && !args.sections.split(',').includes(s.id)) continue
           // The clock jumps first: a jump's own frame can be a millisecond apart on the two pages (each counts from its
@@ -329,6 +368,18 @@ async function main() {
             await look(s.id, `${m}ms`)
           }
           at += 30000 + Math.max(...MOMENTS)
+          // With --scrolls, the page is scrolled to each place in turn, and the frames after each scroll compared. The
+          // clock waits while the browser scrolls, so the frame that hears of the scroll comes at the same moment on both.
+          for (const y of FOLLOW_SCROLL.includes(s.kind) ? SCROLLS : []) {
+            await both((side) => side.page.clock.pauseAt(T0 + at))
+            await both((side) => scrollTo(side, y))
+            for (const m of SCROLL_MOMENTS) {
+              if (m) await both((side) => side.page.clock.pauseAt(T0 + at + m))
+              await both((side) => side.page.clock.runFor(32))
+              await look(s.id, `y${y}+${m}ms`)
+            }
+            at += 5000 + Math.max(...SCROLL_MOMENTS)
+          }
           // With --resize-to, the window is resized (and back), and the frames after each resize compared.
           if (args['resize-to']) {
             for (const w of [Number(args['resize-to']), width]) {

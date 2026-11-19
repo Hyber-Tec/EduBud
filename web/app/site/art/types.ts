@@ -57,12 +57,23 @@ export interface ArtRenderer {
    * drawn in the same canvas before, and the context keeps what it left); leave no vertex attribute array enabled.
    */
   render(time: number): void
+  /**
+   * For art that doesn't move by itself (`moves` false) but changes now and then (parallax, with the scroll): called
+   * on each frame the page may draw it (when it's on screen and playing, or must be drawn), just before, to take a
+   * step; returns whether it changed and must be drawn again (the original's `update`, and its `isDirty`).
+   */
+  update?(time: number): boolean
   /** Lets go of everything it holds: its programs, buffers and textures (never the shared context). */
   destroy(): void
   /** The color the canvas is cleared with before each frame, from 0 to 1 (the original's `clearColor`); white when not given. */
   readonly clearColor?: readonly [number, number, number, number]
   /** Whether the art moves (the original's `autoUpdate`): art that doesn't is drawn only when needed, and has no pause button. True when not given. */
   readonly moves?: boolean
+  /**
+   * Whether the pause buttons pause it, as they pause all of the original's generative art together. True when not
+   * given; an effect on a section's picture (parallax) is never paused, as on the original.
+   */
+  readonly pausable?: boolean
 }
 
 /** Starts a kind's renderer on a canvas (the shared one, see above), or returns null when the browser can't draw it. */

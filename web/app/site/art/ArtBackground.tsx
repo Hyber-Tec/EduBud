@@ -1,49 +1,97 @@
 import { useEffect, useLayoutEffect, useRef, useState, type MouseEvent, type RefObject } from 'react'
-import type { SectionBackground } from '~/content/types'
+import type { Picture, SectionBackground } from '~/content/types'
+import { focal, pictureSrc, srcSet } from '../Picture'
 import { startArt } from './stage'
 
 type Art = NonNullable<SectionBackground['art']>
 
-/** Where a section's art is: running (drawn by the page), moving, paused, and drawn at least once. */
+/** Where a section's art is: running (drawn by the page), moving, paused, drawn at least once, or unable to start. */
 export interface ArtState {
   running: boolean
   moves: boolean
   paused: boolean
   drawn: boolean
+  /** It can't be drawn here (no WebGL, or a kind we don't draw). */
+  failed: boolean
 }
 
 export interface ArtControl {
   node: RefObject<HTMLDivElement | null>
+  /** The picture an effect on the section's picture draws. */
+  picture: RefObject<HTMLImageElement | null>
   state: ArtState
   togglePaused(): void
 }
 
+/** Whether a section's art is an effect on its picture (parallax), which has no pause buttons, rather than generative art. */
+export const isPictureEffect = (bg: SectionBackground | undefined): boolean => !!(bg?.image && bg.art)
+
 /** Runs a section's art (stage.ts), for its background and its pause buttons. */
 export function useArt(art: Art | undefined): ArtControl {
   const node = useRef<HTMLDivElement>(null)
-  const [state, setState] = useState<ArtState>({ running: false, moves: false, paused: false, drawn: false })
+  const picture = useRef<HTMLImageElement>(null)
+  const [state, setState] = useState<ArtState>({ running: false, moves: false, paused: false, drawn: false, failed: false })
   const control = useRef<ReturnType<typeof startArt> | null>(null)
   const settings = art?.settings
   useEffect(() => {
-    if (!node.current || !settings) return
-    const c = startArt(node.current, settings, {
-      changed: (s) => setState((prev) => ({ ...prev, ...s })),
-      drawn: () => setState((prev) => ({ ...prev, drawn: true })),
-    })
-    control.current = c
+    const box = node.current
+    if (!box || !settings) return
+    const img = picture.current
+    let c: ReturnType<typeof startArt> | undefined
+    const start = () => {
+      if (c) return
+      c = control.current = startArt(box, settings, {
+        changed: (s) => setState((prev) => ({ ...prev, ...s, failed: !s.running })),
+        drawn: () => setState((prev) => ({ ...prev, drawn: true })),
+      })
+    }
+    // An effect on the section's picture is drawn from it: it starts once the picture has loaded, as the original's
+    // does, and not at all for visitors who ask for less motion, who see the picture still.
+    if (!img) start()
+    else if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (img.complete && img.naturalWidth) start()
+      else img.addEventListener('load', start)
+    }
     return () => {
-      c.stop()
+      img?.removeEventListener('load', start)
+      c?.stop()
       if (control.current === c) control.current = null
     }
   }, [settings])
-  return { node, state, togglePaused: () => control.current?.togglePaused() }
+  return { node, picture, state, togglePaused: () => control.current?.togglePaused() }
 }
 
 /**
- * A section's animated art: drawn in the page, as the original's, in the box its code draws into. Until it's first
- * drawn, and wherever it can't be (no WebGL, or a kind we don't draw), the picture of it we took.
+ * A section's animated art: drawn in the page, as the original's, in the box its code draws into.
+ *
+ * Generative art shows the picture of it we took until it's first drawn, and wherever it can't be (no WebGL, or a
+ * kind we don't draw). An effect on the section's picture (`picture`) has the picture itself next to its box, as on
+ * the original: hidden while the effect shows it (sections.css), and shown still wherever the effect can't be drawn.
+ * Its sizes are the original's, so that the browser picks the same file, and the picture has the same size on the
+ * page, which the effect fits to the section.
  */
-export function ArtBackground({ art, control }: { art: Art; control: ArtControl }) {
+export function ArtBackground({ art, picture, control }: { art: Art; picture?: Picture; control: ArtControl }) {
+  if (picture)
+    return (
+      <div className="section-background-content">
+        <img
+          ref={control.picture}
+          className="background-image-fx"
+          src={pictureSrc(picture)}
+          srcSet={srcSet(picture)}
+          sizes="(max-width: 799px) 200vw, 100vw"
+          width={picture.width || undefined}
+          height={picture.height || undefined}
+          alt=""
+          data-image-focal-point={picture.focal?.join(',')}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          style={{ objectPosition: focal(picture), visibility: control.state.failed || !art.settings ? 'visible' : undefined }}
+        />
+        <div ref={control.node} className="section-background-canvas background-fx-canvas" />
+      </div>
+    )
   return (
     <>
       {!control.state.drawn && art.images.length > 0 && (
