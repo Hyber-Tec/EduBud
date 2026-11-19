@@ -185,6 +185,22 @@
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
      "css": "[data-block=\"75b6d3b6b1a9a54fee83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -242,6 +258,22 @@
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
      "css": "[data-block=\"58e69831184774708117\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",

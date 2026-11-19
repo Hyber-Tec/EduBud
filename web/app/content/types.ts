@@ -63,10 +63,46 @@ export interface Link {
   newWindow?: boolean
 }
 
+/**
+ * A pose a block moves to on hover or press, or starts from when it appears: an offset (px, or % of the block's own
+ * size), a turn (degrees), a stretch (1 = as it is) and a slant (degrees), added to the block's own transform.
+ */
+export interface MotionPose {
+  x: string
+  y: string
+  rotate: number
+  scaleX: number
+  scaleY: number
+  skewX: number
+  skewY: number
+}
+
+/** One of a block's animations: a spring of this length (ms) and bounciness (0 to 1), after a delay (ms). */
+export interface MotionStep {
+  pose: MotionPose
+  duration: number
+  delay: number
+  bounce: number
+}
+
+/**
+ * A block's animations, as set on the original ("block animations"): it moves to a pose while the mouse is over it,
+ * or while it's pressed; and once, as it scrolls into view, it moves from a pose to its place. "point" is which edge
+ * of the block (or its middle) has to rise above a line "threshold" % up the window (0: its bottom; -100: a whole
+ * window below it).
+ */
+export interface Motion {
+  hover?: MotionStep
+  press?: MotionStep
+  appear?: MotionStep & { point: 'top' | 'middle' | 'bottom'; threshold: number }
+}
+
 interface BlockBase {
   id: string
   mobile: Area
   desktop: Area
+  /** Its animations, if it has any. */
+  motion?: Motion
   /** Settings on the block (both widths), and those for phones only. */
   vars?: Vars
   varsMobile?: Vars

@@ -725,6 +725,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"ab893b04722f74484cbc\"] .image-frame { overflow: hidden; clip-path: url(#ab893b04722f74484cbc-system_desktop); -webkit-clip-path: url(#ab893b04722f74484cbc-system_desktop); }\n[data-block=\"ab893b04722f74484cbc\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/b441b1d9a822",
@@ -868,6 +884,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"430e0ec080d63521fc83\"] .image-frame { overflow: hidden; clip-path: url(#430e0ec080d63521fc83-system_desktop); -webkit-clip-path: url(#430e0ec080d63521fc83-system_desktop); }\n[data-block=\"430e0ec080d63521fc83\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/2b23789117f0",
@@ -1011,6 +1043,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"2588f370a649780b2133\"] .image-frame { overflow: hidden; clip-path: url(#2588f370a649780b2133-system_desktop); -webkit-clip-path: url(#2588f370a649780b2133-system_desktop); }\n[data-block=\"2588f370a649780b2133\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/58574923e15d",
@@ -1154,6 +1202,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"1cff90d85d0d1a033b7d\"] .image-frame { overflow: hidden; clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); -webkit-clip-path: url(#1cff90d85d0d1a033b7d-system_desktop); }\n[data-block=\"1cff90d85d0d1a033b7d\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/2297c219190c",
@@ -1297,6 +1361,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"4a7bcd095a8495affc3e\"] .image-frame { overflow: hidden; clip-path: url(#4a7bcd095a8495affc3e-system_desktop); -webkit-clip-path: url(#4a7bcd095a8495affc3e-system_desktop); }\n[data-block=\"4a7bcd095a8495affc3e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/babd8fbad832",
@@ -1440,6 +1520,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"c2ff7e18ef679c01ad8e\"] .image-frame { overflow: hidden; clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); -webkit-clip-path: url(#c2ff7e18ef679c01ad8e-system_desktop); }\n[data-block=\"c2ff7e18ef679c01ad8e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/f05b9e1440b3",
@@ -1583,6 +1679,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"0cb163d5f385d6e7007c\"] .image-frame { overflow: hidden; clip-path: url(#0cb163d5f385d6e7007c-system_desktop); -webkit-clip-path: url(#0cb163d5f385d6e7007c-system_desktop); }\n[data-block=\"0cb163d5f385d6e7007c\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/ae029b45d129",
@@ -2321,6 +2433,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"32cb58fa187930efd1f0\"] .image-frame { overflow: hidden; clip-path: url(#32cb58fa187930efd1f0-system_desktop); -webkit-clip-path: url(#32cb58fa187930efd1f0-system_desktop); }\n[data-block=\"32cb58fa187930efd1f0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/a2db537fb21f",
@@ -2944,6 +3072,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"2f342381d22d61467423\"] .image-frame { overflow: hidden; clip-path: url(#2f342381d22d61467423-system_desktop); -webkit-clip-path: url(#2f342381d22d61467423-system_desktop); }\n[data-block=\"2f342381d22d61467423\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/d2fd6cbd024f",
@@ -3567,6 +3711,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"c68253b79cc419c35141\"] .image-frame { overflow: hidden; clip-path: url(#c68253b79cc419c35141-system_desktop); -webkit-clip-path: url(#c68253b79cc419c35141-system_desktop); }\n[data-block=\"c68253b79cc419c35141\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/39cce501acf3",
@@ -4190,6 +4350,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"11280c5f95f515f393e0\"] .image-frame { overflow: hidden; clip-path: url(#11280c5f95f515f393e0-system_desktop); -webkit-clip-path: url(#11280c5f95f515f393e0-system_desktop); }\n[data-block=\"11280c5f95f515f393e0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/d5f2901dcd2b",
@@ -4813,6 +4989,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"76055851aafa90a70d00\"] .image-frame { overflow: hidden; clip-path: url(#76055851aafa90a70d00-system_desktop); -webkit-clip-path: url(#76055851aafa90a70d00-system_desktop); }\n[data-block=\"76055851aafa90a70d00\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/e47065203372",
@@ -5436,6 +5628,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"a4a9dab7cbc55de23328\"] .image-frame { overflow: hidden; clip-path: url(#a4a9dab7cbc55de23328-system_desktop); -webkit-clip-path: url(#a4a9dab7cbc55de23328-system_desktop); }\n[data-block=\"a4a9dab7cbc55de23328\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/4b77ff8bb392",
@@ -6059,6 +6267,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"2ca43063eea4c0fded3f\"] .image-frame { overflow: hidden; clip-path: url(#2ca43063eea4c0fded3f-system_desktop); -webkit-clip-path: url(#2ca43063eea4c0fded3f-system_desktop); }\n[data-block=\"2ca43063eea4c0fded3f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "-10%",
+        "rotate": -5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.5
+      }
+     },
      "type": "image",
      "picture": {
       "base": "/media/82842a618c31",

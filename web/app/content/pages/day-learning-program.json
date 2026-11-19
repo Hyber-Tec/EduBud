@@ -187,6 +187,24 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"bd61daca8d1d4d333c79\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"bd61daca8d1d4d333c79\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "appear": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0,
+        "scaleY": 0,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 700,
+       "delay": 0,
+       "bounce": 0.1,
+       "point": "middle",
+       "threshold": 0
+      }
+     },
      "type": "text",
      "html": "<h1 style=\"white-space:pre-wrap;\">Belief in Education. Potential. Growth.</h1>"
     },
@@ -241,6 +259,22 @@
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
      "css": "[data-block=\"a7495d900ce3695e7650\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -298,6 +332,22 @@
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
      "css": "[data-block=\"d05cfbebf361fc989aa0\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -355,6 +405,22 @@
       "--shape-block-background-color": "hsla(var(--accent-hsl), 1)"
      },
      "css": "[data-block=\"yui_3_17_2_1_1787097597219_9119\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": -5,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 350,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "shape",
      "name": "four-petal-flower",
      "svg": "<path d=\"M99.5 31.5A30 30 0 0050 8.7 30 30 0 007.3 50.5 30 30 0 0050 92.3a30 30 0 0042.7-41.8 29.9 29.9 0 006.8-19z\" />",
@@ -844,6 +910,22 @@
       "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
      },
      "css": "[data-block=\"0e85523e6a779d96be13\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0.9,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 300,
+       "delay": 0,
+       "bounce": 0.2
+      }
+     },
      "type": "shape",
      "name": "open-book",
      "svg": "<path d=\"M99.5 99.5V.5L50 10.5.5.5v99l49.5-10 49.5 10z\" />",
@@ -904,6 +986,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"356e62be0ae78b04f9b3\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"356e62be0ae78b04f9b3\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "text",
      "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Developmental Disabilities</h4>"
     },
@@ -958,6 +1056,22 @@
       "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
      },
      "css": "[data-block=\"0d7f84f17b40156eb57e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0.9,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 300,
+       "delay": 0,
+       "bounce": 0.2
+      }
+     },
      "type": "shape",
      "name": "arched-window",
      "svg": "<path d=\"M50 .5A49.5 49.5 0 00.5 50v99.5h99V50A49.5 49.5 0 0050 .5z\" />",
@@ -1015,6 +1129,22 @@
       "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
      },
      "css": "[data-block=\"4f81a7c2e2e5455609b8\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0.9,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 300,
+       "delay": 0,
+       "bounce": 0.2
+      }
+     },
      "type": "shape",
      "name": "horizontal-right-leaning-oval",
      "svg": "<ellipse cx=\"75\" cy=\"50\" rx=\"78\" ry=\"43.7\" transform=\"rotate(-21.1 75 50)\" />",
@@ -1075,6 +1205,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"79b3105928e44235453f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"79b3105928e44235453f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "text",
      "html": "<p class=\"rte-small\" style=\"text-align: center; ; white-space:pre-wrap;\"><br></p><h4 style=\"text-align: center; ; white-space:pre-wrap;\">Intellectual Disabilities</h4>"
     },
@@ -1129,6 +1275,22 @@
       "--shape-block-background-color": "hsla(var(--lightAccent-hsl), 1)"
      },
      "css": "[data-block=\"75804d671b576129b7bd\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0.9,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 300,
+       "delay": 0,
+       "bounce": 0.2
+      }
+     },
      "type": "shape",
      "name": "rectangle",
      "svg": "<rect style=\"width: calc(100% + var(--shape-block-stroke-width, 0px)); height: calc(100% + var(--shape-block-stroke-width, 0px));\" x=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" y=\"calc(var(--shape-block-stroke-width, 0px) / -2)\" />",
@@ -1189,6 +1351,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"e58dcbed213fe8ec48f2\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"e58dcbed213fe8ec48f2\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "text",
      "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"><br></p><h4 style=\"text-align: center; white-space: pre-wrap\">Autism Spectrum Disorders</h4>"
     },
@@ -1246,6 +1424,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"21bad934a00c9f8a117e\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"21bad934a00c9f8a117e\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.3
+      }
+     },
      "type": "text",
      "html": "<p class=\"rte-small\" style=\"text-align: center; white-space: pre-wrap\"><br></p><h4 style=\"text-align: center; white-space: pre-wrap\"> Down Syndrome</h4>"
     },
@@ -1298,6 +1492,22 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"yui_3_17_2_1_1788459039754_33138\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "press": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 300,
+       "delay": 0,
+       "bounce": 0.2
+      }
+     },
      "type": "button",
      "label": "SCHEDULE A FREE INITIAL CONSULTATION",
      "link": {
@@ -2018,6 +2228,38 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"1d5a40608ef8d2e95a7a\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"1d5a40608ef8d2e95a7a\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "hover": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 1.1,
+        "scaleY": 1.1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 500,
+       "delay": 0,
+       "bounce": 0.3
+      },
+      "appear": {
+       "pose": {
+        "x": "0px",
+        "y": "100%",
+        "rotate": -10,
+        "scaleX": 1,
+        "scaleY": 1,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 800,
+       "delay": 0,
+       "bounce": 0.1,
+       "point": "middle",
+       "threshold": 0
+      }
+     },
      "type": "text",
      "html": "<h2 style=\"text-align: center; ; white-space:pre-wrap;\">Frequently Asked Questions</h2>"
     },
@@ -2319,6 +2561,24 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"yui_3_17_2_1_1788459039754_67171\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "appear": {
+       "pose": {
+        "x": "0px",
+        "y": "0px",
+        "rotate": 0,
+        "scaleX": 0,
+        "scaleY": 0,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 700,
+       "delay": 0,
+       "bounce": 0.1,
+       "point": "middle",
+       "threshold": 0
+      }
+     },
      "type": "map",
      "lat": 0,
      "lng": 0,
@@ -2573,6 +2833,24 @@
      },
      "varsMobile": {},
      "css": "[data-block=\"9cd068571f7c935e0e5f\"] { mix-blend-mode: var(--tweak-text-block-blend\n  ); border-radius: var(--tweak-text-block-radius); }\n[data-block=\"9cd068571f7c935e0e5f\"] { opacity: var(--opacity, 1); transform: var(--block-transform); transform-origin: var(--origin-x) var(--origin-y); }",
+     "motion": {
+      "appear": {
+       "pose": {
+        "x": "0px",
+        "y": "200%",
+        "rotate": 0,
+        "scaleX": 2,
+        "scaleY": 2,
+        "skewX": 0,
+        "skewY": 0
+       },
+       "duration": 900,
+       "delay": 0,
+       "bounce": 0,
+       "point": "top",
+       "threshold": -100
+      }
+     },
      "type": "text",
      "html": "<h2 style=\"white-space:pre-wrap;\">Get In Touch</h2>"
     },

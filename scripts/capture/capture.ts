@@ -18,7 +18,7 @@ import { parseArgs } from 'node:util'
 import { parseCss, walkRules } from './css'
 import { downloadMedia, mediaQueue, picture, video } from './media'
 import { captureTheme } from './theme'
-import type { Area, Block, Grid, Page, Section, SectionBackground, Theme, Vars } from '../../web/app/content/types'
+import type { Area, Block, Grid, Motion, MotionStep, Page, Section, SectionBackground, Theme, Vars } from '../../web/app/content/types'
 
 export const ORIGIN = 'https://www.edubud.org'
 const ROOT = path.resolve(import.meta.dirname, '../..')
@@ -266,6 +266,68 @@ function scopedCss(rules: { sel: string; decls: [string, string][]; bp: string }
   return out.join('\n')
 }
 
+interface RawValue {
+  value: number
+  unit: string
+}
+interface RawTransform {
+  rotation: { z: RawValue }
+  scale: { x: RawValue; y: RawValue }
+  opacity: RawValue
+  offset: { x: RawValue; y: RawValue }
+  skew: { x: RawValue; y: RawValue }
+}
+interface RawAnimation {
+  trigger: string
+  triggerElement: string
+  transforms: RawTransform[]
+  ease: string
+  bounce?: number
+  duration?: RawValue
+  delay?: RawValue
+  appearPoint?: 'top' | 'middle' | 'bottom'
+  threshold?: RawValue | number
+  replay?: boolean
+}
+
+/**
+ * The block's animations ("block animations" on the original, a JSON script in the block): on hover, on press, and
+ * once as it scrolls into view. Only what the site uses is read (springs, on the block itself, no fading); anything
+ * else is reported so it isn't missed.
+ */
+function blockMotion(feBlock: Element, id: string): Motion | undefined {
+  const script = feBlock.querySelector(`script[data-block-animations="${id}"]`)
+  if (!script?.textContent) return undefined
+  const data = JSON.parse(script.textContent) as { animations?: RawAnimation[] }
+  const motion: Motion = {}
+  for (const a of data.animations ?? []) {
+    const t = a.transforms[0]
+    if (!['hover', 'press', 'appear'].includes(a.trigger) || a.ease !== 'spring' || a.triggerElement !== 'self' || a.transforms.length !== 1 || a.replay || t.opacity.value !== 100) {
+      console.warn(`  ! block ${id}: an animation we don't draw (${a.trigger}, ${a.ease}, on ${a.triggerElement})`)
+      continue
+    }
+    const step: MotionStep = {
+      pose: {
+        x: `${t.offset.x.value}${t.offset.x.unit}`,
+        y: `${t.offset.y.value}${t.offset.y.unit}`,
+        rotate: t.rotation.z.value,
+        scaleX: t.scale.x.value / 100,
+        scaleY: t.scale.y.value / 100,
+        skewX: t.skew.x.value,
+        skewY: t.skew.y.value,
+      },
+      duration: Math.round((a.duration?.value ?? 0.5) * 1000),
+      delay: Math.round((a.delay?.value ?? 0) * 1000),
+      bounce: a.bounce ?? 0.5,
+    }
+    if (a.trigger === 'appear') {
+      const threshold = typeof a.threshold === 'number' ? a.threshold : (a.threshold?.value ?? 0)
+      motion.appear = { ...step, point: a.appearPoint ?? 'top', threshold }
+    } else motion[a.trigger as 'hover' | 'press'] = step
+  }
+  return Object.keys(motion).length ? motion : undefined
+}
+
 function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desktop: Area }>): Block | null {
   const id = [...feBlock.classList].find((c) => c.startsWith('fe-block-'))?.slice('fe-block-'.length)
   const sqs = feBlock.querySelector('.sqs-block')
@@ -275,7 +337,8 @@ function parseBlock(feBlock: Element, areas: Record<string, { mobile: Area; desk
   const { vars, varsMobile, rules, css: ownCss } = blockVars(styleText(feBlock), id)
   const area = areas[id] ?? { mobile: { ...EMPTY_AREA }, desktop: { ...EMPTY_AREA } }
   const background = sqs.classList.contains('sqs-background-enabled') || undefined
-  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined, ...(background ? { background } : {}) }
+  const motion = blockMotion(feBlock, id)
+  const base = { id, mobile: area.mobile, desktop: area.desktop, vars, varsMobile, css: ownCss || undefined, ...(background ? { background } : {}), ...(motion ? { motion } : {}) }
 
   switch (kind) {
     case 'html': {
