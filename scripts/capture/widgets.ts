@@ -45,6 +45,14 @@ const focal = (el: Element | null): [number, number] | undefined => {
   return f.length === 2 && f.every((n) => !Number.isNaN(n)) ? [f[0], f[1]] : undefined
 }
 
+/**
+ * A post's caption as plain text, as the original's lightbox shows it: Squarespace keeps it as HTML (`What&rsquo;s`)
+ * and the lightbox draws it as HTML (What’s). (The pictures' `alt` keeps it as the original has it.)
+ */
+function captionText(html: string): string {
+  return parseHTML(`<!doctype html><html><body><p>${html}</p></body></html>`).document.querySelector('p')?.textContent ?? html
+}
+
 /** The Instagram feed: Squarespace draws it as a gallery grid of the posts it copied, each opening in a lightbox. */
 function instagram(block: Element) {
   const cfg = json(block.getAttribute('data-block-json')) ?? {}
@@ -60,7 +68,7 @@ function instagram(block: Element) {
       return {
         kind,
         picture: picture(img?.getAttribute('data-src') ?? '', { width, height, alt: '', focal: focal(img) }),
-        description: opener?.getAttribute('data-description') ?? '',
+        description: captionText(opener?.getAttribute('data-description') ?? ''),
         // The post on Instagram, and the player Instagram gives for embedding it (the lightbox shows it).
         href: src.replace(/embed\/?$/, ''),
         embed: { src, width: Number(iframe?.getAttribute('width') ?? 612), height: Number(iframe?.getAttribute('height') ?? 710) },
@@ -72,7 +80,7 @@ function instagram(block: Element) {
     return {
       kind,
       picture: picture(img?.getAttribute('data-src') ?? img?.getAttribute('data-image') ?? '', { width, height, alt: img?.getAttribute('alt') ?? '', focal: focal(img) }),
-      description: a?.getAttribute('data-description') ?? '',
+      description: captionText(a?.getAttribute('data-description') ?? ''),
     }
   })
   return {
